@@ -172,6 +172,18 @@
   .add-btn-sm{padding:5px 12px;font-size:.76rem;}
   .soon-tag{font-size:.7rem;font-weight:500;color:var(--ink-50);background:var(--paper);border:1px solid var(--line-strong);border-radius:3px;padding:1px 6px;margin-left:6px;}
 
+  .nck-selectors{display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap;}
+  .nck-select-group{display:flex;flex-direction:column;gap:4px;}
+  .nck-select-label{font-size:.72rem;font-weight:600;color:var(--ink-50);text-transform:uppercase;letter-spacing:.4px;}
+  .nck-select{
+    padding:9px 32px 9px 12px;border:1.3px solid var(--line-strong);border-radius:5px;background:var(--paper);
+    font-family:inherit;font-size:.88rem;color:var(--ink);min-width:220px;cursor:pointer;
+    appearance:none;-webkit-appearance:none;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2'><path d='M6 9l6 6 6-6'/></svg>");
+    background-repeat:no-repeat;background-position:right 10px center;background-size:14px;
+  }
+  .nck-select:focus{outline:2px solid var(--green);outline-offset:1px;}
+
   .row-buy{display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex-shrink:0;}
   .row-price{font-family:'Lora',serif;font-weight:600;font-size:1.08rem;}
   .add-btn{
@@ -590,12 +602,37 @@
     { id:"ultimate-bundle", name:"Ultimate Nursing Bundle", category:"bundles", price:800,
       description:"Every resource in the catalog, bundled at a lower combined price once everything's ready.", photo:null, fileUrl:"#", ready:false },
 
-    { id:"nck-prep-parent", name:"NCK Exam Prep", category:"nck-prep", isParent:true,
-      description:"Practice questions for Kenya's NCK licensure exam, organized by cadre.",
+    { id:"nck-prep-parent", name:"NCK Exam Prep", category:"nck-prep", isParent:true, useDropdown:true,
+      description:"Practice questions for Kenya's NCK licensure exam, organized by cadre and topic. Each topic includes a printable question set plus an interactive quiz.",
       subItems: [
-        { id:201, name:"KRCHN Practice Questions", price:150, description:"Kenya Registered Community Health Nurse exam practice.", photo:null, fileUrl:"#", ready:false },
-        { id:202, name:"BScN Practice Questions", price:150, description:"Bachelor of Science in Nursing exam practice.", photo:null, fileUrl:"#", ready:false },
-        { id:203, name:"Higher Diploma Practice Questions", price:150, description:"Critical Care, Oncology, Renal, Psychiatric & Peri-Op.", photo:null, fileUrl:"#", ready:false }
+        // ---------------- KRCHN ----------------
+        { id:301, name:"KRCHN — Medical-Surgical Nursing", price:150, description:"Adult health nursing: cardiovascular, respiratory, GI, renal, endocrine, and more.", photo:null, fileUrl:"#", ready:false },
+        { id:302, name:"KRCHN — Maternal & Child Health", price:150, description:"Midwifery, labor and delivery, antenatal and postnatal care.", photo:null, fileUrl:"#", ready:false },
+        { id:303, name:"KRCHN — Pediatric Nursing", price:150, description:"Growth and development, common childhood illnesses, pediatric care.", photo:null, fileUrl:"#", ready:false },
+        { id:304, name:"KRCHN — Community & Public Health Nursing", price:150, description:"Primary health care, epidemiology, community-based nursing practice.", photo:null, fileUrl:"#", ready:false },
+        { id:305, name:"KRCHN — Mental Health & Psychiatric Nursing", price:150, description:"Psychiatric disorders, therapeutic communication, crisis care.", photo:null, fileUrl:"#", ready:false },
+        { id:306, name:"KRCHN — Nursing Foundations", price:150, description:"Core fundamentals: vitals, assessment, basic nursing procedures.", photo:null, fileUrl:"#", ready:false },
+        { id:307, name:"KRCHN — Pharmacology", price:150, description:"Drug classes, dosage calculations, nursing considerations.", photo:null, fileUrl:"#", ready:false },
+        { id:308, name:"KRCHN — Microbiology & Infection Control", price:150, description:"Pathogens, transmission, sterilization, and infection prevention.", photo:null, fileUrl:"#", ready:false },
+        { id:309, name:"KRCHN — Nursing Research & Biostatistics", price:150, description:"Research methods, data interpretation, evidence-based practice basics.", photo:null, fileUrl:"#", ready:false },
+        { id:310, name:"KRCHN — Professional Ethics & Nursing Jurisprudence", price:150, description:"Nursing law in Kenya, ethical principles, professional conduct.", photo:null, fileUrl:"#", ready:false },
+
+        // ---------------- BScN ----------------
+        { id:321, name:"BScN — Advanced Medical-Surgical Nursing", price:150, description:"Complex adult health cases and advanced clinical reasoning.", photo:null, fileUrl:"#", ready:false },
+        { id:322, name:"BScN — Nursing Leadership & Management", price:150, description:"Ward management, delegation, quality improvement, health systems.", photo:null, fileUrl:"#", ready:false },
+        { id:323, name:"BScN — Advanced Maternal & Child Health", price:150, description:"High-risk obstetrics and advanced neonatal care.", photo:null, fileUrl:"#", ready:false },
+        { id:324, name:"BScN — Community Health & Epidemiology", price:150, description:"Population health, disease surveillance, health program planning.", photo:null, fileUrl:"#", ready:false },
+        { id:325, name:"BScN — Research & Evidence-Based Practice", price:150, description:"Study design, critical appraisal, applying evidence to practice.", photo:null, fileUrl:"#", ready:false },
+        { id:326, name:"BScN — Advanced Pharmacology", price:150, description:"Complex drug therapy, polypharmacy, and prescribing considerations.", photo:null, fileUrl:"#", ready:false },
+        { id:327, name:"BScN — Mental Health Nursing", price:150, description:"Advanced psychiatric assessment and therapeutic interventions.", photo:null, fileUrl:"#", ready:false },
+        { id:328, name:"BScN — Health Policy & Nursing Ethics", price:150, description:"Kenyan health policy, bioethics, and advanced professional practice.", photo:null, fileUrl:"#", ready:false },
+
+        // ---------------- Higher Diploma ----------------
+        { id:341, name:"Higher Diploma — Critical Care Nursing", price:150, description:"ICU/HDU care, hemodynamic monitoring, life support.", photo:null, fileUrl:"#", ready:false },
+        { id:342, name:"Higher Diploma — Oncology Nursing", price:150, description:"Cancer care, chemotherapy nursing, palliative principles.", photo:null, fileUrl:"#", ready:false },
+        { id:343, name:"Higher Diploma — Renal Nursing", price:150, description:"Dialysis care, chronic kidney disease management.", photo:null, fileUrl:"#", ready:false },
+        { id:344, name:"Higher Diploma — Psychiatric Nursing", price:150, description:"Specialized psychiatric care at the higher diploma level.", photo:null, fileUrl:"#", ready:false },
+        { id:345, name:"Higher Diploma — Peri-Operative Nursing", price:150, description:"Pre-op, intra-op, and post-op surgical nursing care.", photo:null, fileUrl:"#", ready:false }
       ]
     }
   ];
@@ -610,6 +647,15 @@
 
   let cart = [];
   let expandedId = null;
+  let nckCadre = null;
+  let nckSubject = null;
+
+  // NCK Prep item names follow "Cadre — Subject" — split on that for the dropdowns
+  // rather than adding parallel fields to every item.
+  function parseCadreSubject(name){
+    const idx = name.indexOf(" — ");
+    return idx === -1 ? { cadre: "", subject: name } : { cadre: name.slice(0, idx), subject: name.slice(idx + 3) };
+  }
 
   function placeholderThumb(category){
     const c = CAT_COLORS[category] || "var(--green)";
@@ -650,10 +696,41 @@
         ? `${p.subItems.length} options`
         : fmtKES(p.price);
 
+      let parentBody = "";
+      if (p.isParent && p.useDropdown) {
+        const parsed = p.subItems.map(s => ({ ...s, ...parseCadreSubject(s.name) }));
+        const cadres = [...new Set(parsed.map(s => s.cadre))];
+        if (!nckCadre || !cadres.includes(nckCadre)) nckCadre = cadres[0];
+        const subjectsForCadre = parsed.filter(s => s.cadre === nckCadre);
+        if (!nckSubject || !subjectsForCadre.find(s => s.id === nckSubject)) nckSubject = subjectsForCadre[0].id;
+        const selected = subjectsForCadre.find(s => s.id === nckSubject);
+
+        parentBody = `
+          <p class="row-expanded-desc">${p.description}</p>
+          <div class="nck-selectors">
+            <div class="nck-select-group">
+              <span class="nck-select-label">Cadre</span>
+              <select class="nck-select" onchange="onNckCadreChange(this.value)">
+                ${cadres.map(c => `<option value="${c}" ${c === nckCadre ? "selected" : ""}>${c}</option>`).join("")}
+              </select>
+            </div>
+            <div class="nck-select-group">
+              <span class="nck-select-label">Subject</span>
+              <select class="nck-select" onchange="onNckSubjectChange(this.value)">
+                ${subjectsForCadre.map(s => `<option value="${s.id}" ${s.id === nckSubject ? "selected" : ""}>${s.subject}</option>`).join("")}
+              </select>
+            </div>
+          </div>
+          <div class="subrow-list">${subRowHTML(p, selected)}</div>
+        `;
+      } else if (p.isParent) {
+        parentBody = `<p class="row-expanded-desc">${p.description}</p><div class="subrow-list">${p.subItems.map(s => subRowHTML(p, s)).join("")}</div>`;
+      }
+
       const expandedPanel = isOpen ? `
         <div class="row-expanded">
           ${p.isParent
-            ? `<p class="row-expanded-desc">${p.description}</p><div class="subrow-list">${p.subItems.map(s => subRowHTML(p, s)).join('')}</div>`
+            ? parentBody
             : `<p class="row-expanded-desc">${p.description}</p>
                ${p.ready
                  ? `<button class="add-btn" onclick="event.stopPropagation(); addToCart('${p.id}')">Add to cart</button>`
@@ -683,6 +760,17 @@
 
   function toggleExpand(id){
     expandedId = (expandedId === id) ? null : id;
+    renderProducts(document.querySelector('.tab-btn.active').dataset.cat);
+  }
+
+  function onNckCadreChange(cadre){
+    nckCadre = cadre;
+    nckSubject = null; // reset so the subject dropdown picks the first item in the new cadre
+    renderProducts(document.querySelector('.tab-btn.active').dataset.cat);
+  }
+
+  function onNckSubjectChange(id){
+    nckSubject = Number(id);
     renderProducts(document.querySelector('.tab-btn.active').dataset.cat);
   }
 
