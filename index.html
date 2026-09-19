@@ -66,10 +66,10 @@
   .cart-icon-svg{width:16px;height:16px;}
 
   .account-btn{
-    background:none;border:1.3px solid rgba(30,42,40,.18);color:var(--green-dark);
-    padding:9px 16px;border-radius:4px;font-size:.88rem;font-weight:600;
+    background:none;border:1.3px solid rgba(255,255,255,.35);color:#fff;
+    padding:9px 16px;border-radius:6px;font-size:.88rem;font-weight:600;
   }
-  .account-btn:hover{background:var(--paper-alt);}
+  .account-btn:hover{background:rgba(255,255,255,.12);border-color:#fff;}
 
   /* ---------- SUBSCRIBE ---------- */
   .subscribe-section{padding:70px 0;background:var(--paper-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
@@ -101,13 +101,15 @@
 
   /* ---------- HERO ---------- */
   .hero{padding:44px 0 60px;}
-  .hero-with-sidebar{display:grid;grid-template-columns:270px 1fr;gap:44px;align-items:start;}
 
-  .side-nav{background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;position:sticky;top:88px;}
+  .shell{display:grid;grid-template-columns:270px 1fr;align-items:start;}
+  .shell-main{min-width:0;}
+
+  .side-nav{background:#fff;position:sticky;top:70px;height:calc(100vh - 70px);overflow-y:auto;border-right:1px solid var(--line);}
   .side-nav-title{
     display:flex;align-items:center;justify-content:space-between;
     background:var(--green-dark);color:#fff;font-family:'Lora',serif;font-weight:700;
-    font-size:.98rem;padding:16px 18px;
+    font-size:.98rem;padding:18px 20px;
   }
   .side-nav-title svg{width:16px;height:16px;stroke:#fff;}
   .cat-list{padding:10px;}
@@ -344,8 +346,8 @@
   .dl-btn:hover{background:#cf4a24;}
 
   @media (max-width:760px){
-    .hero-with-sidebar{grid-template-columns:1fr;}
-    .side-nav{position:static;}
+    .shell{grid-template-columns:1fr;}
+    .side-nav{position:static;height:auto;border-right:none;border-bottom:1px solid var(--line);}
     .feature-grid{grid-template-columns:1fr 1fr;}
     .hiw-grid{grid-template-columns:1fr;}
     .hero-grid{grid-template-columns:1fr;}
@@ -380,14 +382,19 @@
 </header>
 
 <section class="hero">
-  <div class="wrap hero-with-sidebar">
-    <aside class="side-nav" id="categories">
-      <div class="side-nav-title">
-        Categories
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-      </div>
-      <div class="cat-list" id="sideNavList"></div>
-    </aside>
+<div class="shell">
+  <aside class="side-nav" id="categories">
+    <div class="side-nav-title">
+      Categories
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+    <div class="cat-list" id="sideNavList"></div>
+  </aside>
+
+  <div class="shell-main">
+
+<section class="hero">
+  <div class="wrap">
     <div>
       <h1>Study materials that fit in your scrub pocket.</h1>
       <p class="lead">Drug cards, flashcards, and rapid-review guides made by a nurse who used them to get through clinicals — built for quick recall, not for reading cover to cover.</p>
@@ -532,6 +539,9 @@
     <p>© 2026 NurseVault. Digital study resources for nursing students.</p>
   </div>
 </footer>
+
+  </div>
+</div>
 
 <div id="cart-overlay" onclick="toggleCart()"></div>
 <div id="cart-sidebar">
