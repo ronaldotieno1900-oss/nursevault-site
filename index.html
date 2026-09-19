@@ -824,6 +824,12 @@
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
     const tabBtn = document.querySelector(`.tab-btn[data-cat="${cat}"]`);
     if (tabBtn) tabBtn.classList.add('active');
+
+    // If this category is a parent (Drug Cards, NCK Exam Prep), open it
+    // straight away instead of leaving it collapsed for a second click.
+    const matchingParent = catalog.find(p => p.isParent && p.category === cat);
+    expandedId = matchingParent ? matchingParent.id : null;
+
     renderProducts(cat);
     document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' });
   }
