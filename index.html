@@ -3,24 +3,113 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#173F35" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0D1614" media="(prefers-color-scheme: dark)" />
 <title>NurseVault — Study materials for nursing & medical students</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
+  /* ---------- THEME TOKENS ----------
+     Two palettes, one set of names. Nothing below this block hardcodes a color.
+
+     Note the brand green is split into three roles, because one value can't do
+     all three jobs once the page can go dark:
+       --brand-deep  : deep green SURFACES (header, footer, sidebar title bar).
+                       Stays dark in both themes — white text sits on it.
+       --green-dark  : the green used as TEXT (headings, links, accents).
+                       Must lighten in dark mode or headings vanish.
+       --btn-fill    : solid button fills, with --btn-fill-ink for their label.
+  */
   :root{
+    color-scheme:light;
     --paper:#F6F5F1;
     --paper-alt:#EEEBE2;
+    --surface:#FFFFFF;
     --ink:#1E2A28;
     --ink-70: rgba(30,42,40,.72);
     --ink-50: rgba(30,42,40,.5);
     --green:#1F5B4C;
     --green-dark:#173F35;
+    --brand-deep:#173F35;
+    --btn-fill:#173F35;
+    --btn-fill-hover:#1F5B4C;
+    --btn-fill-ink:#FFFFFF;
+    --cat-active-icon:rgba(255,255,255,.2);
     --coral:#E4572E;
+    --coral-hover:#CF4A24;
     --gold:#C98A2C;
     --blue:#2C6E8E;
     --purple:#6B4F8C;
     --line:#DAD7CC;
     --line-strong:#C7C3B6;
+    --incorrect:#B3261E;
+    --thumb-shadow:rgba(30,42,40,.15);
+    --fan-shadow:rgba(23,63,53,.22);
+  }
+
+  /* Follow the OS when the user hasn't picked a theme.
+     The :not([data-theme="light"]) guard lets an explicit "Light" choice win
+     even on a machine set to dark. */
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      color-scheme:dark;
+      --paper:#121A18;
+      --paper-alt:#1A2422;
+      --surface:#1F2B28;
+      --ink:#E9ECE8;
+      --ink-70: rgba(233,236,232,.74);
+      --ink-50: rgba(233,236,232,.52);
+      --green:#4FA98F;
+      --green-dark:#7FCBB2;
+      --brand-deep:#0D1614;
+      --btn-fill:#4FA98F;
+      --btn-fill-hover:#6FC0A6;
+      --btn-fill-ink:#0D1614;
+      --cat-active-icon:rgba(0,0,0,.18);
+      --coral:#F2794F;
+      --coral-hover:#FF8C63;
+      --gold:#DFA94F;
+      --blue:#5FA8C9;
+      --purple:#A488CE;
+      --line:#2A3633;
+      --line-strong:#3A4844;
+      --incorrect:#FF8A7A;
+      --thumb-shadow:rgba(0,0,0,.45);
+      --fan-shadow:rgba(0,0,0,.5);
+    }
+  }
+
+  /* Explicit choice from the header toggle. Same values as above. */
+  :root[data-theme="dark"]{
+    color-scheme:dark;
+    --paper:#121A18;
+    --paper-alt:#1A2422;
+    --surface:#1F2B28;
+    --ink:#E9ECE8;
+    --ink-70: rgba(233,236,232,.74);
+    --ink-50: rgba(233,236,232,.52);
+    --green:#4FA98F;
+    --green-dark:#7FCBB2;
+    --brand-deep:#0D1614;
+    --btn-fill:#4FA98F;
+    --btn-fill-hover:#6FC0A6;
+    --btn-fill-ink:#0D1614;
+    --cat-active-icon:rgba(0,0,0,.18);
+    --coral:#F2794F;
+    --coral-hover:#FF8C63;
+    --gold:#DFA94F;
+    --blue:#5FA8C9;
+    --purple:#A488CE;
+    --line:#2A3633;
+    --line-strong:#3A4844;
+    --incorrect:#FF8A7A;
+    --thumb-shadow:rgba(0,0,0,.45);
+    --fan-shadow:rgba(0,0,0,.5);
+  }
+
+  /* Respect "reduce motion" — the theme fade is decorative. */
+  @media (prefers-reduced-motion:no-preference){
+    body{transition:background-color .2s ease,color .2s ease;}
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -40,24 +129,50 @@
   /* ---------- HEADER ---------- */
   header{
     position:sticky;top:0;z-index:40;
-    background:var(--green-dark);
+    background:var(--brand-deep);
   }
   .header-row{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;}
   .wordmark{font-family:'Lora',serif;font-weight:600;font-style:italic;font-size:1.4rem;color:#fff;letter-spacing:.2px;}
   .wordmark span{color:var(--coral);font-style:normal;}
+
+  /* ---------- SPLASH SCREEN ----------
+     Just the NurseVault name on a dark background, shown for SPLASH_MIN_MS
+     (see the script) before fading out. It stays dark in light mode too.
+     It sits above everything, so the brand shows before the site appears. */
+  #splash-screen{
+    position:fixed;inset:0;z-index:200;
+    background:#0D1614;
+    display:flex;align-items:center;justify-content:center;
+    padding:24px;
+    transition:opacity .4s ease;
+  }
+  #splash-screen.splash-hide{opacity:0;pointer-events:none;}
+  .splash-word{
+    font-family:'Lora',serif;font-weight:600;font-style:italic;
+    font-size:clamp(2.8rem,10vw,4.6rem);line-height:1;color:#fff;letter-spacing:.3px;
+    opacity:0;animation:splashIn 1s ease .2s forwards;
+  }
+  .splash-word span{color:#F2794F;font-style:normal;}
+  @keyframes splashIn{from{opacity:0;transform:scale(.96);}to{opacity:1;transform:scale(1);}}
+  @media (prefers-reduced-motion:reduce){
+    .splash-word{animation:none;opacity:1;}
+  }
   nav.main-nav{display:flex;gap:10px;font-size:.9rem;}
+  /* Header controls are plain text/icons (no boxes). The header background is
+     a dark green in both light and dark mode, so white stays readable in both. */
   nav.main-nav a{
     text-decoration:none;color:#fff;font-weight:600;
-    border:1.3px solid rgba(255,255,255,.35);border-radius:6px;
-    padding:9px 18px;transition:background .15s,border-color .15s;
+    padding:9px 12px;
   }
-  nav.main-nav a:hover{background:rgba(255,255,255,.12);border-color:#fff;}
+  nav.main-nav a:hover{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px;}
+  nav.main-nav a:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:4px;}
   .cart-btn{
-    position:relative;background:#12241f;color:#fff;border:1.3px solid rgba(255,255,255,.35);
-    padding:10px 18px;border-radius:6px;font-size:.9rem;font-weight:600;
+    position:relative;background:none;color:#fff;border:none;
+    padding:10px 12px;border-radius:6px;font-size:.9rem;font-weight:600;
     display:flex;align-items:center;gap:8px;
   }
-  .cart-btn:hover{background:#0c1a16;}
+  .cart-btn:hover{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px;}
+  .cart-btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
   .cart-count{
     position:absolute;top:-7px;right:-7px;background:var(--coral);color:#fff;
     font-size:.68rem;font-weight:600;min-width:18px;height:18px;border-radius:9px;
@@ -66,23 +181,51 @@
   .cart-icon-svg{width:16px;height:16px;}
 
   .account-btn{
-    background:none;border:1.3px solid rgba(255,255,255,.35);color:#fff;
-    padding:9px 16px;border-radius:6px;font-size:.88rem;font-weight:600;
+    background:none;border:none;color:#fff;
+    padding:9px 12px;border-radius:6px;font-size:.88rem;font-weight:600;
   }
-  .account-btn:hover{background:rgba(255,255,255,.12);border-color:#fff;}
+  .account-btn:hover{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px;}
+  .account-btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+
+  /* ---------- DISPLAY MODE TOGGLE ---------- */
+  /* .support-btn shares this look — same pill shape as the theme toggle. */
+  .theme-btn,.support-btn{
+    display:flex;align-items:center;gap:7px;
+    background:none;border:none;color:#fff;
+    padding:9px 12px;border-radius:6px;font-size:.88rem;font-weight:600;
+  }
+  .theme-btn:hover,.support-btn:hover{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px;}
+  .theme-btn:hover .theme-icon,.support-btn:hover .theme-icon{text-decoration:none;}
+  .theme-btn:focus-visible,.support-btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+  .theme-icon{display:flex;}
+  .theme-icon svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  .theme-btn .theme-icon svg{width:21px;height:21px;}
+  @media (max-width:520px){
+    .theme-label{display:none;}
+    .theme-btn,.support-btn{padding:9px 11px;}
+  }
+  /* Small phones: tighten the header so the buttons AND the NurseVault name
+     (pinned to the far left) all fit without cutting the name off. */
+  @media (max-width:480px){
+    .header-row{padding:12px 12px;gap:8px;}
+    .header-row > div:not(.wordmark){gap:6px !important;min-width:0;}
+    .theme-btn,.support-btn{padding:8px 7px;}
+    .account-btn,.cart-btn{padding:8px 7px;font-size:.8rem;white-space:nowrap;}
+    .wordmark{font-size:1.1rem;flex-shrink:0;}
+  }
 
   /* ---------- SUBSCRIBE ---------- */
   .subscribe-section{padding:70px 0;background:var(--paper-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .plan-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:640px;margin:36px auto 0;}
-  .plan-card{background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:28px 24px;text-align:center;}
+  .plan-card{background:var(--surface);border:1.5px solid var(--line);border-radius:8px;padding:28px 24px;text-align:center;}
   .plan-card.featured{border-color:var(--coral);box-shadow:0 6px 20px rgba(228,87,46,.12);position:relative;}
   .plan-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--coral);color:#fff;font-size:.7rem;font-weight:700;padding:3px 12px;border-radius:10px;text-transform:uppercase;letter-spacing:.4px;}
   .plan-name{font-family:'Lora',serif;font-weight:600;font-size:1.15rem;color:var(--green-dark);margin-bottom:6px;}
   .plan-price{font-family:'Lora',serif;font-weight:700;font-size:2.1rem;color:var(--ink);margin-bottom:2px;}
   .plan-period{font-size:.85rem;color:var(--ink-50);margin-bottom:18px;}
   .plan-desc{font-size:.85rem;color:var(--ink-70);margin-bottom:20px;line-height:1.5;}
-  .plan-btn{width:100%;background:var(--green-dark);color:#fff;border:none;padding:12px;border-radius:5px;font-size:.9rem;font-weight:600;}
-  .plan-btn:hover{background:var(--green);}
+  .plan-btn{width:100%;background:var(--btn-fill);color:var(--btn-fill-ink);border:none;padding:12px;border-radius:5px;font-size:.9rem;font-weight:600;}
+  .plan-btn:hover{background:var(--btn-fill-hover);}
   .subscribe-note{text-align:center;font-size:.8rem;color:var(--ink-50);margin-top:24px;max-width:480px;margin-left:auto;margin-right:auto;}
 
   /* ---------- ACCOUNT MODAL ---------- */
@@ -96,7 +239,7 @@
   .account-status{padding:6px 0;}
   .account-status .email-line{font-weight:600;margin-bottom:4px;}
   .account-status .sub-line{font-size:.85rem;color:var(--ink-70);margin-bottom:16px;}
-  .account-error{color:var(--incorrect,#B3261E);font-size:.83rem;display:none;}
+  .account-error{color:var(--incorrect);font-size:.83rem;display:none;}
   .account-error.show{display:block;}
 
   /* ---------- HERO ---------- */
@@ -105,21 +248,27 @@
   .shell{display:grid;grid-template-columns:270px 1fr;align-items:start;}
   .shell-main{min-width:0;}
 
-  .side-nav{background:#fff;position:sticky;top:70px;height:calc(100vh - 70px);overflow-y:auto;border-right:1px solid var(--line);}
+  /* max-height (not a fixed height) so the panel shrinks to just the title bar
+     when the list is collapsed instead of leaving an empty white column. */
+  .side-nav{background:var(--surface);position:sticky;top:70px;max-height:calc(100vh - 70px);overflow-y:auto;border-right:1px solid var(--line);}
   .side-nav-title{
     display:flex;align-items:center;justify-content:space-between;
-    background:var(--green-dark);color:#fff;font-family:'Lora',serif;font-weight:700;
-    font-size:.98rem;padding:18px 20px;
+    background:var(--brand-deep);color:#fff;font-family:'Lora',serif;font-weight:700;
+    font-size:.98rem;padding:18px 20px;cursor:pointer;user-select:none;
   }
-  .side-nav-title svg{width:16px;height:16px;stroke:#fff;}
-  .cat-list{padding:10px;}
+  .side-nav-title:hover{background:color-mix(in srgb, var(--brand-deep) 86%, #fff);}
+  .side-nav-title:focus-visible{outline:2px solid var(--gold);outline-offset:-3px;}
+  .side-nav-title svg{width:16px;height:16px;stroke:#fff;transition:transform .22s ease;}
+  .side-nav-title.collapsed svg{transform:rotate(-90deg);}
+  .cat-list{padding:10px;overflow:hidden;max-height:1000px;transition:max-height .28s ease,padding .28s ease,opacity .2s ease;}
+  .cat-list.collapsed{max-height:0;padding-top:0;padding-bottom:0;opacity:0;}
   .cat-item{
     display:flex;align-items:center;gap:12px;padding:10px 10px;border-radius:6px;cursor:pointer;
     font-size:.9rem;font-weight:600;color:var(--ink);transition:background .15s;margin-bottom:2px;
   }
   .cat-item:hover{background:var(--paper-alt);}
-  .cat-item.active{background:var(--green-dark);color:#fff;}
-  .cat-item.active .cat-icon{background:rgba(255,255,255,.2);}
+  .cat-item.active{background:var(--btn-fill);color:var(--btn-fill-ink);}
+  .cat-item.active .cat-icon{background:var(--cat-active-icon);}
   .cat-icon{
     width:30px;height:30px;border-radius:6px;flex-shrink:0;
     display:flex;align-items:center;justify-content:center;
@@ -133,7 +282,7 @@
     background:var(--coral);color:#fff;border:none;padding:13px 26px;border-radius:4px;
     font-size:.95rem;font-weight:600;
   }
-  .btn-primary:hover{background:#cf4a24;}
+  .btn-primary:hover{background:var(--coral-hover);}
   .btn-text{font-size:.9rem;color:var(--green-dark);text-decoration:underline;text-decoration-color:var(--line-strong);text-underline-offset:3px;background:none;border:none;padding:0;}
 
   .steps{display:flex;gap:0;border-top:1px solid var(--line);padding-top:20px;max-width:480px;}
@@ -145,28 +294,42 @@
   }
   .step p{margin:0;font-size:.83rem;color:var(--ink-70);}
 
-  /* fanned card photos */
-  .card-fan{position:relative;height:420px;}
-  .card-fan img{
-    position:absolute;width:230px;border-radius:8px;
-    box-shadow:0 14px 34px rgba(23,63,53,.22);
-    border:1px solid rgba(255,255,255,.6);
+  /* Fan of sample drug cards in the hero. Built from HTML/CSS (no image files),
+     colored per drug class like the real cards. Sizes are relative to the
+     fan's own width (cqw), so it scales down cleanly on phones. */
+  .card-fan{position:relative;width:100%;max-width:460px;aspect-ratio:1.095;margin:0 auto;container-type:inline-size;}
+  .fcard{
+    position:absolute;width:46%;aspect-ratio:3/4;overflow:hidden;
+    background:var(--surface);border:1px solid var(--line);border-radius:10px;
+    box-shadow:0 14px 34px var(--fan-shadow);
+    padding:6.2cqw 4.2cqw 3cqw;
+    font-size:clamp(10.5px,3cqw,14px);line-height:1.35;color:var(--ink);
   }
-  .cf-1{left:8%;top:6%;transform:rotate(-9deg);z-index:1;}
-  .cf-2{left:32%;top:0;transform:rotate(-2deg);z-index:2;}
-  .cf-3{left:52%;top:8%;transform:rotate(6deg);z-index:3;}
-  .cf-4{left:38%;top:28%;transform:rotate(-4deg);z-index:4;box-shadow:0 20px 40px rgba(23,63,53,.3);}
+  .fcard::before{content:"";position:absolute;left:0;right:0;top:0;height:max(5px,1.5cqw);background:var(--c);}
+  .fc-class{display:block;font-size:.8em;font-weight:600;color:var(--ink-70);margin-bottom:.45em;}
+  .fc-name{font-family:'Lora',serif;font-weight:600;font-size:1.75em;line-height:1.1;color:var(--green-dark);margin-bottom:.6em;}
+  .fcard ul{list-style:none;margin:0;padding:0;display:grid;gap:.5em;}
+  .fcard li{position:relative;padding-left:.95em;}
+  .fcard li::before{content:"";position:absolute;left:0;top:.5em;width:.42em;height:.42em;border-radius:50%;background:var(--c);}
+  .cf-1{left:1%;top:12%;transform:rotate(-8deg);z-index:1;}
+  .cf-3{left:53%;top:6%;transform:rotate(7deg);z-index:2;}
+  .cf-4{left:27%;top:32%;transform:rotate(-2deg);z-index:3;box-shadow:0 20px 40px var(--fan-shadow);}
 
   @keyframes fanIn{
     from{opacity:0;transform:translateY(18px) rotate(0deg);}
   }
-  .cf-1{animation:fanIn .6s ease-out both;}
-  .cf-2{animation:fanIn .6s .08s ease-out both;}
-  .cf-3{animation:fanIn .6s .16s ease-out both;}
-  .cf-4{animation:fanIn .6s .24s ease-out both;}
+  @media (prefers-reduced-motion:no-preference){
+    .cf-1{animation:fanIn .6s ease-out both;}
+    .cf-3{animation:fanIn .6s .12s ease-out both;}
+    .cf-4{animation:fanIn .6s .24s ease-out both;}
+  }
+  /* Not enough room beside the text: stack the fan under it. */
+  @media (max-width:1180px){
+    .hero-grid{grid-template-columns:1fr;gap:36px;}
+  }
 
   /* ---------- CATEGORY TABS ---------- */
-  .tabs-section{background:var(--green-dark);}
+  .tabs-section{background:var(--brand-deep);}
   .tabs-row{display:flex;gap:4px;padding-top:14px;overflow-x:auto;}
   .tab-btn{
     background:rgba(255,255,255,.08);color:rgba(255,255,255,.68);
@@ -189,7 +352,7 @@
   }
   .row:hover{background:var(--paper-alt);}
 
-  .thumb{width:78px;height:110px;flex-shrink:0;border-radius:5px;overflow:hidden;box-shadow:0 3px 10px rgba(30,42,40,.15);}
+  .thumb{width:78px;height:110px;flex-shrink:0;border-radius:5px;overflow:hidden;box-shadow:0 3px 10px var(--thumb-shadow);}
   .thumb img{width:100%;height:100%;object-fit:cover;display:block;}
   .thumb.placeholder{
     background:var(--paper);border:1px solid var(--line-strong);display:flex;flex-direction:column;
@@ -209,6 +372,7 @@
   /* ---------- EXPANDABLE ACCORDION ---------- */
   .row-wrap{border-bottom:1px solid var(--line);}
   .row-wrap .row{border-bottom:none;cursor:pointer;}
+  .row-wrap .row:focus-visible{outline:2px solid var(--green);outline-offset:-2px;background:var(--paper-alt);}
   .row-open{background:var(--paper-alt);}
   .chevron{font-size:.9rem;color:var(--ink-50);transition:transform .18s ease;display:inline-block;}
   .chevron-open{transform:rotate(180deg);color:var(--green-dark);}
@@ -250,7 +414,7 @@
     background:none;border:1.3px solid var(--green);color:var(--green-dark);
     padding:7px 16px;border-radius:4px;font-size:.82rem;font-weight:600;transition:background .15s,color .15s;
   }
-  .add-btn:hover{background:var(--green-dark);color:#fff;border-color:var(--green-dark);}
+  .add-btn:hover{background:var(--btn-fill);color:var(--btn-fill-ink);border-color:var(--btn-fill);}
 
   /* ---------- ABOUT ---------- */
   /* ---------- FEATURES ---------- */
@@ -290,21 +454,24 @@
   .about cite{font-size:.9rem;color:var(--ink-70);font-style:normal;display:block;padding-left:22px;}
 
   /* ---------- FOOTER ---------- */
-  footer{background:var(--green-dark);color:rgba(255,255,255,.72);padding:44px 0;}
+  footer{background:var(--brand-deep);color:rgba(255,255,255,.72);padding:44px 0;}
   .footer-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
   .footer-word{font-family:'Lora',serif;font-style:italic;font-weight:600;color:#fff;font-size:1.1rem;}
   footer p{font-size:.82rem;margin:0;}
 
   /* ---------- CART SIDEBAR ---------- */
-  #cart-overlay{position:fixed;inset:0;background:rgba(23,32,30,.45);z-index:50;display:none;}
-  #cart-sidebar{
+  /* #support-overlay / #support-sidebar reuse this exact panel shape — same
+     slide-from-right drawer, just a different id so both can exist without
+     fighting over one element. */
+  #cart-overlay,#support-overlay{position:fixed;inset:0;background:rgba(23,32,30,.45);z-index:50;display:none;}
+  #cart-sidebar,#support-sidebar{
     position:fixed;top:0;right:0;height:100%;width:100%;max-width:400px;background:var(--paper);
     z-index:51;box-shadow:-8px 0 30px rgba(0,0,0,.15);transform:translateX(100%);
     transition:transform .3s ease;display:flex;flex-direction:column;
   }
-  .cart-head{padding:20px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;}
-  .cart-head h3{margin:0;font-size:1.15rem;}
-  .cart-head button{background:none;border:none;font-size:1.3rem;color:var(--ink-50);line-height:1;}
+  .cart-head,.support-head{padding:20px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;}
+  .cart-head h3,.support-head h3{margin:0;font-size:1.15rem;}
+  .cart-head button,.support-head button{background:none;border:none;font-size:1.3rem;color:var(--ink-50);line-height:1;}
   #cart-items{flex:1;overflow-y:auto;padding:18px 22px;display:flex;flex-direction:column;gap:16px;}
   .cart-empty{color:var(--ink-50);text-align:center;padding:60px 0;font-size:.9rem;}
   .cart-item{display:flex;gap:12px;align-items:center;}
@@ -319,11 +486,24 @@
   .cart-foot{padding:20px 22px;border-top:1px solid var(--line);}
   .cart-total-row{display:flex;justify-content:space-between;font-family:'Lora',serif;font-size:1.15rem;font-weight:600;margin-bottom:14px;}
   .checkout-btn{width:100%;background:var(--coral);color:#fff;border:none;padding:14px;border-radius:4px;font-size:.95rem;font-weight:600;}
-  .checkout-btn:hover{background:#cf4a24;}
+  .checkout-btn:hover{background:var(--coral-hover);}
+
+  /* ---------- SUPPORT & SETTINGS PANEL ---------- */
+  /* Body content is mostly built from classes the page already has —
+     .nck-select-label for section headers, .dl-row/.dl-name/.dl-btn for
+     link-style rows, .faq-item for the legal accordions — so this only adds
+     what's genuinely new: the scroll container, a subtext line, and the
+     footer strip. */
+  .support-body{flex:1;overflow-y:auto;padding:20px 22px;display:flex;flex-direction:column;gap:26px;}
+  .support-section-title{margin:0 0 12px;}
+  .settings-sub{font-size:.78rem;color:var(--ink-50);margin-top:2px;}
+  .support-legal-list .faq-item:first-child{padding-top:0;}
+  .support-legal-list .faq-item p{font-size:.85rem;}
+  .support-foot{padding:14px 22px;border-top:1px solid var(--line);font-size:.76rem;color:var(--ink-50);text-align:center;}
 
   /* ---------- CHECKOUT MODAL ---------- */
   #checkout-modal{position:fixed;inset:0;background:rgba(23,32,30,.55);z-index:60;display:none;align-items:center;justify-content:center;padding:20px;}
-  .modal-card{background:var(--paper);border-radius:8px;max-width:420px;width:100%;padding:28px;}
+  .modal-card{background:var(--paper);border:1px solid var(--line);border-radius:8px;max-width:420px;width:100%;padding:28px;box-shadow:0 18px 44px rgba(0,0,0,.28);}
   .modal-card h3{margin:0 0 4px;font-size:1.25rem;}
   #checkout-summary{font-size:.88rem;color:var(--ink-70);margin:18px 0;display:flex;flex-direction:column;gap:8px;}
   .co-line{display:flex;justify-content:space-between;}
@@ -331,7 +511,7 @@
   .modal-note{font-size:.83rem;color:var(--ink-50);margin-bottom:22px;}
   .modal-actions{display:flex;gap:10px;}
   .btn-ghost{flex:1;background:none;border:1px solid var(--line-strong);padding:12px;border-radius:4px;font-size:.88rem;font-weight:500;}
-  .btn-solid{flex:1;background:var(--green-dark);color:#fff;border:none;padding:12px;border-radius:4px;font-size:.88rem;font-weight:600;}
+  .btn-solid{flex:1;background:var(--btn-fill);color:var(--btn-fill-ink);border:none;padding:12px;border-radius:4px;font-size:.88rem;font-weight:600;}
   .btn-solid:hover{background:var(--green);}
   .btn-solid:disabled{opacity:.55;cursor:default;}
   .email-label{display:block;font-size:.8rem;color:var(--ink-70);margin-bottom:6px;}
@@ -343,7 +523,7 @@
   .dl-row:last-child{border-bottom:none;}
   .dl-name{font-size:.9rem;font-weight:500;}
   .dl-btn{background:var(--coral);color:#fff;border:none;padding:7px 14px;border-radius:4px;font-size:.8rem;font-weight:600;text-decoration:none;}
-  .dl-btn:hover{background:#cf4a24;}
+  .dl-btn:hover{background:var(--coral-hover);}
 
   @media (max-width:760px){
     .shell{grid-template-columns:1fr;}
@@ -351,18 +531,36 @@
     .feature-grid{grid-template-columns:1fr 1fr;}
     .hiw-grid{grid-template-columns:1fr;}
     .hero-grid{grid-template-columns:1fr;}
-    .card-fan{height:300px;margin-top:10px;}
-    .cf-1,.cf-2,.cf-3,.cf-4{width:150px;}
     nav.main-nav{display:none;}
     .row{align-items:flex-start;}
     .row-buy{align-items:flex-end;}
   }
 </style>
+
+<!-- Runs before the body paints, so a dark-mode visitor never sees a white
+     flash on load. The full toggle logic lives at the bottom with the rest
+     of the app JS; this only needs to set the attribute. -->
+<script>
+  (function(){
+    window.__splashStart = Date.now(); // marks when the splash screen appeared, so it's shown for a decent minimum even on a fast/cached load
+    try{
+      var saved = localStorage.getItem('nv-theme');
+      if (saved === 'light' || saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
+    }catch(e){ /* private mode / storage blocked — fall back to System */ }
+  })();
+</script>
 </head>
 <body>
 
+<noscript><style>#splash-screen{display:none !important;}</style></noscript>
+<div id="splash-screen" aria-hidden="true">
+  <div class="splash-word">Nurse<span>Vault</span></div>
+</div>
+
 <header>
-  <div class="header-row wrap" style="padding-left:0;padding-right:0;">
+  <div class="header-row">
     <div class="wordmark">Nurse<span>Vault</span></div>
     <nav class="main-nav">
       <a href="#catalog">Shop</a>
@@ -371,11 +569,18 @@
       <a href="#about">About</a>
     </nav>
     <div style="display:flex;align-items:center;gap:10px;">
+      <button class="theme-btn" id="themeBtn" onclick="cycleTheme()" aria-label="Display mode">
+        <span class="theme-icon" id="themeIcon"></span>
+      </button>
       <button class="account-btn" id="accountBtn" onclick="openAccountModal()">Log in</button>
       <button class="cart-btn" onclick="toggleCart()">
         <svg class="cart-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
         Cart
         <span id="cart-count" class="cart-count">0</span>
+      </button>
+      <button class="support-btn" onclick="toggleSupport()" aria-haspopup="dialog" aria-controls="support-sidebar" aria-label="Support and settings">
+        <span class="theme-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+        <span class="theme-label">Support</span>
       </button>
     </div>
   </div>
@@ -384,7 +589,10 @@
 <section class="hero">
 <div class="shell">
   <aside class="side-nav" id="categories">
-    <div class="side-nav-title">
+    <div class="side-nav-title" id="catToggle" role="button" tabindex="0"
+         aria-expanded="true" aria-controls="sideNavList"
+         onclick="toggleCategories()"
+         onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleCategories();}">
       Categories
       <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
     </div>
@@ -395,6 +603,7 @@
 
 <section class="hero">
   <div class="wrap">
+    <div class="hero-grid">
     <div>
       <h1>Study materials that fit in your scrub pocket.</h1>
       <p class="lead">Drug cards, flashcards, and rapid-review guides made by a nurse who used them to get through clinicals — built for quick recall, not for reading cover to cover.</p>
@@ -407,6 +616,38 @@
         <div class="step"><span class="num">2</span><p>Download instantly</p></div>
         <div class="step"><span class="num">3</span><p>Study anywhere</p></div>
       </div>
+    </div>
+
+    <!-- Sample drug cards (decorative). One per drug class, in the class colors. -->
+    <div class="card-fan" aria-hidden="true">
+      <div class="fcard cf-1" style="--c:var(--blue)">
+        <span class="fc-class">Penicillins</span>
+        <div class="fc-name">Amoxicillin</div>
+        <ul>
+          <li>Kills bacteria by blocking cell-wall building</li>
+          <li>Ask about penicillin allergy first</li>
+          <li>Watch for rash or trouble breathing</li>
+        </ul>
+      </div>
+      <div class="fcard cf-3" style="--c:var(--purple)">
+        <span class="fc-class">Respiratory</span>
+        <div class="fc-name">Salbutamol</div>
+        <ul>
+          <li>Opens narrowed airways fast</li>
+          <li>May cause tremor and a fast heartbeat</li>
+          <li>Check inhaler technique</li>
+        </ul>
+      </div>
+      <div class="fcard cf-4" style="--c:var(--coral)">
+        <span class="fc-class">Beta-blockers</span>
+        <div class="fc-name">Atenolol</div>
+        <ul>
+          <li>Lowers heart rate and blood pressure</li>
+          <li>Check pulse and BP before each dose</li>
+          <li>Never stop suddenly</li>
+        </ul>
+      </div>
+    </div>
     </div>
   </div>
 </section>
@@ -554,6 +795,89 @@
     <div class="cart-total-row"><span>Total</span><span id="cart-total">$0.00</span></div>
     <button class="checkout-btn" onclick="checkout()">Proceed to checkout</button>
   </div>
+</div>
+
+<!-- ====================== SUPPORT & SETTINGS PANEL ======================
+     Support email is nursesvault@gmail.com, WhatsApp is +254787589949.
+     Contact links open Gmail's web compose page (not mailto:) so they work
+     even on devices with no default mail app registered — the same reason
+     the WhatsApp link works. If you switch to a non-Gmail address later,
+     swap these back to mailto: or to that provider's own compose URL.
+     Terms of Service, Privacy Policy, and the Refund & Delivery Policy are
+     starter drafts written for a small Kenya-based digital-downloads store
+     on Paystack — read them over (ideally with a lawyer) before relying on
+     them. -->
+<div id="support-overlay" onclick="toggleSupport()"></div>
+<div id="support-sidebar" role="dialog" aria-modal="true" aria-labelledby="supportTitle">
+  <div class="support-head">
+    <h3 id="supportTitle">Support &amp; settings</h3>
+    <button onclick="toggleSupport()" aria-label="Close">&times;</button>
+  </div>
+
+  <div class="support-body">
+
+    <div>
+      <p class="nck-select-label support-section-title">Settings</p>
+      <div class="dl-row">
+        <div>
+          <div class="dl-name">Display mode</div>
+          <div class="settings-sub">Currently: <span id="themeLabel2">Light</span></div>
+        </div>
+        <button class="dl-btn" onclick="cycleTheme()">Change</button>
+      </div>
+    </div>
+
+    <div>
+      <p class="nck-select-label support-section-title">Support</p>
+      <div class="support-legal-list">
+        <details class="faq-item">
+          <summary>Contact us</summary>
+          <p>Email <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nursesvault%40gmail.com" target="_blank" rel="noopener">nursesvault@gmail.com</a> — that's the fastest way to reach us for order issues, download problems, or anything else.</p>
+          <p>Prefer chat? Message us on <a href="https://wa.me/254787589949" target="_blank" rel="noopener">WhatsApp</a>.</p>
+        </details>
+      </div>
+      <div class="dl-row">
+        <span class="dl-name">Frequently asked questions</span>
+        <button class="dl-btn" onclick="toggleSupport(); document.getElementById('faq').scrollIntoView({behavior:'smooth'});">View</button>
+      </div>
+      <div class="dl-row">
+        <div>
+          <div class="dl-name">Report a problem</div>
+          <div class="settings-sub">nursesvault@gmail.com</div>
+        </div>
+        <a class="dl-btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=nursesvault%40gmail.com&su=NurseVault%20%E2%80%94%20Issue%20report" target="_blank" rel="noopener">Email us</a>
+      </div>
+    </div>
+
+    <div>
+      <p class="nck-select-label support-section-title">Legal</p>
+      <div class="support-legal-list">
+        <details class="faq-item">
+          <summary>Terms of Service</summary>
+          <p>By using NurseVault or buying a resource here, you're agreeing to these terms. NurseVault sells digital study materials — drug cards, flashcards, notes, and NCK exam-prep questions — for personal study use. It's an independent resource shop and isn't affiliated with or endorsed by the Nursing Council of Kenya or any licensing body.</p>
+          <p>Purchases are for your own personal, non-commercial use. Reselling, redistributing, or publicly sharing purchased files isn't permitted. Prices are shown in KES and payments are processed by Paystack (card and M-Pesa); NurseVault never sees or stores your card details.</p>
+          <p>Some items are marked "coming soon" and aren't available to buy yet — the catalog updates as new content is finished. Subscriptions renew on the cycle you choose (weekly or monthly) and can be cancelled any time from your account; access continues until the end of the paid period.</p>
+          <p>These materials are study aids meant to support your revision — they're not a guarantee of exam results and shouldn't replace your official coursework or clinical training. NurseVault may update these terms occasionally; continued use after a change means you accept the update.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Privacy Policy</summary>
+          <p>NurseVault collects the email address you provide at checkout or sign-up, so we can send your receipt, download links, and account/subscription updates. Payment is handled entirely by Paystack — we receive confirmation that you paid, never your card or M-Pesa details.</p>
+          <p>Your account and subscription status are managed through our backend (a Cloudflare Worker) so you can log in and access what you've paid for. We don't sell your information to anyone or use it for advertising.</p>
+          <p>The site stores a few things in your browser's local storage — your cart, your login session, and your display-mode choice — purely so the site remembers them between visits. None of that is sent anywhere except when you check out or log in.</p>
+          <p>You can ask us to delete your account and associated data at any time by emailing <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nursesvault%40gmail.com" target="_blank" rel="noopener">nursesvault@gmail.com</a>. This policy may be updated as the store grows; check back here for the current version.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Refund &amp; delivery policy</summary>
+          <p>Every resource is delivered digitally and instantly — as soon as payment is confirmed, your download link appears on-screen and is emailed to you as a receipt.</p>
+          <p>Because files are delivered immediately, we generally don't offer refunds once a download has started. That said, if a payment failed to unlock your download, a file was corrupted or wrong, or you were charged twice, email <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nursesvault%40gmail.com" target="_blank" rel="noopener">nursesvault@gmail.com</a> with your payment reference — we'll sort it out or refund you.</p>
+          <p>Subscriptions can be cancelled any time; you'll keep access until the current paid period ends, and you won't be charged again after that.</p>
+        </details>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="support-foot">NurseVault · © 2026</div>
 </div>
 
 <div id="checkout-modal">
@@ -788,6 +1112,72 @@
     return idx === -1 ? { cadre: "", subject: name } : { cadre: name.slice(0, idx), subject: name.slice(idx + 3) };
   }
 
+  // ---------- Display mode (Light / Dark) ----------
+  // The header button shows a sun in light mode and a moon in dark mode, and
+  // flips between the two on click. Until someone clicks, the page follows the
+  // device setting (themeMode "system"); their first click saves an explicit choice.
+  const THEME_ICONS = {
+    light: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+    dark:  '<svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>'
+  };
+  const THEME_LABELS = { light:"Light", dark:"Dark" };
+
+  function readStoredTheme(){
+    try { const v = localStorage.getItem('nv-theme'); return (v === 'light' || v === 'dark') ? v : 'system'; }
+    catch(e){ return 'system'; }
+  }
+  let themeMode = readStoredTheme();
+
+  // The mode actually on screen right now ("light" or "dark").
+  function effectiveTheme(){
+    if (themeMode === 'light' || themeMode === 'dark') return themeMode;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function applyTheme(){
+    const root = document.documentElement;
+    if (themeMode === 'system') root.removeAttribute('data-theme');
+    else root.setAttribute('data-theme', themeMode);
+
+    try {
+      if (themeMode === 'system') localStorage.removeItem('nv-theme');
+      else localStorage.setItem('nv-theme', themeMode);
+    } catch(e){ /* storage blocked — the choice just won't survive a reload */ }
+
+    const eff    = effectiveTheme();
+    const other  = eff === 'dark' ? 'light' : 'dark';
+    const icon   = document.getElementById('themeIcon');
+    const label2 = document.getElementById('themeLabel2'); // status text inside the Support panel's Settings row
+    const btn    = document.getElementById('themeBtn');
+    if (icon)   icon.innerHTML = THEME_ICONS[eff];
+    if (label2) label2.textContent = THEME_LABELS[eff];
+    if (btn){
+      btn.title = `${THEME_LABELS[eff]} mode — switch to ${other} mode`;
+      btn.setAttribute('aria-label', btn.title);
+    }
+    syncThemeColor();
+  }
+
+  // Keep the mobile browser's address-bar color in step with the chosen mode.
+  function syncThemeColor(){
+    const dark = effectiveTheme() === 'dark';
+    document.querySelectorAll('meta[name="theme-color"]').forEach(m => m.remove());
+    const m = document.createElement('meta');
+    m.name = 'theme-color';
+    m.content = dark ? '#0D1614' : '#173F35';
+    document.head.appendChild(m);
+  }
+
+  function cycleTheme(){
+    themeMode = effectiveTheme() === 'dark' ? 'light' : 'dark';
+    applyTheme();
+  }
+
+  // Until a choice is made, follow the device if it flips mid-session.
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    if (themeMode === 'system') applyTheme();
+  });
+
   // ---------- Left sidebar navigation ----------
   const CAT_ICONS = {
     all: '<rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>',
@@ -801,6 +1191,29 @@
   const SIDEBAR_CATS = ["all", "flashcards", "drug-cards", "nclex", "notes", "bundles", "nck-prep"];
   let activeSidebarCat = "all";
 
+  // On phones the sidebar sits above the hero, so start it collapsed and let the
+  // user open it. On desktop it's a real column — start open.
+  const isNarrow = () => window.matchMedia("(max-width:760px)").matches;
+  let categoriesOpen = !isNarrow();
+
+  function applyCategoriesState(){
+    const title = document.getElementById('catToggle');
+    const list  = document.getElementById('sideNavList');
+    if (!title || !list) return;
+    title.classList.toggle('collapsed', !categoriesOpen);
+    list.classList.toggle('collapsed', !categoriesOpen);
+    title.setAttribute('aria-expanded', String(categoriesOpen));
+  }
+
+  function toggleCategories(){
+    categoriesOpen = !categoriesOpen;
+    applyCategoriesState();
+  }
+
+  // Re-render the catalog using whatever category is currently selected.
+  // (The old top tab bar is gone — activeSidebarCat is the single source of truth.)
+  function rerenderProducts(){ renderProducts(activeSidebarCat); }
+
   function renderSideNav(){
     const list = document.getElementById('sideNavList');
     if (!list) return;
@@ -810,8 +1223,8 @@
       const isActive = cat === activeSidebarCat;
       return `
         <div class="cat-item ${isActive ? 'active' : ''}" onclick="selectSidebarCat('${cat}')">
-          <span class="cat-icon" style="background:${isActive ? "rgba(255,255,255,.2)" : `color-mix(in srgb, ${color} 20%, white)`};">
-            <svg viewBox="0 0 24 24" fill="none" stroke="${isActive ? '#fff' : color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${CAT_ICONS[cat]}</svg>
+          <span class="cat-icon" style="background:${isActive ? "var(--cat-active-icon)" : `color-mix(in srgb, ${color} 22%, var(--surface))`};">
+            <svg viewBox="0 0 24 24" fill="none" stroke="${isActive ? 'var(--btn-fill-ink)' : color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${CAT_ICONS[cat]}</svg>
           </span>
           <span>${label}</span>
         </div>`;
@@ -821,9 +1234,6 @@
   function selectSidebarCat(cat){
     activeSidebarCat = cat;
     renderSideNav();
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    const tabBtn = document.querySelector(`.tab-btn[data-cat="${cat}"]`);
-    if (tabBtn) tabBtn.classList.add('active');
 
     // If this category is a parent (Drug Cards, NCK Exam Prep), open it
     // straight away instead of leaving it collapsed for a second click.
@@ -831,6 +1241,10 @@
     expandedId = matchingParent ? matchingParent.id : null;
 
     renderProducts(cat);
+
+    // On phones, fold the list away once a pick is made so the catalog is visible.
+    if (isNarrow() && categoriesOpen) toggleCategories();
+
     document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' });
   }
 
@@ -937,7 +1351,10 @@
 
       return `
       <div class="row-wrap">
-        <div class="row ${isOpen ? 'row-open' : ''}" style="border-left-color:${CAT_COLORS[p.category]}${(!p.isParent && !p.ready) ? ';opacity:.72' : ''}" onclick="toggleExpand('${p.id}')">
+        <div class="row ${isOpen ? 'row-open' : ''}" role="button" tabindex="0" aria-expanded="${isOpen}"
+             style="border-left-color:${CAT_COLORS[p.category]}${(!p.isParent && !p.ready) ? ';opacity:.72' : ''}"
+             onclick="toggleExpand('${p.id}')"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleExpand('${p.id}');}">
           ${p.photo ? `<div class="thumb"><img src="${p.photo}" alt=""></div>` : placeholderThumb(p.category)}
           <div class="row-body">
             <div class="row-cat" style="color:${CAT_COLORS[p.category]}">${CAT_LABELS[p.category]}${readyBadge}</div>
@@ -957,24 +1374,24 @@
 
   function toggleExpand(id){
     expandedId = (expandedId === id) ? null : id;
-    renderProducts(document.querySelector('.tab-btn.active').dataset.cat);
+    rerenderProducts();
   }
 
   function onNckCadreChange(cadre){
     nckCadre = cadre;
     nckSubject = null; // reset so the subject dropdown picks the first item in the new cadre
-    renderProducts(document.querySelector('.tab-btn.active').dataset.cat);
+    rerenderProducts();
   }
 
   function onNckSubjectChange(id){
     nckSubject = Number(id);
-    renderProducts(document.querySelector('.tab-btn.active').dataset.cat);
+    rerenderProducts();
   }
 
-  function filterProducts(cat, btn){
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    if(btn) btn.classList.add('active');
+  function filterProducts(cat){
+    activeSidebarCat = cat;
     expandedId = null;
+    renderSideNav();
     renderProducts(cat);
   }
 
@@ -1030,16 +1447,42 @@
     `).join('');
   }
 
+  function closeCart(){
+    document.getElementById('cart-sidebar').style.transform = 'translateX(100%)';
+    document.getElementById('cart-overlay').style.display = 'none';
+  }
+
   function toggleCart(forceOpen){
     const sidebar = document.getElementById('cart-sidebar');
     const overlay = document.getElementById('cart-overlay');
     const isOpen = sidebar.style.transform === 'translateX(0%)' || sidebar.style.transform === 'translateX(0px)';
     if(forceOpen || !isOpen){
+      // Only one right-side drawer (or the account modal) makes sense open at once.
+      closeSupport();
+      closeAccountModal();
       sidebar.style.transform = 'translateX(0%)';
       overlay.style.display = 'block';
     } else {
-      sidebar.style.transform = 'translateX(100%)';
-      overlay.style.display = 'none';
+      closeCart();
+    }
+  }
+
+  function closeSupport(){
+    document.getElementById('support-sidebar').style.transform = 'translateX(100%)';
+    document.getElementById('support-overlay').style.display = 'none';
+  }
+
+  function toggleSupport(forceOpen){
+    const sidebar = document.getElementById('support-sidebar');
+    const overlay = document.getElementById('support-overlay');
+    const isOpen = sidebar.style.transform === 'translateX(0%)' || sidebar.style.transform === 'translateX(0px)';
+    if(forceOpen || !isOpen){
+      closeCart();
+      closeAccountModal();
+      sidebar.style.transform = 'translateX(0%)';
+      overlay.style.display = 'block';
+    } else {
+      closeSupport();
     }
   }
 
@@ -1166,6 +1609,8 @@
   let sessionInfo = { loggedIn: false, email: null, subscriptionActive: false, subscriptionExpiry: null };
 
   function openAccountModal(){
+    closeCart();
+    closeSupport();
     document.getElementById("account-modal").style.display = "flex";
   }
   function closeAccountModal(){
@@ -1318,10 +1763,44 @@
     });
   }
 
+  // ---------- Splash screen ----------
+  // __splashStart is stamped by the tiny pre-paint script in <head>, so this
+  // measures real elapsed time rather than assuming the splash just appeared.
+  // The minimum keeps it from flashing illegibly on a fast/cached load, while
+  // still letting a slow load take as long as it actually needs.
+  const SPLASH_MIN_MS = 2500;
+  const SPLASH_FADE_MS = 400; // must match the #splash-screen transition duration above
+  function hideSplash(){
+    const el = document.getElementById('splash-screen');
+    if (!el) return; // already hidden — e.g. the window-load fallback below firing twice
+    const elapsed = Date.now() - (window.__splashStart || Date.now());
+    const wait = Math.max(0, SPLASH_MIN_MS - elapsed);
+    setTimeout(() => {
+      el.classList.add('splash-hide');
+      setTimeout(() => el.remove(), SPLASH_FADE_MS);
+    }, wait);
+  }
+  // Fallback: if something below throws before reaching hideSplash(), don't
+  // leave the splash covering the page forever.
+  window.addEventListener('load', hideSplash);
+
   checkSession();
+  applyTheme();
   renderProducts('all');
   updateCartUI();
   renderSideNav();
+  applyCategoriesState();
+  hideSplash();
+
+  // Rotating a phone (or resizing) shouldn't leave the list stuck shut on desktop.
+  let wasNarrow = isNarrow();
+  window.addEventListener('resize', () => {
+    const nowNarrow = isNarrow();
+    if (nowNarrow === wasNarrow) return;
+    wasNarrow = nowNarrow;
+    categoriesOpen = !nowNarrow;
+    applyCategoriesState();
+  });
 </script>
 
 </body>
