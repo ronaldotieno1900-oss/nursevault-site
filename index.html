@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#0D1614" media="(prefers-color-scheme: dark)" />
 <title>NurseVault — Study materials for nursing & medical students</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
 <style>
   /* ---------- THEME TOKENS ----------
      Two palettes, one set of names. Nothing below this block hardcodes a color.
@@ -122,6 +122,8 @@
     line-height:1.5;
   }
   h1,h2,h3,.serif{font-family:'Lora', serif;}
+  /* Handwritten look for the hero headline and the sample drug cards. */
+  .hand{font-family:'Caveat','Segoe Script','Bradley Hand','Comic Sans MS',cursive;}
   a{color:inherit;}
   .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
   button{font-family:inherit;cursor:pointer;}
@@ -244,6 +246,9 @@
 
   /* ---------- HERO ---------- */
   .hero{padding:44px 0 60px;}
+  /* The outer hero wraps the whole page (sidebar + content + footer): no bottom padding,
+     or a blank strip shows under the footer. */
+  section.hero:has(> .shell){padding-bottom:0;}
 
   .shell{display:grid;grid-template-columns:270px 1fr;align-items:start;}
   .shell-main{min-width:0;}
@@ -275,7 +280,7 @@
   }
   .cat-icon svg{width:16px;height:16px;}
   .hero-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center;}
-  .hero h1{font-size:2.7rem;font-weight:600;line-height:1.18;margin:0 0 20px;color:var(--green-dark);max-width:520px;}
+  .hero h1{font-family:'Caveat','Segoe Script','Bradley Hand','Comic Sans MS',cursive;font-size:3.9rem;font-weight:700;line-height:1.02;margin:0 0 20px;color:var(--green-dark);max-width:520px;}
   .hero p.lead{font-size:1.08rem;color:var(--ink-70);max-width:460px;margin:0 0 30px;}
   .hero-cta{display:flex;align-items:center;gap:22px;margin-bottom:40px;}
   .btn-primary{
@@ -303,14 +308,15 @@
     background:var(--surface);border:1px solid var(--line);border-radius:10px;
     box-shadow:0 14px 34px var(--fan-shadow);
     padding:6.2cqw 4.2cqw 3cqw;
-    font-size:clamp(10.5px,3cqw,14px);line-height:1.35;color:var(--ink);
+    font-family:'Caveat','Segoe Script','Bradley Hand','Comic Sans MS',cursive;
+    font-size:clamp(13px,3.9cqw,18px);line-height:1.15;color:var(--ink);
   }
   .fcard::before{content:"";position:absolute;left:0;right:0;top:0;height:max(5px,1.5cqw);background:var(--c);}
-  .fc-class{display:block;font-size:.8em;font-weight:600;color:var(--ink-70);margin-bottom:.45em;}
-  .fc-name{font-family:'Lora',serif;font-weight:600;font-size:1.75em;line-height:1.1;color:var(--green-dark);margin-bottom:.6em;}
-  .fcard ul{list-style:none;margin:0;padding:0;display:grid;gap:.5em;}
+  .fc-class{display:block;font-size:.95em;font-weight:500;color:var(--ink-70);margin-bottom:.3em;}
+  .fc-name{font-weight:700;font-size:2em;line-height:1;color:var(--green-dark);margin-bottom:.45em;}
+  .fcard ul{list-style:none;margin:0;padding:0;display:grid;gap:.4em;font-weight:500;}
   .fcard li{position:relative;padding-left:.95em;}
-  .fcard li::before{content:"";position:absolute;left:0;top:.5em;width:.42em;height:.42em;border-radius:50%;background:var(--c);}
+  .fcard li::before{content:"";position:absolute;left:0;top:.42em;width:.4em;height:.4em;border-radius:50%;background:var(--c);}
   .cf-1{left:1%;top:12%;transform:rotate(-8deg);z-index:1;}
   .cf-3{left:53%;top:6%;transform:rotate(7deg);z-index:2;}
   .cf-4{left:27%;top:32%;transform:rotate(-2deg);z-index:3;box-shadow:0 20px 40px var(--fan-shadow);}
@@ -427,6 +433,21 @@
   .feature-card h3{font-family:'Lora',serif;font-size:1.02rem;font-weight:600;margin:0 0 8px;}
   .feature-card p{font-size:.85rem;color:var(--ink-70);margin:0;line-height:1.5;}
 
+  /* ---------- SHOP (nursing gear) ---------- */
+  .shop-section{padding:70px 0;scroll-margin-top:72px;}
+  .shop-badge{
+    display:table;margin:0 auto 14px;background:var(--coral);color:#fff;
+    font-size:.75rem;font-weight:700;padding:4px 14px;border-radius:12px;letter-spacing:.3px;
+  }
+  .shop-section .section-sub{max-width:580px;}
+  .shop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .shop-card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:26px 22px;}
+  .shop-icon{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px;}
+  .shop-card h3{font-family:'Lora',serif;font-size:1.1rem;font-weight:600;margin:0 0 8px;color:var(--green-dark);}
+  .shop-card p{font-size:.88rem;color:var(--ink-70);margin:0;line-height:1.55;}
+  .shop-note{text-align:center;font-size:.9rem;color:var(--ink-70);margin:34px auto 0;max-width:520px;}
+  .shop-note a{color:var(--green-dark);font-weight:600;text-underline-offset:3px;}
+
   /* ---------- HOW IT WORKS ---------- */
   .how-it-works{padding:70px 0;background:var(--paper-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .hiw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:36px;}
@@ -458,6 +479,22 @@
   .footer-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
   .footer-word{font-family:'Lora',serif;font-style:italic;font-weight:600;color:#fff;font-size:1.1rem;}
   footer p{font-size:.82rem;margin:0;}
+  .footer-links{display:flex;flex-wrap:wrap;gap:8px 22px;}
+  .footer-links a{color:rgba(255,255,255,.88);font-size:.85rem;text-decoration:underline;text-underline-offset:3px;}
+  .footer-links a:hover{color:#fff;}
+  .footer-links a:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px;}
+  .footer-copy{margin-top:20px;}
+
+  /* ---------- LEGAL POPUP (opened from the footer links / Support panel) ---------- */
+  #legal-modal{position:fixed;inset:0;background:rgba(23,32,30,.55);z-index:66;display:none;align-items:center;justify-content:center;padding:20px;}
+  .legal-card{max-width:600px;max-height:85vh;display:flex;flex-direction:column;padding:24px 26px;}
+  .legal-card .account-tabs{flex-wrap:wrap;margin-bottom:14px;}
+  .legal-docs{overflow-y:auto;flex:1;padding-right:4px;}
+  .legal-doc{display:none;}
+  .legal-doc.active{display:block;}
+  .legal-doc p{font-size:.88rem;color:var(--ink-70);line-height:1.6;margin:0 0 12px;}
+  .legal-doc a{color:var(--green-dark);}
+  .legal-close{display:flex;justify-content:flex-end;padding-top:14px;border-top:1px solid var(--line);margin-top:6px;}
 
   /* ---------- CART SIDEBAR ---------- */
   /* #support-overlay / #support-sidebar reuse this exact panel shape — same
@@ -529,11 +566,16 @@
     .shell{grid-template-columns:1fr;}
     .side-nav{position:static;height:auto;border-right:none;border-bottom:1px solid var(--line);}
     .feature-grid{grid-template-columns:1fr 1fr;}
+    .shop-grid{grid-template-columns:1fr 1fr;}
+    .hero h1{font-size:3.1rem;}
     .hiw-grid{grid-template-columns:1fr;}
     .hero-grid{grid-template-columns:1fr;}
     nav.main-nav{display:none;}
     .row{align-items:flex-start;}
     .row-buy{align-items:flex-end;}
+  }
+  @media (max-width:520px){
+    .shop-grid{grid-template-columns:1fr;}
   }
 </style>
 
@@ -563,9 +605,9 @@
   <div class="header-row">
     <div class="wordmark">Nurse<span>Vault</span></div>
     <nav class="main-nav">
-      <a href="#catalog">Shop</a>
       <a href="#categories">Categories</a>
       <a href="#subscribe">Subscribe</a>
+      <a href="#shop">Shop</a>
       <a href="#about">About</a>
     </nav>
     <div style="display:flex;align-items:center;gap:10px;">
@@ -767,17 +809,65 @@
   </div>
 </section>
 
+<section class="shop-section" id="shop">
+  <div class="wrap">
+    <span class="shop-badge">Opening soon</span>
+    <h2 class="section-title">Gear up for every shift</h2>
+    <p class="section-sub">Beyond the study materials, we're building a shop for the everyday essentials of nursing life: the tools you carry, the uniform you wear, and the small things that make a long shift easier.</p>
+    <div class="shop-grid">
+      <div class="shop-card">
+        <div class="shop-icon" style="background:var(--coral)">🩺</div>
+        <h3>Stethoscopes</h3>
+        <p>Hear every heartbeat and breath sound clearly, from your first clinical placement to your first ward round.</p>
+      </div>
+      <div class="shop-card">
+        <div class="shop-icon" style="background:var(--green)">🖊️</div>
+        <h3>Pens</h3>
+        <p>Dependable pens for charting, notes and handovers. The small thing you'll reach for a hundred times a shift.</p>
+      </div>
+      <div class="shop-card">
+        <div class="shop-icon" style="background:var(--gold)">🏷️</div>
+        <h3>Name tags</h3>
+        <p>Introduce yourself with confidence. Clear, professional name tags for placements, wards and interviews.</p>
+      </div>
+      <div class="shop-card">
+        <div class="shop-icon" style="background:var(--blue)">🔦</div>
+        <h3>Torches</h3>
+        <p>Slim pen torches for quick assessments, small enough to clip on and always ready when you need them.</p>
+      </div>
+      <div class="shop-card">
+        <div class="shop-icon" style="background:var(--purple)">👕</div>
+        <h3>Scrubs</h3>
+        <p>Comfortable, easy-care scrubs made for long shifts on your feet, so you can focus on your patients, not your uniform.</p>
+      </div>
+      <div class="shop-card">
+        <div class="shop-icon" style="background:var(--coral)">🥼</div>
+        <h3>Lab coats</h3>
+        <p>A clean, professional look for clinicals, labs and ward rounds, from the very first day.</p>
+      </div>
+    </div>
+    <p class="shop-note">Want to know the moment the shop opens? <a href="mailto:nursesvault@gmail.com?subject=NurseVault%20shop%20updates">Email us</a> and we'll keep you posted.</p>
+  </div>
+</section>
+
 <section class="about" id="about">
   <div class="wrap">
     <blockquote>"I made these because I couldn't find study materials made for how nursing school actually feels — rushed, exhausted, and needing the key point fast, not a wall of text."</blockquote>
-    <cite>— Ronald Otieno, BSc Nursing, founder of NurseVault</cite>
+    <cite>— The founder of NurseVault</cite>
   </div>
 </section>
 
 <footer>
   <div class="wrap footer-row">
     <div class="footer-word">NurseVault</div>
-    <p>© 2026 NurseVault. Digital study resources for nursing students.</p>
+    <nav class="footer-links" aria-label="Legal">
+      <a href="#" role="button" onclick="event.preventDefault();openLegal('terms')">Terms of Service</a>
+      <a href="#" role="button" onclick="event.preventDefault();openLegal('privacy')">Privacy Policy</a>
+      <a href="#" role="button" onclick="event.preventDefault();openLegal('refund')">Refund &amp; delivery policy</a>
+    </nav>
+  </div>
+  <div class="wrap">
+    <p class="footer-copy">© 2026 NurseVault. Digital study resources for nursing students.</p>
   </div>
 </footer>
 
@@ -803,10 +893,8 @@
      even on devices with no default mail app registered — the same reason
      the WhatsApp link works. If you switch to a non-Gmail address later,
      swap these back to mailto: or to that provider's own compose URL.
-     Terms of Service, Privacy Policy, and the Refund & Delivery Policy are
-     starter drafts written for a small Kenya-based digital-downloads store
-     on Paystack — read them over (ideally with a lawyer) before relying on
-     them. -->
+     The Terms, Privacy and Refund text lives in the #legal-modal popup; the
+     Legal row here and the footer links both open it. -->
 <div id="support-overlay" onclick="toggleSupport()"></div>
 <div id="support-sidebar" role="dialog" aria-modal="true" aria-labelledby="supportTitle">
   <div class="support-head">
@@ -851,27 +939,12 @@
 
     <div>
       <p class="nck-select-label support-section-title">Legal</p>
-      <div class="support-legal-list">
-        <details class="faq-item">
-          <summary>Terms of Service</summary>
-          <p>By using NurseVault or buying a resource here, you're agreeing to these terms. NurseVault sells digital study materials — drug cards, flashcards, notes, and NCK exam-prep questions — for personal study use. It's an independent resource shop and isn't affiliated with or endorsed by the Nursing Council of Kenya or any licensing body.</p>
-          <p>Purchases are for your own personal, non-commercial use. Reselling, redistributing, or publicly sharing purchased files isn't permitted. Prices are shown in KES and payments are processed by Paystack (card and M-Pesa); NurseVault never sees or stores your card details.</p>
-          <p>Some items are marked "coming soon" and aren't available to buy yet — the catalog updates as new content is finished. Subscriptions renew on the cycle you choose (weekly or monthly) and can be cancelled any time from your account; access continues until the end of the paid period.</p>
-          <p>These materials are study aids meant to support your revision — they're not a guarantee of exam results and shouldn't replace your official coursework or clinical training. NurseVault may update these terms occasionally; continued use after a change means you accept the update.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Privacy Policy</summary>
-          <p>NurseVault collects the email address you provide at checkout or sign-up, so we can send your receipt, download links, and account/subscription updates. Payment is handled entirely by Paystack — we receive confirmation that you paid, never your card or M-Pesa details.</p>
-          <p>Your account and subscription status are managed through our backend (a Cloudflare Worker) so you can log in and access what you've paid for. We don't sell your information to anyone or use it for advertising.</p>
-          <p>The site stores a few things in your browser's local storage — your cart, your login session, and your display-mode choice — purely so the site remembers them between visits. None of that is sent anywhere except when you check out or log in.</p>
-          <p>You can ask us to delete your account and associated data at any time by emailing <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nursesvault%40gmail.com" target="_blank" rel="noopener">nursesvault@gmail.com</a>. This policy may be updated as the store grows; check back here for the current version.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Refund &amp; delivery policy</summary>
-          <p>Every resource is delivered digitally and instantly — as soon as payment is confirmed, your download link appears on-screen and is emailed to you as a receipt.</p>
-          <p>Because files are delivered immediately, we generally don't offer refunds once a download has started. That said, if a payment failed to unlock your download, a file was corrupted or wrong, or you were charged twice, email <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nursesvault%40gmail.com" target="_blank" rel="noopener">nursesvault@gmail.com</a> with your payment reference — we'll sort it out or refund you.</p>
-          <p>Subscriptions can be cancelled any time; you'll keep access until the current paid period ends, and you won't be charged again after that.</p>
-        </details>
+      <div class="dl-row">
+        <div>
+          <div class="dl-name">Terms, privacy &amp; refund policy</div>
+          <div class="settings-sub">Also linked at the bottom of every page</div>
+        </div>
+        <button class="dl-btn" onclick="toggleSupport(); openLegal('terms');">View</button>
       </div>
     </div>
 
@@ -902,6 +975,43 @@
     <div class="modal-actions" style="margin-top:18px;">
       <button class="btn-solid" onclick="closeSuccess()">Done</button>
     </div>
+  </div>
+</div>
+
+<!-- Terms of Service, Privacy Policy, and the Refund &amp; Delivery Policy are
+     starter drafts written for a small Kenya-based digital-downloads store
+     on Paystack — read them over (ideally with a lawyer) before relying on
+     them. They open in this popup from the footer links and the Support panel. -->
+<div id="legal-modal" onclick="if(event.target===this)closeLegal()">
+  <div class="modal-card legal-card" role="dialog" aria-modal="true" aria-label="Legal">
+    <div class="account-tabs" role="tablist">
+      <button class="account-tab active" id="legal-tab-terms" role="tab" onclick="showLegal('terms')">Terms</button>
+      <button class="account-tab" id="legal-tab-privacy" role="tab" onclick="showLegal('privacy')">Privacy</button>
+      <button class="account-tab" id="legal-tab-refund" role="tab" onclick="showLegal('refund')">Refunds</button>
+    </div>
+    <div class="legal-docs">
+      <div class="legal-doc active" id="legal-doc-terms">
+          <p>By using NurseVault or buying a resource here, you're agreeing to these terms. NurseVault sells digital study materials — drug cards, flashcards, notes, and NCK exam-prep questions — for personal study use. It's an independent resource shop and isn't affiliated with or endorsed by the Nursing Council of Kenya or any licensing body.</p>
+          <p>Purchases are for your own personal, non-commercial use. Reselling, redistributing, or publicly sharing purchased files isn't permitted. Prices are shown in KES and payments are processed by Paystack (card and M-Pesa); NurseVault never sees or stores your card details.</p>
+          <p>Some items are marked "coming soon" and aren't available to buy yet — the catalog updates as new content is finished. Subscriptions renew on the cycle you choose (weekly or monthly) and can be cancelled any time from your account; access continues until the end of the paid period.</p>
+          <p>These materials are study aids meant to support your revision — they're not a guarantee of exam results and shouldn't replace your official coursework or clinical training. NurseVault may update these terms occasionally; continued use after a change means you accept the update.</p>
+        
+      </div>
+      <div class="legal-doc" id="legal-doc-privacy">
+          <p>NurseVault collects the email address you provide at checkout or sign-up, so we can send your receipt, download links, and account/subscription updates. Payment is handled entirely by Paystack — we receive confirmation that you paid, never your card or M-Pesa details.</p>
+          <p>Your account and subscription status are managed through our backend (a Cloudflare Worker) so you can log in and access what you've paid for. We don't sell your information to anyone or use it for advertising.</p>
+          <p>The site stores a few things in your browser's local storage — your cart, your login session, and your display-mode choice — purely so the site remembers them between visits. None of that is sent anywhere except when you check out or log in.</p>
+          <p>You can ask us to delete your account and associated data at any time by emailing <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nursesvault%40gmail.com" target="_blank" rel="noopener">nursesvault@gmail.com</a>. This policy may be updated as the store grows; check back here for the current version.</p>
+        
+      </div>
+      <div class="legal-doc" id="legal-doc-refund">
+          <p>Every resource is delivered digitally and instantly — as soon as payment is confirmed, your download link appears on-screen and is emailed to you as a receipt.</p>
+          <p>Because files are delivered immediately, we generally don't offer refunds once a download has started. That said, if a payment failed to unlock your download, a file was corrupted or wrong, or you were charged twice, email <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nursesvault%40gmail.com" target="_blank" rel="noopener">nursesvault@gmail.com</a> with your payment reference — we'll sort it out or refund you.</p>
+          <p>Subscriptions can be cancelled any time; you'll keep access until the current paid period ends, and you won't be charged again after that.</p>
+        
+      </div>
+    </div>
+    <div class="legal-close"><button class="dl-btn" onclick="closeLegal()">Close</button></div>
   </div>
 </div>
 
@@ -1467,6 +1577,26 @@
     }
   }
 
+  // Legal popup (Terms / Privacy / Refunds), opened from the footer links and
+  // the Support panel.
+  function showLegal(which){
+    ['terms','privacy','refund'].forEach(k => {
+      document.getElementById('legal-doc-' + k).classList.toggle('active', k === which);
+      document.getElementById('legal-tab-' + k).classList.toggle('active', k === which);
+    });
+    const docs = document.querySelector('.legal-docs');
+    if (docs) docs.scrollTop = 0;
+  }
+  function openLegal(which){
+    closeCart();
+    closeSupport();
+    showLegal(which || 'terms');
+    document.getElementById('legal-modal').style.display = 'flex';
+  }
+  function closeLegal(){
+    document.getElementById('legal-modal').style.display = 'none';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLegal(); });
   function closeSupport(){
     document.getElementById('support-sidebar').style.transform = 'translateX(100%)';
     document.getElementById('support-overlay').style.display = 'none';
