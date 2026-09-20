@@ -136,6 +136,7 @@
   .header-row{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;}
   .wordmark{font-family:'Lora',serif;font-weight:600;font-style:italic;font-size:1.4rem;color:#fff;letter-spacing:.2px;}
   .wordmark span{color:var(--coral);font-style:normal;}
+  a.wordmark{text-decoration:none;}
 
   /* ---------- SPLASH SCREEN ----------
      Just the NurseVault name on a dark background, shown for SPLASH_MIN_MS
@@ -351,6 +352,21 @@
   .catalog-head{display:flex;justify-content:space-between;align-items:baseline;padding:34px 0 18px;border-bottom:1px solid var(--line);}
   .catalog-head h2{margin:0;font-size:1.5rem;font-weight:600;color:var(--green-dark);}
   .catalog-head .count{font-size:.85rem;color:var(--ink-50);}
+
+  /* Category pages: picking an item in the Categories list opens that category on its
+     own page (only its resources + the footer), instead of scrolling the home page. */
+  .cat-crumb,.cat-desc{display:none;}
+  .cat-crumb{padding-top:26px;font-size:.9rem;font-weight:600;color:var(--green-dark);text-decoration:none;}
+  .cat-crumb:hover{text-decoration:underline;text-underline-offset:4px;}
+  .cat-desc{color:var(--ink-70);margin:10px 0 0;max-width:600px;line-height:1.55;font-size:.95rem;}
+  body.cat-view .cat-crumb{display:inline-block;}
+  body.cat-view .cat-desc{display:block;}
+  body.cat-view .catalog-head{padding-top:12px;}
+  body.cat-view .catalog-head h2{font-size:2rem;}
+  body.cat-view .catalog{min-height:60vh;}
+  body.cat-view .shell-main > section:not(.catalog){display:none;}
+  /* Keep jumped-to sections clear of the sticky header. */
+  #catalog,#faq,#subscribe,#about{scroll-margin-top:72px;}
 
   .row{
     display:flex;gap:22px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line);
@@ -603,7 +619,7 @@
 
 <header>
   <div class="header-row">
-    <div class="wordmark">Nurse<span>Vault</span></div>
+    <a class="wordmark" href="#/" aria-label="NurseVault home">Nurse<span>Vault</span></a>
     <nav class="main-nav">
       <a href="#categories">Categories</a>
       <a href="#subscribe">Subscribe</a>
@@ -650,7 +666,7 @@
       <h1>Study materials that fit in your scrub pocket.</h1>
       <p class="lead">Drug cards, flashcards, and rapid-review guides made by a nurse who used them to get through clinicals — built for quick recall, not for reading cover to cover.</p>
       <div class="hero-cta">
-        <button class="btn-primary" onclick="document.getElementById('catalog').scrollIntoView({behavior:'smooth'})">See all resources</button>
+        <button class="btn-primary" onclick="selectSidebarCat('all')">See all resources</button>
         <button class="btn-text" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Why NurseVault</button>
       </div>
       <div class="steps">
@@ -696,8 +712,12 @@
 
 <section class="catalog" id="catalog">
   <div class="wrap">
+    <a class="cat-crumb" href="#/">&larr; Back to home</a>
     <div class="catalog-head">
-      <h2>All resources</h2>
+      <div>
+        <h2 id="catalogTitle">All resources</h2>
+        <p class="cat-desc" id="catDesc"></p>
+      </div>
       <div class="count"><span id="product-count">8</span> items</div>
     </div>
     <div id="products-grid"></div>
@@ -926,7 +946,7 @@
       </div>
       <div class="dl-row">
         <span class="dl-name">Frequently asked questions</span>
-        <button class="dl-btn" onclick="toggleSupport(); document.getElementById('faq').scrollIntoView({behavior:'smooth'});">View</button>
+        <button class="dl-btn" onclick="toggleSupport(); goToSection('faq');">View</button>
       </div>
       <div class="dl-row">
         <div>
@@ -1327,10 +1347,12 @@
   function renderSideNav(){
     const list = document.getElementById('sideNavList');
     if (!list) return;
+    // Only highlight an item while its own page is open (the home page has none selected).
+    const onCategoryPage = document.body.classList.contains('cat-view');
     list.innerHTML = SIDEBAR_CATS.map(cat => {
       const label = cat === "all" ? "All" : CAT_LABELS[cat];
       const color = CAT_COLORS[cat];
-      const isActive = cat === activeSidebarCat;
+      const isActive = onCategoryPage && cat === activeSidebarCat;
       return `
         <div class="cat-item ${isActive ? 'active' : ''}" onclick="selectSidebarCat('${cat}')">
           <span class="cat-icon" style="background:${isActive ? "var(--cat-active-icon)" : `color-mix(in srgb, ${color} 22%, var(--surface))`};">
@@ -1341,21 +1363,85 @@
     }).join('');
   }
 
-  function selectSidebarCat(cat){
-    activeSidebarCat = cat;
-    renderSideNav();
+  // ---------- Category pages ----------
+  // Each item in the Categories list opens on its own page (#/flashcards, #/nck-prep …)
+  // with just that category's resources. Using the URL hash keeps the browser's Back
+  // button working and lets a category page be bookmarked or shared.
+  const CAT_DESCRIPTIONS = {
+    all: "Every study resource in one place.",
+    flashcards: "Quick-recall flashcards for revision between lectures, clinicals and shifts.",
+    "drug-cards": "Double-sided drug cards grouped and color-coded by therapeutic class: quick facts on the front, nursing considerations on the back.",
+    nclex: "Rapid-review material for your NCLEX-RN preparation.",
+    notes: "Condensed, easy-to-read notes that cut the reading down to what you need to remember.",
+    bundles: "Several resources together in a single bundle.",
+    "nck-prep": "Exam preparation for the Nursing Council of Kenya licensing exam, by cadre and subject."
+  };
+  const BASE_TITLE = document.title;
 
-    // If this category is a parent (Drug Cards, NCK Exam Prep), open it
-    // straight away instead of leaving it collapsed for a second click.
+  function selectSidebarCat(cat){
+    const target = '#/' + cat;
+    if (location.hash === target) applyRoute();   // already there — hashchange won't fire
+    else location.hash = target;
+  }
+
+  function openCategoryPage(cat){
+    activeSidebarCat = cat;
+    // Parents (Drug Cards, NCK Prep) open straight away so their options show at once.
     const matchingParent = catalog.find(p => p.isParent && p.category === cat);
     expandedId = matchingParent ? matchingParent.id : null;
 
+    document.body.classList.add('cat-view');
+    const label = cat === 'all' ? 'All resources' : CAT_LABELS[cat];
+    document.getElementById('catalogTitle').textContent = label;
+    document.getElementById('catDesc').textContent = CAT_DESCRIPTIONS[cat] || '';
+    document.title = `${label} — NurseVault`;
+
+    renderSideNav();
     renderProducts(cat);
 
-    // On phones, fold the list away once a pick is made so the catalog is visible.
+    // On phones, fold the list away once a pick is made so the page is visible.
     if (isNarrow() && categoriesOpen) toggleCategories();
+    window.scrollTo(0, 0);
+  }
 
-    document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' });
+  function leaveCategoryPage(){
+    document.body.classList.remove('cat-view');
+    activeSidebarCat = 'all';
+    expandedId = null;
+    document.getElementById('catalogTitle').textContent = 'All resources';
+    document.title = BASE_TITLE;
+    renderSideNav();
+    renderProducts('all');
+  }
+
+  // Runs on load and whenever the hash changes (link clicks, Back/Forward).
+  function applyRoute(){
+    const h = location.hash;
+    const m = h.match(/^#\/([\w-]+)$/);
+    if (m && SIDEBAR_CATS.includes(m[1])) { openCategoryPage(m[1]); return; }
+
+    const onCategoryPage = document.body.classList.contains('cat-view');
+    // The header's "Categories" link just points at the sidebar, which is on every page.
+    if (onCategoryPage && h === '#categories') {
+      if (!categoriesOpen) toggleCategories();
+      return;
+    }
+    if (onCategoryPage) leaveCategoryPage();
+
+    // Back on the home page: jump to the requested section (its content was hidden
+    // a moment ago), or to the top for "#/" / no hash.
+    const id = (h.length > 1 && !h.startsWith('#/')) ? decodeURIComponent(h.slice(1)) : '';
+    const target = id && document.getElementById(id);
+    if (onCategoryPage) {
+      requestAnimationFrame(() => target ? target.scrollIntoView() : window.scrollTo(0, 0));
+    }
+  }
+  window.addEventListener('hashchange', applyRoute);
+
+  // Scroll to a home-page section from anywhere (leaves a category page first).
+  function goToSection(id){
+    if (document.body.classList.contains('cat-view')) { location.hash = '#' + id; }
+    else { const t = document.getElementById(id); if (t) t.scrollIntoView({behavior:'smooth'}); }
   }
 
   function placeholderThumb(category){
@@ -1920,6 +2006,7 @@
   updateCartUI();
   renderSideNav();
   applyCategoriesState();
+  applyRoute();
   hideSplash();
 
   // Rotating a phone (or resizing) shouldn't leave the list stuck shut on desktop.
