@@ -2249,7 +2249,7 @@
   //
   // AI explanations call a small server endpoint (NCK_EXPLAIN_URL) so no API key ever
   // sits in this page. Progress and dates are saved on the visitor's own device.
-  const NCK_EXPLAIN_URL = "REPLACE_WITH_EXPLAIN_WORKER_URL";
+  const NCK_EXPLAIN_URL = "https://nursevault-ai-explain.ronaldotieno1900.workers.dev";
   const NCK_CADRES = ["KRCHN", "BScN", "Higher Diploma"];
   const NCK_TABS = [
     { id:"home",     label:"Overview" },
@@ -3308,18 +3308,24 @@
       return;
     }
     box.innerHTML = nckAiBox("Working out an explanation…", true);
+    // The explain worker takes the question, the correct answer, the standard explanation and a
+    // follow-up question from the student. We write the follow-up from what they answered.
+    const L = "ABCDEFGH", clip = t => String(t).slice(0, 140);
+    const correctText = `${L[q.answer]}. ${q.options[q.answer]}`;
+    let ask;
+    if (chosen === undefined) ask = "Please explain why the correct answer is right and why the other options are wrong.";
+    else if (chosen === q.answer) ask = "I got this right. Can you explain the reasoning in more depth, and why the other options are wrong?";
+    else ask = `I chose "${clip(q.options[chosen])}" but the correct answer is "${clip(q.options[q.answer])}". Why is my choice wrong, and how can I remember the right answer?`;
     try {
       const res = await fetch(NCK_EXPLAIN_URL, {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          token: sessionToken, cadre: r.meta.cadre || NCK.cadre, topic: q.t, question: q.q, options: q.options,
-          correctIndex: q.answer, chosenIndex: chosen === undefined ? null : chosen, rationale: q.explanation || ""
-        })
+        body: JSON.stringify({ question: q.q, options: q.options, correctAnswer: correctText, explanation: q.explanation || "", userQuestion: ask })
       });
       const data = await res.json().catch(() => ({}));
-      if (res.status === 401) { box.innerHTML = nckAiBox("Please log in to use AI explanations.", true); return; }
-      if (!res.ok || !data.explanation) throw new Error(data.error || "failed");
-      const html = nckAiBox(nckEsc(data.explanation).replace(/\n/g, "<br>"));
+      if (res.status === 429) { box.innerHTML = nckAiBox(nckEsc(data.error || "The AI has reached its daily limit. Please try again tomorrow."), true); return; }
+      const text = data.answer || data.explanation;
+      if (!res.ok || !text) throw new Error(data.error || "failed");
+      const html = nckAiBox(nckEsc(text).replace(/\n/g, "<br>"));
       NCK.ai[key] = html; box.innerHTML = html;
     } catch(e) {
       box.innerHTML = nckAiBox("Couldn't get an AI explanation right now. Please try again in a moment.", true);
