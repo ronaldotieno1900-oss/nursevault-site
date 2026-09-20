@@ -359,12 +359,55 @@
   .cat-crumb{padding-top:26px;font-size:.9rem;font-weight:600;color:var(--green-dark);text-decoration:none;}
   .cat-crumb:hover{text-decoration:underline;text-underline-offset:4px;}
   .cat-desc{color:var(--ink-70);margin:10px 0 0;max-width:600px;line-height:1.55;font-size:.95rem;}
-  body.cat-view .cat-crumb{display:inline-block;}
-  body.cat-view .cat-desc{display:block;}
-  body.cat-view .catalog-head{padding-top:12px;}
-  body.cat-view .catalog-head h2{font-size:2rem;}
-  body.cat-view .catalog{min-height:60vh;}
-  body.cat-view .shell-main > section:not(.catalog){display:none;}
+  body[data-page="catalog"] .cat-crumb{display:inline-block;}
+  body[data-page="catalog"] .cat-desc{display:block;}
+  body[data-page="catalog"] .catalog-head{padding-top:12px;}
+  body[data-page="catalog"] .catalog-head h2{font-size:2rem;}
+  body[data-page="catalog"] .catalog{min-height:60vh;}
+
+  /* The Shop and Categories pages stay hidden on the home page. */
+  .shell-main > section.shop-section,
+  .shell-main > section.categories-page{display:none;}
+
+  /* Every page other than home shows just its own section (plus the footer). */
+  body.sub-page .shell-main > section{display:none;}
+  body[data-page="catalog"] .shell-main > section.catalog,
+  body[data-page="shop"] .shell-main > section.shop-section,
+  body[data-page="categories"] .shell-main > section.categories-page{display:block;}
+
+  /* Shared page header (Shop, Categories) */
+  .page-crumb{display:block;width:fit-content;margin-bottom:20px;font-size:.9rem;font-weight:600;color:var(--green-dark);text-decoration:none;}
+  .page-crumb:hover{text-decoration:underline;text-underline-offset:4px;}
+  .page-title{margin:0 0 10px;font-size:2rem;font-weight:600;color:var(--green-dark);}
+  .page-sub{margin:0 0 30px;max-width:620px;color:var(--ink-70);line-height:1.6;font-size:.95rem;}
+
+  /* Categories page */
+  .categories-page{padding:44px 0 70px;min-height:60vh;}
+  .cats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .cat-tile{
+    display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;color:inherit;
+    background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:24px 22px;
+    transition:border-color .15s,transform .15s;
+  }
+  .cat-tile:hover{border-color:var(--green);transform:translateY(-2px);}
+  .cat-tile:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+  .cat-tile-icon{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
+  .cat-tile-icon svg{width:22px;height:22px;}
+  .cat-tile h3{font-family:'Lora',serif;font-size:1.1rem;font-weight:600;margin:0 0 6px;color:var(--green-dark);}
+  .cat-tile p{font-size:.88rem;color:var(--ink-70);margin:0 0 14px;line-height:1.5;flex:1;}
+  .cat-tile-count{font-size:.8rem;font-weight:600;color:var(--ink-50);}
+
+  /* Shop page + the small banner on the home page */
+  .shop-section .shop-badge{display:inline-block;margin:0 0 12px;}
+  .shop-section .shop-note{text-align:left;margin:34px 0 0;max-width:none;}
+  .shop-teaser{padding:34px 0;}
+  .shop-teaser-inner{
+    display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+    background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:24px 28px;
+  }
+  .shop-teaser h2{margin:0 0 4px;font-size:1.3rem;color:var(--green-dark);}
+  .shop-teaser p{margin:0;font-size:.92rem;color:var(--ink-70);}
+  .shop-teaser-btn{display:inline-block;text-decoration:none;text-align:center;}
   /* Keep jumped-to sections clear of the sticky header. */
   #catalog,#faq,#subscribe,#about{scroll-margin-top:72px;}
 
@@ -450,7 +493,7 @@
   .feature-card p{font-size:.85rem;color:var(--ink-70);margin:0;line-height:1.5;}
 
   /* ---------- SHOP (nursing gear) ---------- */
-  .shop-section{padding:70px 0;scroll-margin-top:72px;}
+  .shop-section{padding:44px 0 70px;min-height:60vh;scroll-margin-top:72px;}
   .shop-badge{
     display:table;margin:0 auto 14px;background:var(--coral);color:#fff;
     font-size:.75rem;font-weight:700;padding:4px 14px;border-radius:12px;letter-spacing:.3px;
@@ -583,6 +626,7 @@
     .side-nav{position:static;height:auto;border-right:none;border-bottom:1px solid var(--line);}
     .feature-grid{grid-template-columns:1fr 1fr;}
     .shop-grid{grid-template-columns:1fr 1fr;}
+    .cats-grid{grid-template-columns:1fr 1fr;}
     .hero h1{font-size:3.1rem;}
     .hiw-grid{grid-template-columns:1fr;}
     .hero-grid{grid-template-columns:1fr;}
@@ -591,7 +635,7 @@
     .row-buy{align-items:flex-end;}
   }
   @media (max-width:520px){
-    .shop-grid{grid-template-columns:1fr;}
+    .shop-grid,.cats-grid{grid-template-columns:1fr;}
   }
 </style>
 
@@ -621,9 +665,9 @@
   <div class="header-row">
     <a class="wordmark" href="#/" aria-label="NurseVault home">Nurse<span>Vault</span></a>
     <nav class="main-nav">
-      <a href="#categories">Categories</a>
+      <a href="#/categories">Categories</a>
       <a href="#subscribe">Subscribe</a>
-      <a href="#shop">Shop</a>
+      <a href="#/shop">Shop</a>
       <a href="#about">About</a>
     </nav>
     <div style="display:flex;align-items:center;gap:10px;">
@@ -829,11 +873,38 @@
   </div>
 </section>
 
+<!-- Small Shop banner on the home page. The header menu is hidden on phones, so this is
+     also how phone visitors reach the Shop. -->
+<section class="shop-teaser">
+  <div class="wrap">
+    <div class="shop-teaser-inner">
+      <div>
+        <h2>NurseVault Shop</h2>
+        <p>Stethoscopes, pens, name tags, torches, scrubs and lab coats. Opening soon.</p>
+      </div>
+      <a class="btn-primary shop-teaser-btn" href="#/shop">Visit the shop</a>
+    </div>
+  </div>
+</section>
+
+<!-- Categories opens on its own page (#/categories): one tile per category. -->
+<section class="categories-page" id="categories-page">
+  <div class="wrap">
+    <a class="page-crumb" href="#/">&larr; Back to home</a>
+    <h2 class="page-title">Categories</h2>
+    <p class="page-sub">Browse NurseVault study materials by type.</p>
+    <div class="cats-grid" id="categoriesGrid"></div>
+  </div>
+</section>
+
+<!-- The Shop opens on its own page (#/shop). It is hidden on the home page and shown
+     when the page is "shop" (see applyRoute in the script). -->
 <section class="shop-section" id="shop">
   <div class="wrap">
+    <a class="page-crumb" href="#/">&larr; Back to home</a>
     <span class="shop-badge">Opening soon</span>
-    <h2 class="section-title">Gear up for every shift</h2>
-    <p class="section-sub">Beyond the study materials, we're building a shop for the everyday essentials of nursing life: the tools you carry, the uniform you wear, and the small things that make a long shift easier.</p>
+    <h2 class="page-title">NurseVault Shop</h2>
+    <p class="page-sub">Gear up for every shift. Beyond the study materials, we're building a shop for the everyday essentials of nursing life: the tools you carry, the uniform you wear, and the small things that make a long shift easier.</p>
     <div class="shop-grid">
       <div class="shop-card">
         <div class="shop-icon" style="background:var(--coral)">🩺</div>
@@ -1344,11 +1415,13 @@
   // (The old top tab bar is gone — activeSidebarCat is the single source of truth.)
   function rerenderProducts(){ renderProducts(activeSidebarCat); }
 
+  function currentPage(){ return document.body.dataset.page || 'home'; }
+
   function renderSideNav(){
     const list = document.getElementById('sideNavList');
     if (!list) return;
-    // Only highlight an item while its own page is open (the home page has none selected).
-    const onCategoryPage = document.body.classList.contains('cat-view');
+    // Only highlight an item while its own page is open (other pages have none selected).
+    const onCategoryPage = currentPage() === 'catalog';
     list.innerHTML = SIDEBAR_CATS.map(cat => {
       const label = cat === "all" ? "All" : CAT_LABELS[cat];
       const color = CAT_COLORS[cat];
@@ -1363,10 +1436,10 @@
     }).join('');
   }
 
-  // ---------- Category pages ----------
-  // Each item in the Categories list opens on its own page (#/flashcards, #/nck-prep …)
-  // with just that category's resources. Using the URL hash keeps the browser's Back
-  // button working and lets a category page be bookmarked or shared.
+  // ---------- Pages ----------
+  // Home, each category (#/flashcards, #/nck-prep …), the Categories overview
+  // (#/categories) and the Shop (#/shop) each open on their own page. Using the URL
+  // hash keeps the browser's Back button working and lets any page be bookmarked.
   const CAT_DESCRIPTIONS = {
     all: "Every study resource in one place.",
     flashcards: "Quick-recall flashcards for revision between lectures, clinicals and shifts.",
@@ -1377,6 +1450,13 @@
     "nck-prep": "Exam preparation for the Nursing Council of Kenya licensing exam, by cadre and subject."
   };
   const BASE_TITLE = document.title;
+
+  // Show one page: 'home' | 'catalog' | 'categories' | 'shop'.
+  function setPage(name, title){
+    document.body.dataset.page = name;
+    document.body.classList.toggle('sub-page', name !== 'home');
+    document.title = title || BASE_TITLE;
+  }
 
   function selectSidebarCat(cat){
     const target = '#/' + cat;
@@ -1390,11 +1470,10 @@
     const matchingParent = catalog.find(p => p.isParent && p.category === cat);
     expandedId = matchingParent ? matchingParent.id : null;
 
-    document.body.classList.add('cat-view');
     const label = cat === 'all' ? 'All resources' : CAT_LABELS[cat];
+    setPage('catalog', `${label} — NurseVault`);
     document.getElementById('catalogTitle').textContent = label;
     document.getElementById('catDesc').textContent = CAT_DESCRIPTIONS[cat] || '';
-    document.title = `${label} — NurseVault`;
 
     renderSideNav();
     renderProducts(cat);
@@ -1404,12 +1483,44 @@
     window.scrollTo(0, 0);
   }
 
-  function leaveCategoryPage(){
-    document.body.classList.remove('cat-view');
+  function renderCategoriesPage(){
+    const grid = document.getElementById('categoriesGrid');
+    if (!grid) return;
+    grid.innerHTML = SIDEBAR_CATS.map(cat => {
+      const label = cat === 'all' ? 'All resources' : CAT_LABELS[cat];
+      const color = CAT_COLORS[cat];
+      const list = cat === 'all' ? catalog : catalog.filter(p => p.category === cat);
+      const n = list.reduce((sum, p) => sum + (p.isParent ? p.subItems.length : 1), 0);
+      return `
+        <a class="cat-tile" href="#/${cat}">
+          <span class="cat-tile-icon" style="background:color-mix(in srgb, ${color} 22%, var(--surface));">
+            <svg viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${CAT_ICONS[cat]}</svg>
+          </span>
+          <h3>${label}</h3>
+          <p>${CAT_DESCRIPTIONS[cat]}</p>
+          <span class="cat-tile-count">${n} ${n === 1 ? 'resource' : 'resources'}</span>
+        </a>`;
+    }).join('');
+  }
+
+  function openCategoriesPage(){
+    setPage('categories', 'Categories — NurseVault');
+    renderCategoriesPage();
+    renderSideNav();
+    window.scrollTo(0, 0);
+  }
+
+  function openShopPage(){
+    setPage('shop', 'Shop — NurseVault');
+    renderSideNav();
+    window.scrollTo(0, 0);
+  }
+
+  function leaveSubPage(){
     activeSidebarCat = 'all';
     expandedId = null;
     document.getElementById('catalogTitle').textContent = 'All resources';
-    document.title = BASE_TITLE;
+    setPage('home');
     renderSideNav();
     renderProducts('all');
   }
@@ -1418,29 +1529,27 @@
   function applyRoute(){
     const h = location.hash;
     const m = h.match(/^#\/([\w-]+)$/);
-    if (m && SIDEBAR_CATS.includes(m[1])) { openCategoryPage(m[1]); return; }
+    const key = m ? m[1] : (h === '#shop' ? 'shop' : null);   // '#shop' = older links
+    if (key === 'shop')       { openShopPage(); return; }
+    if (key === 'categories') { openCategoriesPage(); return; }
+    if (key && SIDEBAR_CATS.includes(key)) { openCategoryPage(key); return; }
 
-    const onCategoryPage = document.body.classList.contains('cat-view');
-    // The header's "Categories" link just points at the sidebar, which is on every page.
-    if (onCategoryPage && h === '#categories') {
-      if (!categoriesOpen) toggleCategories();
-      return;
-    }
-    if (onCategoryPage) leaveCategoryPage();
+    const wasSubPage = currentPage() !== 'home';
+    if (wasSubPage) leaveSubPage();
 
     // Back on the home page: jump to the requested section (its content was hidden
     // a moment ago), or to the top for "#/" / no hash.
     const id = (h.length > 1 && !h.startsWith('#/')) ? decodeURIComponent(h.slice(1)) : '';
     const target = id && document.getElementById(id);
-    if (onCategoryPage) {
+    if (wasSubPage) {
       requestAnimationFrame(() => target ? target.scrollIntoView() : window.scrollTo(0, 0));
     }
   }
   window.addEventListener('hashchange', applyRoute);
 
-  // Scroll to a home-page section from anywhere (leaves a category page first).
+  // Scroll to a home-page section from anywhere (leaves any other page first).
   function goToSection(id){
-    if (document.body.classList.contains('cat-view')) { location.hash = '#' + id; }
+    if (currentPage() !== 'home') { location.hash = '#' + id; }
     else { const t = document.getElementById(id); if (t) t.scrollIntoView({behavior:'smooth'}); }
   }
 
