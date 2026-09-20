@@ -367,13 +367,15 @@
 
   /* The Shop and Categories pages stay hidden on the home page. */
   .shell-main > section.shop-section,
-  .shell-main > section.categories-page{display:none;}
+  .shell-main > section.categories-page,
+  .shell-main > section.nck-page{display:none;}
 
   /* Every page other than home shows just its own section (plus the footer). */
   body.sub-page .shell-main > section{display:none;}
   body[data-page="catalog"] .shell-main > section.catalog,
   body[data-page="shop"] .shell-main > section.shop-section,
-  body[data-page="categories"] .shell-main > section.categories-page{display:block;}
+  body[data-page="categories"] .shell-main > section.categories-page,
+  body[data-page="nck"] .shell-main > section.nck-page{display:block;}
 
   /* Shared page header (Shop, Categories) */
   .page-crumb{display:block;width:fit-content;margin-bottom:20px;font-size:.9rem;font-weight:600;color:var(--green-dark);text-decoration:none;}
@@ -408,6 +410,122 @@
   .shop-teaser h2{margin:0 0 4px;font-size:1.3rem;color:var(--green-dark);}
   .shop-teaser p{margin:0;font-size:.92rem;color:var(--ink-70);}
   .shop-teaser-btn{display:inline-block;text-decoration:none;text-align:center;}
+  /* ---------- NCK PREP (practice hub) ---------- */
+  .nck-page{padding:44px 0 70px;min-height:60vh;}
+  .nck-cadres{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px;}
+  .nck-pill{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 14px;border-radius:20px;font-size:.85rem;font-weight:600;cursor:pointer;font-family:inherit;}
+  .nck-pill:hover{border-color:var(--green);}
+  .nck-pill.active{background:var(--btn-fill);color:var(--btn-fill-ink);border-color:transparent;}
+  .nck-tabs{display:flex;gap:2px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-bottom:26px;}
+  .nck-tab{padding:10px 14px;font-size:.9rem;font-weight:600;color:var(--ink-70);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px;}
+  .nck-tab:hover{color:var(--ink);}
+  .nck-tab.active{color:var(--green-dark);border-bottom-color:var(--coral);}
+  .nck-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .nck-card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px;}
+  a.nck-card{display:block;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s;}
+  a.nck-card:hover{border-color:var(--green);transform:translateY(-2px);}
+  .nck-card .ic{font-size:1.5rem;margin-bottom:10px;display:block;}
+  .nck-card h3,.nck-row h3{font-family:'Lora',serif;font-size:1.05rem;font-weight:600;margin:0 0 6px;color:var(--green-dark);}
+  .nck-card p{margin:0;font-size:.88rem;color:var(--ink-70);line-height:1.5;}
+  .nck-muted{color:var(--ink-70);font-size:.88rem;margin:0;}
+  .nck-note{font-size:.82rem;color:var(--ink-50);line-height:1.5;margin:18px 0 0;}
+  .nck-tag{display:inline-block;font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:10px;background:var(--paper-alt);color:var(--ink-70);margin-left:6px;vertical-align:middle;}
+  .nck-btn{background:var(--btn-fill);color:var(--btn-fill-ink);border:none;border-radius:6px;padding:9px 16px;font-weight:600;font-size:.88rem;cursor:pointer;font-family:inherit;}
+  .nck-btn:hover{background:var(--btn-fill-hover);}
+  .nck-btn:disabled{opacity:.45;cursor:default;}
+  .nck-btn-ghost{background:none;color:var(--green-dark);border:1px solid var(--line-strong);border-radius:6px;padding:8px 14px;font-weight:600;font-size:.86rem;cursor:pointer;font-family:inherit;}
+  .nck-btn-ghost:hover{border-color:var(--green);}
+  .nck-btn-coral{background:var(--coral);color:#fff;}
+  .nck-btn-coral:hover{background:var(--coral-hover);}
+  .nck-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px;}
+  .nck-list{border-top:1px solid var(--line);}
+  .nck-row{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid var(--line);}
+  .nck-row .acts{display:flex;gap:8px;flex-wrap:wrap;}
+  .nck-empty{border:1px dashed var(--line-strong);border-radius:8px;padding:28px;text-align:center;color:var(--ink-70);font-size:.92rem;line-height:1.55;}
+  .nck-empty b{display:block;color:var(--green-dark);margin-bottom:6px;font-family:'Lora',serif;font-size:1.05rem;}
+  .nck-h4{font-family:'Lora',serif;font-size:1.05rem;font-weight:600;color:var(--green-dark);margin:28px 0 12px;}
+  .nck-banner{background:color-mix(in srgb,var(--gold) 16%,var(--surface));border:1px solid color-mix(in srgb,var(--gold) 50%,var(--line));border-radius:8px;padding:12px 16px;margin-bottom:18px;font-size:.9rem;line-height:1.5;}
+
+  /* stats + charts */
+  .nck-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px;}
+  .nck-stat{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;}
+  .nck-stat b{display:block;font-family:'Lora',serif;font-size:1.6rem;color:var(--green-dark);line-height:1.1;}
+  .nck-stat span{font-size:.78rem;color:var(--ink-70);}
+  .nck-bar-row{display:grid;grid-template-columns:minmax(120px,220px) 1fr auto;gap:12px;align-items:center;padding:8px 0;font-size:.88rem;}
+  .nck-bar{height:10px;background:var(--paper-alt);border-radius:5px;overflow:hidden;}
+  .nck-bar i{display:block;height:100%;border-radius:5px;}
+  .nck-chart{width:100%;max-width:720px;height:auto;display:block;background:var(--surface);border:1px solid var(--line);border-radius:8px;}
+  .nck-chart text{fill:var(--ink-50);font-size:11px;font-family:inherit;}
+  .nck-table{width:100%;border-collapse:collapse;font-size:.86rem;}
+  .nck-table th{text-align:left;font-size:.74rem;color:var(--ink-50);font-weight:600;padding:8px 10px 8px 0;border-bottom:1px solid var(--line);}
+  .nck-table td{padding:9px 10px 9px 0;border-bottom:1px solid var(--line);color:var(--ink-70);}
+  .nck-scroll{overflow-x:auto;}
+
+  /* running a quiz / exam */
+  .nck-run-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px;}
+  .nck-run-top h2{margin:0;font-size:1.25rem;color:var(--green-dark);}
+  .nck-timer{font-variant-numeric:tabular-nums;font-weight:700;font-size:1.05rem;color:var(--green-dark);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:6px 12px;}
+  .nck-timer.low{color:var(--incorrect);border-color:var(--incorrect);}
+  .nck-progressbar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:18px;}
+  .nck-progressbar i{display:block;height:100%;background:var(--green);}
+  .nck-warn{background:color-mix(in srgb,var(--coral) 14%,var(--surface));border:1px solid var(--coral);border-radius:8px;padding:10px 14px;margin-bottom:14px;font-size:.88rem;line-height:1.5;display:none;}
+  .nck-warn.show{display:block;}
+  .nck-nav{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px;}
+  .nck-nav button{width:34px;height:34px;border-radius:6px;border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-70);font-size:.8rem;font-weight:600;cursor:pointer;font-family:inherit;position:relative;}
+  .nck-nav button.ans{background:color-mix(in srgb,var(--green) 18%,var(--surface));color:var(--green-dark);}
+  .nck-nav button.flag::after{content:"";position:absolute;top:2px;right:2px;width:7px;height:7px;border-radius:50%;background:var(--coral);}
+  .nck-nav button.cur{outline:2px solid var(--green-dark);outline-offset:1px;}
+  .nck-qmeta{font-size:.82rem;color:var(--ink-50);font-weight:600;}
+  .nck-qtext{font-size:1.1rem;line-height:1.55;margin:10px 0 18px;color:var(--ink);}
+  .nck-opt{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:10px;cursor:pointer;color:var(--ink);font:inherit;line-height:1.45;}
+  .nck-opt:hover:not(:disabled){border-color:var(--green);}
+  .nck-opt:disabled{cursor:default;}
+  .nck-opt .k{flex:none;width:26px;height:26px;border-radius:50%;background:var(--paper-alt);display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700;color:var(--ink-70);}
+  .nck-opt.sel{border-color:var(--green-dark);background:color-mix(in srgb,var(--green) 12%,var(--surface));}
+  .nck-opt.right{border-color:var(--green);background:color-mix(in srgb,var(--green) 16%,var(--surface));}
+  .nck-opt.right .k{background:var(--green);color:#fff;}
+  .nck-opt.wrong{border-color:var(--incorrect);background:color-mix(in srgb,var(--incorrect) 12%,var(--surface));}
+  .nck-opt.wrong .k{background:var(--incorrect);color:#fff;}
+  .nck-feedback{border-radius:8px;padding:14px 16px;margin:14px 0;background:var(--paper-alt);font-size:.92rem;line-height:1.55;}
+  .nck-feedback b.ok{color:var(--green-dark);} .nck-feedback b.no{color:var(--incorrect);}
+  .nck-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;align-items:center;}
+  .nck-actions .sp{flex:1;}
+  .nck-ai{margin-top:12px;border-left:3px solid var(--purple);padding:10px 14px;background:var(--paper-alt);border-radius:0 6px 6px 0;font-size:.9rem;line-height:1.6;}
+  .nck-ai small{display:block;margin-top:8px;color:var(--ink-50);font-size:.76rem;}
+  .nck-cam{position:fixed;right:16px;top:84px;width:170px;border-radius:8px;border:2px solid var(--line-strong);z-index:40;background:#000;}
+  .nck-run.proctor{user-select:none;-webkit-user-select:none;}
+  .nck-score{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin:6px 0 22px;}
+  .nck-score .big{font-family:'Lora',serif;font-size:3rem;font-weight:600;color:var(--green-dark);line-height:1;}
+  .nck-review{border-top:1px solid var(--line);padding:18px 0;}
+  .nck-review .st{font-weight:700;font-size:.8rem;}
+  .nck-review .st.ok{color:var(--green-dark);} .nck-review .st.no{color:var(--incorrect);} .nck-review .st.skip{color:var(--ink-50);}
+  .nck-filters{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px;}
+
+  /* mock setup + dates */
+  .nck-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 18px;max-width:640px;}
+  .nck-form label{display:flex;flex-direction:column;gap:4px;font-size:.78rem;font-weight:600;color:var(--ink-50);}
+  .nck-input{font:inherit;font-size:.92rem;color:var(--ink);background:var(--surface);border:1px solid var(--line-strong);border-radius:6px;padding:9px 10px;}
+  .nck-input:focus{outline:2px solid var(--green);outline-offset:1px;}
+  .nck-check{display:flex;gap:10px;align-items:flex-start;font-size:.9rem;color:var(--ink);line-height:1.45;margin:8px 0;}
+  .nck-check input{margin-top:3px;}
+  .nck-rules{margin:10px 0 14px;padding-left:20px;font-size:.88rem;color:var(--ink-70);line-height:1.6;}
+  .nck-ev{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:14px 0;border-bottom:1px solid var(--line);}
+  .nck-ev.past{opacity:.55;}
+  .nck-ev .when{font-weight:700;color:var(--green-dark);font-size:.86rem;}
+  .nck-ev h3{font-size:1rem;margin:0 0 3px;font-family:'Lora',serif;color:var(--ink);}
+  .nck-ev .acts{display:flex;gap:8px;flex-wrap:wrap;}
+
+  @media (max-width:900px){
+    .nck-grid{grid-template-columns:1fr 1fr;}
+    .nck-stats{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:520px){
+    .nck-grid,.nck-form{grid-template-columns:1fr;}
+    .nck-bar-row{grid-template-columns:1fr auto;}
+    .nck-bar-row .nck-bar{grid-column:1 / -1;order:3;}
+    .nck-cam{width:120px;}
+  }
+
   /* Keep jumped-to sections clear of the sticky header. */
   #catalog,#faq,#subscribe,#about{scroll-margin-top:72px;}
 
@@ -894,6 +1012,14 @@
     <h2 class="page-title">Categories</h2>
     <p class="page-sub">Browse NurseVault study materials by type.</p>
     <div class="cats-grid" id="categoriesGrid"></div>
+  </div>
+</section>
+
+<!-- NCK Prep practice hub (#/nck-prep). Everything inside #nckRoot is drawn by the script. -->
+<section class="nck-page" id="nck-page">
+  <div class="wrap">
+    <a class="page-crumb" href="#/">&larr; Back to home</a>
+    <div id="nckRoot"></div>
   </div>
 </section>
 
@@ -1421,7 +1547,7 @@
     const list = document.getElementById('sideNavList');
     if (!list) return;
     // Only highlight an item while its own page is open (other pages have none selected).
-    const onCategoryPage = currentPage() === 'catalog';
+    const onCategoryPage = currentPage() === 'catalog' || currentPage() === 'nck';
     list.innerHTML = SIDEBAR_CATS.map(cat => {
       const label = cat === "all" ? "All" : CAT_LABELS[cat];
       const color = CAT_COLORS[cat];
@@ -1447,7 +1573,7 @@
     nclex: "Rapid-review material for your NCLEX-RN preparation.",
     notes: "Condensed, easy-to-read notes that cut the reading down to what you need to remember.",
     bundles: "Several resources together in a single bundle.",
-    "nck-prep": "Exam preparation for the Nursing Council of Kenya licensing exam, by cadre and subject."
+    "nck-prep": "Practice questions, past papers, timed mock exams and progress tracking for the Nursing Council of Kenya licensing exam."
   };
   const BASE_TITLE = document.title;
 
@@ -1474,6 +1600,10 @@
     setPage('catalog', `${label} — NurseVault`);
     document.getElementById('catalogTitle').textContent = label;
     document.getElementById('catDesc').textContent = CAT_DESCRIPTIONS[cat] || '';
+    if (cat === 'nck-prep') {
+      document.getElementById('catDesc').textContent = 'Printable question sets by cadre and subject, or a subscription that unlocks them all.';
+      document.getElementById('catDesc').insertAdjacentHTML('beforeend', ' <a href="#/nck-prep">Open the NCK Prep practice hub &rarr;</a>');
+    }
 
     renderSideNav();
     renderProducts(cat);
@@ -1528,8 +1658,9 @@
   // Runs on load and whenever the hash changes (link clicks, Back/Forward).
   function applyRoute(){
     const h = location.hash;
-    const m = h.match(/^#\/([\w-]+)$/);
+    const m = h.match(/^#\/([\w-]+)(?:\/([\w-]+))?$/);
     const key = m ? m[1] : (h === '#shop' ? 'shop' : null);   // '#shop' = older links
+    if (key === 'nck-prep')   { if (m[2] === 'packs') openCategoryPage('nck-prep'); else openNckPage(m[2] || 'home'); return; }
     if (key === 'shop')       { openShopPage(); return; }
     if (key === 'categories') { openCategoriesPage(); return; }
     if (key && SIDEBAR_CATS.includes(key)) { openCategoryPage(key); return; }
@@ -1969,6 +2100,7 @@
       loggedInView.style.display = "none";
       closeRow.style.display = "flex";
     }
+    nckRefresh();   // NCK Prep locks/unlocks sets according to the subscription state
   }
 
   async function checkSession(){
@@ -2108,6 +2240,1131 @@
   // Fallback: if something below throws before reaching hideSplash(), don't
   // leave the splash covering the page forever.
   window.addEventListener('load', hideSplash);
+
+  // ====================== NCK PREP HUB ======================
+  // Topic practice, past papers, timed mock exams (with a "digital proctor" simulation),
+  // progress analytics and an exam/mock date tracker. Question content lives in the
+  // NCK_SAMPLE_SETS below (demo material) and in an optional nck-bank.json next to this
+  // page, which is merged in on load (see nckLoadExternalBank).
+  //
+  // AI explanations call a small server endpoint (NCK_EXPLAIN_URL) so no API key ever
+  // sits in this page. Progress and dates are saved on the visitor's own device.
+  const NCK_EXPLAIN_URL = "REPLACE_WITH_EXPLAIN_WORKER_URL";
+  const NCK_CADRES = ["KRCHN", "BScN", "Higher Diploma"];
+  const NCK_TABS = [
+    { id:"home",     label:"Overview" },
+    { id:"practice", label:"Topic practice" },
+    { id:"papers",   label:"Past papers" },
+    { id:"mock",     label:"Mock exam" },
+    { id:"progress", label:"My progress" },
+    { id:"dates",    label:"Exam dates" }
+  ];
+  const NCK_KEYS = { attempts:"nv-nck-attempts", events:"nv-nck-events", cadre:"nv-nck-cadre", notified:"nv-nck-notified" };
+  const NCK_SAMPLE_SETS = [
+ {
+  "id": "tq-krchn-pharmacology-sample",
+  "kind": "topic",
+  "cadre": "KRCHN",
+  "subject": "Pharmacology",
+  "title": "Pharmacology: sample set",
+  "sample": true,
+  "access": "free",
+  "questions": [
+   {
+    "id": "p1",
+    "q": "A nurse is about to give a client digoxin. Which finding should the nurse report to the prescriber before giving the dose?",
+    "options": [
+     "Apical pulse of 88 beats/min",
+     "Apical pulse of 52 beats/min",
+     "Serum potassium of 4.2 mmol/L",
+     "Blood pressure of 118/76 mmHg"
+    ],
+    "answer": 1,
+    "explanation": "Digoxin slows the heart rate. In adults, an apical pulse below 60 beats/min is a reason to hold the dose and report (follow your facility protocol). A potassium of 4.2 is normal; low potassium would raise the risk of digoxin toxicity.",
+    "topic": "Pharmacology"
+   },
+   {
+    "id": "p2",
+    "q": "Which laboratory test is used to monitor the effect of warfarin therapy?",
+    "options": [
+     "Activated partial thromboplastin time (aPTT)",
+     "International normalised ratio (INR)",
+     "Platelet count",
+     "Serum creatinine"
+    ],
+    "answer": 1,
+    "explanation": "Warfarin reduces the vitamin K-dependent clotting factors, and its effect is monitored with the prothrombin time reported as the INR. The aPTT is used to monitor unfractionated heparin.",
+    "topic": "Pharmacology"
+   },
+   {
+    "id": "p3",
+    "q": "Which drug is the antidote for heparin overdose?",
+    "options": [
+     "Vitamin K",
+     "Protamine sulphate",
+     "Naloxone",
+     "Flumazenil"
+    ],
+    "answer": 1,
+    "explanation": "Protamine sulphate neutralises heparin. Vitamin K reverses warfarin, naloxone reverses opioids, and flumazenil reverses benzodiazepines.",
+    "topic": "Pharmacology"
+   },
+   {
+    "id": "p4",
+    "q": "A client develops urticaria, wheezing and swelling of the lips minutes after an injection of benzylpenicillin. What is the priority nursing action?",
+    "options": [
+     "Apply a cold compress to the injection site",
+     "Give an oral antihistamine",
+     "Stop the injection, call for help and prepare adrenaline (epinephrine) as prescribed",
+     "Reassure the client and monitor for one hour"
+    ],
+    "answer": 2,
+    "explanation": "These signs point to anaphylaxis, which threatens the airway. Stop the drug, call for help, keep the airway open and give intramuscular adrenaline according to protocol. Oral antihistamines are too slow and are not first-line treatment.",
+    "topic": "Pharmacology"
+   },
+   {
+    "id": "p5",
+    "q": "Which electrolyte imbalance is a common adverse effect of furosemide?",
+    "options": [
+     "Hyperkalaemia",
+     "Hypokalaemia",
+     "Hypercalcaemia",
+     "Hypernatraemia"
+    ],
+    "answer": 1,
+    "explanation": "Furosemide is a loop diuretic that increases potassium loss in the urine, so hypokalaemia is common. Monitor potassium and watch for weakness, cramps and irregular heartbeat.",
+    "topic": "Pharmacology"
+   },
+   {
+    "id": "p6",
+    "q": "Which drug is used to treat paracetamol overdose?",
+    "options": [
+     "Acetylcysteine",
+     "Atropine",
+     "Flumazenil",
+     "Protamine sulphate"
+    ],
+    "answer": 0,
+    "explanation": "Acetylcysteine replenishes glutathione and protects the liver from the toxic metabolite of paracetamol. It works best when started early.",
+    "topic": "Pharmacology"
+   }
+  ]
+ },
+ {
+  "id": "tq-krchn-medsurg-sample",
+  "kind": "topic",
+  "cadre": "KRCHN",
+  "subject": "Medical-Surgical Nursing",
+  "title": "Medical-Surgical Nursing: sample set",
+  "sample": true,
+  "access": "free",
+  "questions": [
+   {
+    "id": "m1",
+    "q": "A client with chronic obstructive pulmonary disease is prescribed oxygen. Which starting flow rate is safest?",
+    "options": [
+     "1-2 L/min by nasal cannula",
+     "6-8 L/min by simple face mask",
+     "10-12 L/min by mask",
+     "15 L/min by non-rebreather mask"
+    ],
+    "answer": 0,
+    "explanation": "Clients who retain carbon dioxide can lose their hypoxic drive to breathe if given too much oxygen. Start low, adjust to the target saturation ordered (commonly 88-92% in these clients) and monitor closely.",
+    "topic": "Medical-Surgical Nursing"
+   },
+   {
+    "id": "m2",
+    "q": "Which position is most appropriate for a client in acute pulmonary oedema?",
+    "options": [
+     "Supine",
+     "Trendelenburg",
+     "High Fowler's (sitting upright)",
+     "Left lateral"
+    ],
+    "answer": 2,
+    "explanation": "Sitting upright reduces venous return and lets the diaphragm move freely, which eases breathlessness. Lying flat makes it worse.",
+    "topic": "Medical-Surgical Nursing"
+   },
+   {
+    "id": "m3",
+    "q": "Which finding suggests hypoglycaemia?",
+    "options": [
+     "Fruity breath odour",
+     "Kussmaul breathing",
+     "Cool, clammy skin with tremors",
+     "Polyuria and extreme thirst"
+    ],
+    "answer": 2,
+    "explanation": "Low blood glucose triggers adrenaline release, causing sweating, tremor, palpitations and hunger. Fruity breath, Kussmaul breathing, polyuria and thirst point to hyperglycaemia or diabetic ketoacidosis.",
+    "topic": "Medical-Surgical Nursing"
+   },
+   {
+    "id": "m4",
+    "q": "Twelve hours after a total thyroidectomy, a client reports tingling around the mouth and muscle cramps. What should the nurse suspect?",
+    "options": [
+     "Hypercalcaemia",
+     "Hypocalcaemia",
+     "Hyperkalaemia",
+     "Hypoglycaemia"
+    ],
+    "answer": 1,
+    "explanation": "The parathyroid glands can be damaged or removed during thyroid surgery, causing calcium to fall. Tingling around the mouth, cramps and positive Chvostek's or Trousseau's signs indicate hypocalcaemia. Notify the doctor.",
+    "topic": "Medical-Surgical Nursing"
+   },
+   {
+    "id": "m5",
+    "q": "What is the minimum acceptable urine output for an adult?",
+    "options": [
+     "10 mL/hour",
+     "20 mL/hour",
+     "30 mL/hour",
+     "60 mL/hour"
+    ],
+    "answer": 2,
+    "explanation": "An output below about 30 mL/hour (roughly 0.5 mL/kg/hour) suggests poor kidney perfusion and should be reported.",
+    "topic": "Medical-Surgical Nursing"
+   }
+  ]
+ },
+ {
+  "id": "tq-krchn-mch-sample",
+  "kind": "topic",
+  "cadre": "KRCHN",
+  "subject": "Maternal & Child Health",
+  "title": "Maternal & Child Health: sample set",
+  "sample": true,
+  "access": "free",
+  "questions": [
+   {
+    "id": "c1",
+    "q": "What is the normal range of the fetal heart rate?",
+    "options": [
+     "60-100 beats/min",
+     "110-160 beats/min",
+     "170-200 beats/min",
+     "80-120 beats/min"
+    ],
+    "answer": 1,
+    "explanation": "A baseline fetal heart rate of 110-160 beats/min is considered normal. Persistent rates outside this range need assessment and escalation.",
+    "topic": "Maternal & Child Health"
+   },
+   {
+    "id": "c2",
+    "q": "The first stage of labour ends when:",
+    "options": [
+     "The membranes rupture",
+     "Contractions become regular",
+     "The cervix is fully dilated (10 cm)",
+     "The head becomes engaged"
+    ],
+    "answer": 2,
+    "explanation": "The first stage runs from the onset of true labour to full cervical dilatation. The second stage then begins and ends with the birth of the baby.",
+    "topic": "Maternal & Child Health"
+   },
+   {
+    "id": "c3",
+    "q": "In active management of the third stage of labour, which drug is given within one minute of birth?",
+    "options": [
+     "Oxytocin 10 IU intramuscularly",
+     "Magnesium sulphate 4 g intravenously",
+     "Ergometrine 0.5 mg intravenously",
+     "Diazepam 10 mg intravenously"
+    ],
+    "answer": 0,
+    "explanation": "WHO recommends oxytocin 10 IU IM as the preferred drug to prevent postpartum haemorrhage, followed by controlled cord traction and uterine massage.",
+    "topic": "Maternal & Child Health"
+   },
+   {
+    "id": "c4",
+    "q": "A client receiving magnesium sulphate for severe pre-eclampsia has a respiratory rate of 10 breaths/min. What is the priority action?",
+    "options": [
+     "Continue the infusion and record the finding",
+     "Stop the infusion and prepare calcium gluconate",
+     "Increase the infusion rate",
+     "Give an oral antihypertensive"
+    ],
+    "answer": 1,
+    "explanation": "Magnesium toxicity causes loss of patellar reflexes, respiratory depression (rate below 12) and reduced urine output. Stop the infusion, call for help and have calcium gluconate ready as the antidote.",
+    "topic": "Maternal & Child Health"
+   },
+   {
+    "id": "c5",
+    "q": "A 3-year-old has diarrhoea with 'some dehydration'. According to WHO guidance, how much ORS is given over the first 4 hours?",
+    "options": [
+     "25 mL/kg",
+     "50 mL/kg",
+     "75 mL/kg",
+     "100 mL/kg"
+    ],
+    "answer": 2,
+    "explanation": "WHO Plan B: give ORS 75 mL/kg over 4 hours, then reassess and choose the next plan. Continue breastfeeding in infants.",
+    "topic": "Pediatric Nursing"
+   }
+  ]
+ },
+ {
+  "id": "pp-krchn-sample",
+  "kind": "paper",
+  "cadre": "KRCHN",
+  "year": "Sample",
+  "title": "Sample paper (format demo)",
+  "sample": true,
+  "access": "free",
+  "minutes": 15,
+  "questions": [
+   {
+    "id": "s-p1",
+    "q": "A nurse is about to give a client digoxin. Which finding should the nurse report to the prescriber before giving the dose?",
+    "options": [
+     "Apical pulse of 88 beats/min",
+     "Apical pulse of 52 beats/min",
+     "Serum potassium of 4.2 mmol/L",
+     "Blood pressure of 118/76 mmHg"
+    ],
+    "answer": 1,
+    "explanation": "Digoxin slows the heart rate. In adults, an apical pulse below 60 beats/min is a reason to hold the dose and report (follow your facility protocol). A potassium of 4.2 is normal; low potassium would raise the risk of digoxin toxicity.",
+    "topic": "Pharmacology"
+   },
+   {
+    "id": "s-p2",
+    "q": "Which laboratory test is used to monitor the effect of warfarin therapy?",
+    "options": [
+     "Activated partial thromboplastin time (aPTT)",
+     "International normalised ratio (INR)",
+     "Platelet count",
+     "Serum creatinine"
+    ],
+    "answer": 1,
+    "explanation": "Warfarin reduces the vitamin K-dependent clotting factors, and its effect is monitored with the prothrombin time reported as the INR. The aPTT is used to monitor unfractionated heparin.",
+    "topic": "Pharmacology"
+   },
+   {
+    "id": "s-p4",
+    "q": "A client develops urticaria, wheezing and swelling of the lips minutes after an injection of benzylpenicillin. What is the priority nursing action?",
+    "options": [
+     "Apply a cold compress to the injection site",
+     "Give an oral antihistamine",
+     "Stop the injection, call for help and prepare adrenaline (epinephrine) as prescribed",
+     "Reassure the client and monitor for one hour"
+    ],
+    "answer": 2,
+    "explanation": "These signs point to anaphylaxis, which threatens the airway. Stop the drug, call for help, keep the airway open and give intramuscular adrenaline according to protocol. Oral antihistamines are too slow and are not first-line treatment.",
+    "topic": "Pharmacology"
+   },
+   {
+    "id": "s-p5",
+    "q": "Which electrolyte imbalance is a common adverse effect of furosemide?",
+    "options": [
+     "Hyperkalaemia",
+     "Hypokalaemia",
+     "Hypercalcaemia",
+     "Hypernatraemia"
+    ],
+    "answer": 1,
+    "explanation": "Furosemide is a loop diuretic that increases potassium loss in the urine, so hypokalaemia is common. Monitor potassium and watch for weakness, cramps and irregular heartbeat.",
+    "topic": "Pharmacology"
+   },
+   {
+    "id": "s-m1",
+    "q": "A client with chronic obstructive pulmonary disease is prescribed oxygen. Which starting flow rate is safest?",
+    "options": [
+     "1-2 L/min by nasal cannula",
+     "6-8 L/min by simple face mask",
+     "10-12 L/min by mask",
+     "15 L/min by non-rebreather mask"
+    ],
+    "answer": 0,
+    "explanation": "Clients who retain carbon dioxide can lose their hypoxic drive to breathe if given too much oxygen. Start low, adjust to the target saturation ordered (commonly 88-92% in these clients) and monitor closely.",
+    "topic": "Medical-Surgical Nursing"
+   },
+   {
+    "id": "s-m2",
+    "q": "Which position is most appropriate for a client in acute pulmonary oedema?",
+    "options": [
+     "Supine",
+     "Trendelenburg",
+     "High Fowler's (sitting upright)",
+     "Left lateral"
+    ],
+    "answer": 2,
+    "explanation": "Sitting upright reduces venous return and lets the diaphragm move freely, which eases breathlessness. Lying flat makes it worse.",
+    "topic": "Medical-Surgical Nursing"
+   },
+   {
+    "id": "s-m4",
+    "q": "Twelve hours after a total thyroidectomy, a client reports tingling around the mouth and muscle cramps. What should the nurse suspect?",
+    "options": [
+     "Hypercalcaemia",
+     "Hypocalcaemia",
+     "Hyperkalaemia",
+     "Hypoglycaemia"
+    ],
+    "answer": 1,
+    "explanation": "The parathyroid glands can be damaged or removed during thyroid surgery, causing calcium to fall. Tingling around the mouth, cramps and positive Chvostek's or Trousseau's signs indicate hypocalcaemia. Notify the doctor.",
+    "topic": "Medical-Surgical Nursing"
+   },
+   {
+    "id": "s-c3",
+    "q": "In active management of the third stage of labour, which drug is given within one minute of birth?",
+    "options": [
+     "Oxytocin 10 IU intramuscularly",
+     "Magnesium sulphate 4 g intravenously",
+     "Ergometrine 0.5 mg intravenously",
+     "Diazepam 10 mg intravenously"
+    ],
+    "answer": 0,
+    "explanation": "WHO recommends oxytocin 10 IU IM as the preferred drug to prevent postpartum haemorrhage, followed by controlled cord traction and uterine massage.",
+    "topic": "Maternal & Child Health"
+   },
+   {
+    "id": "s-c4",
+    "q": "A client receiving magnesium sulphate for severe pre-eclampsia has a respiratory rate of 10 breaths/min. What is the priority action?",
+    "options": [
+     "Continue the infusion and record the finding",
+     "Stop the infusion and prepare calcium gluconate",
+     "Increase the infusion rate",
+     "Give an oral antihypertensive"
+    ],
+    "answer": 1,
+    "explanation": "Magnesium toxicity causes loss of patellar reflexes, respiratory depression (rate below 12) and reduced urine output. Stop the infusion, call for help and have calcium gluconate ready as the antidote.",
+    "topic": "Maternal & Child Health"
+   },
+   {
+    "id": "s-c5",
+    "q": "A 3-year-old has diarrhoea with 'some dehydration'. According to WHO guidance, how much ORS is given over the first 4 hours?",
+    "options": [
+     "25 mL/kg",
+     "50 mL/kg",
+     "75 mL/kg",
+     "100 mL/kg"
+    ],
+    "answer": 2,
+    "explanation": "WHO Plan B: give ORS 75 mL/kg over 4 hours, then reassess and choose the next plan. Continue breastfeeding in infants.",
+    "topic": "Pediatric Nursing"
+   }
+  ]
+ }
+];
+
+  function nckLoad(key, fallback){ try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : fallback; } catch(e){ return fallback; } }
+  function nckSave(key, val){ try { localStorage.setItem(key, JSON.stringify(val)); } catch(e){} }
+  function nckEsc(s){ return String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+  function nckPct(c, t){ return t ? Math.round(100 * c / t) : 0; }
+  function nckShuffle(a){ a = a.slice(); for (let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+  function nckFmtTime(sec){ sec = Math.max(0, Math.round(sec)); const m = Math.floor(sec / 60), s = sec % 60; return `${m}:${String(s).padStart(2, "0")}`; }
+  function nckYmd(d){ return `${d.getFullYear()}${String(d.getMonth()+1).padStart(2,"0")}${String(d.getDate()).padStart(2,"0")}`; }
+  function nckDaysUntil(dateStr){
+    const t = new Date(); t.setHours(0,0,0,0);
+    const d = new Date(dateStr + "T00:00:00");
+    return Math.round((d - t) / 86400000);
+  }
+  function nckCountdown(days){
+    if (days === 0) return "Today";
+    if (days === 1) return "Tomorrow";
+    if (days > 1) return `In ${days} days`;
+    if (days === -1) return "Yesterday";
+    return `${-days} days ago`;
+  }
+
+  const NCK = {
+    tab: "home",
+    cadre: NCK_CADRES.includes(nckLoad(NCK_KEYS.cadre, "")) ? nckLoad(NCK_KEYS.cadre, "") : "KRCHN",
+    run: null,
+    ai: {},
+    reviewFilter: "all",
+    mock: { count: 10, minutes: 15, fullscreen: true, camera: false, lock: true, agree: false }
+  };
+  let nckBank = { sets: NCK_SAMPLE_SETS.slice(), events: [] };
+
+  // Optional external content. Put a nck-bank.json next to index.html:
+  //   { "hideSamples": true, "sets": [ ...same shape as NCK_SAMPLE_SETS... ], "events": [ ... ] }
+  async function nckLoadExternalBank(){
+    try {
+      const r = await fetch("nck-bank.json", { cache: "no-store" });
+      if (r.ok) {
+        const d = await r.json();
+        if (d.hideSamples) nckBank.sets = nckBank.sets.filter(s => !s.sample);
+        (d.sets || []).forEach(s => {
+          const i = nckBank.sets.findIndex(x => x.id === s.id);
+          if (i >= 0) nckBank.sets[i] = s; else nckBank.sets.push(s);
+        });
+        nckBank.events = d.events || [];
+        nckRefresh();
+      }
+    } catch(e) { /* no external bank: the built-in samples are used */ }
+    nckCheckReminders();
+  }
+
+  // Re-draw the hub when something it depends on changed (login state, loaded content).
+  function nckRefresh(){ if (currentPage() === "nck" && !NCK.run) renderNck(); }
+
+  // ---------- data helpers ----------
+  function nckCanOpen(set){ return set.access === "free" || !!sessionInfo.subscriptionActive; }
+  function nckSets(kind, cadre){ return nckBank.sets.filter(s => s.kind === kind && (s.cadre === cadre || s.cadre === "All")); }
+  function nckMakeQuestions(set){ return set.questions.map(q => Object.assign({}, q, { k: set.id + ":" + q.id, t: q.topic || set.subject || set.title })); }
+  function nckQuestionByKey(k){
+    const [setId, ...rest] = k.split(":"); const qid = rest.join(":");
+    const set = nckBank.sets.find(s => s.id === setId); if (!set) return null;
+    const q = set.questions.find(x => x.id === qid); if (!q) return null;
+    return Object.assign({}, q, { k, t: q.topic || set.subject || set.title });
+  }
+  function nckPool(cadre){
+    const seen = new Set(), out = [];
+    nckSets("topic", cadre).concat(nckSets("paper", cadre)).filter(nckCanOpen).forEach(set => {
+      nckMakeQuestions(set).forEach(q => { const sig = q.q.trim().toLowerCase(); if (!seen.has(sig)) { seen.add(sig); out.push(q); } });
+    });
+    return out;
+  }
+  function nckSubjects(cadre){
+    const parent = catalog.find(p => p.id === "nck-prep-parent");
+    const out = [];
+    if (parent) parent.subItems.forEach(s => { const x = parseCadreSubject(s.name); if (x.cadre === cadre && !out.includes(x.subject)) out.push(x.subject); });
+    return out;
+  }
+  function nckAttempts(){ return nckLoad(NCK_KEYS.attempts, []); }
+  function nckRecord(a){ const all = nckAttempts(); all.push(a); while (all.length > 200) all.shift(); nckSave(NCK_KEYS.attempts, all); }
+  function nckTopicStats(cadre){
+    const stats = {};
+    nckAttempts().filter(a => a.cadre === cadre).forEach(a => a.items.forEach(i => {
+      const s = stats[i.t] || (stats[i.t] = { c: 0, t: 0 }); s.t++; s.c += i.c;
+    }));
+    return stats;
+  }
+  function nckMissed(cadre){
+    const last = {};
+    nckAttempts().filter(a => a.cadre === cadre).forEach(a => a.items.forEach(i => { last[i.k] = i.c; }));
+    return Object.keys(last).filter(k => last[k] === 0 && nckQuestionByKey(k));
+  }
+  function nckStreak(){
+    const days = new Set(nckAttempts().map(a => nckYmd(new Date(a.ts))));
+    let n = 0; const d = new Date();
+    if (!days.has(nckYmd(d))) d.setDate(d.getDate() - 1);
+    while (days.has(nckYmd(d))) { n++; d.setDate(d.getDate() - 1); }
+    return n;
+  }
+
+  // ---------- routing entry ----------
+  function openNckPage(tab){
+    activeSidebarCat = "nck-prep"; expandedId = null;
+    NCK.tab = NCK_TABS.some(t => t.id === tab) ? tab : "home";
+    if (NCK.run) nckExit(true);
+    setPage("nck", "NCK Prep — NurseVault");
+    renderSideNav();
+    renderNck();
+    if (isNarrow() && categoriesOpen) toggleCategories();
+    window.scrollTo(0, 0);
+  }
+  function nckSetCadre(c){ NCK.cadre = c; nckSave(NCK_KEYS.cadre, c); NCK.mock.count = 10; renderNck(); }
+
+  // ---------- rendering ----------
+  function renderNck(){
+    const root = document.getElementById("nckRoot"); if (!root) return;
+    if (NCK.run) { root.innerHTML = nckRunHTML(); nckAfterRender(); return; }
+    let view = "";
+    if (NCK.tab === "practice") view = nckPracticeHTML();
+    else if (NCK.tab === "papers") view = nckPapersHTML();
+    else if (NCK.tab === "mock") view = nckMockHTML();
+    else if (NCK.tab === "progress") view = nckProgressHTML();
+    else if (NCK.tab === "dates") view = nckDatesHTML();
+    else view = nckHomeHTML();
+    root.innerHTML = `
+      <h2 class="page-title">NCK Prep</h2>
+      <p class="page-sub">Practise for the Nursing Council of Kenya licensing exam with topic questions, past papers, timed mock exams and progress tracking. Ask the AI to explain any answer.</p>
+      <div class="nck-cadres" role="group" aria-label="Choose your cadre">
+        ${NCK_CADRES.map(c => `<button class="nck-pill ${c === NCK.cadre ? "active" : ""}" onclick="nckSetCadre('${c}')">${c}</button>`).join("")}
+      </div>
+      <nav class="nck-tabs" aria-label="NCK Prep sections">
+        ${NCK_TABS.map(t => `<a class="nck-tab ${t.id === NCK.tab ? "active" : ""}" href="#/nck-prep${t.id === "home" ? "" : "/" + t.id}">${t.label}</a>`).join("")}
+      </nav>
+      ${view}`;
+  }
+
+  function nckStartBtn(set, mode, label){
+    if (!nckCanOpen(set)) return `<button class="nck-btn-ghost" onclick="goToSection('subscribe')">Subscribers only</button>`;
+    return `<button class="${mode === "exam" ? "nck-btn-ghost" : "nck-btn"}" onclick="nckStartSet('${nckEsc(set.id)}','${mode}')">${label}</button>`;
+  }
+
+  function nckHomeHTML(){
+    const att = nckAttempts().filter(a => a.cadre === NCK.cadre);
+    const up = nckUpcoming(2);
+    const soon = nckAllEvents().filter(e => { const d = nckDaysUntil(e.date); return d >= 0 && Number(e.remind) > 0 && d <= Number(e.remind); });
+    const total = att.reduce((n, a) => n + a.total, 0), correct = att.reduce((n, a) => n + a.correct, 0);
+    return `
+      ${soon.length ? `<div class="nck-banner"><b>Reminder:</b> ${soon.map(e => `${nckEsc(e.title)} (${nckCountdown(nckDaysUntil(e.date)).toLowerCase()})`).join(" · ")}</div>` : ""}
+      ${att.length ? `
+        <div class="nck-stats">
+          <div class="nck-stat"><b>${nckPct(correct, total)}%</b><span>Overall accuracy</span></div>
+          <div class="nck-stat"><b>${total}</b><span>Questions answered</span></div>
+          <div class="nck-stat"><b>${att.length}</b><span>Sessions completed</span></div>
+          <div class="nck-stat"><b>${up.length ? nckCountdown(nckDaysUntil(up[0].date)) : "None set"}</b><span>${up.length ? nckEsc(up[0].title) : "Next exam or mock"}</span></div>
+        </div>` : ""}
+      <div class="nck-grid">
+        <a class="nck-card" href="#/nck-prep/practice"><span class="ic">📝</span><h3>Topic practice</h3><p>Question sets for each subject, with instant feedback and a written explanation for every answer.</p></a>
+        <a class="nck-card" href="#/nck-prep/papers"><span class="ic">📄</span><h3>Past papers</h3><p>Work through papers year by year, in practice mode or under exam timing.</p></a>
+        <a class="nck-card" href="#/nck-prep/mock"><span class="ic">⏱️</span><h3>Mock exam</h3><p>A timed, proctor-style simulation with no feedback until you submit.</p></a>
+        <a class="nck-card" href="#/nck-prep/progress"><span class="ic">📈</span><h3>My progress</h3><p>See your accuracy over time, your strongest and weakest topics, and the questions you keep missing.</p></a>
+        <a class="nck-card" href="#/nck-prep/dates"><span class="ic">📅</span><h3>Exam dates</h3><p>Track exam and mock dates with countdowns and calendar reminders.</p></a>
+        <a class="nck-card" href="#/nck-prep/packs"><span class="ic">🎓</span><h3>Study packs and subscription</h3><p>Printable question sets by cadre and subject, or one subscription that unlocks them all.</p></a>
+      </div>
+      <p class="nck-note">NurseVault is an independent study resource and is not affiliated with the Nursing Council of Kenya. Sample sets are for demonstration and are not from NCK papers. AI explanations can make mistakes, so check important points against your textbooks and lecturers.</p>`;
+  }
+
+  function nckPracticeHTML(){
+    const subjects = nckSubjects(NCK.cadre);
+    const sets = nckSets("topic", NCK.cadre);
+    const stats = nckTopicStats(NCK.cadre);
+    const missed = nckMissed(NCK.cadre);
+    const pool = nckPool(NCK.cadre).length;
+    const known = new Set(subjects);
+    const extra = sets.filter(s => !known.has(s.subject)).map(s => s.subject).filter((v, i, a) => a.indexOf(v) === i);
+    const rowFor = sub => {
+      const ss = sets.filter(s => s.subject === sub);
+      const st = Object.keys(stats).filter(k => k === sub).map(k => stats[k])[0];
+      return `
+        <div class="nck-row">
+          <div>
+            <h3>${nckEsc(sub)}</h3>
+            <p class="nck-muted">${ss.length ? ss.map(s => `${s.questions.length} questions${s.sample ? '<span class="nck-tag">Sample</span>' : ""}`).join(" · ") : "Questions coming soon"}${st ? ` · your accuracy ${nckPct(st.c, st.t)}%` : ""}</p>
+          </div>
+          <div class="acts">${ss.map(s => nckStartBtn(s, "practice", ss.length > 1 ? nckEsc(s.title) : "Start practice")).join("")}</div>
+        </div>`;
+    };
+    return `
+      <div class="nck-toolbar">
+        ${pool >= 5 ? `<button class="nck-btn-ghost" onclick="nckStartMix()">Random mix (10 questions)</button>` : ""}
+        ${missed.length ? `<button class="nck-btn-ghost" onclick="nckStartMissed()">Practise ${missed.length} missed question${missed.length === 1 ? "" : "s"}</button>` : ""}
+      </div>
+      ${subjects.length || extra.length ? `<div class="nck-list">${subjects.concat(extra).sort((a, b) => (sets.some(x => x.subject === b) ? 1 : 0) - (sets.some(x => x.subject === a) ? 1 : 0)).map(rowFor).join("")}</div>` : `<div class="nck-empty"><b>No subjects yet</b>Topic questions for ${nckEsc(NCK.cadre)} will appear here.</div>`}
+      <p class="nck-note">Topic sets are being added over time. Sample sets show how practice works and are not from NCK papers.</p>`;
+  }
+
+  function nckPapersHTML(){
+    const papers = nckSets("paper", NCK.cadre).slice().sort((a, b) => {
+      const ay = Number(a.year), by = Number(b.year);
+      if (isNaN(ay) && isNaN(by)) return 0; if (isNaN(ay)) return 1; if (isNaN(by)) return -1; return by - ay;
+    });
+    if (!papers.length) return `<div class="nck-empty"><b>Past papers coming soon</b>Papers for ${nckEsc(NCK.cadre)} will be listed here by year, each one playable in practice mode or under exam timing.</div>`;
+    return `
+      <div class="nck-list">
+        ${papers.map(p => `
+          <div class="nck-row">
+            <div>
+              <h3>${nckEsc(p.title)}${p.sample ? '<span class="nck-tag">Sample</span>' : ""}</h3>
+              <p class="nck-muted">${nckEsc(p.year)} · ${p.questions.length} questions · ${p.minutes || Math.ceil(p.questions.length * 1.5)} minutes</p>
+            </div>
+            <div class="acts">${nckStartBtn(p, "practice", "Practice mode")}${nckStartBtn(p, "exam", "Timed exam")}</div>
+          </div>`).join("")}
+      </div>
+      <p class="nck-note">Practice mode gives feedback after every question. Timed exam hides answers until you submit.</p>`;
+  }
+
+  function nckMockHTML(){
+    const pool = nckPool(NCK.cadre).length;
+    if (pool < 5) return `<div class="nck-empty"><b>Mock exams need more questions</b>Once at least 5 questions are available for ${nckEsc(NCK.cadre)}, you can build a timed mock exam here.</div>`;
+    const m = NCK.mock;
+    const counts = [10, 20, 30, 50, 100].filter(n => n < pool).concat([pool]);
+    if (!counts.includes(m.count)) { m.count = counts[0]; m.minutes = Math.ceil(m.count * 1.5); }
+    return `
+      <p class="nck-muted" style="max-width:640px;margin-bottom:18px;">Build a mock from every question available for ${nckEsc(NCK.cadre)}. It runs like an exam: a countdown timer, no feedback until you submit, and an integrity report at the end.</p>
+      <div class="nck-form">
+        <label>Number of questions
+          <select class="nck-input" onchange="nckMockSet('count', Number(this.value))">${counts.map(n => `<option value="${n}" ${n === m.count ? "selected" : ""}>${n === pool ? "All (" + n + ")" : n}</option>`).join("")}</select>
+        </label>
+        <label>Time allowed (minutes)
+          <input class="nck-input" type="number" min="1" max="300" value="${m.minutes}" onchange="nckMockSet('minutes', Math.max(1, Number(this.value) || 1))">
+        </label>
+      </div>
+      <h4 class="nck-h4">Digital proctor (practice simulation)</h4>
+      <label class="nck-check"><input type="checkbox" ${m.fullscreen ? "checked" : ""} onchange="nckMockSet('fullscreen', this.checked)"> Full-screen mode, and flag it if I leave full screen</label>
+      <label class="nck-check"><input type="checkbox" ${m.lock ? "checked" : ""} onchange="nckMockSet('lock', this.checked)"> Block copy, paste and right-click during the exam</label>
+      <label class="nck-check"><input type="checkbox" ${m.camera ? "checked" : ""} onchange="nckMockSet('camera', this.checked)"> Show my camera while I sit the exam (video stays on my device and is never recorded or sent)</label>
+      <ul class="nck-rules">
+        <li>The timer starts as soon as you begin and the exam submits itself when time runs out.</li>
+        <li>Switching tabs or windows is flagged and listed in your integrity report.</li>
+        <li>You can flag questions and move between them before you submit.</li>
+      </ul>
+      <label class="nck-check"><input type="checkbox" ${m.agree ? "checked" : ""} onchange="nckMockSet('agree', this.checked)"> I understand these rules and I'm ready to begin</label>
+      <div class="nck-actions"><button class="nck-btn nck-btn-coral" ${m.agree ? "" : "disabled"} onclick="nckStartMock()">Start mock exam</button></div>
+      <p class="nck-note">This is a practice simulation to build exam habits. It is not real proctoring and nothing is uploaded or watched by anyone.</p>`;
+  }
+  function nckMockSet(key, val){
+    NCK.mock[key] = val;
+    if (key === "count") NCK.mock.minutes = Math.ceil(val * 1.5);
+    renderNck();
+  }
+
+  // ---------- analytics ----------
+  function nckTrendSVG(atts){
+    const pts = atts.slice(-12).map(a => nckPct(a.correct, a.total));
+    const W = 600, H = 200, L = 34, R = 14, T = 14, B = 26;
+    const x = i => pts.length === 1 ? (L + W - R) / 2 : L + i * (W - L - R) / (pts.length - 1);
+    const y = v => T + (100 - v) * (H - T - B) / 100;
+    const grid = [0, 50, 100].map(v => `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)" stroke-dasharray="${v === 50 ? "4 4" : "0"}"/><text x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${v}%</text>`).join("");
+    const line = pts.length > 1 ? `<polyline fill="none" stroke="var(--green)" stroke-width="2.5" points="${pts.map((v, i) => `${x(i)},${y(v)}`).join(" ")}"/>` : "";
+    const dots = pts.map((v, i) => `<circle cx="${x(i)}" cy="${y(v)}" r="4" fill="var(--green)"><title>${v}%</title></circle>`).join("");
+    const lbl = `<text x="${L}" y="${H - 6}">Older</text><text x="${W - R}" y="${H - 6}" text-anchor="end">Latest</text>`;
+    return `<svg class="nck-chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Accuracy over your last ${pts.length} sessions">${grid}${line}${dots}${lbl}</svg>`;
+  }
+
+  function nckProgressHTML(){
+    const atts = nckAttempts().filter(a => a.cadre === NCK.cadre);
+    if (!atts.length) return `<div class="nck-empty"><b>No progress to show yet</b>Finish a practice session, past paper or mock exam for ${nckEsc(NCK.cadre)} and your results will be charted here.<div class="nck-actions" style="justify-content:center"><a class="nck-btn" style="text-decoration:none" href="#/nck-prep/practice">Start practising</a></div></div>`;
+    const total = atts.reduce((n, a) => n + a.total, 0), correct = atts.reduce((n, a) => n + a.correct, 0);
+    const recent = atts.slice(-5), rTotal = recent.reduce((n, a) => n + a.total, 0), rCorrect = recent.reduce((n, a) => n + a.correct, 0);
+    const stats = nckTopicStats(NCK.cadre);
+    const rows = Object.keys(stats).map(t => ({ t, c: stats[t].c, n: stats[t].t, p: nckPct(stats[t].c, stats[t].t) })).sort((a, b) => a.p - b.p);
+    const col = p => p >= 75 ? "var(--green)" : p >= 50 ? "var(--gold)" : "var(--coral)";
+    const tag = p => p >= 75 ? "Strong" : p >= 50 ? "Getting there" : "Needs work";
+    const kinds = { topic: "Topic practice", paper: "Past papers", mock: "Mock exams", mix: "Random mixes", missed: "Missed questions" };
+    const byKind = {}; atts.forEach(a => { const k = byKind[a.kind] || (byKind[a.kind] = { c: 0, t: 0 }); k.c += a.correct; k.t += a.total; });
+    const missed = nckMissed(NCK.cadre);
+    return `
+      <div class="nck-stats">
+        <div class="nck-stat"><b>${nckPct(correct, total)}%</b><span>Overall accuracy</span></div>
+        <div class="nck-stat"><b>${nckPct(rCorrect, rTotal)}%</b><span>Last ${recent.length} session${recent.length === 1 ? "" : "s"}</span></div>
+        <div class="nck-stat"><b>${total}</b><span>Questions answered</span></div>
+        <div class="nck-stat"><b>${nckStreak()}</b><span>Day streak</span></div>
+      </div>
+      <h4 class="nck-h4" style="margin-top:6px">Accuracy over time</h4>
+      ${nckTrendSVG(atts)}
+      <h4 class="nck-h4">By topic</h4>
+      ${rows.map(r => `
+        <div class="nck-bar-row">
+          <div>${nckEsc(r.t)} <span class="nck-tag">${tag(r.p)}</span></div>
+          <div class="nck-bar"><i style="width:${r.p}%;background:${col(r.p)}"></i></div>
+          <div>${r.p}% <span class="nck-muted">(${r.c}/${r.n})</span></div>
+        </div>`).join("")}
+      <h4 class="nck-h4">By type of practice</h4>
+      ${Object.keys(byKind).map(k => `
+        <div class="nck-bar-row">
+          <div>${kinds[k] || k}</div>
+          <div class="nck-bar"><i style="width:${nckPct(byKind[k].c, byKind[k].t)}%;background:${col(nckPct(byKind[k].c, byKind[k].t))}"></i></div>
+          <div>${nckPct(byKind[k].c, byKind[k].t)}% <span class="nck-muted">(${byKind[k].c}/${byKind[k].t})</span></div>
+        </div>`).join("")}
+      ${missed.length ? `<div class="nck-actions"><button class="nck-btn" onclick="nckStartMissed()">Practise ${missed.length} missed question${missed.length === 1 ? "" : "s"}</button></div>` : ""}
+      <h4 class="nck-h4">Recent sessions</h4>
+      <div class="nck-scroll"><table class="nck-table">
+        <thead><tr><th>Date</th><th>Session</th><th>Mode</th><th>Score</th><th>Time</th></tr></thead>
+        <tbody>${atts.slice(-10).reverse().map(a => `
+          <tr><td>${new Date(a.ts).toLocaleDateString(undefined, { day: "numeric", month: "short" })}</td><td>${nckEsc(a.title)}</td><td>${a.mode === "exam" ? "Exam" : "Practice"}</td><td>${a.correct}/${a.total} (${nckPct(a.correct, a.total)}%)</td><td>${nckFmtTime(a.seconds)}</td></tr>`).join("")}
+        </tbody></table></div>
+      <div class="nck-actions">
+        <button class="nck-btn-ghost" onclick="nckExportProgress()">Download my progress</button>
+        <button class="nck-btn-ghost" onclick="nckResetProgress()">Reset my progress</button>
+      </div>
+      <p class="nck-note">Your progress is saved in this browser on this device only. Clearing your browser data, or using another device, starts a fresh record.</p>`;
+  }
+  function nckExportProgress(){
+    const blob = new Blob([JSON.stringify({ exported: new Date().toISOString(), attempts: nckAttempts(), events: nckLoad(NCK_KEYS.events, []) }, null, 2)], { type: "application/json" });
+    const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "nursevault-nck-progress.json"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  }
+  function nckResetProgress(){
+    if (!confirm("Reset all your NCK Prep progress on this device? This cannot be undone.")) return;
+    nckSave(NCK_KEYS.attempts, []); renderNck();
+  }
+
+  // ---------- exam and mock date tracker ----------
+  function nckAllEvents(){
+    const site = nckBank.events.filter(e => !e.cadre || e.cadre === "All" || e.cadre === NCK.cadre).map(e => Object.assign({ remind: 7 }, e, { site: true, id: "s:" + (e.id || e.title + e.date) }));
+    const mine = nckLoad(NCK_KEYS.events, []);
+    return site.concat(mine).sort((a, b) => (a.date + (a.time || "")).localeCompare(b.date + (b.time || "")));
+  }
+  function nckUpcoming(n){ return nckAllEvents().filter(e => nckDaysUntil(e.date) >= 0).slice(0, n); }
+  const NCK_EVENT_TYPES = { exam: "Exam", mock: "Mock exam", cat: "CAT", other: "Other" };
+
+  function nckDatesHTML(){
+    const evs = nckAllEvents();
+    const today = new Date().toISOString().slice(0, 10);
+    const notifOK = "Notification" in window && Notification.permission === "granted";
+    return `
+      <p class="nck-muted" style="max-width:640px;margin-bottom:18px;">Add your exam and mock dates to see a countdown here. Use "Add to calendar" to get reminders on your phone or laptop calendar, even when NurseVault isn't open. Always confirm official exam dates with the Nursing Council of Kenya.</p>
+      ${evs.length ? `<div class="nck-list">${evs.map(e => {
+        const d = nckDaysUntil(e.date);
+        const dateTxt = new Date(e.date + "T00:00:00").toLocaleDateString(undefined, { weekday: "short", day: "numeric", month: "short", year: "numeric" });
+        return `
+          <div class="nck-ev ${d < 0 ? "past" : ""}">
+            <div>
+              <div class="when">${nckCountdown(d)}</div>
+              <h3>${nckEsc(e.title)}<span class="nck-tag">${NCK_EVENT_TYPES[e.type] || "Other"}</span>${e.site ? '<span class="nck-tag">From NurseVault</span>' : ""}</h3>
+              <p class="nck-muted">${dateTxt}${e.time ? " at " + nckEsc(e.time) : ""}${Number(e.remind) > 0 ? ` · reminder ${e.remind} day${Number(e.remind) === 1 ? "" : "s"} before` : ""}${e.note ? " · " + nckEsc(e.note) : ""}</p>
+            </div>
+            <div class="acts">
+              <button class="nck-btn-ghost" onclick="nckDownloadIcs('${nckEsc(e.id)}')">Add to calendar</button>
+              ${e.site ? "" : `<button class="nck-btn-ghost" onclick="nckDelEvent('${nckEsc(e.id)}')">Remove</button>`}
+            </div>
+          </div>`;
+      }).join("")}</div>` : `<div class="nck-empty"><b>No dates yet</b>Add your first exam or mock below.</div>`}
+      <h4 class="nck-h4">Add a date</h4>
+      <div class="nck-form">
+        <label>Title<input id="nck-ev-title" class="nck-input" type="text" maxlength="80" placeholder="e.g. KRCHN mock exam"></label>
+        <label>Type<select id="nck-ev-type" class="nck-input">${Object.keys(NCK_EVENT_TYPES).map(k => `<option value="${k}">${NCK_EVENT_TYPES[k]}</option>`).join("")}</select></label>
+        <label>Date<input id="nck-ev-date" class="nck-input" type="date" min="${today}"></label>
+        <label>Time (optional)<input id="nck-ev-time" class="nck-input" type="time"></label>
+        <label>Remind me<select id="nck-ev-remind" class="nck-input"><option value="0">No reminder</option><option value="1">1 day before</option><option value="3">3 days before</option><option value="7" selected>1 week before</option><option value="14">2 weeks before</option></select></label>
+        <label>Note (optional)<input id="nck-ev-note" class="nck-input" type="text" maxlength="120" placeholder="e.g. Paper 1, Room 4"></label>
+      </div>
+      <div class="nck-actions">
+        <button class="nck-btn" onclick="nckAddEvent()">Add date</button>
+        ${"Notification" in window && !notifOK && Notification.permission !== "denied" ? `<button class="nck-btn-ghost" onclick="nckEnableNotifications()">Turn on browser reminders</button>` : ""}
+      </div>
+      <p class="nck-note">${notifOK ? "Browser reminders are on. They appear when you open NurseVault." : "Browser reminders appear when you open NurseVault. For alerts when the site is closed, use Add to calendar."}</p>`;
+  }
+  function nckAddEvent(){
+    const v = id => document.getElementById(id).value.trim();
+    const title = v("nck-ev-title"), date = v("nck-ev-date");
+    if (!title || !date) { alert("Please enter a title and a date."); return; }
+    const list = nckLoad(NCK_KEYS.events, []);
+    list.push({ id: "u" + Date.now(), title, type: v("nck-ev-type"), date, time: v("nck-ev-time"), remind: Number(v("nck-ev-remind")), note: v("nck-ev-note") });
+    nckSave(NCK_KEYS.events, list);
+    renderNck();
+  }
+  function nckDelEvent(id){
+    nckSave(NCK_KEYS.events, nckLoad(NCK_KEYS.events, []).filter(e => e.id !== id));
+    renderNck();
+  }
+  function nckIcsText(ev){
+    const esc = s => String(s || "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
+    const d = ev.date.replace(/-/g, "");
+    const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//NurseVault//NCK Prep//EN", "BEGIN:VEVENT", `UID:${ev.id}@nursevault`, `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "")}`];
+    const lead = Number(ev.remind) || 0;
+    let trigger = "";
+    if (ev.time) {
+      const t = ev.time.replace(":", "") + "00";
+      const end = new Date(`${ev.date}T${ev.time}:00`); end.setHours(end.getHours() + 2);
+      lines.push(`DTSTART:${d}T${t}`, `DTEND:${nckYmd(end)}T${String(end.getHours()).padStart(2, "0")}${String(end.getMinutes()).padStart(2, "0")}00`);
+      if (lead) trigger = `-P${lead}D`;
+    } else {
+      const next = new Date(ev.date + "T00:00:00"); next.setDate(next.getDate() + 1);
+      lines.push(`DTSTART;VALUE=DATE:${d}`, `DTEND;VALUE=DATE:${nckYmd(next)}`);
+      if (lead) trigger = lead - 1 === 0 ? "-PT15H" : `-P${lead - 1}DT15H`;   // 9:00 in the morning, N days before
+    }
+    lines.push(`SUMMARY:${esc(ev.title)}`);
+    if (ev.note) lines.push(`DESCRIPTION:${esc(ev.note)}`);
+    if (trigger) lines.push("BEGIN:VALARM", "ACTION:DISPLAY", `DESCRIPTION:${esc(ev.title)}`, `TRIGGER:${trigger}`, "END:VALARM");
+    lines.push("END:VEVENT", "END:VCALENDAR");
+    return lines.join("\r\n");
+  }
+  function nckDownloadIcs(id){
+    const ev = nckAllEvents().find(e => e.id === id); if (!ev) return;
+    const blob = new Blob([nckIcsText(ev)], { type: "text/calendar" });
+    const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+    a.download = "nursevault-" + ev.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") + ".ics";
+    a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  }
+  function nckEnableNotifications(){
+    if (!("Notification" in window)) return;
+    Notification.requestPermission().then(() => { nckCheckReminders(); renderNck(); });
+  }
+  function nckCheckReminders(){
+    if (!("Notification" in window) || Notification.permission !== "granted") return;
+    const today = nckYmd(new Date()), done = nckLoad(NCK_KEYS.notified, {});
+    nckAllEvents().forEach(ev => {
+      const d = nckDaysUntil(ev.date), lead = Number(ev.remind) || 0;
+      if (lead > 0 && d >= 0 && d <= lead && done[ev.id] !== today) {
+        try { new Notification("NurseVault reminder", { body: `${ev.title}: ${nckCountdown(d).toLowerCase()}` }); } catch(e){}
+        done[ev.id] = today;
+      }
+    });
+    nckSave(NCK_KEYS.notified, done);
+  }
+
+  // ---------- starting sessions ----------
+  function nckStartSet(setId, mode){
+    const set = nckBank.sets.find(s => s.id === setId); if (!set) return;
+    if (!nckCanOpen(set)) { goToSection("subscribe"); return; }
+    const qs = nckMakeQuestions(set);
+    nckBegin({
+      title: set.title, questions: qs, mode,
+      minutes: mode === "exam" ? (set.minutes || Math.ceil(qs.length * 1.5)) : 0,
+      meta: { setId: set.id, kind: set.kind, cadre: set.cadre === "All" ? NCK.cadre : set.cadre }
+    });
+  }
+  function nckStartMix(){
+    const qs = nckShuffle(nckPool(NCK.cadre)).slice(0, 10);
+    nckBegin({ title: "Random mix", questions: qs, mode: "practice", minutes: 0, meta: { kind: "mix", cadre: NCK.cadre } });
+  }
+  function nckStartMissed(){
+    const qs = nckMissed(NCK.cadre).map(nckQuestionByKey).filter(Boolean);
+    nckBegin({ title: "Missed questions", questions: qs, mode: "practice", minutes: 0, meta: { kind: "missed", cadre: NCK.cadre } });
+  }
+  function nckStartMock(){
+    const m = NCK.mock;
+    const qs = nckShuffle(nckPool(NCK.cadre)).slice(0, m.count);
+    nckBegin({
+      title: `${NCK.cadre} mock exam`, questions: qs, mode: "exam", minutes: m.minutes,
+      meta: { kind: "mock", cadre: NCK.cadre },
+      proctor: { fullscreen: m.fullscreen, camera: m.camera, lock: m.lock }
+    });
+  }
+  function nckRetryWrong(){
+    const r = NCK.run; if (!r || !r.result) return;
+    const qs = r.questions.filter(q => r.answers[q.k] !== q.answer);
+    nckExit(true);
+    nckBegin({ title: "Retry: questions I missed", questions: qs, mode: "practice", minutes: 0, meta: { kind: "missed", cadre: NCK.cadre } });
+  }
+
+  function nckBegin(cfg){
+    if (!cfg.questions.length) { alert("There are no questions to show yet."); return; }
+    const now = Date.now();
+    NCK.reviewFilter = "all";
+    NCK.run = {
+      title: cfg.title, questions: cfg.questions, mode: cfg.mode, meta: cfg.meta || {}, minutes: cfg.minutes || 0,
+      proctor: cfg.proctor || null, idx: 0, answers: {}, flags: {}, startedAt: now,
+      endsAt: cfg.minutes ? now + cfg.minutes * 60000 : null,
+      incidents: [], done: false, result: null, timer: null, handlers: [], stream: null, lastIncident: 0
+    };
+    if (NCK.run.proctor) nckProctorStart();
+    if (NCK.run.endsAt) NCK.run.timer = setInterval(nckTick, 1000);
+    renderNck();
+    window.scrollTo(0, 0);
+  }
+
+  function nckTick(){
+    const r = NCK.run; if (!r || r.done || !r.endsAt) return;
+    const left = Math.ceil((r.endsAt - Date.now()) / 1000);
+    const el = document.getElementById("nckTimer");
+    if (el) { el.textContent = nckFmtTime(left); el.classList.toggle("low", left <= 60); }
+    if (left <= 0) nckSubmit(true);
+  }
+
+  // ---------- the quiz / exam screen ----------
+  function nckOptionsHTML(q, chosen, reveal, disabled){
+    return q.options.map((o, i) => {
+      let cls = "nck-opt";
+      if (reveal) { if (i === q.answer) cls += " right"; else if (i === chosen) cls += " wrong"; }
+      else if (i === chosen) cls += " sel";
+      return `<button class="${cls}" ${disabled ? "disabled" : ""} onclick="nckPick(${i})"><span class="k">${"ABCDEFGH"[i]}</span><span>${nckEsc(o)}</span></button>`;
+    }).join("");
+  }
+  function nckAIBlock(i){
+    return `<div class="nck-actions"><button class="nck-btn-ghost" onclick="nckExplain(${i})">Explain with AI</button></div><div id="nck-ai-${i}"></div>`;
+  }
+  function nckRunHTML(){
+    const r = NCK.run;
+    if (r.done) return nckResultHTML();
+    const n = r.questions.length, q = r.questions[r.idx], chosen = r.answers[q.k];
+    const practice = r.mode === "practice", revealed = practice && chosen !== undefined;
+    const answeredCount = Object.keys(r.answers).length;
+    const left = r.endsAt ? Math.max(0, Math.ceil((r.endsAt - Date.now()) / 1000)) : 0;
+    return `
+      <div class="nck-run ${r.proctor && r.proctor.lock ? "proctor" : ""}">
+        <div class="nck-run-top">
+          <h2>${nckEsc(r.title)}</h2>
+          <div class="acts" style="display:flex;gap:10px;align-items:center">
+            ${r.endsAt ? `<span class="nck-timer ${left <= 60 ? "low" : ""}" id="nckTimer" aria-label="Time left">${nckFmtTime(left)}</span>` : ""}
+            ${practice && answeredCount ? `<button class="nck-btn-ghost" onclick="nckFinish()">Finish and see results</button>` : ""}
+            <button class="nck-btn-ghost" onclick="nckLeave()">${practice ? "Leave" : "Leave exam"}</button>
+          </div>
+        </div>
+        <div class="nck-progressbar"><i style="width:${Math.round(100 * (practice ? answeredCount : answeredCount) / n)}%"></i></div>
+        <div class="nck-warn ${r.incidents.length ? "show" : ""}" id="nckWarn" role="alert">${nckWarnHTML()}</div>
+        ${!practice ? `<div class="nck-nav" aria-label="Question navigator">${r.questions.map((x, i) => `<button class="${r.answers[x.k] !== undefined ? "ans" : ""} ${r.flags[x.k] ? "flag" : ""} ${i === r.idx ? "cur" : ""}" onclick="nckGo(${i})" aria-label="Question ${i + 1}">${i + 1}</button>`).join("")}</div>` : ""}
+        <div class="nck-qmeta">Question ${r.idx + 1} of ${n} · ${nckEsc(q.t)}</div>
+        <div class="nck-qtext">${nckEsc(q.q)}</div>
+        ${nckOptionsHTML(q, chosen, revealed, revealed)}
+        ${revealed ? `
+          <div class="nck-feedback"><b class="${chosen === q.answer ? "ok" : "no"}">${chosen === q.answer ? "Correct." : "Not quite."}</b> ${chosen === q.answer ? "" : `The correct answer is <b>${"ABCDEFGH"[q.answer]}</b>. `}${nckEsc(q.explanation || "")}</div>
+          ${nckAIBlock(r.idx)}` : ""}
+        <div class="nck-actions">
+          ${!practice ? `<button class="nck-btn-ghost" onclick="nckPrev()" ${r.idx === 0 ? "disabled" : ""}>Previous</button><button class="nck-btn-ghost" onclick="nckFlag()">${r.flags[q.k] ? "Unflag" : "Flag for review"}</button>` : ""}
+          <span class="sp"></span>
+          ${practice
+            ? (revealed ? `<button class="nck-btn" onclick="nckNext()">${r.idx === n - 1 ? "Finish" : "Next question"}</button>` : "")
+            : (r.idx < n - 1 ? `<button class="nck-btn" onclick="nckNext()">Next</button>` : "") + `<button class="nck-btn nck-btn-coral" onclick="nckSubmit(false)">Submit exam</button>`}
+        </div>
+      </div>
+      ${r.proctor && r.proctor.camera && r.stream ? `<video id="nckCam" class="nck-cam" autoplay muted playsinline></video>` : ""}`;
+  }
+  function nckWarnHTML(){
+    const r = NCK.run; if (!r.incidents.length) return "";
+    const last = r.incidents[r.incidents.length - 1];
+    const fsBtn = r.proctor && r.proctor.fullscreen && !document.fullscreenElement && document.documentElement.requestFullscreen
+      ? ` <button class="nck-btn-ghost" onclick="document.documentElement.requestFullscreen().catch(()=>{})">Return to full screen</button>` : "";
+    return `<b>Flag ${r.incidents.length}:</b> ${nckEsc(last.msg)}. In a real exam this could be reported. It is recorded in your integrity report.${fsBtn}`;
+  }
+  function nckAfterRender(){
+    const r = NCK.run; if (!r) return;
+    const v = document.getElementById("nckCam");
+    if (v && r.stream) { v.srcObject = r.stream; const p = v.play && v.play(); if (p && p.catch) p.catch(() => {}); }
+  }
+
+  function nckPick(i){
+    const r = NCK.run, q = r.questions[r.idx];
+    if (r.mode === "practice" && r.answers[q.k] !== undefined) return;
+    r.answers[q.k] = i;
+    renderNck();
+  }
+  function nckNext(){
+    const r = NCK.run, n = r.questions.length;
+    if (r.mode === "practice" && r.idx === n - 1) { nckFinish(); return; }
+    r.idx = Math.min(n - 1, r.idx + 1); renderNck(); window.scrollTo(0, 0);
+  }
+  function nckPrev(){ const r = NCK.run; r.idx = Math.max(0, r.idx - 1); renderNck(); window.scrollTo(0, 0); }
+  function nckGo(i){ NCK.run.idx = i; renderNck(); }
+  function nckFlag(){ const r = NCK.run, q = r.questions[r.idx]; r.flags[q.k] = !r.flags[q.k]; renderNck(); }
+  function nckSubmit(force){
+    const r = NCK.run; if (!r || r.done) return;
+    const un = r.questions.length - Object.keys(r.answers).length;
+    if (!force && un > 0 && !confirm(`You have ${un} unanswered question${un === 1 ? "" : "s"}. Submit anyway?`)) return;
+    nckFinish();
+  }
+  function nckLeave(){
+    const r = NCK.run;
+    if (r && !r.done && Object.keys(r.answers).length && !confirm("Leave this session? Your answers so far won't be saved.")) return;
+    nckExit(false);
+  }
+
+  function nckFinish(){
+    const r = NCK.run; if (!r || r.done) return;
+    const exam = r.mode === "exam";
+    const scored = r.questions.filter(q => exam || r.answers[q.k] !== undefined);
+    if (!scored.length) { nckExit(false); return; }
+    const items = scored.map(q => ({ k: q.k, t: q.t, c: r.answers[q.k] === q.answer ? 1 : 0 }));
+    const correct = items.reduce((n, i) => n + i.c, 0);
+    const seconds = Math.round((Date.now() - r.startedAt) / 1000);
+    r.result = { total: scored.length, correct, seconds };
+    r.done = true;
+    if (r.timer) { clearInterval(r.timer); r.timer = null; }
+    nckProctorStop();
+    nckRecord({
+      id: r.startedAt, ts: Date.now(), setId: r.meta.setId || null, title: r.title, kind: r.meta.kind || "mix", mode: r.mode,
+      cadre: r.meta.cadre || NCK.cadre, total: scored.length, correct, seconds, flags: r.incidents.length, items
+    });
+    renderNck(); window.scrollTo(0, 0);
+  }
+  function nckExit(silent){
+    const r = NCK.run;
+    if (r) { if (r.timer) clearInterval(r.timer); nckProctorStop(); }
+    NCK.run = null;
+    if (!silent) renderNck();
+    window.scrollTo(0, 0);
+  }
+
+  function nckResultHTML(){
+    const r = NCK.run, res = r.result;
+    const exam = r.mode === "exam", f = NCK.reviewFilter;
+    const byTopic = {}; r.questions.forEach(q => {
+      if (!exam && r.answers[q.k] === undefined) return;
+      const t = byTopic[q.t] || (byTopic[q.t] = { c: 0, n: 0 }); t.n++; if (r.answers[q.k] === q.answer) t.c++;
+    });
+    const col = p => p >= 75 ? "var(--green)" : p >= 50 ? "var(--gold)" : "var(--coral)";
+    const wrongCount = r.questions.filter(q => r.answers[q.k] !== q.answer && (exam || r.answers[q.k] !== undefined)).length;
+    const list = r.questions.map((q, i) => ({ q, i })).filter(({ q }) => {
+      const a = r.answers[q.k];
+      if (!exam && a === undefined) return false;
+      if (f === "wrong") return a !== q.answer;
+      if (f === "flagged") return !!r.flags[q.k];
+      return true;
+    });
+    return `
+      <div class="nck-run">
+        <div class="nck-run-top"><h2>${nckEsc(r.title)}: results</h2></div>
+        <div class="nck-score">
+          <div class="big">${nckPct(res.correct, res.total)}%</div>
+          <div><b>${res.correct} of ${res.total} correct</b><p class="nck-muted">Time taken ${nckFmtTime(res.seconds)}${r.minutes ? " of " + r.minutes + " minutes" : ""}</p></div>
+        </div>
+        ${r.proctor ? `
+          <div class="nck-card" style="margin-bottom:18px">
+            <h3>Integrity report</h3>
+            ${r.incidents.length
+              ? `<p class="nck-muted">${r.incidents.length} flag${r.incidents.length === 1 ? "" : "s"} during this exam:</p><ul class="nck-rules">${r.incidents.map(i => `<li>${nckEsc(i.msg)} at ${nckFmtTime((i.t - r.startedAt) / 1000)}</li>`).join("")}</ul>`
+              : `<p class="nck-muted">No flags. You stayed in the exam window the whole time.</p>`}
+          </div>` : ""}
+        <h4 class="nck-h4" style="margin-top:0">By topic</h4>
+        ${Object.keys(byTopic).map(t => { const p = nckPct(byTopic[t].c, byTopic[t].n); return `
+          <div class="nck-bar-row"><div>${nckEsc(t)}</div><div class="nck-bar"><i style="width:${p}%;background:${col(p)}"></i></div><div>${p}% <span class="nck-muted">(${byTopic[t].c}/${byTopic[t].n})</span></div></div>`; }).join("")}
+        <div class="nck-actions">
+          ${wrongCount ? `<button class="nck-btn" onclick="nckRetryWrong()">Retry the ${wrongCount} I missed</button>` : ""}
+          <button class="nck-btn-ghost" onclick="nckExit(false)">Back to NCK Prep</button>
+        </div>
+        <h4 class="nck-h4">Review your answers</h4>
+        <div class="nck-filters">
+          ${[["all", "All"], ["wrong", "Incorrect"], ["flagged", "Flagged"]].map(([k, l]) => `<button class="nck-pill ${f === k ? "active" : ""}" onclick="nckSetFilter('${k}')">${l}</button>`).join("")}
+        </div>
+        ${list.length ? list.map(({ q, i }) => {
+          const a = r.answers[q.k], ok = a === q.answer;
+          return `
+            <div class="nck-review">
+              <div class="nck-qmeta">Question ${i + 1} · ${nckEsc(q.t)} · <span class="st ${a === undefined ? "skip" : ok ? "ok" : "no"}">${a === undefined ? "Not answered" : ok ? "Correct" : "Incorrect"}</span></div>
+              <div class="nck-qtext">${nckEsc(q.q)}</div>
+              ${nckOptionsHTML(q, a, true, true)}
+              <div class="nck-feedback">${a === q.answer ? "" : `The correct answer is <b>${"ABCDEFGH"[q.answer]}</b>. `}${nckEsc(q.explanation || "")}</div>
+              ${nckAIBlock(i)}
+            </div>`; }).join("") : `<p class="nck-muted" style="margin-top:14px">Nothing to show for this filter.</p>`}
+      </div>`;
+  }
+  function nckSetFilter(k){ NCK.reviewFilter = k; renderNck(); }
+
+  // ---------- AI explanations ----------
+  function nckAiBox(html, small){ return `<div class="nck-ai">${html}${small ? "" : "<small>AI explanations can make mistakes. Check important points against your textbooks or lecturer.</small>"}</div>`; }
+  async function nckExplain(i){
+    const r = NCK.run; if (!r) return;
+    const q = r.questions[i], chosen = r.answers[q.k];
+    const box = document.getElementById("nck-ai-" + i); if (!box) return;
+    const key = q.k + ":" + chosen;
+    if (NCK.ai[key]) { box.innerHTML = NCK.ai[key]; return; }
+    if (NCK_EXPLAIN_URL.includes("REPLACE_WITH")) {
+      box.innerHTML = nckAiBox("AI explanations aren't switched on for this copy of the site yet. The written explanation above still applies.", true);
+      return;
+    }
+    box.innerHTML = nckAiBox("Working out an explanation…", true);
+    try {
+      const res = await fetch(NCK_EXPLAIN_URL, {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          token: sessionToken, cadre: r.meta.cadre || NCK.cadre, topic: q.t, question: q.q, options: q.options,
+          correctIndex: q.answer, chosenIndex: chosen === undefined ? null : chosen, rationale: q.explanation || ""
+        })
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.status === 401) { box.innerHTML = nckAiBox("Please log in to use AI explanations.", true); return; }
+      if (!res.ok || !data.explanation) throw new Error(data.error || "failed");
+      const html = nckAiBox(nckEsc(data.explanation).replace(/\n/g, "<br>"));
+      NCK.ai[key] = html; box.innerHTML = html;
+    } catch(e) {
+      box.innerHTML = nckAiBox("Couldn't get an AI explanation right now. Please try again in a moment.", true);
+    }
+  }
+
+  // ---------- digital proctor (practice simulation) ----------
+  function nckIncident(msg){
+    const r = NCK.run; if (!r || r.done || !r.proctor) return;
+    const now = Date.now();
+    if (now - r.lastIncident < 1500) return;      // one event often fires several browser signals
+    r.lastIncident = now;
+    r.incidents.push({ t: now, msg });
+    const el = document.getElementById("nckWarn");
+    if (el) { el.innerHTML = nckWarnHTML(); el.classList.add("show"); }
+  }
+  function nckProctorStart(){
+    const r = NCK.run, p = r.proctor;
+    const on = (target, type, fn) => { target.addEventListener(type, fn); r.handlers.push([target, type, fn]); };
+    if (p.fullscreen && document.documentElement.requestFullscreen) document.documentElement.requestFullscreen().catch(() => {});
+    on(document, "visibilitychange", () => { if (document.hidden) nckIncident("You switched to another tab or window"); });
+    on(window, "blur", () => nckIncident("The exam window lost focus"));
+    on(document, "fullscreenchange", () => { if (p.fullscreen && !document.fullscreenElement) nckIncident("You left full-screen mode"); });
+    if (p.lock) ["copy", "cut", "paste", "contextmenu"].forEach(t => on(document, t, e => { e.preventDefault(); nckIncident(t === "contextmenu" ? "Right-click was blocked" : `A ${t} attempt was blocked`); }));
+    on(window, "beforeunload", e => { e.preventDefault(); e.returnValue = ""; });
+    if (p.camera) nckCameraStart();
+  }
+  async function nckCameraStart(){
+    const r = NCK.run;
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+      if (NCK.run !== r || r.done) { stream.getTracks().forEach(t => t.stop()); return; }
+      r.stream = stream; renderNck();
+    } catch(e) { nckIncident("The camera couldn't be started"); }
+  }
+  function nckProctorStop(){
+    const r = NCK.run; if (!r) return;
+    (r.handlers || []).forEach(([t, type, fn]) => t.removeEventListener(type, fn));
+    r.handlers = [];
+    if (r.stream) { r.stream.getTracks().forEach(t => t.stop()); r.stream = null; }
+    if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(() => {});
+  }
+
+  nckLoadExternalBank();
+
 
   checkSession();
   applyTheme();
