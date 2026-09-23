@@ -1,0 +1,1136 @@
+{
+  "hideSamples": true,
+  "sets": [
+    {
+      "id": "tq-bscn-medsurg-01",
+      "kind": "topic",
+      "cadre": "BScN",
+      "subject": "Medical-Surgical Nursing",
+      "title": "Medical-Surgical Nursing",
+      "access": "free",
+      "questions": [
+        {
+          "id": "ms1",
+          "q": "A patient is admitted with chest trauma following a motor vehicle accident. On assessment, you note absent breath sounds on the left side and tracheal deviation to the right. What is your priority action?",
+          "options": ["Administer high-flow oxygen via non-rebreather mask", "Prepare for immediate needle decompression", "Position the patient in Trendelenburg position", "Obtain a stat chest X-ray"],
+          "answer": 1,
+          "explanation": "This describes tension pneumothorax. Needle decompression is the priority to relieve trapped air before it causes cardiac arrest.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms2",
+          "q": "A 55-year-old male presents with crushing chest pain radiating to the jaw, diaphoresis, and nausea. His ECG shows ST-segment elevation in leads II, III, and aVF. Which coronary artery is most likely affected?",
+          "options": ["Left anterior descending artery", "Left circumflex artery", "Right coronary artery", "Left main coronary artery"],
+          "answer": 2,
+          "explanation": "ST elevation in inferior leads (II, III, aVF) indicates right coronary artery involvement.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms3",
+          "q": "The primary reason for administering digoxin to a patient with heart failure is to:",
+          "options": ["Relax the walls of the heart's arteries", "Improve the strength of the heartbeat", "Prevent irregularities in ventricular contractions", "Decrease inflammation of the heart wall"],
+          "answer": 1,
+          "explanation": "Digoxin increases myocardial contractility (positive inotropic effect), improving cardiac output.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms4",
+          "q": "A patient with heart failure and pulmonary edema has which priority nursing diagnosis?",
+          "options": ["Risk for infection related to stasis of alveolar secretions", "Impaired skin integrity related to pressure", "Activity intolerance related to pump failure", "Constipation related to immobility"],
+          "answer": 2,
+          "explanation": "Activity intolerance from decreased cardiac output and oxygen supply is the priority in pulmonary edema.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms5",
+          "q": "Which finding is suggestive of a pneumothorax in a patient with chest trauma?",
+          "options": ["Inspiratory wheezing", "Dullness on chest percussion", "Pronounced crackles", "Hyperresonance on percussion"],
+          "answer": 3,
+          "explanation": "Pneumothorax produces hyperresonance on percussion due to trapped air in the pleural space.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms6",
+          "q": "An uncontrollable risk factor for coronary artery disease is:",
+          "options": ["Smoking", "Hypertension", "Family history", "Obesity"],
+          "answer": 2,
+          "explanation": "Family history cannot be modified. Smoking, hypertension and obesity are modifiable.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms7",
+          "q": "A patient with myocardial infarction develops a new cardiac murmur. This most likely suggests:",
+          "options": ["Pericarditis", "Papillary muscle rupture", "Ventricular aneurysm", "Dressler's syndrome"],
+          "answer": 1,
+          "explanation": "A new murmur after MI suggests papillary muscle rupture causing mitral regurgitation.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms8",
+          "q": "For a patient with COPD, the most important intervention to improve oxygen delivery is:",
+          "options": ["Administer high-flow oxygen at 10 L/min", "Position the patient in high Fowler's position", "Encourage pursed-lip breathing", "Restrict oral fluids to 1 L/day"],
+          "answer": 2,
+          "explanation": "Pursed-lip breathing prolongs exhalation, prevents airway collapse and improves gas exchange.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms9",
+          "q": "The classic \"barrel chest\" appearance is a feature of:",
+          "options": ["Heart failure", "Kyphosis", "Emphysema", "Pneumonia"],
+          "answer": 2,
+          "explanation": "Emphysema causes hyperinflation of the lungs and a barrel-chest appearance.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms10",
+          "q": "A patient with diabetes mellitus type 1 is at risk for diabetic ketoacidosis (DKA) due to:",
+          "options": ["Increased potassium levels", "Increased breakdown of fat", "Increased metabolism of fatty acids", "Decreased glucose utilization"],
+          "answer": 1,
+          "explanation": "Insulin deficiency leads to increased fat breakdown (lipolysis), producing ketone bodies.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms11",
+          "q": "The priority nursing intervention for a patient experiencing an acute asthma attack is:",
+          "options": ["Administer oral corticosteroids", "Apply a cold compress to the forehead", "Position the patient in high Fowler's position", "Encourage the patient to lie flat"],
+          "answer": 2,
+          "explanation": "High Fowler's position optimizes diaphragmatic excursion and facilitates breathing.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms12",
+          "q": "Which laboratory finding is most concerning in a patient with diabetic ketoacidosis?",
+          "options": ["Serum glucose 250 mg/dL", "Serum potassium 2.8 mEq/L", "Serum sodium 135 mEq/L", "Bicarbonate 18 mEq/L"],
+          "answer": 1,
+          "explanation": "Hypokalemia in DKA increases the risk of cardiac arrhythmias, especially when insulin is started.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms13",
+          "q": "The typical ECG change seen in a patient with pericarditis is:",
+          "options": ["ST-segment elevation in all leads", "Pathologic Q waves", "Peaked T waves", "Prolonged PR interval"],
+          "answer": 0,
+          "explanation": "Diffuse ST-segment elevation (concave upward) is characteristic of acute pericarditis.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms14",
+          "q": "A patient with chronic kidney disease has a hemoglobin of 8.5 g/dL. This is most likely due to:",
+          "options": ["Hemorrhage from dialysis", "Lack of erythropoietin production", "Iron deficiency from dietary restrictions", "Hemolysis from uremic toxins"],
+          "answer": 1,
+          "explanation": "The kidneys produce erythropoietin. In CKD, decreased erythropoietin leads to anemia.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms15",
+          "q": "A patient with cirrhosis develops asterixis (liver flap). This indicates:",
+          "options": ["Portal hypertension", "Hepatic encephalopathy", "Esophageal varices", "Hepatorenal syndrome"],
+          "answer": 1,
+          "explanation": "Asterixis is a characteristic sign of hepatic encephalopathy due to ammonia accumulation.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms16",
+          "q": "In a patient with Cushing's syndrome, the characteristic appearance includes:",
+          "options": ["Moon face, buffalo hump, central obesity, thin extremities", "Hypotension, Kussmaul breathing, diaphoresis", "Flushing, brittle skin, abdominal pain", "Weight loss, hyperpigmentation, diarrhea"],
+          "answer": 0,
+          "explanation": "Cortisol excess causes central fat redistribution with muscle wasting in the extremities.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms17",
+          "q": "A patient with myxedema coma would most likely present with:",
+          "options": ["Hyperthermia, tachycardia, agitation", "Hypothermia, bradycardia, lethargy", "Hypertension, tachypnea, tremors", "Fever, diaphoresis, weight loss"],
+          "answer": 1,
+          "explanation": "Myxedema coma is severe hypothyroidism with hypothermia, bradycardia and decreased mental status.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms18",
+          "q": "The most common cause of acute pancreatitis is:",
+          "options": ["Gallstones and alcohol use", "Trauma and infection", "Medications and hyperlipidemia", "Autoimmune disease"],
+          "answer": 0,
+          "explanation": "Gallstones and alcohol account for approximately 80% of acute pancreatitis cases.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms19",
+          "q": "A patient with appendicitis typically experiences pain that:",
+          "options": ["Starts in the epigastrium and moves to the right lower quadrant", "Begins as diffuse lower abdominal cramping", "Localizes immediately to the right lower quadrant", "Radiates to the left shoulder"],
+          "answer": 0,
+          "explanation": "Appendicitis pain typically migrates from the periumbilical/epigastric area to the RLQ.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms20",
+          "q": "The nurse should be MOST concerned about which finding in a patient with a newly placed tracheostomy?",
+          "options": ["Small amount of blood-tinged secretions", "Subcutaneous emphysema around the neck", "Difficulty passing a suction catheter", "Mild coughing during suctioning"],
+          "answer": 2,
+          "explanation": "Difficulty passing a suction catheter may indicate mucus plug or tracheal obstruction.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms21",
+          "q": "For a patient receiving Total Parenteral Nutrition (TPN), the nurse should monitor for which complication?",
+          "options": ["Hypoglycemia if TPN is abruptly discontinued", "Hyperglycemia if the infusion rate is too slow", "Hyponatremia as the most common electrolyte imbalance", "Respiratory acidosis from carbohydrate overload"],
+          "answer": 0,
+          "explanation": "Abrupt discontinuation of TPN causes rebound hypoglycemia due to continued high insulin levels.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms22",
+          "q": "A patient with acute renal failure is hyperkalemic. Which assessment finding requires immediate intervention?",
+          "options": ["Muscle weakness", "ECG showing peaked T waves", "Nausea and vomiting", "Blood pressure 160/90 mmHg"],
+          "answer": 1,
+          "explanation": "Peaked T waves are an early ECG sign of hyperkalemia that can progress to cardiac arrest.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms23",
+          "q": "A patient with a partial-thickness burn covering 30% of TBSA is at greatest risk for:",
+          "options": ["Infection during the first 48 hours", "Hypovolemic shock from fluid shifts", "Hypermetabolism with weight loss", "Respiratory failure from inhalation injury"],
+          "answer": 1,
+          "explanation": "In the first 24–48 hours after major burns, fluid shifts cause hypovolemic shock.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms24",
+          "q": "The most common organism causing burn wound sepsis is:",
+          "options": ["Staphylococcus aureus", "Streptococcus pyogenes", "Pseudomonas aeruginosa", "Escherichia coli"],
+          "answer": 2,
+          "explanation": "Pseudomonas aeruginosa is the most frequent and dangerous cause of burn-wound sepsis.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms25",
+          "q": "A patient with myasthenia gravis is prescribed pyridostigmine. The nurse should instruct the patient to take this medication:",
+          "options": ["At bedtime to prevent nighttime weakness", "Exactly on time, preferably 30–45 minutes before meals", "Only when weakness becomes severe", "As needed for muscle cramps"],
+          "answer": 1,
+          "explanation": "Pyridostigmine should be taken on schedule before meals to maintain consistent acetylcholine levels and prevent swallowing difficulty.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms26",
+          "q": "The classic triad of symptoms for Ménière's disease includes:",
+          "options": ["Tinnitus, hearing loss, and vertigo", "Headache, photophobia, and vomiting", "Nystagmus, ataxia, and dysarthria", "Ear pain, fever, and purulent drainage"],
+          "answer": 0,
+          "explanation": "Ménière's disease presents with episodic vertigo, fluctuating sensorineural hearing loss and tinnitus.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms27",
+          "q": "A patient with suspected meningitis is admitted. The nurse should prepare the patient for:",
+          "options": ["CT scan followed by lumbar puncture", "Lumbar puncture immediately on admission", "Blood cultures before antibiotics are started", "Both A and C"],
+          "answer": 3,
+          "explanation": "Blood cultures should be obtained, then CT (to rule out raised ICP), then lumbar puncture, then antibiotics.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms28",
+          "q": "The characteristic rash of meningococcal meningitis is:",
+          "options": ["Maculopapular rash on the trunk", "Petechial or purpuric rash", "Vesicular rash on a red base", "Fine, sandpaper-like rash"],
+          "answer": 1,
+          "explanation": "Meningococcemia produces a petechial or purpuric rash due to DIC.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms29",
+          "q": "A patient with Bell's palsy would most likely present with:",
+          "options": ["Sudden onset of unilateral facial paralysis", "Gradual weakness of all four extremities", "Bilateral facial weakness", "Paralysis with loss of taste on both sides"],
+          "answer": 0,
+          "explanation": "Bell's palsy is acute unilateral facial paralysis, often of viral origin.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms30",
+          "q": "The priority nursing intervention for a patient experiencing a tonic-clonic seizure is to:",
+          "options": ["Insert a padded tongue blade between the teeth", "Restrain the patient to prevent injury", "Turn the patient to the side and protect the head", "Administer oral anticonvulsant medication"],
+          "answer": 2,
+          "explanation": "Protecting the airway (side-lying) and preventing injury are the priorities during a seizure.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms31",
+          "q": "A patient with a spinal cord injury at C5 is at greatest risk for:",
+          "options": ["Inability to breathe independently", "Loss of all motor function in upper extremities", "Neurogenic shock with bradycardia and hypotension", "Inability to speak"],
+          "answer": 2,
+          "explanation": "Injuries above T6 cause neurogenic shock due to loss of sympathetic tone.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms32",
+          "q": "A patient with a traumatic brain injury has a Glasgow Coma Scale score of 7. This indicates:",
+          "options": ["Mild brain injury", "Moderate brain injury", "Severe brain injury", "Persistent vegetative state"],
+          "answer": 2,
+          "explanation": "GCS 13–15 = mild, 9–12 = moderate, 3–8 = severe brain injury.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms33",
+          "q": "The priority indicator of increasing intracranial pressure is:",
+          "options": ["Unequal pupil size", "Decreasing systolic pressure", "Tachycardia", "Decreasing body temperature"],
+          "answer": 0,
+          "explanation": "Unequal or non-reactive pupils indicate brainstem compression and are a neurological emergency.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms34",
+          "q": "A patient with Addison's disease would most likely present with:",
+          "options": ["Hyperpigmentation, hypotension, and hyponatremia", "Moon face, buffalo hump, and hyperglycemia", "Weight gain, hirsutism, and easy bruising", "Heat intolerance, tachycardia, and exophthalmos"],
+          "answer": 0,
+          "explanation": "Addison's disease causes hyperpigmentation (high ACTH), hypotension and hyponatremia.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms35",
+          "q": "A patient with SIADH would most likely have:",
+          "options": ["Hyponatremia with concentrated urine", "Hypernatremia with dilute urine", "Hyperkalemia with polyuria", "Hypocalcemia with muscle tetany"],
+          "answer": 0,
+          "explanation": "SIADH causes water retention, dilutional hyponatremia and concentrated urine.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms36",
+          "q": "The most common site for deep vein thrombosis (DVT) is the:",
+          "options": ["Femoral vein", "Popliteal vein", "Calf veins (peroneal, posterior tibial)", "Iliac vein"],
+          "answer": 2,
+          "explanation": "DVTs most commonly originate in the deep calf veins.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms37",
+          "q": "A patient with a pulmonary embolism would most likely present with:",
+          "options": ["Sudden onset of pleuritic chest pain and dyspnea", "Gradual onset of productive cough and fever", "Asymptomatic with normal oxygen saturation", "Severe hemoptysis and hypotension"],
+          "answer": 0,
+          "explanation": "Classic PE presentation is sudden pleuritic chest pain, dyspnea and tachypnea.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms38",
+          "q": "The most important nursing intervention to prevent DVT in hospitalized patients is:",
+          "options": ["Administering prophylactic anticoagulation", "Encouraging ambulation and leg exercises", "Applying sequential compression devices", "All of the above"],
+          "answer": 3,
+          "explanation": "A combination of ambulation, mechanical and pharmacological prophylaxis is most effective.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms39",
+          "q": "A patient with a newly placed colostomy should be taught to expect stool that is (transverse colostomy):",
+          "options": ["Formed and brown, passed every 1–2 days", "Semi-formed to pasty, passed 1–2 times daily", "Liquid to semi-liquid, passed frequently", "Hard pellets, passed with difficulty"],
+          "answer": 1,
+          "explanation": "A transverse colostomy typically produces semi-formed to pasty stool.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms40",
+          "q": "The priority nursing intervention for a patient with a new colostomy is:",
+          "options": ["Teaching the patient how to irrigate the colostomy", "Applying a well-fitting pouch with skin barrier", "Restricting dietary fiber intake", "Encouraging the patient to avoid looking at the stoma"],
+          "answer": 1,
+          "explanation": "Immediate priority is pouching to contain effluent and protect peristomal skin.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms41",
+          "q": "A patient with an above-knee amputation is at highest risk for:",
+          "options": ["Phantom limb pain", "Flexion contracture of the hip", "Hemorrhage from the surgical site", "Osteomyelitis of the stump"],
+          "answer": 1,
+          "explanation": "Hip flexion contracture is a major complication; the patient should lie prone regularly.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms42",
+          "q": "After a below-knee amputation, the nurse should position the stump:",
+          "options": ["Flat on the bed with no pillow after the first 24–48 hours", "Elevated on pillows indefinitely", "Dependent to promote blood flow", "Abducted and externally rotated"],
+          "answer": 0,
+          "explanation": "Elevation for 24–48 hours reduces edema; thereafter avoid elevation to prevent contractures.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms43",
+          "q": "A patient with a fractured hip is placed in Buck's traction. The nurse understands that this type of traction:",
+          "options": ["Provides rigid immobilization of the fracture site", "Reduces muscle spasms and immobilizes the leg before surgery", "Allows the patient to be ambulatory", "Uses skeletal pins inserted into the bone"],
+          "answer": 1,
+          "explanation": "Buck's traction is skin traction used temporarily to reduce muscle spasms before surgery.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms44",
+          "q": "A patient with a casted leg should be instructed to report:",
+          "options": ["Swelling of the toes that resolves with elevation", "Warmth and dryness of the skin around the cast edges", "Numbness or inability to move the toes", "Mild aching pain in the fractured area"],
+          "answer": 2,
+          "explanation": "Numbness or paralysis indicates compartment syndrome or nerve compression and needs immediate evaluation.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms45",
+          "q": "A patient with gout is likely to have the first attack in which joint?",
+          "options": ["Knee", "Wrist", "Great toe (first metatarsophalangeal joint)", "Elbow"],
+          "answer": 2,
+          "explanation": "Podagra (first MTP joint) is the classic presentation of acute gout.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms46",
+          "q": "A patient with acute gouty arthritis should be educated to avoid which food?",
+          "options": ["Cherries", "Organ meats (liver, kidney)", "Green leafy vegetables", "Whole grains"],
+          "answer": 1,
+          "explanation": "Organ meats are high in purines and can worsen gout.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms47",
+          "q": "A patient with rheumatoid arthritis is prescribed methotrexate. The nurse should monitor for:",
+          "options": ["Hepatotoxicity and bone marrow suppression", "Hyperglycemia and weight gain", "Hypertension and tachycardia", "Nephrotoxicity and ototoxicity"],
+          "answer": 0,
+          "explanation": "Methotrexate is hepatotoxic and can cause bone-marrow suppression; regular LFTs and CBC are required.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms48",
+          "q": "The characteristic deformities seen in rheumatoid arthritis include:",
+          "options": ["Heberden's nodes and Bouchard's nodes", "Swan-neck deformity and ulnar deviation", "Hallux valgus and hammer toes", "Scoliosis and kyphosis"],
+          "answer": 1,
+          "explanation": "Swan-neck deformity and ulnar deviation are classic RA hand deformities.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms49",
+          "q": "A patient with systemic lupus erythematosus (SLE) presents with a rash across the cheeks and bridge of the nose. This is known as:",
+          "options": ["Discoid rash", "Malar (butterfly) rash", "Photosensitivity rash", "Subacute cutaneous rash"],
+          "answer": 1,
+          "explanation": "The malar (\"butterfly\") rash is a classic sign of SLE.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms50",
+          "q": "A priority teaching point for a patient with SLE is:",
+          "options": ["Avoid sunlight and use high-SPF sunscreen", "Increase intake of dairy products", "Limit fluid intake to 1 L per day", "Take iron supplements with meals"],
+          "answer": 0,
+          "explanation": "Patients with SLE are photosensitive; UV exposure can trigger disease flares.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms51",
+          "q": "A patient with herpes zoster (shingles) should be educated that:",
+          "options": ["The rash is contagious until all lesions are crusted", "Antiviral medications cure the infection", "Post-herpetic neuralgia only occurs in young patients", "The vaccine is contraindicated after an outbreak"],
+          "answer": 0,
+          "explanation": "Herpes zoster is contagious via direct contact with open lesions until they crust over.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms52",
+          "q": "A patient with a positive Mantoux test (PPD) of 15 mm induration but no symptoms most likely has:",
+          "options": ["Active tuberculosis", "Latent tuberculosis infection", "False-positive reaction from BCG vaccine", "Atypical mycobacterial infection"],
+          "answer": 1,
+          "explanation": "For low-risk individuals, ≥15 mm is positive and indicates latent TB.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms53",
+          "q": "For a patient with active tuberculosis the most important infection-control measure is:",
+          "options": ["Contact precautions with gown and gloves", "Airborne precautions with N95 respirator and negative-pressure room", "Droplet precautions with surgical mask", "Standard precautions only"],
+          "answer": 1,
+          "explanation": "TB requires airborne precautions: N95 respirator and negative-pressure room.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms54",
+          "q": "A patient being treated for TB with rifampin should be advised that this medication will cause:",
+          "options": ["Permanent hearing loss", "Orange-red discoloration of body fluids", "Severe photosensitivity reaction", "Constipation and gastric upset"],
+          "answer": 1,
+          "explanation": "Rifampin causes harmless orange-red discoloration of urine, sweat, tears and saliva.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms55",
+          "q": "A patient develops sudden chest pain, dyspnoea and haemoptysis three days after major surgery. The most likely diagnosis is:",
+          "options": ["Myocardial infarction", "Pulmonary embolism", "Pneumonia", "Atelectasis"],
+          "answer": 1,
+          "explanation": "Sudden pleuritic pain, dyspnoea and haemoptysis after surgery are classic for pulmonary embolism.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms56",
+          "q": "A patient with a spinal cord injury at C6 develops a sudden severe headache, flushed face and hypertension. The nurse’s first actions should include:",
+          "options": ["Administer an antihypertensive immediately", "Check for bladder distension or faecal impaction and elevate the head of the bed", "Place the patient in Trendelenburg position", "Give a sedative to calm the patient"],
+          "answer": 1,
+          "explanation": "This is autonomic dysreflexia. Remove the noxious stimulus (usually bladder or bowel) and elevate the head of the bed.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms57",
+          "q": "A patient having an acute asthma attack has been wheezing loudly. Which change would suggest the attack is becoming life-threatening?",
+          "options": ["Increased respiratory rate", "Louder wheezing", "Absence of wheezing (silent chest)", "Coughing up thick sputum"],
+          "answer": 2,
+          "explanation": "A silent chest indicates severe airway obstruction with insufficient airflow to generate wheeze.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms58",
+          "q": "Fifteen minutes after starting a blood transfusion the patient develops chills, low-back pain and hypotension. The priority nursing action is:",
+          "options": ["Slow the transfusion rate and give an antihistamine", "Stop the transfusion and keep the IV line open with normal saline", "Complete the transfusion while monitoring vital signs closely", "Administer paracetamol and continue the transfusion"],
+          "answer": 1,
+          "explanation": "These are classic signs of an acute haemolytic transfusion reaction. Stop the transfusion immediately.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms59",
+          "q": "A patient with a newly applied plaster cast complains of severe pain not relieved by analgesia; the toes are cold and pale. The nurse should:",
+          "options": ["Elevate the limb higher and apply ice", "Notify the doctor immediately – possible compartment syndrome", "Reassure the patient that pain is normal after casting", "Give a stronger analgesic"],
+          "answer": 1,
+          "explanation": "Unrelieved pain, pallor and coolness are classic signs of compartment syndrome, a surgical emergency.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms60",
+          "q": "A patient on long-term prednisone is being discharged. The most important teaching point is:",
+          "options": ["Stop the medication as soon as symptoms improve", "Do not stop the drug abruptly", "Take the drug only when symptoms are severe", "Increase the dose if feeling unwell"],
+          "answer": 1,
+          "explanation": "Abrupt withdrawal of long-term corticosteroids can precipitate adrenal crisis.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms61",
+          "q": "A patient with peptic ulcer disease is prescribed a proton-pump inhibitor. The nurse should instruct the patient to take this medication:",
+          "options": ["With meals", "30–60 minutes before meals", "At bedtime only", "As needed for pain"],
+          "answer": 1,
+          "explanation": "PPIs are most effective when taken 30–60 minutes before meals because they act on activated proton pumps.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms62",
+          "q": "For a patient with hypertension the DASH diet emphasises:",
+          "options": ["High protein and low carbohydrate intake", "Fruits, vegetables and low-fat dairy products", "Low sodium, high potassium and high calcium", "Both B and C"],
+          "answer": 3,
+          "explanation": "The DASH diet is rich in fruits, vegetables and low-fat dairy and is designed to be low in sodium while high in potassium and calcium.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms63",
+          "q": "Patients with chronic alcoholism are at risk for Wernicke–Korsakoff syndrome due to deficiency of:",
+          "options": ["Vitamin B12", "Thiamine (Vitamin B1)", "Folic acid", "Vitamin C"],
+          "answer": 1,
+          "explanation": "Thiamine deficiency in alcoholics causes Wernicke’s encephalopathy and Korsakoff’s psychosis.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms64",
+          "q": "A patient with a rapid strep test positive for Group A Streptococcus should be educated about the risk of:",
+          "options": ["Rheumatic fever if untreated", "Otitis media developing in 2 weeks", "Chronic carrier state requiring tonsillectomy", "Spontaneous resolution without antibiotics"],
+          "answer": 0,
+          "explanation": "Untreated Group A strep pharyngitis can lead to rheumatic fever and post-streptococcal glomerulonephritis.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms65",
+          "q": "A patient develops a dry, persistent cough after starting an antihypertensive. The most likely causative drug class is:",
+          "options": ["Beta-blockers", "Calcium-channel blockers", "ACE inhibitors", "Thiazide diuretics"],
+          "answer": 2,
+          "explanation": "A dry cough is a well-known side effect of ACE inhibitors due to accumulation of bradykinin.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms66",
+          "q": "A patient with a tracheostomy becomes restless and oxygen saturation drops to 85%. The first action should be:",
+          "options": ["Increase the oxygen flow rate", "Suction the tracheostomy immediately", "Remove the inner cannula and check for obstruction", "Call the doctor"],
+          "answer": 2,
+          "explanation": "Sudden desaturation in a tracheostomised patient is most often due to tube obstruction. Removing the inner cannula is a rapid first check.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms67",
+          "q": "A patient with SIADH is most likely to have which laboratory findings?",
+          "options": ["High serum sodium and high urine osmolality", "Low serum sodium and high urine osmolality", "High serum sodium and low urine osmolality", "Low serum sodium and low urine osmolality"],
+          "answer": 1,
+          "explanation": "SIADH causes water retention leading to dilutional hyponatraemia with concentrated (high-osmolality) urine.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms68",
+          "q": "A patient is prescribed metformin. Which condition is a relative contraindication?",
+          "options": ["Mild hypertension", "Significant renal impairment", "Well-controlled asthma", "Osteoarthritis"],
+          "answer": 1,
+          "explanation": "Metformin is contraindicated in significant renal impairment because of the risk of lactic acidosis.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms69",
+          "q": "A patient with acute pancreatitis should be positioned for maximum comfort in:",
+          "options": ["Supine with legs elevated", "High Fowler’s position", "Side-lying with knees drawn up", "Prone position"],
+          "answer": 2,
+          "explanation": "The side-lying position with knees flexed reduces tension on the inflamed pancreas and decreases pain.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms70",
+          "q": "A patient develops a petechial rash, fever and neck stiffness. The priority infection-control measure is:",
+          "options": ["Contact precautions", "Droplet precautions", "Airborne precautions", "Standard precautions only"],
+          "answer": 1,
+          "explanation": "Suspected meningococcal disease requires droplet precautions until 24 hours after effective antibiotic therapy.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms71",
+          "q": "Before administering digoxin to a patient with heart failure the nurse must:",
+          "options": ["Check blood pressure only", "Assess the apical pulse for one full minute and check serum potassium", "Ensure the patient has eaten a meal", "Check the patient’s temperature"],
+          "answer": 1,
+          "explanation": "Digoxin is withheld if the apical pulse is below 60 bpm in adults. Hypokalaemia also increases the risk of digoxin toxicity.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms72",
+          "q": "A postoperative patient has produced only 18 mL of urine in the last hour. The nurse’s priority action is to:",
+          "options": ["Increase the intravenous fluid rate", "Check the Foley catheter for kinks and assess for bladder distension", "Administer a prescribed diuretic", "Notify the doctor immediately without further assessment"],
+          "answer": 1,
+          "explanation": "Oliguria first requires assessment of catheter patency and bladder status before assuming the patient needs more fluid.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms73",
+          "q": "A patient with a newly created colostomy in the ascending colon is most likely to have stool that is:",
+          "options": ["Formed and brown", "Semi-formed to pasty", "Liquid to semi-liquid", "Hard pellets"],
+          "answer": 2,
+          "explanation": "The ascending colon absorbs little water, so effluent from an ascending colostomy is liquid or semi-liquid.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms74",
+          "q": "A patient with type 1 diabetes is found unconscious with a blood glucose of 2.0 mmol/L. The priority action is:",
+          "options": ["Administer oral glucose gel", "Administer 50% dextrose IV or glucagon IM", "Administer rapid-acting insulin", "Check urine for ketones"],
+          "answer": 1,
+          "explanation": "Severe hypoglycaemia with unconsciousness requires parenteral glucose or glucagon. Oral glucose cannot be given safely.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms75",
+          "q": "A patient on warfarin has an INR of 5.6 and minor gum bleeding. The most appropriate immediate action is:",
+          "options": ["Continue the same dose of warfarin", "Hold the next dose of warfarin and notify the physician", "Administer vitamin K and fresh frozen plasma immediately", "Increase the warfarin dose"],
+          "answer": 1,
+          "explanation": "An elevated INR with minor bleeding usually requires withholding the dose and medical review.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms76",
+          "q": "A patient receiving heparin develops bleeding. The antidote for heparin is:",
+          "options": ["Vitamin K", "Protamine sulfate", "Naloxone", "Flumazenil"],
+          "answer": 1,
+          "explanation": "Protamine sulfate reverses heparin’s anticoagulant effects. Vitamin K reverses warfarin.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms77",
+          "q": "A patient is prescribed furosemide for heart failure. The nurse should monitor for signs of:",
+          "options": ["Hyperkalaemia", "Hypokalaemia and dehydration", "Hypercalcaemia", "Metabolic acidosis"],
+          "answer": 1,
+          "explanation": "Furosemide is a loop diuretic that causes excretion of potassium and water, leading to hypokalaemia and dehydration risk.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms78",
+          "q": "A patient prescribed albuterol for asthma should be instructed that this medication may cause:",
+          "options": ["Bradycardia and hypotension", "Tachycardia, jitteriness and nervousness", "Drowsiness and constipation", "Urinary retention"],
+          "answer": 1,
+          "explanation": "Albuterol is a beta-2 agonist; beta-1 effects (tachycardia, palpitations) and CNS stimulation can occur.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms79",
+          "q": "A patient receiving morphine for postoperative pain has a respiratory rate of 8 breaths per minute. The priority intervention is to administer:",
+          "options": ["Naloxone", "Flumazenil", "Activated charcoal", "Oxygen at 2 L/min by nasal cannula only"],
+          "answer": 0,
+          "explanation": "Naloxone is an opioid antagonist that reverses respiratory depression caused by morphine.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms80",
+          "q": "A patient prescribed an ACE inhibitor for hypertension should be monitored for which adverse effects?",
+          "options": ["Hyperkalaemia and dry cough", "Hypokalaemia and angio-oedema", "Hyperglycaemia and weight loss", "Bradycardia and heart block"],
+          "answer": 0,
+          "explanation": "ACE inhibitors cause potassium retention (hyperkalaemia) and a characteristic dry cough.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms81",
+          "q": "A patient prescribed amoxicillin develops hives and facial swelling. The nurse recognises this as:",
+          "options": ["Expected side effect", "Anaphylaxis / immediate hypersensitivity reaction", "Delayed hypersensitivity reaction", "Jarisch–Herxheimer reaction"],
+          "answer": 1,
+          "explanation": "Hives and facial swelling indicate an allergic reaction requiring immediate discontinuation of the drug.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms82",
+          "q": "A patient taking oral contraceptives is prescribed rifampin for TB. The nurse should advise:",
+          "options": ["Stopping the birth-control pills immediately", "Using an additional non-hormonal contraceptive method", "Doubling the birth-control pill dose", "No change is needed"],
+          "answer": 1,
+          "explanation": "Rifampin induces liver enzymes that reduce oral-contraceptive effectiveness. Backup contraception is necessary.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms83",
+          "q": "A patient receiving chemotherapy with doxorubicin should be monitored for:",
+          "options": ["Cardiotoxicity (dilated cardiomyopathy)", "Nephrotoxicity", "Ototoxicity", "Pulmonary fibrosis"],
+          "answer": 0,
+          "explanation": "Doxorubicin is associated with dose-dependent cardiotoxicity.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms84",
+          "q": "The nurse administers enoxaparin subcutaneously. This medication prevents DVT by:",
+          "options": ["Inhibiting vitamin-K-dependent clotting factors", "Inhibiting factor Xa and thrombin", "Irreversibly inhibiting platelet aggregation", "Dissolving existing clots"],
+          "answer": 1,
+          "explanation": "Enoxaparin (low-molecular-weight heparin) inhibits factor Xa and thrombin. It does not dissolve existing clots.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms85",
+          "q": "A patient prescribed prednisone for several weeks should be instructed not to stop the medication abruptly because this could cause:",
+          "options": ["Adrenal crisis (hypotension, shock)", "Severe rebound inflammation only", "Hyperglycaemic coma", "Status asthmaticus"],
+          "answer": 0,
+          "explanation": "Long-term corticosteroids suppress the HPA axis. Abrupt withdrawal can cause adrenal insufficiency.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms86",
+          "q": "A patient with chronic kidney disease (not on dialysis) is advised to follow which dietary restriction?",
+          "options": ["High protein, high potassium", "Low protein, low sodium, low potassium, low phosphorus", "High protein, low carbohydrate, high fat", "No restrictions until dialysis"],
+          "answer": 1,
+          "explanation": "CKD pre-dialysis management includes protein, sodium, potassium and phosphorus restriction.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms87",
+          "q": "A patient with dumping syndrome after gastric surgery should be instructed to:",
+          "options": ["Drink large amounts of fluids with meals", "Eat three large meals daily", "Limit fluids with meals and eat small, frequent meals", "Increase simple-sugar intake for energy"],
+          "answer": 2,
+          "explanation": "Dumping-syndrome management includes small, frequent meals, dry meals and low simple-sugar intake.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms88",
+          "q": "A patient with GERD should be taught to:",
+          "options": ["Lie down immediately after eating", "Eat large, heavy meals before bedtime", "Elevate the head of the bed and avoid eating 2–3 hours before bedtime", "Increase intake of spicy foods"],
+          "answer": 2,
+          "explanation": "GERD management includes head-of-bed elevation, avoiding lying down after meals and avoiding trigger foods.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms89",
+          "q": "A patient with coronary artery disease should be counselled to follow a diet that is:",
+          "options": ["Low in saturated fat and cholesterol, high in fruits and vegetables", "High in red meat and full-fat dairy", "Low in fibre and high in refined carbohydrates", "Strictly ketogenic"],
+          "answer": 0,
+          "explanation": "A heart-healthy diet emphasises unsaturated fats, fruits, vegetables and whole grains and limits saturated fat and sodium.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms90",
+          "q": "A patient on warfarin who suddenly increases intake of green leafy vegetables is at risk for:",
+          "options": ["Increased INR and bleeding", "Decreased INR and blood-clot formation", "No change in anticoagulation", "Warfarin toxicity"],
+          "answer": 1,
+          "explanation": "Green leafy vegetables (high in vitamin K) antagonise warfarin, reducing INR and increasing clotting risk.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms91",
+          "q": "A patient with damage to the phrenic nerve would most likely experience difficulty with which physiological function?",
+          "options": ["Digestion of proteins", "Movement of the diaphragm", "Regulation of heart rate", "Peristalsis in the intestines"],
+          "answer": 1,
+          "explanation": "The phrenic nerve (C3–C5) innervates the diaphragm. Damage impairs ventilation.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms92",
+          "q": "Why does the left ventricle have a thicker wall compared with the right ventricle?",
+          "options": ["It stores more blood", "It pumps blood to the lungs", "It has to pump blood against higher systemic resistance", "It receives more blood than the right ventricle"],
+          "answer": 2,
+          "explanation": "The systemic circulation has much higher resistance than the pulmonary circulation, requiring greater muscle mass.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms93",
+          "q": "Following a severe head injury a patient has a fixed, dilated pupil and no eye movement. This suggests damage to which cranial nerve?",
+          "options": ["CN II (optic)", "CN III (oculomotor)", "CN V (trigeminal)", "CN VI (abducens)"],
+          "answer": 1,
+          "explanation": "CN III controls pupillary constriction, eyelid elevation and most eye movements. Damage causes fixed dilation.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms94",
+          "q": "Which of the following explains why chronic renal failure leads to anaemia?",
+          "options": ["Increased destruction of red blood cells", "Haemorrhage through urine", "Lack of erythropoietin production", "Inadequate absorption of iron only"],
+          "answer": 2,
+          "explanation": "The kidneys produce erythropoietin. In chronic renal failure, erythropoietin production is decreased.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms95",
+          "q": "A patient with hyperventilation due to anxiety is likely to develop which acid–base imbalance?",
+          "options": ["Metabolic acidosis", "Respiratory alkalosis", "Respiratory acidosis", "Metabolic alkalosis"],
+          "answer": 1,
+          "explanation": "Hyperventilation causes excessive CO₂ elimination, reducing H⁺ concentration and increasing pH → respiratory alkalosis.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms96",
+          "q": "The mitral valve (bicuspid valve) is located between which structures?",
+          "options": ["Right atrium and right ventricle", "Right ventricle and pulmonary artery", "Left atrium and left ventricle", "Left ventricle and aorta"],
+          "answer": 2,
+          "explanation": "The mitral (bicuspid) valve separates the left atrium from the left ventricle.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms97",
+          "q": "Which part of the brain is responsible for coordination, balance and fine motor movement?",
+          "options": ["Cerebrum", "Cerebellum", "Brainstem", "Hypothalamus"],
+          "answer": 1,
+          "explanation": "The cerebellum coordinates movement, balance, posture and motor learning.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms98",
+          "q": "A patient has difficulty swallowing following a stroke. Which cranial nerves are most likely affected?",
+          "options": ["CN IX (glossopharyngeal) and CN X (vagus)", "CN V (trigeminal)", "CN VII (facial)", "CN XII (hypoglossal) only"],
+          "answer": 0,
+          "explanation": "Swallowing involves CN IX (sensory) and CN X (motor). Damage causes dysphagia.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms99",
+          "q": "Oxygen is primarily transported in the blood by:",
+          "options": ["Dissolved in plasma", "Bound to haemoglobin in red blood cells", "As bicarbonate in red blood cells", "Bound to albumin"],
+          "answer": 1,
+          "explanation": "Approximately 97–98% of oxygen is carried bound to haemoglobin in red blood cells.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms100",
+          "q": "The normal heart sound “S1” (lub) is caused by:",
+          "options": ["Opening of the semilunar valves", "Closure of the AV valves (mitral and tricuspid)", "Opening of the AV valves", "Closure of the semilunar valves"],
+          "answer": 1,
+          "explanation": "S1 is the sound of mitral and tricuspid (AV) valve closure at the beginning of systole.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms101",
+          "q": "Which of the following is NOT a function of the liver?",
+          "options": ["Production of bile", "Detoxification of drugs and toxins", "Production of insulin", "Synthesis of clotting factors"],
+          "answer": 2,
+          "explanation": "Insulin is produced by the pancreas, not the liver.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms102",
+          "q": "The functional unit of the kidney is the:",
+          "options": ["Glomerulus", "Nephron", "Bowman’s capsule", "Loop of Henle"],
+          "answer": 1,
+          "explanation": "The nephron is the functional unit of the kidney.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms103",
+          "q": "Which hormone increases blood glucose levels by stimulating glycogen breakdown?",
+          "options": ["Insulin", "Glucagon", "Cortisol", "Growth hormone"],
+          "answer": 1,
+          "explanation": "Glucagon promotes glycogenolysis and gluconeogenesis, increasing blood glucose.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms104",
+          "q": "A patient has absent deep-tendon reflexes, flaccid paralysis and areflexia following an infection. The nurse suspects:",
+          "options": ["Guillain–Barré syndrome", "Multiple sclerosis", "Myasthenia gravis", "Parkinson’s disease"],
+          "answer": 0,
+          "explanation": "Guillain–Barré is an acute demyelinating polyneuropathy often preceded by infection, causing ascending weakness and areflexia.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms105",
+          "q": "The normal blood pH range is:",
+          "options": ["7.15–7.25", "7.25–7.35", "7.35–7.45", "7.45–7.55"],
+          "answer": 2,
+          "explanation": "Normal arterial blood pH is 7.35–7.45.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms106",
+          "q": "Which electrolyte is most important for neuromuscular function and cardiac contractility?",
+          "options": ["Sodium", "Chloride", "Calcium", "Magnesium"],
+          "answer": 2,
+          "explanation": "Calcium is critical for muscle contraction (including cardiac), nerve transmission and blood clotting.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms107",
+          "q": "The “fight-or-flight” response is primarily mediated by which division of the autonomic nervous system?",
+          "options": ["Sympathetic nervous system", "Parasympathetic nervous system", "Somatic nervous system", "Enteric nervous system"],
+          "answer": 0,
+          "explanation": "The sympathetic nervous system mediates the stress response.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms108",
+          "q": "The main function of platelets (thrombocytes) is:",
+          "options": ["Oxygen transport", "Immune defence", "Blood clotting (haemostasis)", "Inflammatory response"],
+          "answer": 2,
+          "explanation": "Platelets are essential for primary haemostasis (clot formation).",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms109",
+          "q": "A patient’s laboratory results show elevated BUN and creatinine. The nurse suspects dysfunction of which organ?",
+          "options": ["Liver", "Kidneys", "Heart", "Lungs"],
+          "answer": 1,
+          "explanation": "BUN and creatinine are waste products normally excreted by the kidneys; elevated levels indicate renal impairment.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms110",
+          "q": "A patient with increased intracranial pressure (ICP) has an ICP reading of 25 mmHg. The nurse should:",
+          "options": ["Document the reading as normal", "Elevate the head of the bed to 30 degrees", "Position the patient flat to increase cerebral perfusion", "Administer a bolus of normal saline"],
+          "answer": 1,
+          "explanation": "Normal ICP is 5–15 mmHg. HOB elevation to 30 degrees promotes venous drainage and helps reduce ICP.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms111",
+          "q": "A patient is receiving a blood transfusion. Fifteen minutes after starting, the patient reports chills, low back pain and feels \"something is wrong.\" The nurse's priority action is to:",
+          "options": ["Slow the transfusion rate and give diphenhydramine", "Stop the transfusion and keep the IV line open with normal saline", "Complete the transfusion and monitor vital signs", "Administer acetaminophen and continue the transfusion"],
+          "answer": 1,
+          "explanation": "These symptoms suggest a hemolytic transfusion reaction. The transfusion must be stopped immediately and the line kept open with saline.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms112",
+          "q": "The nurse is caring for a patient with a chest tube to water seal drainage for a pneumothorax. Continuous bubbling in the water seal chamber indicates:",
+          "options": ["Normal chest tube function", "An air leak in the system", "The chest tube needs to be removed", "Increased suction is required"],
+          "answer": 1,
+          "explanation": "Continuous bubbling in the water seal chamber indicates an air leak. Intermittent bubbling with exhalation or coughing is normal.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms113",
+          "q": "The water seal chamber of a chest tube drainage system should be kept:",
+          "options": ["At the level of the patient's head", "Below the level of the patient's chest", "At the level of the patient's heart", "Above the patient to promote drainage"],
+          "answer": 1,
+          "explanation": "The drainage system must be kept below the level of the chest to promote gravity drainage and prevent backflow.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms114",
+          "q": "A patient undergoing mechanical ventilation has an endotracheal tube cuff pressure of 35 cm H₂O. The appropriate action is to:",
+          "options": ["Document the finding as within normal range", "Deflate the cuff completely", "Notify the respiratory therapist to adjust cuff pressure to 20–30 cm H₂O", "Increase the cuff pressure to prevent aspiration"],
+          "answer": 2,
+          "explanation": "Normal ETT cuff pressure is 20–30 cm H₂O. Higher pressure increases the risk of tracheal ischemia and necrosis.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms115",
+          "q": "A patient has a pulmonary artery (Swan-Ganz) catheter. The pulmonary artery wedge pressure (PAWP) reflects:",
+          "options": ["Right ventricular preload", "Left ventricular end-diastolic pressure (preload)", "Systemic vascular resistance", "Pulmonary artery systolic pressure"],
+          "answer": 1,
+          "explanation": "PAWP reflects left atrial pressure, which approximates left ventricular end-diastolic pressure (LV preload).",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms116",
+          "q": "A patient is admitted with a traumatic brain injury. Cushing's triad includes:",
+          "options": ["Hypotension, bradycardia, tachypnea", "Hypertension, bradycardia, irregular respirations", "Hypothermia, tachycardia, hypotension", "Fever, tachycardia, tachypnea"],
+          "answer": 1,
+          "explanation": "Cushing's triad (late sign of raised ICP) includes hypertension with widening pulse pressure, bradycardia and irregular respirations.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms117",
+          "q": "The most reliable indicator of pain in a non-verbal, intubated patient is:",
+          "options": ["Heart rate changes during turning", "Blood pressure elevation during suctioning", "Behavioral pain assessment tools (e.g. CPOT, BPS)", "Family report of the patient's usual pain responses"],
+          "answer": 2,
+          "explanation": "Validated behavioral pain assessment tools (CPOT, BPS) are the standard for assessing pain in non-verbal intubated patients.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms118",
+          "q": "A postoperative patient has a PCA pump with morphine. The patient is sleeping with a respiratory rate of 8 breaths per minute. The priority action is to:",
+          "options": ["Place the patient in high Fowler's position", "Stop the PCA infusion and administer naloxone as ordered", "Increase the oxygen flow rate to 4 L/min", "Shake the patient vigorously to arouse"],
+          "answer": 1,
+          "explanation": "Respiratory rate of 8 indicates opioid-induced respiratory depression. Stop the PCA and give naloxone.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms119",
+          "q": "A patient on a ventilator has oxygen saturation dropping to 88%. The nurse's priority action is to:",
+          "options": ["Increase the FiO₂ to 1.0 (100%)", "Suction the endotracheal tube", "Check the ventilator connections and circuit", "Call the respiratory therapist immediately"],
+          "answer": 0,
+          "explanation": "For acute desaturation, first increase FiO₂ to 100% to provide immediate oxygenation while assessing the cause.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms120",
+          "q": "A patient with a tension pneumothorax following chest trauma would present with:",
+          "options": ["Hypotension, jugular venous distension, absent breath sounds, tracheal deviation", "Hypertension, flat neck veins, bilateral breath sounds", "Bradycardia, warm dry skin, symmetrical chest expansion", "Fever, productive cough, crackles"],
+          "answer": 0,
+          "explanation": "Tension pneumothorax presents with hypotension, JVD, absent breath sounds on the affected side and tracheal deviation away from the affected side.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms121",
+          "q": "During the immediate postoperative period, the nurse's priority assessment is:",
+          "options": ["Pain level on a 0–10 scale", "Patency of the airway and quality of respirations", "Level of consciousness and orientation", "Temperature and skin color"],
+          "answer": 1,
+          "explanation": "Airway patency and respiratory status are the highest priority in the immediate postoperative period (ABCs).",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms122",
+          "q": "A patient is admitted with full-thickness burns to the anterior trunk and both anterior thighs. Using the Rule of Nines, the estimated burn size is:",
+          "options": ["27%", "31.5%", "36%", "45%"],
+          "answer": 2,
+          "explanation": "Anterior trunk = 18%, each anterior thigh = 9%. Total = 18% + 18% = 36%.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms123",
+          "q": "In a patient with hemorrhagic shock, vasoconstriction occurs due to activation of:",
+          "options": ["Parasympathetic nervous system", "Baroreceptor reflex via the vagus nerve", "Sympathetic nervous system and adrenal medulla", "Local vasodilation of arterioles"],
+          "answer": 2,
+          "explanation": "Hemorrhagic shock activates the sympathetic nervous system and adrenal medulla, releasing catecholamines that cause systemic vasoconstriction.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms124",
+          "q": "The priority nursing diagnosis for a patient immediately following a major burn injury is:",
+          "options": ["Risk for infection related to skin barrier loss", "Impaired physical mobility related to pain and edema", "Deficient fluid volume related to increased capillary permeability", "Imbalanced nutrition: less than body requirements"],
+          "answer": 2,
+          "explanation": "In the emergent phase (first 24–48 hours), fluid loss from increased capillary permeability makes deficient fluid volume the priority.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms125",
+          "q": "A patient with a newly placed tracheostomy is being suctioned and oxygen saturation drops to 85%. The priority action is to:",
+          "options": ["Complete the suction pass to clear the airway", "Remove the suction catheter and administer oxygen", "Increase suction pressure to maximum", "Instill 5 mL of normal saline before the next pass"],
+          "answer": 1,
+          "explanation": "If oxygen saturation drops during suctioning, remove the catheter immediately and administer oxygen. Limit each pass to 10–15 seconds.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms126",
+          "q": "A patient is prepared for elective surgery. Which medication increases surgical bleeding risk and should be reported?",
+          "options": ["Acetaminophen taken 6 hours ago", "Aspirin 81 mg taken yesterday", "Metformin taken this morning", "Albuterol inhaler used this morning"],
+          "answer": 1,
+          "explanation": "Aspirin increases bleeding risk and is typically held 5–7 days before surgery.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms127",
+          "q": "A patient with a spinal cord injury above T6 is at risk for which complication when a noxious stimulus is present?",
+          "options": ["Spinal shock", "Autonomic dysreflexia", "Neurogenic bladder only", "Malignant hyperthermia"],
+          "answer": 1,
+          "explanation": "Autonomic dysreflexia is a medical emergency that can occur with spinal cord injuries at or above T6 in response to a noxious stimulus (usually bladder or bowel).",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms128",
+          "q": "A patient with Guillain–Barré syndrome is most at risk for which life-threatening complication?",
+          "options": ["Seizures", "Respiratory failure", "Acute kidney injury", "Hepatic encephalopathy"],
+          "answer": 1,
+          "explanation": "Ascending paralysis can involve the respiratory muscles, leading to respiratory failure that may require mechanical ventilation.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms129",
+          "q": "A patient with myasthenia gravis is experiencing a myasthenic crisis. The priority nursing concern is:",
+          "options": ["Hypertension", "Respiratory muscle weakness and airway protection", "Severe bradycardia", "Acute renal failure"],
+          "answer": 1,
+          "explanation": "Myasthenic crisis causes severe muscle weakness that can include the respiratory muscles, threatening the airway.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms130",
+          "q": "A patient with acute pancreatitis is most likely to have which laboratory finding?",
+          "options": ["Decreased serum amylase and lipase", "Elevated serum amylase and lipase", "Decreased blood glucose", "Elevated serum calcium"],
+          "answer": 1,
+          "explanation": "Serum amylase and lipase are typically elevated in acute pancreatitis.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms131",
+          "q": "A patient with cirrhosis and ascites is scheduled for a paracentesis. The nurse should monitor most closely for which complication after the procedure?",
+          "options": ["Hypertension", "Hypovolemia and hypotension", "Hyperkalemia", "Respiratory alkalosis"],
+          "answer": 1,
+          "explanation": "Removal of large volumes of ascitic fluid can cause a rapid fluid shift and hypovolemia.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms132",
+          "q": "A patient with chronic heart failure is prescribed digoxin and furosemide. The nurse should be most alert for signs of:",
+          "options": ["Hyperkalemia", "Digoxin toxicity due to hypokalemia", "Hyponatremia only", "Metabolic alkalosis only"],
+          "answer": 1,
+          "explanation": "Furosemide causes potassium loss. Hypokalemia increases the risk of digoxin toxicity.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms133",
+          "q": "A patient with a suspected basilar skull fracture should not have which procedure performed?",
+          "options": ["CT scan of the head", "Nasogastric tube insertion", "Intravenous access", "ECG monitoring"],
+          "answer": 1,
+          "explanation": "Nasogastric tubes are contraindicated in basilar skull fractures because of the risk of intracranial placement.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms134",
+          "q": "A patient with acute respiratory distress syndrome (ARDS) is most likely to have which finding?",
+          "options": ["Normal PaO₂ on room air", "Refractory hypoxemia despite high FiO₂", "Metabolic alkalosis", "Decreased work of breathing"],
+          "answer": 1,
+          "explanation": "A hallmark of ARDS is refractory hypoxemia that does not improve adequately with increasing oxygen concentration.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms135",
+          "q": "A patient with a history of chronic alcohol use is admitted with confusion, ataxia and ophthalmoplegia. The priority medication to administer is:",
+          "options": ["Glucose", "Thiamine", "Naloxone", "Flumazenil"],
+          "answer": 1,
+          "explanation": "This presentation suggests Wernicke’s encephalopathy. Thiamine should be given before or with glucose to prevent worsening of the condition.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms136",
+          "q": "A patient with a newly diagnosed deep vein thrombosis is started on heparin infusion. The nurse should monitor which laboratory value to guide therapy?",
+          "options": ["INR", "aPTT (activated partial thromboplastin time)", "Platelet count only", "Serum creatinine only"],
+          "answer": 1,
+          "explanation": "Unfractionated heparin therapy is monitored using aPTT.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms137",
+          "q": "A patient with chronic obstructive pulmonary disease is receiving oxygen at 2 L/min via nasal cannula. The nurse understands that higher oxygen flow rates may:",
+          "options": ["Always improve outcomes", "Suppress the hypoxic drive to breathe in some patients", "Have no effect on respiratory drive", "Cause metabolic acidosis"],
+          "answer": 1,
+          "explanation": "Some COPD patients rely on hypoxic drive. Excessive oxygen can reduce their respiratory drive.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms138",
+          "q": "A patient develops sudden shortness of breath, chest pain and anxiety while receiving a central line insertion. The nurse suspects:",
+          "options": ["Air embolism", "Hypoglycemia", "Medication allergy", "Urinary retention"],
+          "answer": 0,
+          "explanation": "Air embolism is a risk during central line insertion or disconnection. The patient should be placed in left Trendelenburg position if air embolism is suspected.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms139",
+          "q": "A patient with a history of heart failure reports waking up at night short of breath. This symptom is known as:",
+          "options": ["Orthopnea", "Paroxysmal nocturnal dyspnea", "Platypnea", "Trepopnea"],
+          "answer": 1,
+          "explanation": "Paroxysmal nocturnal dyspnea is sudden nighttime breathlessness that wakes the patient and is classic in heart failure.",
+          "topic": "Medical-Surgical Nursing"
+        },
+        {
+          "id": "ms140",
+          "q": "A patient with acute kidney injury has a serum potassium of 6.8 mEq/L and ECG changes. The nurse anticipates which urgent treatment?",
+          "options": ["Oral potassium supplements", "Calcium gluconate, insulin with glucose, or other potassium-lowering measures", "High-protein diet", "Fluid restriction only"],
+          "answer": 1,
+          "explanation": "Severe hyperkalemia with ECG changes requires immediate measures to stabilize the cardiac membrane and shift or remove potassium.",
+          "topic": "Medical-Surgical Nursing"
+        }
+      ]
+    }
+  ],
+  "events": []
+}
