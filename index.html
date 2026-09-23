@@ -2261,29 +2261,6 @@
   // sits in this page. Progress and dates are saved on the visitor's own device.
   const NCK_EXPLAIN_URL = "https://nursevault-ai-explain.ronaldotieno1900.workers.dev";
   const NCK_CADRES = ["KRCHN", "BScN", "Higher Diploma"];
-
-  // Bank files to load. Put each .json next to index.html.
-  // To add a new subject: upload a new file, then add its name here.
-  // To update one subject: replace only that subject's file.
-  // Missing files are skipped — the rest still load.
-  const NCK_BANK_FILES = [
-    "nck-bank.json",
-    "nck-bank-medsurg.json",
-    "nck-bank-pharmacology.json",
-    "nck-bank-pediatrics.json",
-    "nck-bank-midwifery.json",
-    "nck-bank-community.json",
-    "nck-bank-mentalhealth.json",
-    "nck-bank-anatomy.json",
-    "nck-bank-microbiology.json",
-    "nck-bank-fundamentals.json",
-    "nck-bank-pathology.json",
-    "nck-bank-nutrition.json",
-    "nck-bank-research.json",
-    "nck-bank-management.json",
-    "nck-bank-psychology.json"
-  ];
-
   const NCK_TABS = [
     { id:"home",     label:"Overview" },
     { id:"practice", label:"Topic practice" },
@@ -2705,8 +2682,8 @@
   };
   let nckBank = { sets: NCK_SAMPLE_SETS.slice(), events: [] };
 
-  // Optional external content. List every bank file in NCK_BANK_FILES (above).
-  // Put each .json next to index.html. Two formats are supported per file:
+  // Optional external content. Put a nck-bank.json next to index.html. Two upload
+  // formats are supported and can be mixed freely in the same file:
   //
   // 1) Pre-grouped "sets" (the original format — same shape as NCK_SAMPLE_SETS above):
   //      { "sets": [ { "id": "...", "kind": "topic", "cadre": "KRCHN", "subject": "...",
@@ -2788,22 +2765,17 @@
     });
   }
   async function nckLoadExternalBank(){
-    // Load every file listed in NCK_BANK_FILES. Missing files are skipped so
-    // you can add subjects one at a time without breaking the site.
-    let anyLoaded = false;
-    for (const file of NCK_BANK_FILES) {
-      try {
-        const r = await fetch(file, { cache: "no-store" });
-        if (!r.ok) continue;
+    try {
+      const r = await fetch("nck-bank.json", { cache: "no-store" });
+      if (r.ok) {
         const d = await r.json();
         if (d.hideSamples) nckBank.sets = nckBank.sets.filter(s => !s.sample);
         nckMergeSets(d.sets);
         nckMergeSets(nckSetsFromQuestions(d.questions));
-        if (Array.isArray(d.events) && d.events.length) nckBank.events = d.events;
-        anyLoaded = true;
-      } catch(e) { /* file missing or invalid — skip and keep going */ }
-    }
-    if (anyLoaded) nckRefresh();
+        nckBank.events = d.events || [];
+        nckRefresh();
+      }
+    } catch(e) { /* no external bank: the built-in samples are used */ }
     nckCheckReminders();
   }
 
@@ -2941,13 +2913,25 @@
           <div class="acts">${ss.map(s => nckStartBtn(s, "practice", ss.length > 1 ? nckEsc(s.title) : "Start practice")).join("")}</div>
         </div>`;
     };
+    const mixCounts = [10, 20, 30, 50].filter(n => n < pool).concat(pool >= 5 ? [pool] : []);
+    const mixBtns = mixCounts.map(n => {
+      const label = n === pool ? `All ${pool}` : String(n);
+      return `<button class="nck-btn-ghost" onclick="nckStartMix(${n})">${label}</button>`;
+    }).join("");
     return `
       <div class="nck-toolbar">
-        ${pool >= 5 ? `<button class="nck-btn-ghost" onclick="nckStartMix()">Random mix (10 questions)</button>` : ""}
         ${missed.length ? `<button class="nck-btn-ghost" onclick="nckStartMissed()">Practise ${missed.length} missed question${missed.length === 1 ? "" : "s"}</button>` : ""}
       </div>
+      ${pool >= 5 ? `
+        <div class="nck-row" style="background:var(--paper-alt);border-radius:8px;padding:16px;margin-bottom:8px;border:1.5px solid var(--line)">
+          <div>
+            <h3>All topics (mixed)</h3>
+            <p class="nck-muted">Practice questions drawn from every subject you have access to for ${nckEsc(NCK.cadre)}. Choose how many.</p>
+          </div>
+          <div class="acts">${mixBtns}</div>
+        </div>` : ""}
       ${subjects.length || extra.length ? `<div class="nck-list">${subjects.concat(extra).sort((a, b) => (sets.some(x => x.subject === b) ? 1 : 0) - (sets.some(x => x.subject === a) ? 1 : 0)).map(rowFor).join("")}</div>` : `<div class="nck-empty"><b>No subjects yet</b>Topic questions for ${nckEsc(NCK.cadre)} will appear here.</div>`}
-      <p class="nck-note">Topic sets are being added over time.</p>`;
+      <p class="nck-note">Topic sets are being added over time. Use “All topics (mixed)” above to practise across subjects.</p>`;
   }
 
   function nckPapersHTML(){
@@ -3191,9 +3175,15 @@
       meta: { setId: set.id, kind: set.kind, cadre: set.cadre === "All" ? NCK.cadre : set.cadre }
     });
   }
-  function nckStartMix(){
-    const qs = nckShuffle(nckPool(NCK.cadre)).slice(0, 10);
-    nckBegin({ title: "Random mix", questions: qs, mode: "practice", minutes: 0, meta: { kind: "mix", cadre: NCK.cadre } });
+  function nckStartMix(count){
+    const pool = nckPool(NCK.cadre);
+    const n = Math.max(1, Math.min(Number(count) || 10, pool.length));
+    const qs = nckShuffle(pool).slice(0, n);
+    nckBegin({
+      title: n >= pool.length ? "All topics (mixed)" : `Mixed practice (${n} questions)`,
+      questions: qs, mode: "practice", minutes: 0,
+      meta: { kind: "mix", cadre: NCK.cadre }
+    });
   }
   function nckStartMissed(){
     const qs = nckMissed(NCK.cadre).map(nckQuestionByKey).filter(Boolean);
