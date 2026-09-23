@@ -1,0 +1,2641 @@
+{
+  "hideSamples": true,
+  "questions": [
+    {
+      "id": "mn-001",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A primigravida at 34 weeks presents with BP 168/110 mmHg, proteinuria of 3+, and a severe frontal headache. Which action is the nurse’s priority?",
+      "options": [
+        "Encourage ambulation to reduce oedema",
+        "Start continuous fetal monitoring and prepare for possible magnesium sulphate as ordered",
+        "Give oral antihypertensives only and discharge home",
+        "Restrict all fluids to 500 mL/day"
+      ],
+      "answer": 1,
+      "explanation": "Severe pre-eclampsia requires stabilisation, seizure prophylaxis (MgSO4), and fetal monitoring. Ambulation and early discharge are unsafe."
+    },
+    {
+      "id": "mn-002",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman at 32 weeks reports painless bright-red vaginal bleeding. The nurse’s first action should be to:",
+      "options": [
+        "Perform a digital vaginal examination to assess cervical dilatation",
+        "Place the woman in left lateral position, assess maternal vital signs and fetal heart rate, and notify the clinician",
+        "Encourage pushing if she feels pressure",
+        "Insert a Foley catheter immediately"
+      ],
+      "answer": 1,
+      "explanation": "Painless bright-red bleeding suggests placenta praevia. Digital VE is contraindicated until placenta location is known. Priorities are maternal/fetal assessment and notification."
+    },
+    {
+      "id": "mn-003",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A client with gestational diabetes is taught to monitor blood glucose. Which statement indicates she understands the teaching?",
+      "options": [
+        "I only need to check my sugar if I feel dizzy",
+        "I should check fasting and post-meal levels as advised and report persistent highs",
+        "Insulin means I can eat freely without monitoring",
+        "Urine testing alone is enough in pregnancy"
+      ],
+      "answer": 1,
+      "explanation": "GDM management requires structured glucose monitoring and reporting abnormal values; diet and medication adjustments depend on those readings."
+    },
+    {
+      "id": "mn-004",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "At 28 weeks a woman reports decreased fetal movements for 24 hours. The most appropriate nursing response is to:",
+      "options": [
+        "Reassure her that movements normally decrease near term",
+        "Advise her to come in today for fetal assessment (e.g. kick count review, CTG/ultrasound as ordered)",
+        "Tell her to wait another 48 hours",
+        "Schedule a routine visit in two weeks"
+      ],
+      "answer": 1,
+      "explanation": "Reduced fetal movements need prompt evaluation. Reassurance without assessment risks missing fetal compromise."
+    },
+    {
+      "id": "mn-005",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A multipara at 36 weeks has sudden abdominal pain, dark vaginal bleeding, and a tense, tender uterus. The nurse suspects abruption. Which finding would most support this and require urgent action?",
+      "options": [
+        "Soft, non-tender uterus and normal fetal heart rate",
+        "Board-like uterus, maternal tachycardia, and non-reassuring fetal heart rate",
+        "Painless bleeding with a soft uterus",
+        "Only mild irregular contractions"
+      ],
+      "answer": 1,
+      "explanation": "Abruption often presents with pain, dark blood, hypertonic/tender uterus and fetal distress — emergency management is required."
+    },
+    {
+      "id": "mn-006",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A pregnant woman at 24 weeks has a haemoglobin of 8.5 g/dL. Which instruction is most important?",
+      "options": [
+        "Stop all iron because high doses are toxic in pregnancy",
+        "Take iron supplements as prescribed with vitamin C–rich fluids and report constipation or black stools as expected effects",
+        "Iron is unnecessary if she eats meat once a week",
+        "Only folic acid is needed until the third trimester"
+      ],
+      "answer": 1,
+      "explanation": "Iron deficiency is common; correct supplementation and adherence teaching matter. Black stools are expected; constipation should be managed, not used as a reason to stop therapy without advice."
+    },
+    {
+      "id": "mn-007",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman at 30 weeks has a blood pressure of 142/92 mmHg on two occasions, no proteinuria, and no symptoms. The nurse recognises this as most consistent with:",
+      "options": [
+        "Severe pre-eclampsia",
+        "Gestational hypertension (or mild hypertension in pregnancy) needing close follow-up",
+        "Normal pregnancy blood pressure",
+        "Chronic hypertension only if it started after 36 weeks"
+      ],
+      "answer": 1,
+      "explanation": "BP ≥140/90 after 20 weeks without proteinuria/severe features suggests gestational hypertension and needs monitoring for progression."
+    },
+    {
+      "id": "mn-008",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "Which client should the antenatal nurse prioritise for immediate review?",
+      "options": [
+        "28 weeks, mild ankle oedema, BP 118/70",
+        "34 weeks, epigastric pain, visual spots, BP 160/100",
+        "20 weeks, mild nausea, weight gain 0.4 kg/week",
+        "36 weeks, irregular Braxton Hicks, fetal movements felt"
+      ],
+      "answer": 1,
+      "explanation": "Epigastric pain, visual disturbance and high BP suggest severe pre-eclampsia — priority over common, benign findings."
+    },
+    {
+      "id": "mn-009",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman is Rhesus negative and her partner is Rhesus positive. At 28 weeks she has had no anti-D. The nurse’s priority teaching is that:",
+      "options": [
+        "Anti-D is never needed if the baby is likely Rh positive",
+        "Anti-D immunoglobulin is given as recommended in pregnancy and after potentially sensitising events to prevent antibody formation",
+        "She must avoid all hospital contact",
+        "Only the newborn needs treatment"
+      ],
+      "answer": 1,
+      "explanation": "Anti-D prophylaxis prevents maternal sensitisation and haemolytic disease in future pregnancies."
+    },
+    {
+      "id": "mn-010",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A primigravida asks why fundal height is measured each visit. The best explanation is:",
+      "options": [
+        "It only checks for twins",
+        "It helps detect abnormal fetal growth or liquor volume that may need further investigation",
+        "It replaces the need for ultrasound",
+        "It measures maternal weight gain only"
+      ],
+      "answer": 1,
+      "explanation": "Serial symphysis–fundal height aids screening for growth restriction, macrosomia or liquor abnormalities."
+    },
+    {
+      "id": "mn-011",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman at 26 weeks has glycosuria on dipstick. The most appropriate next nursing action is to:",
+      "options": [
+        "Diagnose diabetes immediately and start insulin",
+        "Arrange confirmatory blood glucose testing as per protocol (e.g. fasting/OGTT pathway)",
+        "Ignore it as normal in pregnancy",
+        "Advise complete fasting for a week"
+      ],
+      "answer": 1,
+      "explanation": "Glycosuria warrants proper blood testing; diagnosis is not based on a single urine result."
+    },
+    {
+      "id": "mn-012",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A client with mild pre-eclampsia is managed as an outpatient. Which instruction must the nurse emphasise?",
+      "options": [
+        "Skip clinic if she feels well",
+        "Report headache, visual changes, epigastric pain or reduced fetal movements immediately",
+        "Increase salt to raise blood pressure",
+        "Take aspirin only when BP is high"
+      ],
+      "answer": 1,
+      "explanation": "Danger symptoms of progression to severe disease must be reported at once."
+    },
+    {
+      "id": "mn-013",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman at 18 weeks has vaginal bleeding and a closed cervix; ultrasound shows a viable fetus. This is best described as:",
+      "options": [
+        "Inevitable abortion",
+        "Threatened abortion",
+        "Complete abortion",
+        "Missed abortion"
+      ],
+      "answer": 1,
+      "explanation": "Bleeding with a closed cervix and viable pregnancy is threatened miscarriage; inevitable implies open cervix/products progressing."
+    },
+    {
+      "id": "mn-014",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "During antenatal teaching, which statement about HIV in pregnancy is most accurate for nursing care?",
+      "options": [
+        "ART should be avoided until after delivery",
+        "With testing and treatment as per national guidelines, mother-to-child transmission can be greatly reduced",
+        "Breastfeeding is always forbidden regardless of guidelines and viral load",
+        "Only the baby needs medication"
+      ],
+      "answer": 1,
+      "explanation": "Timely ART and guideline-based care significantly reduce vertical transmission."
+    },
+    {
+      "id": "mn-015",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman at 37 weeks has itching of palms and soles, dark urine, and raised bile acids. The nurse anticipates that the priority concern is:",
+      "options": [
+        "Normal stretch marks",
+        "Intrahepatic cholestasis of pregnancy with risk to the fetus requiring obstetric review",
+        "Simple dry skin",
+        "Only maternal discomfort without fetal risk"
+      ],
+      "answer": 1,
+      "explanation": "ICP is associated with fetal risk (including stillbirth); urgent obstetric assessment is needed."
+    },
+    {
+      "id": "mn-016",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A labouring woman at 6 cm has contractions every 2 minutes lasting 60 seconds. The fetal heart rate drops to 80 bpm during a contraction and recovers slowly to baseline after 40 seconds. The priority nursing action is to:",
+      "options": [
+        "Encourage her to push immediately",
+        "Reposition to left lateral, stop oxytocin if running, give oxygen as protocol, and call for help",
+        "Ignore the tracing as early decelerations are always benign",
+        "Perform fundal pressure"
+      ],
+      "answer": 1,
+      "explanation": "Late/prolonged decelerations suggest uteroplacental insufficiency — intrauterine resuscitation and urgent review are required."
+    },
+    {
+      "id": "mn-017",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "Which finding in the second stage should the nurse report immediately?",
+      "options": [
+        "Fetal heart rate 140 bpm between contractions",
+        "Green-stained liquor and fetal heart rate 90 bpm lasting 2 minutes",
+        "Mild variable decelerations that recover quickly with position change",
+        "Maternal urge to push at full dilatation"
+      ],
+      "answer": 1,
+      "explanation": "Meconium plus prolonged bradycardia indicates possible fetal compromise needing urgent action."
+    },
+    {
+      "id": "mn-018",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A multipara in active labour requests opioids for pain. Which assessment is most important before administration?",
+      "options": [
+        "Preferred baby names",
+        "Cervical dilatation and fetal heart rate pattern, and proximity to birth",
+        "Maternal shoe size",
+        "Partner’s blood group"
+      ],
+      "answer": 1,
+      "explanation": "Opioids near birth can depress the neonate; stage of labour and FHR status guide safe use."
+    },
+    {
+      "id": "mn-019",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "After artificial rupture of membranes, the nurse notes a loop of cord at the introitus. The priority action is to:",
+      "options": [
+        "Push the cord back into the uterus firmly",
+        "Call for help, relieve cord pressure (e.g. elevate presenting part), position knee–chest or exaggerated Sims, and prepare for emergency birth",
+        "Start oxytocin to speed delivery",
+        "Have the mother stand and walk"
+      ],
+      "answer": 1,
+      "explanation": "Cord prolapse is an obstetric emergency: relieve pressure, call help, and expedite delivery."
+    },
+    {
+      "id": "mn-020",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A woman has been fully dilated for 2.5 hours with adequate contractions; the head is not descending. The nurse’s best action is to:",
+      "options": [
+        "Reassure that this is always normal in primips",
+        "Notify the clinician — prolonged second stage needs assessment for obstruction or assisted birth",
+        "Increase intravenous fluids only and wait silently",
+        "Apply fundal pressure continuously"
+      ],
+      "answer": 1,
+      "explanation": "Prolonged second stage requires clinical review for disproportion, malposition or need for assistance."
+    },
+    {
+      "id": "mn-021",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "Which maternal behaviour in transition (8–10 cm) is expected and should be supported rather than pathologised?",
+      "options": [
+        "Sudden calmness and sleep between all contractions",
+        "Nausea, irritability, shaking, and stating she ‘cannot do this’",
+        "Complete refusal to change position for 3 hours without distress",
+        "Absence of any show or pressure"
+      ],
+      "answer": 1,
+      "explanation": "Transition often brings nausea, irritability and self-doubt; supportive care is appropriate if FHR and progress are acceptable."
+    },
+    {
+      "id": "mn-022",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "Oxytocin infusion is running. Contractions are lasting 90 seconds with less than 30 seconds resting tone between them. The priority nursing action is to:",
+      "options": [
+        "Increase the infusion rate",
+        "Stop or reduce oxytocin per protocol, reposition, notify the clinician, and monitor fetus",
+        "Give a fluid bolus only and continue the same rate",
+        "Encourage closed-glottis pushing"
+      ],
+      "answer": 1,
+      "explanation": "Tachysystole reduces placental perfusion; oxytocin must be managed immediately."
+    },
+    {
+      "id": "mn-023",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A labouring woman becomes restless, has sudden sharp abdominal pain, and the fetal presenting part rises. The uterus changes shape. The nurse suspects:",
+      "options": [
+        "Normal transition",
+        "Uterine rupture until proven otherwise",
+        "False labour",
+        "Placenta praevia only"
+      ],
+      "answer": 1,
+      "explanation": "Sudden pain, loss of station and change in uterine shape raise concern for rupture — emergency response."
+    },
+    {
+      "id": "mn-024",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "When is the best time to give intramuscular oxytocin for active management of the third stage (as commonly practised)?",
+      "options": [
+        "After the placenta is delivered and inspected",
+        "With delivery of the anterior shoulder (or as per local protocol at birth of the baby)",
+        "One hour after birth",
+        "Only if bleeding exceeds 1000 mL"
+      ],
+      "answer": 1,
+      "explanation": "AMTSL timing is typically with delivery of the anterior shoulder or immediately after birth per national protocol."
+    },
+    {
+      "id": "mn-025",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A primip has regular contractions for 3 hours but the cervix remains 3 cm (was 3 cm on admission). Membranes intact, FHR normal. The nurse should:",
+      "options": [
+        "Declare failure to progress and prepare for caesarean immediately",
+        "Assess contraction quality, maternal position, hydration/emotion, and continue supportive care with ongoing review",
+        "Start pushing teaching",
+        "Restrict all oral intake permanently"
+      ],
+      "answer": 1,
+      "explanation": "Latent/early labour needs support and assessment of contraction effectiveness, not automatic caesarean."
+    },
+    {
+      "id": "mn-026",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "Which position is generally preferred for a labouring woman with a non-reassuring fetal heart pattern when not contraindicated?",
+      "options": [
+        "Supine with legs elevated",
+        "Left lateral or upright positions that improve uterine perfusion",
+        "Lithotomy with prolonged breath-holding",
+        "Prone flat"
+      ],
+      "answer": 1,
+      "explanation": "Left lateral and upright positions often improve uteroplacental blood flow."
+    },
+    {
+      "id": "mn-027",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A woman reports a gush of fluid. Nitrazine/pad testing is positive. Which additional assessment is essential?",
+      "options": [
+        "Maternal blood group only",
+        "Fetal heart rate, colour/odour of fluid, and maternal temperature, plus time of rupture",
+        "Only the father’s preference for birth place",
+        "Immediate episiotomy"
+      ],
+      "answer": 1,
+      "explanation": "After ROM, assess fetal wellbeing, signs of infection, and meconium."
+    },
+    {
+      "id": "mn-028",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "During a vaginal examination the nurse feels a pulsating structure beside the head. The priority is to:",
+      "options": [
+        "Continue routine examination without comment",
+        "Stop the exam, avoid further manipulation, call for help, and manage as possible cord presentation/prolapse risk",
+        "Push harder to complete dilatation assessment",
+        "Rupture membranes deliberately"
+      ],
+      "answer": 1,
+      "explanation": "Pulsation suggests cord; minimise handling and escalate immediately."
+    },
+    {
+      "id": "mn-029",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A labouring client with a history of previous caesarean is having strong contractions. Which symptom must the nurse treat as a warning of possible scar dehiscence?",
+      "options": [
+        "Mild backache relieved by massage",
+        "Sudden cessation of contractions, sharp pain, or maternal haemodynamic change",
+        "Desire for analgesia",
+        "Clear liquor and reactive CTG"
+      ],
+      "answer": 1,
+      "explanation": "Scar rupture/dehiscence may present with pain change, loss of contractions, or shock — emergency."
+    },
+    {
+      "id": "mn-030",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "The partograph shows the alert line crossed and the action line approaching with inadequate cervical progress despite good contractions. The nurse should:",
+      "options": [
+        "Ignore the partograph if the mother is coping",
+        "Escalate to the clinician for decision on augmentation, instrumental delivery or caesarean as appropriate",
+        "Send the mother home",
+        "Stop all monitoring"
+      ],
+      "answer": 1,
+      "explanation": "Crossing action thresholds requires skilled obstetric decision-making."
+    },
+    {
+      "id": "mn-031",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "One hour after vaginal birth, the fundus is boggy above the umbilicus and lochia is heavy with clots. The first nursing action is to:",
+      "options": [
+        "Document and reassess in 2 hours",
+        "Massage the fundus firmly, express clots, and call for help while assessing bleeding and vital signs",
+        "Start walking the mother to the bathroom",
+        "Give oral fluids only"
+      ],
+      "answer": 1,
+      "explanation": "Uterine atony is the leading cause of PPH; immediate fundal massage and escalation are first-line nursing actions."
+    },
+    {
+      "id": "mn-032",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A postpartum woman reports sudden chest pain, dyspnoea and anxiety on day 2. The priority action is to:",
+      "options": [
+        "Encourage deep breathing exercises only",
+        "Sit her up, give oxygen as protocol, assess vital signs, and call for emergency help — suspect PE until proven otherwise",
+        "Apply a warm compress to the chest",
+        "Reassure that anxiety is normal and leave her alone"
+      ],
+      "answer": 1,
+      "explanation": "PP period is high risk for thromboembolism; acute respiratory symptoms need emergency response."
+    },
+    {
+      "id": "mn-033",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "On day 3 a mother has fever 38.9°C, uterine tenderness, and foul-smelling lochia. The nurse suspects:",
+      "options": [
+        "Normal involution",
+        "Endometritis and should notify the clinician promptly",
+        "Only breast engorgement",
+        "Milk fever that never needs antibiotics"
+      ],
+      "answer": 1,
+      "explanation": "Fever, tender uterus and offensive lochia suggest endometritis — needs medical review and treatment."
+    },
+    {
+      "id": "mn-034",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A primipara is tearful on day 4, has trouble sleeping, but cares for the baby and has no thoughts of harm. The nurse’s best response is to:",
+      "options": [
+        "Diagnose major depression and separate her from the baby",
+        "Explain baby blues are common, provide support, and teach danger signs of postpartum depression",
+        "Tell her to stop breastfeeding",
+        "Ignore her feelings"
+      ],
+      "answer": 1,
+      "explanation": "Baby blues are common and self-limiting; support plus red-flag education for PPD is appropriate."
+    },
+    {
+      "id": "mn-035",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "Which finding on the first postpartum day needs urgent reporting?",
+      "options": [
+        "Fundus firm at umbilicus, lochia rubra moderate",
+        "Saturated pad in 15 minutes, dizziness, BP 88/50",
+        "Mild afterpains with breastfeeding",
+        "Temperature 37.4°C"
+      ],
+      "answer": 1,
+      "explanation": "Heavy bleeding with hypotension indicates PPH/shock — emergency."
+    },
+    {
+      "id": "mn-036",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A breastfeeding mother develops a red, wedge-shaped, painful area on the breast and fever. Priority nursing advice includes:",
+      "options": [
+        "Stop breastfeeding on that side permanently",
+        "Continue frequent feeding/expression, gentle support, analgesia as advised, and seek review for possible mastitis/antibiotics",
+        "Apply ice only and skip feeds",
+        "Wean immediately to formula"
+      ],
+      "answer": 1,
+      "explanation": "For mastitis, continued milk removal is important alongside medical assessment."
+    },
+    {
+      "id": "mn-037",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "After a third-degree tear, which instruction is most important?",
+      "options": [
+        "Avoid all analgesia so she can feel healing",
+        "Perineal hygiene, stool softeners as advised, pelvic rest, and report severe pain or bowel control problems",
+        "Start vigorous exercise on day 1",
+        "Insert tampons within 48 hours"
+      ],
+      "answer": 1,
+      "explanation": "Perineal trauma needs hygiene, bowel management and follow-up for complications."
+    },
+    {
+      "id": "mn-038",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A mother who had a caesarean 12 hours ago has a respiratory rate of 10, is very drowsy, and has received opioids. The priority is to:",
+      "options": [
+        "Give another dose of opioid for incision pain",
+        "Support airway/breathing, stimulate, give oxygen as needed, and notify the clinician — possible opioid depression",
+        "Encourage her to sleep deeply undisturbed for 6 hours",
+        "Start ambulation immediately without assessment"
+      ],
+      "answer": 1,
+      "explanation": "Opioid-induced respiratory depression is life-threatening; airway and medical review come first."
+    },
+    {
+      "id": "mn-039",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "Which mother needs Rho(D) immunoglobulin after birth?",
+      "options": [
+        "Rh-positive mother, Rh-positive baby",
+        "Rh-negative mother, Rh-positive baby, within the recommended timeframe if not already sensitised",
+        "Any mother with blood group O",
+        "Only if the baby is jaundiced"
+      ],
+      "answer": 1,
+      "explanation": "Rh-negative mothers with Rh-positive infants receive anti-D as indicated to prevent sensitisation."
+    },
+    {
+      "id": "mn-040",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A postpartum check shows a fundus deviated to the right and above the umbilicus. Lochia is moderate. The first action is to:",
+      "options": [
+        "Massage vigorously without further assessment",
+        "Assist her to void, then reassess the fundus",
+        "Start oxytocin infusion immediately without assessment",
+        "Discharge home"
+      ],
+      "answer": 1,
+      "explanation": "A full bladder displaces the uterus and impairs contraction; voiding often corrects position."
+    },
+    {
+      "id": "mn-041",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "Which statement by a new mother indicates correct understanding of lochia?",
+      "options": [
+        "Bright red heavy bleeding with large clots on day 10 is normal",
+        "Lochia should gradually lighten from red to pink/brown to yellow-white; sudden heavy bright bleeding is not normal",
+        "No discharge should occur after day 2",
+        "Foul smell is expected for 6 weeks"
+      ],
+      "answer": 1,
+      "explanation": "Pattern and smell help detect secondary PPH or infection."
+    },
+    {
+      "id": "mn-042",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A mother plans to bottle-feed. Which nursing action helps suppress lactation comfort safely?",
+      "options": [
+        "Encourage frequent hot showers directed at the breasts and repeated stimulation",
+        "Supportive bra, avoid stimulation, cold packs as needed, and analgesia if engorged — per protocol",
+        "Bind breasts extremely tightly for a week",
+        "Pump every hour to ‘empty completely’ if not breastfeeding"
+      ],
+      "answer": 1,
+      "explanation": "Avoid stimulation; comfort measures for engorgement if not lactating."
+    },
+    {
+      "id": "mn-043",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "On day 5 a mother reports she cannot stop crying, feels worthless, and has thoughts that the baby might be better without her. The priority is to:",
+      "options": [
+        "Tell her this is normal blues and leave",
+        "Stay with her, ensure safety of mother and baby, and arrange urgent mental health/obstetric review",
+        "Advise exercise only",
+        "Stop all visitors permanently without assessment"
+      ],
+      "answer": 1,
+      "explanation": "Suicidal or harm ideation indicates possible severe PPD/psychosis risk — safety and urgent referral."
+    },
+    {
+      "id": "mn-044",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "Which measure best prevents postpartum thromboembolism in a post-caesarean mother?",
+      "options": [
+        "Strict bed rest for 5 days",
+        "Early mobilisation, hydration, and prophylactic measures as prescribed",
+        "Crossing legs continuously in bed",
+        "Dehydration to reduce urine output"
+      ],
+      "answer": 1,
+      "explanation": "Early ambulation and VTE prophylaxis are key preventive strategies."
+    },
+    {
+      "id": "mn-045",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A mother asks when sexual activity may resume. The best response is:",
+      "options": [
+        "Always within 3 days of birth",
+        "After bleeding has settled, tear/caesarean healing allows, and she feels ready — often after postnatal check, as advised by clinician",
+        "Never while breastfeeding",
+        "Only after complete weaning"
+      ],
+      "answer": 1,
+      "explanation": "Timing is individual; healing, lochia and readiness guide advice."
+    },
+    {
+      "id": "mn-046",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A newborn at 1 minute is blue, limp, and not breathing. After drying and stimulating, there is still no breathing. The priority is to:",
+      "options": [
+        "Wait another 2 minutes before acting",
+        "Open airway and start positive-pressure ventilation as per neonatal resuscitation guidelines",
+        "Give glucose water orally first",
+        "Bathe the baby immediately"
+      ],
+      "answer": 1,
+      "explanation": "Effective ventilation is the key step in neonatal resuscitation when the baby is apnoeic."
+    },
+    {
+      "id": "mn-047",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Which newborn finding needs immediate intervention?",
+      "options": [
+        "Acrocyanosis at 20 minutes of life",
+        "Grunting, nasal flaring and chest indrawing at rest",
+        "Vernix in skin creases",
+        "Heart rate 140 bpm"
+      ],
+      "answer": 1,
+      "explanation": "Respiratory distress signs require urgent assessment and support."
+    },
+    {
+      "id": "mn-048",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A term baby becomes jittery at 3 hours of age. The mother had poorly controlled diabetes. The nurse’s priority action is to:",
+      "options": [
+        "Ignore jitteriness as normal startle",
+        "Check blood glucose and treat hypoglycaemia per protocol while keeping the baby warm and fed",
+        "Give insulin to the baby",
+        "Delay feeding for 6 hours"
+      ],
+      "answer": 1,
+      "explanation": "Infants of diabetic mothers are at high risk of hypoglycaemia; test and treat promptly."
+    },
+    {
+      "id": "mn-049",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "When is the ideal time to initiate breastfeeding in an uncomplicated term birth?",
+      "options": [
+        "After a 4-hour nursery observation only",
+        "Within the first hour, with skin-to-skin as able",
+        "On day 2 only",
+        "After the first bath"
+      ],
+      "answer": 1,
+      "explanation": "Early initiation supports bonding, thermoregulation and successful lactation."
+    },
+    {
+      "id": "mn-050",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A newborn has not passed meconium by 36 hours of age. The nurse should:",
+      "options": [
+        "Reassure that delay to day 5 is always normal",
+        "Report to the clinician — delayed meconium can signal obstruction or other pathology",
+        "Give castor oil",
+        "Increase formula forcibly"
+      ],
+      "answer": 1,
+      "explanation": "Failure to pass meconium within ~24–48 hours needs evaluation."
+    },
+    {
+      "id": "mn-051",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Which action is correct during newborn identification?",
+      "options": [
+        "Apply one band after mother is discharged",
+        "Verify identity bands on mother and baby before any separation or procedure",
+        "Use only the father’s surname verbally",
+        "Skip banding for home births that later attend clinic"
+      ],
+      "answer": 1,
+      "explanation": "Identification checks prevent mix-ups; bands are verified at each separation/return."
+    },
+    {
+      "id": "mn-052",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A baby of a hepatitis B–positive mother should receive:",
+      "options": [
+        "No special care",
+        "Hepatitis B vaccine and HBIG as per national schedule as soon as possible after birth",
+        "Antibiotics only",
+        "Isolation from the mother for 6 weeks"
+      ],
+      "answer": 1,
+      "explanation": "HBIG + vaccine promptly after birth reduces transmission risk."
+    },
+    {
+      "id": "mn-053",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Phototherapy is ordered for jaundice. Which nursing care is essential?",
+      "options": [
+        "Cover the eyes, maximise skin exposure, monitor temperature and hydration, and continue feeds",
+        "Withhold all feeds during treatment",
+        "Place clothing over the whole body under lights",
+        "Stop phototherapy if the baby cries"
+      ],
+      "answer": 1,
+      "explanation": "Eye protection, exposure, thermal care and feeding are standard under phototherapy."
+    },
+    {
+      "id": "mn-054",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Apgar score at 5 minutes is 5. The nurse understands that:",
+      "options": [
+        "No further resuscitation steps are ever needed",
+        "Ongoing assessment and support are required; Apgar does not dictate every step but low scores need continued care",
+        "The baby is guaranteed normal neurodevelopment",
+        "Scoring replaces the need for ventilation if the baby is apnoeic"
+      ],
+      "answer": 1,
+      "explanation": "Low Apgar indicates need for continued resuscitation/assessment; it is not a standalone prognosis tool."
+    },
+    {
+      "id": "mn-055",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A preterm baby is in kangaroo mother care. Which observation needs intervention?",
+      "options": [
+        "Baby pink, flexed, feeding at the breast",
+        "Baby apnoeic, pale, and not responding to gentle stimulation",
+        "Mother talking softly to the baby",
+        "Stable temperature in range"
+      ],
+      "answer": 1,
+      "explanation": "Apnoea and pallor require immediate stimulation and escalation."
+    },
+    {
+      "id": "mn-056",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Vitamin K is given to newborns primarily to:",
+      "options": [
+        "Prevent ophthalmia neonatorum",
+        "Prevent vitamin K deficiency bleeding",
+        "Boost immunity against TB",
+        "Replace iron stores"
+      ],
+      "answer": 1,
+      "explanation": "Newborns have low vitamin K; prophylaxis prevents haemorrhagic disease."
+    },
+    {
+      "id": "mn-057",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A mother is concerned because her 2-day-old has yellowish skin. Bilirubin is below treatment threshold and the baby is feeding well. The best nursing action is to:",
+      "options": [
+        "Tell her all jaundice is dangerous and stop breastfeeding",
+        "Explain physiological jaundice, support frequent feeding, and teach danger signs to report",
+        "Start phototherapy without orders",
+        "Advise sunlight as the only treatment always"
+      ],
+      "answer": 1,
+      "explanation": "Physiological jaundice is common; feeding support and warning signs education are key."
+    },
+    {
+      "id": "mn-058",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Which newborn is at highest risk for hypothermia?",
+      "options": [
+        "Term baby, skin-to-skin on mother, dry and covered",
+        "Preterm baby left uncovered on an open trolley after birth",
+        "Term baby under a pre-warmed radiant heater",
+        "Baby in kangaroo position with hat on"
+      ],
+      "answer": 1,
+      "explanation": "Preterm and wet/uncovered infants lose heat rapidly."
+    },
+    {
+      "id": "mn-059",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Eye prophylaxis (e.g. tetracycline ointment) is given to prevent:",
+      "options": [
+        "Neonatal jaundice",
+        "Ophthalmia neonatorum (e.g. gonococcal)",
+        "Congenital cataract only",
+        "Retinopathy of prematurity alone"
+      ],
+      "answer": 1,
+      "explanation": "Prophylaxis targets preventable infectious conjunctivitis acquired at birth."
+    },
+    {
+      "id": "mn-060",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A baby has a cephalohematoma. The nurse should teach the parents that:",
+      "options": [
+        "It will not cross suture lines and usually resolves over weeks; monitor jaundice risk",
+        "It always needs surgical drainage on day 1",
+        "It is the same as caput and disappears in hours always",
+        "Massage will remove it faster and is required"
+      ],
+      "answer": 1,
+      "explanation": "Cephalohematoma is limited by sutures, resolves slowly, and may contribute to jaundice."
+    },
+    {
+      "id": "mn-061",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman in early labour has a BP of 150/98, proteinuria, and complains of upper abdominal pain. The priority is to:",
+      "options": [
+        "Give oral fluids and reassess tomorrow",
+        "Escalate as possible pre-eclampsia with severe features; continuous monitoring and obstetric review",
+        "Encourage walking in the corridor unsupervised",
+        "Administer ergometrine prophylactically now"
+      ],
+      "answer": 1,
+      "explanation": "Epigastric pain with hypertension/proteinuria is a severe feature — urgent care."
+    },
+    {
+      "id": "mn-062",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "Which admission assessment finding in labour is most urgent to report?",
+      "options": [
+        "Cervix 4 cm, membranes intact, FHR 136",
+        "FHR baseline 90 bpm with minimal variability",
+        "Maternal pulse 88, temperature 36.8°C",
+        "Mild show"
+      ],
+      "answer": 1,
+      "explanation": "Bradycardia with poor variability suggests fetal compromise."
+    },
+    {
+      "id": "mn-063",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman receiving magnesium sulphate for severe pre-eclampsia becomes drowsy, has RR 10, and absent deep tendon reflexes. The priority is to:",
+      "options": [
+        "Increase the magnesium infusion",
+        "Stop magnesium, support airway/breathing, give calcium gluconate as ordered, and call for help",
+        "Give additional opioids for rest",
+        "Sit her in a chair"
+      ],
+      "answer": 1,
+      "explanation": "These are signs of magnesium toxicity; stop the drug and give antidote per protocol."
+    },
+    {
+      "id": "mn-064",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "Active management of the third stage aims primarily to reduce:",
+      "options": [
+        "Maternal bonding time",
+        "Postpartum haemorrhage risk",
+        "Need for breastfeeding",
+        "Duration of pregnancy"
+      ],
+      "answer": 1,
+      "explanation": "AMTSL reduces PPH, a leading cause of maternal death."
+    },
+    {
+      "id": "mn-065",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A postpartum mother saturates a pad in 20 minutes. Fundus is firm and midline. The nurse should next:",
+      "options": [
+        "Assume atony and only massage",
+        "Inspect for genital tract trauma / retained tissue and escalate — firm fundus with heavy bleeding suggests trauma",
+        "Ignore if BP is normal once",
+        "Give oral iron only"
+      ],
+      "answer": 1,
+      "explanation": "Firm uterus with heavy bleeding points to lacerations or other non-atonic causes."
+    },
+    {
+      "id": "mn-066",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Which newborn feeding cue should the mother respond to early?",
+      "options": [
+        "Only after prolonged continuous crying",
+        "Rooting, hand-to-mouth, and soft sounds before frantic crying",
+        "Sleeping through the day without feeds for 8 hours in day 1",
+        "Refusal of all contact"
+      ],
+      "answer": 1,
+      "explanation": "Early cues improve latch success and reduce distress."
+    },
+    {
+      "id": "mn-067",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman at 29 weeks has regular painful contractions and cervical change. Priority nursing care includes:",
+      "options": [
+        "Sending her home with no follow-up",
+        "Tocolysis/steroids/antibiotics as ordered, fetal monitoring, and preparation for preterm birth care",
+        "Encouraging her to push",
+        "Immediate ergometrine"
+      ],
+      "answer": 1,
+      "explanation": "Preterm labour management focuses on steroids for lung maturity and specialised care."
+    },
+    {
+      "id": "mn-068",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "During neonatal resuscitation, after 30 seconds of effective PPV the heart rate is 40 bpm. The next step per standard algorithms is generally to:",
+      "options": [
+        "Stop all support",
+        "Start chest compressions coordinated with ventilation and consider advanced help/drugs as protocol",
+        "Only continue drying",
+        "Give oral antibiotics"
+      ],
+      "answer": 1,
+      "explanation": "HR <60 after effective ventilation → compressions."
+    },
+    {
+      "id": "mn-069",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A mother with HIV asks about feeding. The nurse should:",
+      "options": [
+        "Ignore national guidelines and choose randomly",
+        "Counsel according to current national guidelines on ART, viral load and feeding options",
+        "State breastfeeding is always impossible",
+        "State formula is always unavailable so guidelines do not matter"
+      ],
+      "answer": 1,
+      "explanation": "Feeding counselling must follow current national PMTCT guidance."
+    },
+    {
+      "id": "mn-070",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "Which sign indicates true labour rather than false labour?",
+      "options": [
+        "Contractions stop with walking and hydration",
+        "Progressive cervical dilatation and contractions that intensify and continue despite rest",
+        "Only fetal movements increase",
+        "Irregular tightenings without cervical change for days"
+      ],
+      "answer": 1,
+      "explanation": "Cervical change with progressive contractions defines true labour."
+    },
+    {
+      "id": "mn-071",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A primigravida at term has a blood pressure of 120/80, mild oedema of feet, and physiologic anaemia. The nurse interprets this as:",
+      "options": [
+        "Severe disease needing ICU",
+        "Common pregnancy findings needing routine surveillance, not emergency treatment",
+        "Indication for immediate induction",
+        "Proof of renal failure"
+      ],
+      "answer": 1,
+      "explanation": "Mild dependent oedema and dilutional anaemia can be physiologic; severe features need action."
+    },
+    {
+      "id": "mn-072",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "After birth the nurse dries the baby and places skin-to-skin. This primarily helps to:",
+      "options": [
+        "Delay bonding",
+        "Support thermoregulation, bonding and early breastfeeding",
+        "Increase infection risk always",
+        "Replace the need for any resuscitation assessment"
+      ],
+      "answer": 1,
+      "explanation": "Skin-to-skin supports temperature, bonding and feeding initiation."
+    },
+    {
+      "id": "mn-073",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A labouring woman has a temperature of 38.5°C, foul liquor, and fetal tachycardia. The priority is to:",
+      "options": [
+        "Continue without informing anyone",
+        "Notify the clinician, increase monitoring, and prepare for possible septic work-up and expedited care",
+        "Give cold drinks only",
+        "Stop all IV access"
+      ],
+      "answer": 1,
+      "explanation": "Chorioamnionitis features need prompt obstetric management."
+    },
+    {
+      "id": "mn-074",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "Which postpartum warning sign should be taught before discharge?",
+      "options": [
+        "Mild sweating at night once",
+        "Heavy bleeding soaking a pad in under an hour, severe headache, fever, or calf pain",
+        "Baby feeding 8–12 times/day",
+        "Mild afterpains"
+      ],
+      "answer": 1,
+      "explanation": "Danger signs education prevents delayed care for PPH, pre-eclampsia, infection and VTE."
+    },
+    {
+      "id": "mn-075",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A newborn’s heart rate is 70 bpm after drying and stimulation; breathing is absent. The nurse should:",
+      "options": [
+        "Only wrap and wait",
+        "Begin PPV immediately",
+        "Check blood sugar before any respiratory support",
+        "Bathe before resuscitation"
+      ],
+      "answer": 1,
+      "explanation": "Apnoea with low HR → open airway and ventilate without delay."
+    },
+    {
+      "id": "mn-076",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman with PROM at 34 weeks is not in labour. Priority nursing surveillance includes:",
+      "options": [
+        "Ignoring temperature",
+        "Monitoring for infection (temperature, pulse, liquor, FHR) and fetal wellbeing",
+        "Daily digital exams to check cervix",
+        "Mandatory immediate caesarean without steroids consideration"
+      ],
+      "answer": 1,
+      "explanation": "Expectant management requires infection and fetal surveillance; minimise unnecessary VE."
+    },
+    {
+      "id": "mn-077",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "Which action is inappropriate when shoulder dystocia is called?",
+      "options": [
+        "McRoberts position and suprapubic pressure as directed",
+        "Applying strong fundal pressure as the first and only manoeuvre",
+        "Calling for extra help",
+        "Noting time of dystocia"
+      ],
+      "answer": 1,
+      "explanation": "Fundal pressure is not the first-line manoeuvre and can worsen outcomes."
+    },
+    {
+      "id": "mn-078",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A mother reports her baby sleeps 5 hours between feeds on day 1 and is hard to rouse. Bilirubin risk is moderate. The nurse should:",
+      "options": [
+        "Praise long sleep as always ideal",
+        "Wake for feeds, assess hydration/jaundice, and review with the clinician as needed",
+        "Start water feeds only",
+        "Discharge without feeding review"
+      ],
+      "answer": 1,
+      "explanation": "Excessive sleepiness can signal inadequate intake or illness."
+    },
+    {
+      "id": "mn-079",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "Inverted uterus is suspected after traction on the cord. The priority is to:",
+      "options": [
+        "Continue aggressive traction",
+        "Call for help, stop traction, resuscitate mother, and prepare for manual replacement by skilled clinician",
+        "Give oral fluids only",
+        "Send the mother to the toilet"
+      ],
+      "answer": 1,
+      "explanation": "Uterine inversion is a haemorrhagic emergency — stop traction and get skilled help."
+    },
+    {
+      "id": "mn-080",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A woman in labour has received epidural analgesia. Which assessment is especially important?",
+      "options": [
+        "Ability to run a marathon mid-labour",
+        "Bladder status, BP, sensory level, and fetal heart rate",
+        "Only her favourite music",
+        "Partner’s temperature"
+      ],
+      "answer": 1,
+      "explanation": "Epidurals can cause hypotension, urinary retention and alter sensation — structured monitoring is required."
+    },
+    {
+      "id": "mn-081",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "Which client is the best candidate for trial of labour after caesarean if other factors are favourable?",
+      "options": [
+        "Prior classical (vertical) uterine incision",
+        "One previous low transverse caesarean and adequate pelvis/facility for emergency CS",
+        "Prior uterine rupture",
+        "Three classical scars"
+      ],
+      "answer": 1,
+      "explanation": "Low transverse scar and readiness for emergency CS are typical prerequisites; classical scar is a contraindication."
+    },
+    {
+      "id": "mn-082",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A newborn has asymmetric Moro reflex and limited movement of one arm after shoulder dystocia. The nurse should:",
+      "options": [
+        "Force the arm through full range immediately",
+        "Support the limb, avoid pulling, and report suspected brachial plexus injury",
+        "Ignore until the 6-week visit only",
+        "Apply heavy weights to the arm"
+      ],
+      "answer": 1,
+      "explanation": "Suspected Erb’s palsy needs gentle handling and prompt clinical review."
+    },
+    {
+      "id": "mn-083",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "Postpartum haemoglobin is 7.0 g/dL after significant PPH. The mother is dizzy when sitting. Priority care includes:",
+      "options": [
+        "Unsupervised ambulation to the shop",
+        "Assisted mobilisation, iron/transfusion as ordered, and monitoring for ongoing bleeding",
+        "Restricting all visitors for a month",
+        "Stopping breastfeeding permanently"
+      ],
+      "answer": 1,
+      "explanation": "Symptomatic anaemia after PPH needs safety, replacement therapy and bleeding surveillance."
+    },
+    {
+      "id": "mn-084",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman at 8 weeks has unilateral pelvic pain, spotting, and shoulder tip pain. BP 90/60. The priority is to:",
+      "options": [
+        "Diagnose gastroenteritis and send home",
+        "Suspect ectopic pregnancy with possible rupture — urgent stabilisation and surgical review",
+        "Perform vigorous pelvic exam only",
+        "Give high-dose ergometrine"
+      ],
+      "answer": 1,
+      "explanation": "Shoulder tip pain and shock with early pregnancy symptoms suggest ruptured ectopic."
+    },
+    {
+      "id": "mn-085",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "Which practice supports evidence-based care in normal labour?",
+      "options": [
+        "Routine continuous lithotomy from 3 cm for all women",
+        "Freedom of movement, continuous support, and monitoring appropriate to risk",
+        "Withholding all information about progress",
+        "Mandatory enema and shaving for every woman"
+      ],
+      "answer": 1,
+      "explanation": "Supportive, respectful, mobility-friendly care improves outcomes in uncomplicated labour."
+    },
+    {
+      "id": "mn-086",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A baby is born through thick meconium, is floppy and not breathing. After the initial steps, the priority is:",
+      "options": [
+        "Stimulation only without airway support",
+        "Clear airway as indicated and provide PPV if still not breathing — follow current NRP guidance",
+        "Routine vigorous suction of a vigorous crying baby only",
+        "Delay drying"
+      ],
+      "answer": 1,
+      "explanation": "Non-vigorous infants need airway support/ventilation per current resuscitation algorithms."
+    },
+    {
+      "id": "mn-087",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "Lochia has been pale; on day 12 it becomes heavy and bright red with clots. The nurse should advise:",
+      "options": [
+        "This is always normal menstrual return",
+        "Seek care promptly — possible secondary PPH",
+        "Double activity level",
+        "Ignore unless fever is 40°C"
+      ],
+      "answer": 1,
+      "explanation": "Sudden heavy bright bleeding after lochia has lightened needs urgent assessment."
+    },
+    {
+      "id": "mn-088",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A pregnant woman with cardiac disease is in labour. Which nursing action is most appropriate?",
+      "options": [
+        "Encourage prolonged closed-glottis pushing in supine position",
+        "Position for comfort/cardiac load reduction, monitor closely, and shorten second stage as directed by the team",
+        "Withhold all pain relief always",
+        "Give unrestricted IV fluid boluses without orders"
+      ],
+      "answer": 1,
+      "explanation": "Cardiac disease needs careful positioning, monitoring and controlled second stage."
+    },
+    {
+      "id": "mn-089",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Teaching about exclusive breastfeeding for 6 months is based on the understanding that it:",
+      "options": [
+        "Prevents all illness forever",
+        "Provides optimal nutrition and protection when practised with appropriate complementary feeding later",
+        "Means water must be given daily from birth in all climates",
+        "Requires scheduled 6-hour intervals only"
+      ],
+      "answer": 1,
+      "explanation": "Exclusive breastfeeding for ~6 months is recommended for optimal nutrition and immunity support."
+    },
+    {
+      "id": "mn-090",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman with pre-eclampsia on MgSO4 has urine output of 15 mL/hour for 3 hours. The nurse should:",
+      "options": [
+        "Increase magnesium rate",
+        "Report oliguria — risk of magnesium toxicity and renal concern; review orders",
+        "Give potassium without assessment",
+        "Stop monitoring reflexes"
+      ],
+      "answer": 1,
+      "explanation": "Oliguria with MgSO4 increases toxicity risk; report and review."
+    },
+    {
+      "id": "mn-091",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Which is the correct immediate care after birth of the baby before cord clamping when the baby is vigorous?",
+      "options": [
+        "Immediate routine suction of all vigorous babies’ throats deeply",
+        "Dry, keep warm, skin-to-skin if appropriate, assess breathing/tone/HR",
+        "Separate from mother for 1 hour always",
+        "Delay drying until after weighing"
+      ],
+      "answer": 1,
+      "explanation": "Warmth, drying and assessment are foundational; vigorous babies do not need deep suction."
+    },
+    {
+      "id": "mn-092",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A postpartum woman has a painful, swollen, red calf and a positive Homans’ sign is mentioned. The safest nursing action is to:",
+      "options": [
+        "Massage the calf firmly",
+        "Advise rest of the limb, avoid massage, and notify the clinician to evaluate for DVT",
+        "Encourage long walks immediately without review",
+        "Apply sequential compression without assessment orders only"
+      ],
+      "answer": 1,
+      "explanation": "Suspected DVT: do not massage; escalate for diagnosis and treatment."
+    },
+    {
+      "id": "mn-093",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "In focussed antenatal care, the nurse prioritises:",
+      "options": [
+        "Only weighing at each visit without history",
+        "Risk identification, education, preventive therapies (e.g. TT, iron), and birth preparedness",
+        "Avoiding discussion of danger signs",
+        "One visit only in the whole pregnancy"
+      ],
+      "answer": 1,
+      "explanation": "Quality ANC detects risk, prevents disease and prepares for birth/emergency."
+    },
+    {
+      "id": "mn-094",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A woman is pushing; the head delivers but the shoulders do not follow with gentle traction. The nurse should:",
+      "options": [
+        "Pull harder on the head",
+        "Call out ‘shoulder dystocia’, note the time, and assist with McRoberts and suprapubic pressure as directed",
+        "Apply fundal pressure only",
+        "Leave the room to find a form"
+      ],
+      "answer": 1,
+      "explanation": "Shoulder dystocia needs organised emergency manoeuvres — not stronger axial traction or fundal pressure first."
+    },
+    {
+      "id": "mn-095",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Which newborn temperature is concerning and needs intervention?",
+      "options": [
+        "36.7°C axillary after skin-to-skin",
+        "35.2°C axillary despite warming measures started",
+        "37.0°C",
+        "36.8°C"
+      ],
+      "answer": 1,
+      "explanation": "Hypothermia <36.5°C (and especially lower) needs active rewarming and assessment."
+    },
+    {
+      "id": "mn-096",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A mother refuses vitamin K for her newborn. The nurse’s best response is to:",
+      "options": [
+        "Inject without consent",
+        "Explain risks of vitamin K deficiency bleeding, document, and involve the clinician while respecting legal/ethical process",
+        "Agree that vitamin K is unnecessary worldwide",
+        "Discharge without any discussion"
+      ],
+      "answer": 1,
+      "explanation": "Informed refusal requires clear risk explanation, documentation and appropriate escalation."
+    },
+    {
+      "id": "mn-097",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "Which finding after epidural may indicate a serious complication needing urgent review?",
+      "options": [
+        "Mild itching",
+        "Sudden severe headache worse when upright after dural puncture risk, or new marked motor block with respiratory difficulty",
+        "Wanting a position change",
+        "Request for information"
+      ],
+      "answer": 1,
+      "explanation": "Post-dural puncture headache pattern or high block/respiratory compromise need urgent anaesthetic review."
+    },
+    {
+      "id": "mn-098",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A twin pregnancy at 30 weeks has contractions. Priority teaching/care includes:",
+      "options": [
+        "Assuming preterm birth cannot be delayed or prepared for",
+        "Seeking care early, steroids if indicated, and monitoring for preterm labour complications",
+        "Heavy lifting to ‘speed engagement’",
+        "Avoiding hospital contact"
+      ],
+      "answer": 1,
+      "explanation": "Multiple pregnancy has higher preterm risk; early care and steroids matter."
+    },
+    {
+      "id": "mn-099",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "The nurse notes a postpartum fundus firm but lochia has a foul odour on day 6 with low-grade fever. Priority is to:",
+      "options": [
+        "Document as normal and discharge without review",
+        "Report possible infection for assessment and treatment",
+        "Start the mother on unsupervised herbal douches only",
+        "Stop hygiene measures"
+      ],
+      "answer": 1,
+      "explanation": "Offensive lochia with fever suggests infection."
+    },
+    {
+      "id": "mn-100",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Which action promotes parent–infant attachment in the first hour?",
+      "options": [
+        "Prolonged separation for routine tasks when the baby is stable",
+        "Uninterrupted skin-to-skin and support for the first breastfeed when mother and baby are well",
+        "Keeping the baby under lights away from parents for 3 hours routinely",
+        "Limiting parental touch"
+      ],
+      "answer": 1,
+      "explanation": "Early contact supports bonding and breastfeeding success."
+    },
+    {
+      "id": "mn-101",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman with severe pre-eclampsia is receiving MgSO4. Which parameter is most important to monitor for toxicity?",
+      "options": [
+        "Hair growth",
+        "Respiratory rate, urine output and deep tendon reflexes",
+        "Shoe size",
+        "Preferred baby name"
+      ],
+      "answer": 1,
+      "explanation": "RR, reflexes and urine output are classic magnesium toxicity monitors."
+    },
+    {
+      "id": "mn-102",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "When counting fetal movements, the nurse should advise the woman to seek care if:",
+      "options": [
+        "She feels 10 movements in 2 hours while resting and focusing, as taught",
+        "Movements are clearly reduced from her normal pattern or she cannot achieve the taught count threshold",
+        "Movements are stronger in the evening",
+        "She feels hiccups"
+      ],
+      "answer": 1,
+      "explanation": "A sustained reduction from the normal pattern needs same-day assessment."
+    },
+    {
+      "id": "mn-103",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A labouring woman’s membranes rupture and the fluid is green. FHR is 110 with late decelerations. The priority is to:",
+      "options": [
+        "Continue without change",
+        "Intrauterine resuscitation measures and urgent clinical review for possible fetal distress",
+        "Discharge for home birth",
+        "Give a large meal"
+      ],
+      "answer": 1,
+      "explanation": "Meconium plus non-reassuring FHR requires action."
+    },
+    {
+      "id": "mn-104",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "Which mother needs the most urgent mental health referral?",
+      "options": [
+        "Day 3 tearfulness with good infant care",
+        "Day 10 inability to sleep, believing the baby is possessed, and refusing to eat",
+        "Mild worry about bathing technique",
+        "Asking many questions about feeding"
+      ],
+      "answer": 1,
+      "explanation": "Psychotic features or severe functional change need urgent specialist care."
+    },
+    {
+      "id": "mn-105",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A preterm newborn under a warmer has a temperature of 36.0°C. The nurse should:",
+      "options": [
+        "Undress further for examination only",
+        "Increase thermal support, check for infection/hypoglycaemia as indicated, and reassess",
+        "Bathe in cool water",
+        "Turn the warmer off"
+      ],
+      "answer": 1,
+      "explanation": "Hypothermia in preterms needs active thermal care and evaluation of causes."
+    },
+    {
+      "id": "mn-106",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "During antenatal care, a BP of 150/100 at 22 weeks in a woman whose BP was normal before pregnancy most likely indicates:",
+      "options": [
+        "Normal finding",
+        "Gestational hypertension or evolving pre-eclampsia pathway — needs follow-up and investigation",
+        "Only white-coat hypertension that is never significant",
+        "Hypotension"
+      ],
+      "answer": 1,
+      "explanation": "New hypertension after 20 weeks requires structured follow-up."
+    },
+    {
+      "id": "mn-107",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A woman is fully dilated and has been pushing for 45 minutes; FHR remains reassuring. The nurse should:",
+      "options": [
+        "Shout continuously at her",
+        "Support effective pushing, position changes, and ongoing fetal/maternal monitoring",
+        "Start fundal pressure routinely",
+        "Stop all encouragement"
+      ],
+      "answer": 1,
+      "explanation": "Supportive second-stage care with monitoring is appropriate while progress and FHR allow."
+    },
+    {
+      "id": "mn-108",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Which practice reduces neonatal tetanus risk?",
+      "options": [
+        "Unclean cord cutting with household blades",
+        "Clean delivery, hygienic cord care, and maternal tetanus toxoid as scheduled",
+        "Applying cow dung to the cord",
+        "Avoiding all antenatal contact"
+      ],
+      "answer": 1,
+      "explanation": "Clean birth practices and maternal TT prevent neonatal tetanus."
+    },
+    {
+      "id": "mn-109",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A postpartum mother has BP 170/110, headache, and epigastric pain on day 1. The nurse should:",
+      "options": [
+        "Discharge home with paracetamol only",
+        "Treat as possible postpartum pre-eclampsia/eclampsia risk — urgent review and monitoring",
+        "Encourage heavy exercise",
+        "Stop all antihypertensives if previously prescribed without advice"
+      ],
+      "answer": 1,
+      "explanation": "Pre-eclampsia can present or worsen postpartum."
+    },
+    {
+      "id": "mn-110",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "The nurse explains that the purpose of antenatal iron and folate is mainly to:",
+      "options": [
+        "Induce labour",
+        "Prevent and treat anaemia and reduce related risks",
+        "Replace the need for malaria prevention",
+        "Guarantee a small baby"
+      ],
+      "answer": 1,
+      "explanation": "Iron/folate reduce anaemia and associated maternal–fetal risks."
+    },
+    {
+      "id": "mn-111",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A newborn has not voided by 30 hours of age. The nurse should:",
+      "options": [
+        "Ignore until day 5",
+        "Assess hydration, feeding, and report delayed voiding for evaluation",
+        "Give frusemide without orders",
+        "Stop all feeds"
+      ],
+      "answer": 1,
+      "explanation": "Delayed first void needs assessment for adequacy of intake or urinary issues."
+    },
+    {
+      "id": "mn-112",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "Which is a danger sign in pregnancy that the woman should report immediately?",
+      "options": [
+        "Mild tiredness after a long day",
+        "Vaginal bleeding, severe headache, visual change, or severe abdominal pain",
+        "Occasional Braxton Hicks at 36 weeks",
+        "Increased vaginal discharge that is clear and non-itchy near term"
+      ],
+      "answer": 1,
+      "explanation": "Bleeding, severe headache/visual symptoms and severe pain are classic danger signs."
+    },
+    {
+      "id": "mn-113",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A woman in labour is HIV positive on ART. Which care principle is correct?",
+      "options": [
+        "Avoid all standard precautions",
+        "Maintain confidentiality, continue ART, and follow national protocols for labour and newborn care",
+        "Announce her status to the whole ward",
+        "Stop ART during labour always"
+      ],
+      "answer": 1,
+      "explanation": "Confidential, guideline-based PMTCT care continues through labour and the newborn period."
+    },
+    {
+      "id": "mn-114",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "After placental delivery, the nurse inspects the placenta and notes a missing cotyledon. The priority is to:",
+      "options": [
+        "Dispose of the placenta without reporting",
+        "Report possible retained products — risk of PPH and infection",
+        "Tell the mother to push again for 2 hours",
+        "Ignore if bleeding is currently mild"
+      ],
+      "answer": 1,
+      "explanation": "Incomplete placenta raises risk of retained tissue complications."
+    },
+    {
+      "id": "mn-115",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A mother with sore nipples from poor latch should be advised to:",
+      "options": [
+        "Stop breastfeeding permanently at the first crack",
+        "Improve positioning and latch, feed frequently, and seek lactation support; assess for infection if severe",
+        "Use only the tip of the nipple in the baby’s mouth",
+        "Space feeds to 8 hours to rest"
+      ],
+      "answer": 1,
+      "explanation": "Most nipple trauma improves with better latch and support."
+    },
+    {
+      "id": "mn-116",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Which Apgar component reflects respiratory effort?",
+      "options": [
+        "Grimace",
+        "Heart rate",
+        "Respiration",
+        "Colour only"
+      ],
+      "answer": 2,
+      "explanation": "The ‘R’ in Apgar is respiration/respiratory effort."
+    },
+    {
+      "id": "mn-117",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman at 39 weeks has a BP of 160/110, proteinuria, and clonus. The priority medication anticipated is:",
+      "options": [
+        "Oral iron only",
+        "Magnesium sulphate for seizure prophylaxis as ordered, plus BP management and birth planning",
+        "High-dose vitamin C alone",
+        "Immediate ergometrine before stabilisation"
+      ],
+      "answer": 1,
+      "explanation": "Severe pre-eclampsia management centres on MgSO4, BP control and timely birth."
+    },
+    {
+      "id": "mn-118",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "During PPH management, after calling for help and fundal massage, the nurse should also:",
+      "options": [
+        "Leave the mother to fetch paperwork first",
+        "Ensure IV access, monitor vital signs, give uterotonics as ordered, and keep accurate blood loss assessment",
+        "Give only oral fluids",
+        "Stop oxygen if used"
+      ],
+      "answer": 1,
+      "explanation": "Systematic PPH care: help, massage, oxytocics, access, monitoring, quantifiy loss."
+    },
+    {
+      "id": "mn-119",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A newborn of a mother with active TB (not on appropriate treatment) may need:",
+      "options": [
+        "No special consideration",
+        "Evaluation per guidelines for infection risk and feeding/separation decisions",
+        "Routine discharge without history review",
+        "Immediate BCG only with no other assessment ever"
+      ],
+      "answer": 1,
+      "explanation": "Maternal TB affects newborn infection risk and management planning."
+    },
+    {
+      "id": "mn-120",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "Which statement about the latent phase of labour is appropriate?",
+      "options": [
+        "It always requires immediate oxytocin in every woman",
+        "It can be longer; support, rest, hydration and monitoring are often appropriate if mother and fetus are well",
+        "Cervical checks every 15 minutes are mandatory",
+        "Women must lie supine throughout"
+      ],
+      "answer": 1,
+      "explanation": "Latent labour often needs supportive care rather than aggressive intervention."
+    },
+    {
+      "id": "mn-121",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A post-term woman at 41+ weeks reports reduced movements. CTG is non-reactive. The nurse anticipates:",
+      "options": [
+        "Sending home without review",
+        "Further fetal assessment and likely obstetric plan for delivery",
+        "Waiting 1 week silently",
+        "Only dietary advice"
+      ],
+      "answer": 1,
+      "explanation": "Post-term pregnancy with reduced movements and non-reactive CTG needs prompt obstetric action."
+    },
+    {
+      "id": "mn-122",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Which newborn is most likely to need glucose monitoring?",
+      "options": [
+        "Term AGA baby, mother without diabetes, feeding well",
+        "Infant of diabetic mother, or preterm/SGA baby",
+        "Baby with strong cry and pink colour only as risk factors",
+        "Baby already 10 days old with good weight gain only"
+      ],
+      "answer": 1,
+      "explanation": "IDM, preterm and growth-restricted infants are priority groups for glucose checks."
+    },
+    {
+      "id": "mn-123",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman develops a seizure in the antenatal ward with BP 180/120. After protecting the airway, the nurse prepares for:",
+      "options": [
+        "Immediate discharge",
+        "Magnesium sulphate and emergency obstetric management for eclampsia",
+        "Only oral diazepam at home",
+        "Ergometrine as first drug"
+      ],
+      "answer": 1,
+      "explanation": "Eclampsia management prioritises airway, MgSO4 and stabilisation toward birth."
+    },
+    {
+      "id": "mn-124",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "The best nursing measure to support a woman with fear of labour is to:",
+      "options": [
+        "Dismiss her fears",
+        "Provide clear information, continuous support, and involvement in decisions",
+        "Leave her alone for long periods",
+        "Promise zero pain without explanation"
+      ],
+      "answer": 1,
+      "explanation": "Support and information reduce fear and improve labour experience."
+    },
+    {
+      "id": "mn-125",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A mother is hepatitis B positive. Before discharge the nurse verifies that the newborn has received:",
+      "options": [
+        "Only vitamin A",
+        "Hepatitis B vaccine and HBIG as indicated, with documentation",
+        "No injections of any kind",
+        "Only BCG"
+      ],
+      "answer": 1,
+      "explanation": "Birth-dose vaccine ± HBIG is critical for exposed newborns."
+    },
+    {
+      "id": "mn-126",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "Which lochia pattern is abnormal on day 4?",
+      "options": [
+        "Pinkish-brown moderate flow",
+        "Sudden return of heavy bright-red bleeding with clots and dizziness",
+        "Scant dark discharge",
+        "Mild afterpains during feeds"
+      ],
+      "answer": 1,
+      "explanation": "Recurrent heavy bright bleeding can signal secondary PPH."
+    },
+    {
+      "id": "mn-127",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A labouring woman has a known placenta praevia. Which nursing action is contraindicated?",
+      "options": [
+        "Monitoring maternal vital signs",
+        "Digital vaginal examination to ‘check dilatation’",
+        "Preparing blood products as ordered",
+        "Continuous fetal monitoring as indicated"
+      ],
+      "answer": 1,
+      "explanation": "Digital VE is contraindicated in known placenta praevia."
+    },
+    {
+      "id": "mn-128",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Kangaroo mother care is especially important because it:",
+      "options": [
+        "Replaces all medical care for extreme preterms always",
+        "Supports warmth, breastfeeding, and stability for eligible low-birth-weight babies",
+        "Is only for term babies",
+        "Requires expensive equipment only"
+      ],
+      "answer": 1,
+      "explanation": "KMC improves thermal control and feeding for stable LBW infants."
+    },
+    {
+      "id": "mn-129",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman reports watery discharge at 30 weeks without contractions. The nurse’s priority assessments include:",
+      "options": [
+        "Only maternal weight",
+        "Confirming PROM vs urine/liquor, fetal heart, infection signs, and gestational age–based plan",
+        "Immediate pushing teaching",
+        "Discharge without review"
+      ],
+      "answer": 1,
+      "explanation": "Possible preterm PROM needs careful assessment and specialist plan."
+    },
+    {
+      "id": "mn-130",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Which action is appropriate when a newborn is vigorous and crying at birth with clear liquor?",
+      "options": [
+        "Deep pharyngeal suction before drying",
+        "Dry and stimulate as needed; no routine deep suction",
+        "Separate from mother for 30 minutes routinely",
+        "Delay clamping discussion forever"
+      ],
+      "answer": 1,
+      "explanation": "Vigorous newborns do not need routine deep suction."
+    },
+    {
+      "id": "mn-131",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A postpartum patient has a temperature of 38.2°C on day 1, breast engorgement starting, and a non-tender uterus. The nurse should:",
+      "options": [
+        "Start IV antibiotics without assessment",
+        "Assess for other infection sources, support engorgement care, and review if fever persists — early fever needs evaluation",
+        "Ignore all fevers in the first week",
+        "Stop breastfeeding"
+      ],
+      "answer": 1,
+      "explanation": "Early fever needs assessment; engorgement alone may contribute but infection must be considered."
+    },
+    {
+      "id": "mn-132",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "The partograph is used primarily to:",
+      "options": [
+        "Replace clinical judgement entirely",
+        "Graphically monitor labour progress and trigger timely action",
+        "Measure only maternal height",
+        "Document newborn weight only"
+      ],
+      "answer": 1,
+      "explanation": "Partograph helps detect prolonged labour and guide intervention timing."
+    },
+    {
+      "id": "mn-133",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A woman with cardiac disease is postpartum. Priority nursing care includes:",
+      "options": [
+        "Encouraging sudden heavy exertion on day 1",
+        "Monitoring for fluid overload and cardiac symptoms, graded activity, and medication adherence",
+        "Stopping all cardiac drugs without advice",
+        "Restricting breastfeeding always"
+      ],
+      "answer": 1,
+      "explanation": "The postpartum period stresses the cardiovascular system; careful monitoring is required."
+    },
+    {
+      "id": "mn-134",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Which teaching is correct about exclusive breastfeeding and infant stools in the first weeks?",
+      "options": [
+        "No stools for 7 days is always normal",
+        "Frequent soft yellow stools are common in exclusively breastfed infants; dry hard stools with poor feeding need review",
+        "Stools should always be black after day 5",
+        "Water must be added if stools are soft"
+      ],
+      "answer": 1,
+      "explanation": "Breastfed stool patterns differ from formula; poor output with feeding issues needs review."
+    },
+    {
+      "id": "mn-135",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A woman is receiving oxytocin. Contractions are every 1 minute lasting 80 seconds. Fetal scalp electrode shows prolonged decelerations. The nurse’s first actions include:",
+      "options": [
+        "Increase oxytocin",
+        "Stop oxytocin, left lateral position, oxygen per protocol, notify clinician",
+        "Start pushing",
+        "Give a sedative only"
+      ],
+      "answer": 1,
+      "explanation": "Tachysystole with fetal compromise → stop oxytocin and resuscitate in utero."
+    },
+    {
+      "id": "mn-136",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "Antenatal education on birth preparedness should include:",
+      "options": [
+        "Only buying baby clothes",
+        "Recognising danger signs, transport plan, skilled birth attendant, and needed supplies/funds",
+        "Avoiding any discussion of emergencies",
+        "Planning to birth alone without telling anyone"
+      ],
+      "answer": 1,
+      "explanation": "Birth preparedness and complication readiness reduce delays in seeking care."
+    },
+    {
+      "id": "mn-137",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A newborn has central cyanosis and respiratory rate of 80. The nurse should:",
+      "options": [
+        "Feed immediately before any assessment",
+        "Support airway/oxygen as protocol and call for urgent help",
+        "Wrap tightly and ignore colour",
+        "Discharge for home monitoring only"
+      ],
+      "answer": 1,
+      "explanation": "Central cyanosis and tachypnoea are emergencies."
+    },
+    {
+      "id": "mn-138",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "Which mother is at highest risk for postpartum haemorrhage?",
+      "options": [
+        "Uncomplicated spontaneous birth, firm uterus, no tears",
+        "Prolonged labour, multiple pregnancy, or previous PPH",
+        "Primip with short second stage only",
+        "Exclusive breastfeeding intent only"
+      ],
+      "answer": 1,
+      "explanation": "Overdistension, prolonged labour and prior PPH raise PPH risk."
+    },
+    {
+      "id": "mn-139",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A woman in the latent phase asks for caesarean because of fear. The nurse should:",
+      "options": [
+        "Schedule surgery without counselling",
+        "Explore fears, provide information and support, and involve the obstetric team in shared decisions",
+        "Refuse all conversation",
+        "Guarantee labour will be painless"
+      ],
+      "answer": 1,
+      "explanation": "Fear needs support and informed choice, not automatic surgery or dismissal."
+    },
+    {
+      "id": "mn-140",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "Hand hygiene before newborn care is essential mainly to:",
+      "options": [
+        "Satisfy paperwork only",
+        "Reduce healthcare-associated infection risk to the neonate",
+        "Warm the nurse’s hands only",
+        "Replace skin-to-skin"
+      ],
+      "answer": 1,
+      "explanation": "Newborns are vulnerable to infection transmitted on hands."
+    },
+    {
+      "id": "mn-141",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman at 33 weeks has BP 140/90, proteinuria 1+, and no severe symptoms. The nurse anticipates:",
+      "options": [
+        "Immediate home discharge with no follow-up",
+        "Close surveillance for progression, fetal assessment, and possible admission depending on protocol",
+        "Ergometrine therapy",
+        "Unsupervised heavy exercise programme"
+      ],
+      "answer": 1,
+      "explanation": "Even ‘mild’ pre-eclampsia needs structured surveillance."
+    },
+    {
+      "id": "mn-142",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "When assisting with controlled cord traction, the nurse must ensure:",
+      "options": [
+        "Continuous traction without counter-support on the uterus",
+        "Counter-traction on the uterus above the pubis and traction only with a contraction when the placenta is separated",
+        "Pulling as hard as possible continuously",
+        "No observation of blood loss"
+      ],
+      "answer": 1,
+      "explanation": "Incorrect traction technique risks inversion and trauma."
+    },
+    {
+      "id": "mn-143",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A mother reports her 5-day-old has fewer wet nappies and is lethargic. The nurse should:",
+      "options": [
+        "Reassure without assessment",
+        "Assess feeding, weight, jaundice and hydration and refer urgently if dehydration or illness is present",
+        "Advise stopping all feeds",
+        "Suggest honey water"
+      ],
+      "answer": 1,
+      "explanation": "Fewer wet nappies and lethargy are danger signs in the neonate."
+    },
+    {
+      "id": "mn-144",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "Which postpartum contraceptive teaching is accurate for a fully breastfeeding mother (LAM criteria applying)?",
+      "options": [
+        "LAM is 100% permanent sterilisation",
+        "Lactational amenorrhoea can be effective under strict criteria; other methods may be needed as eligibility changes",
+        "No method is ever needed while breastfeeding",
+        "Combined oral contraceptives are always first choice at 48 hours for everyone"
+      ],
+      "answer": 1,
+      "explanation": "LAM works only with correct criteria; counselling should cover transition to other methods."
+    },
+    {
+      "id": "mn-145",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "A woman with GDM in labour needs:",
+      "options": [
+        "No glucose monitoring because labour cures diabetes",
+        "Blood glucose monitoring and insulin/glucose management per protocol to avoid maternal–fetal hypo/hyperglycaemia",
+        "High-dose oral sugar continuous infusion without orders",
+        "Stopping all diabetes care"
+      ],
+      "answer": 1,
+      "explanation": "Intrapartum glucose control protects mother and fetus."
+    },
+    {
+      "id": "mn-146",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "The nurse suspects postpartum urinary retention when:",
+      "options": [
+        "The mother voids 400 mL freely and fundus is firm midline",
+        "Fundus is high and displaced, with small frequent voids or inability to void after birth",
+        "Lochia is scant",
+        "She requests analgesia for afterpains only"
+      ],
+      "answer": 1,
+      "explanation": "Displacement and voiding difficulty suggest retention — bladder emptying aids uterine tone."
+    },
+    {
+      "id": "mn-147",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A newborn screening blood spot is best collected:",
+      "options": [
+        "Before any feed ever",
+        "As per national timing guidelines (often after 24 hours of age) with correct technique",
+        "Only if the parents request research participation",
+        "From the mother’s finger only"
+      ],
+      "answer": 1,
+      "explanation": "Timing and technique affect screening accuracy."
+    },
+    {
+      "id": "mn-148",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "Which sign suggests impending eclampsia in a pre-eclamptic woman?",
+      "options": [
+        "Mild ankle swelling alone",
+        "Severe headache, visual disturbances, epigastric pain, or hyperreflexia/clonus",
+        "Desire to sleep after a long clinic visit",
+        "Normal fetal movements"
+      ],
+      "answer": 1,
+      "explanation": "Neurological and epigastric symptoms warn of progression toward eclampsia."
+    },
+    {
+      "id": "mn-149",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "During neonatal resuscitation, room air vs oxygen use should follow:",
+      "options": [
+        "Personal preference only",
+        "Current resuscitation guidelines (starting with air for term babies and titrating based on response/targets)",
+        "100% oxygen for every term baby for 20 minutes routinely",
+        "No oxygen ever for any baby"
+      ],
+      "answer": 1,
+      "explanation": "Modern NRP guidance uses air initially for term infants with targeted saturation."
+    },
+    {
+      "id": "mn-150",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A multipara delivers a live baby; within minutes she becomes pale, hypotensive, and the uterus is poorly contracted with heavy bleeding. The nurse’s simultaneous priorities are:",
+      "options": [
+        "Documentation only for 10 minutes",
+        "Call for help, continuous fundal massage, uterotonics as ordered, IV access/fluids, oxygen, and ongoing vital signs",
+        "Walk her to the shower",
+        "Delay oxytocin until the placenta is histologically reported"
+      ],
+      "answer": 1,
+      "explanation": "PPH requires parallel actions: help, mechanical and pharmacological uterine control, and resuscitation."
+    },
+    {
+      "id": "mn-151",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Antenatal & high-risk",
+      "access": "free",
+      "q": "A woman at 25 weeks has a cervical length of 20 mm on ultrasound and a history of previous mid-trimester loss. The nurse anticipates possible:",
+      "options": [
+        "Discharge without follow-up",
+        "Closer surveillance and interventions such as progesterone/cerclage as the obstetric team decides",
+        "Immediate induction of labour",
+        "Advice to run daily marathons"
+      ],
+      "answer": 1,
+      "explanation": "Short cervix with poor history needs specialist prevention strategies."
+    },
+    {
+      "id": "mn-152",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "Which behaviour by staff best supports respectful maternity care?",
+      "options": [
+        "Performing procedures without explanation",
+        "Seeking consent, maintaining privacy, and communicating plans in a language the woman understands",
+        "Scolding women for expressing pain",
+        "Restricting all companions even when policy allows"
+      ],
+      "answer": 1,
+      "explanation": "Consent, privacy and communication are core to respectful care."
+    },
+    {
+      "id": "mn-153",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Newborn",
+      "access": "free",
+      "q": "A newborn has ambiguous genitalia. The priority nursing approach is to:",
+      "options": [
+        "Assign a gender immediately in front of relatives without senior review",
+        "Avoid hasty gender assignment, support parents, and ensure urgent specialist evaluation",
+        "Post photos publicly",
+        "Discharge without investigation"
+      ],
+      "answer": 1,
+      "explanation": "Disorder of sex development needs sensitive, specialist-led management."
+    },
+    {
+      "id": "mn-154",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Labour & birth",
+      "access": "free",
+      "q": "After a forceps birth, the nurse should prioritise assessment for:",
+      "options": [
+        "Only maternal happiness",
+        "Maternal genital tract trauma and neonatal marks/neurological behaviour",
+        "Skipping the fundus check",
+        "Immediate unsupervised bath of mother"
+      ],
+      "answer": 1,
+      "explanation": "Instrumental birth increases risk of maternal trauma and neonatal injury signs."
+    },
+    {
+      "id": "mn-155",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Maternal and Newborn Health / Midwifery",
+      "group": "Postpartum",
+      "access": "free",
+      "q": "A mother who is not breastfeeding asks how to manage engorgement. The best advice is:",
+      "options": [
+        "Pump every hour to keep producing milk",
+        "Supportive bra, cold packs, minimal stimulation, analgesia if needed",
+        "Hot compresses before every pump session to increase supply",
+        "Antibiotics routinely without infection signs"
+      ],
+      "answer": 1,
+      "explanation": "If not lactating, avoid stimulation; comfort measures reduce engorgement pain."
+    }
+  ],
+  "events": []
+}
