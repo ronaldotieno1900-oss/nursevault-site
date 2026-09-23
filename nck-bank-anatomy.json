@@ -1,0 +1,3406 @@
+{
+  "hideSamples": true,
+  "questions": [
+    {
+      "id": "anat-001",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The functional unit of the kidney is the:",
+      "options": [
+        "Glomerulus",
+        "Nephron",
+        "Collecting duct",
+        "Renal pyramid"
+      ],
+      "answer": 1,
+      "explanation": "The nephron is the functional unit of the kidney; it includes the glomerulus, tubules and collecting system."
+    },
+    {
+      "id": "anat-002",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The mitral (bicuspid) valve is located between the:",
+      "options": [
+        "Right atrium and right ventricle",
+        "Left atrium and left ventricle",
+        "Right ventricle and pulmonary artery",
+        "Left ventricle and aorta"
+      ],
+      "answer": 1,
+      "explanation": "The mitral valve separates the left atrium from the left ventricle."
+    },
+    {
+      "id": "anat-003",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which cranial nerve is responsible for most eye movements, pupil constriction and eyelid elevation?",
+      "options": [
+        "CN II (optic)",
+        "CN III (oculomotor)",
+        "CN IV (trochlear)",
+        "CN VI (abducens)"
+      ],
+      "answer": 1,
+      "explanation": "CN III (oculomotor) innervates most extraocular muscles, the levator palpebrae and the pupil constrictor."
+    },
+    {
+      "id": "anat-004",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The left ventricle has a thicker wall than the right ventricle because it:",
+      "options": [
+        "Receives more blood",
+        "Pumps blood against higher systemic resistance",
+        "Pumps blood only to the lungs",
+        "Contains more valves"
+      ],
+      "answer": 1,
+      "explanation": "Systemic vascular resistance is much higher than pulmonary resistance, so the left ventricle needs greater muscle mass."
+    },
+    {
+      "id": "anat-005",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which bone forms the forehead and the superior part of the orbits?",
+      "options": [
+        "Parietal",
+        "Temporal",
+        "Frontal",
+        "Occipital"
+      ],
+      "answer": 2,
+      "explanation": "The frontal bone forms the forehead and the roofs of the orbits."
+    },
+    {
+      "id": "anat-006",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The diaphragm is primarily innervated by which nerve?",
+      "options": [
+        "Vagus nerve",
+        "Phrenic nerve",
+        "Intercostal nerves",
+        "Accessory nerve"
+      ],
+      "answer": 1,
+      "explanation": "The phrenic nerve (C3–C5) is the main motor supply to the diaphragm."
+    },
+    {
+      "id": "anat-007",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which structure separates the thoracic cavity from the abdominal cavity?",
+      "options": [
+        "Mediastinum",
+        "Diaphragm",
+        "Peritoneum",
+        "Pleura"
+      ],
+      "answer": 1,
+      "explanation": "The diaphragm is the muscular partition between the thorax and abdomen."
+    },
+    {
+      "id": "anat-008",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The pacemaker of the heart is normally the:",
+      "options": [
+        "AV node",
+        "SA node",
+        "Bundle of His",
+        "Purkinje fibres"
+      ],
+      "answer": 1,
+      "explanation": "The sinoatrial (SA) node initiates the normal cardiac impulse."
+    },
+    {
+      "id": "anat-009",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which chamber of the heart receives deoxygenated blood from the systemic circulation?",
+      "options": [
+        "Left atrium",
+        "Left ventricle",
+        "Right atrium",
+        "Right ventricle"
+      ],
+      "answer": 2,
+      "explanation": "The right atrium receives venous blood via the superior and inferior vena cava."
+    },
+    {
+      "id": "anat-010",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The tricuspid valve lies between the:",
+      "options": [
+        "Left atrium and left ventricle",
+        "Right atrium and right ventricle",
+        "Right ventricle and pulmonary trunk",
+        "Left ventricle and aorta"
+      ],
+      "answer": 1,
+      "explanation": "The tricuspid valve is the atrioventricular valve on the right side of the heart."
+    },
+    {
+      "id": "anat-011",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which part of the brain is mainly responsible for balance and coordination?",
+      "options": [
+        "Cerebrum",
+        "Cerebellum",
+        "Medulla oblongata",
+        "Thalamus"
+      ],
+      "answer": 1,
+      "explanation": "The cerebellum coordinates voluntary movement, balance and posture."
+    },
+    {
+      "id": "anat-012",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Cranial nerve X is the:",
+      "options": [
+        "Trigeminal nerve",
+        "Facial nerve",
+        "Vagus nerve",
+        "Hypoglossal nerve"
+      ],
+      "answer": 2,
+      "explanation": "CN X is the vagus nerve; it has extensive parasympathetic supply to thoracic and abdominal organs."
+    },
+    {
+      "id": "anat-013",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The largest organ of the body is the:",
+      "options": [
+        "Liver",
+        "Skin",
+        "Brain",
+        "Intestine"
+      ],
+      "answer": 1,
+      "explanation": "The skin is the largest organ by surface area and weight."
+    },
+    {
+      "id": "anat-014",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which cells produce myelin in the central nervous system?",
+      "options": [
+        "Schwann cells",
+        "Oligodendrocytes",
+        "Astrocytes",
+        "Microglia"
+      ],
+      "answer": 1,
+      "explanation": "Oligodendrocytes myelinate CNS axons; Schwann cells myelinate peripheral nerves."
+    },
+    {
+      "id": "anat-015",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The foramen magnum is found in which bone?",
+      "options": [
+        "Frontal",
+        "Temporal",
+        "Occipital",
+        "Sphenoid"
+      ],
+      "answer": 2,
+      "explanation": "The foramen magnum is the large opening in the occipital bone through which the spinal cord passes."
+    },
+    {
+      "id": "anat-016",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which valve prevents backflow of blood from the aorta into the left ventricle?",
+      "options": [
+        "Mitral",
+        "Tricuspid",
+        "Aortic",
+        "Pulmonary"
+      ],
+      "answer": 2,
+      "explanation": "The aortic valve closes during diastole to prevent aortic blood from returning to the left ventricle."
+    },
+    {
+      "id": "anat-017",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The primary site of gas exchange in the lungs is the:",
+      "options": [
+        "Bronchi",
+        "Bronchioles",
+        "Alveoli",
+        "Trachea"
+      ],
+      "answer": 2,
+      "explanation": "Alveoli provide the large surface area and thin barrier needed for gas exchange."
+    },
+    {
+      "id": "anat-018",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which endocrine gland is located in the sella turcica of the sphenoid bone?",
+      "options": [
+        "Thyroid",
+        "Adrenal",
+        "Pituitary",
+        "Pineal"
+      ],
+      "answer": 2,
+      "explanation": "The pituitary gland sits in the sella turcica."
+    },
+    {
+      "id": "anat-019",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The liver receives oxygenated blood mainly via the:",
+      "options": [
+        "Portal vein",
+        "Hepatic artery",
+        "Hepatic vein",
+        "Inferior vena cava"
+      ],
+      "answer": 1,
+      "explanation": "The hepatic artery supplies oxygenated blood; the portal vein brings nutrient-rich blood from the gut."
+    },
+    {
+      "id": "anat-020",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which structure carries urine from the kidney to the bladder?",
+      "options": [
+        "Urethra",
+        "Ureter",
+        "Collecting duct",
+        "Renal pelvis only"
+      ],
+      "answer": 1,
+      "explanation": "The ureters transport urine from the renal pelvis to the urinary bladder."
+    },
+    {
+      "id": "anat-021",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The atlas (C1) articulates superiorly with the:",
+      "options": [
+        "Axis (C2)",
+        "Occipital bone",
+        "Mandible",
+        "Hyoid"
+      ],
+      "answer": 1,
+      "explanation": "The atlas articulates with the occipital condyles, allowing nodding movements."
+    },
+    {
+      "id": "anat-022",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which muscle is the primary muscle of respiration?",
+      "options": [
+        "External intercostals",
+        "Diaphragm",
+        "Sternocleidomastoid",
+        "Rectus abdominis"
+      ],
+      "answer": 1,
+      "explanation": "The diaphragm is the principal muscle of quiet inspiration."
+    },
+    {
+      "id": "anat-023",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The Circle of Willis is located at the:",
+      "options": [
+        "Base of the brain",
+        "Apex of the heart",
+        "Hilum of the lung",
+        "Porta hepatis"
+      ],
+      "answer": 0,
+      "explanation": "The Circle of Willis is an arterial anastomosis at the base of the brain."
+    },
+    {
+      "id": "anat-024",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which blood vessel returns blood from the myocardium to the right atrium?",
+      "options": [
+        "Pulmonary vein",
+        "Coronary sinus",
+        "Azygos vein",
+        "Superior vena cava only"
+      ],
+      "answer": 1,
+      "explanation": "Most cardiac venous drainage enters the right atrium via the coronary sinus."
+    },
+    {
+      "id": "anat-025",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The islets of Langerhans are found in the:",
+      "options": [
+        "Liver",
+        "Pancreas",
+        "Spleen",
+        "Kidney"
+      ],
+      "answer": 1,
+      "explanation": "The islets of Langerhans are the endocrine portion of the pancreas."
+    },
+    {
+      "id": "anat-026",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which part of the small intestine is the longest?",
+      "options": [
+        "Duodenum",
+        "Jejunum",
+        "Ileum",
+        "Caecum"
+      ],
+      "answer": 2,
+      "explanation": "The ileum is the longest segment of the small intestine."
+    },
+    {
+      "id": "anat-027",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The vocal cords are located in the:",
+      "options": [
+        "Pharynx",
+        "Larynx",
+        "Trachea",
+        "Oropharynx"
+      ],
+      "answer": 1,
+      "explanation": "The vocal folds (cords) are within the larynx."
+    },
+    {
+      "id": "anat-028",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which bone is commonly called the collarbone?",
+      "options": [
+        "Scapula",
+        "Clavicle",
+        "Sternum",
+        "Humerus"
+      ],
+      "answer": 1,
+      "explanation": "The clavicle is the collarbone."
+    },
+    {
+      "id": "anat-029",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The glenohumeral joint is the:",
+      "options": [
+        "Elbow joint",
+        "Shoulder joint",
+        "Hip joint",
+        "Wrist joint"
+      ],
+      "answer": 1,
+      "explanation": "The glenohumeral joint is the ball-and-socket joint of the shoulder."
+    },
+    {
+      "id": "anat-030",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which structure produces cerebrospinal fluid (CSF)?",
+      "options": [
+        "Arachnoid villi",
+        "Choroid plexus",
+        "Pia mater",
+        "Falx cerebri"
+      ],
+      "answer": 1,
+      "explanation": "CSF is produced by the choroid plexus in the ventricles."
+    },
+    {
+      "id": "anat-031",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The normal adult has how many pairs of spinal nerves?",
+      "options": [
+        "12",
+        "24",
+        "31",
+        "33"
+      ],
+      "answer": 2,
+      "explanation": "There are 31 pairs of spinal nerves."
+    },
+    {
+      "id": "anat-032",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which organ stores bile?",
+      "options": [
+        "Liver",
+        "Gallbladder",
+        "Pancreas",
+        "Duodenum"
+      ],
+      "answer": 1,
+      "explanation": "Bile is produced by the liver and stored and concentrated in the gallbladder."
+    },
+    {
+      "id": "anat-033",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The femur articulates distally with the:",
+      "options": [
+        "Tibia and patella",
+        "Fibula only",
+        "Calcaneus",
+        "Talus"
+      ],
+      "answer": 0,
+      "explanation": "The distal femur articulates with the tibia and the patella."
+    },
+    {
+      "id": "anat-034",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which layer of the heart wall is the thickest?",
+      "options": [
+        "Endocardium",
+        "Myocardium",
+        "Epicardium",
+        "Pericardium"
+      ],
+      "answer": 1,
+      "explanation": "The myocardium (cardiac muscle) is the thickest layer."
+    },
+    {
+      "id": "anat-035",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The optic nerve (CN II) exits the orbit via the:",
+      "options": [
+        "Superior orbital fissure",
+        "Optic canal",
+        "Inferior orbital fissure",
+        "Foramen rotundum"
+      ],
+      "answer": 1,
+      "explanation": "CN II passes through the optic canal."
+    },
+    {
+      "id": "anat-036",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which salivary gland is the largest?",
+      "options": [
+        "Submandibular",
+        "Sublingual",
+        "Parotid",
+        "Buccal"
+      ],
+      "answer": 2,
+      "explanation": "The parotid glands are the largest salivary glands."
+    },
+    {
+      "id": "anat-037",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The appendix is attached to the:",
+      "options": [
+        "Ileum",
+        "Caecum",
+        "Ascending colon",
+        "Sigmoid colon"
+      ],
+      "answer": 1,
+      "explanation": "The vermiform appendix is attached to the caecum."
+    },
+    {
+      "id": "anat-038",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which vessel carries oxygenated blood from the lungs to the left atrium?",
+      "options": [
+        "Pulmonary artery",
+        "Pulmonary veins",
+        "Aorta",
+        "Bronchial arteries"
+      ],
+      "answer": 1,
+      "explanation": "The pulmonary veins return oxygenated blood to the left atrium."
+    },
+    {
+      "id": "anat-039",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The medulla oblongata is part of the:",
+      "options": [
+        "Cerebrum",
+        "Cerebellum",
+        "Brainstem",
+        "Diencephalon"
+      ],
+      "answer": 2,
+      "explanation": "The brainstem comprises midbrain, pons and medulla oblongata."
+    },
+    {
+      "id": "anat-040",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which cartilage forms the Adam's apple?",
+      "options": [
+        "Cricoid",
+        "Thyroid",
+        "Epiglottis",
+        "Arytenoid"
+      ],
+      "answer": 1,
+      "explanation": "The laryngeal prominence (Adam's apple) is formed by the thyroid cartilage."
+    },
+    {
+      "id": "anat-041",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The hip joint is an example of a:",
+      "options": [
+        "Hinge joint",
+        "Ball-and-socket joint",
+        "Pivot joint",
+        "Saddle joint"
+      ],
+      "answer": 1,
+      "explanation": "The hip is a ball-and-socket (spheroidal) synovial joint."
+    },
+    {
+      "id": "anat-042",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which structure filters blood in the kidney?",
+      "options": [
+        "Loop of Henle",
+        "Glomerulus",
+        "Collecting duct",
+        "Distal convoluted tubule"
+      ],
+      "answer": 1,
+      "explanation": "The glomerulus is the capillary tuft where filtration occurs."
+    },
+    {
+      "id": "anat-043",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The spleen is located in the:",
+      "options": [
+        "Right upper quadrant",
+        "Left upper quadrant",
+        "Right lower quadrant",
+        "Left lower quadrant"
+      ],
+      "answer": 1,
+      "explanation": "The spleen lies in the left upper quadrant under the diaphragm."
+    },
+    {
+      "id": "anat-044",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which nerve innervates the diaphragm?",
+      "options": [
+        "Vagus",
+        "Phrenic",
+        "Intercostal",
+        "Recurrent laryngeal"
+      ],
+      "answer": 1,
+      "explanation": "The phrenic nerve (C3–C5) innervates the diaphragm."
+    },
+    {
+      "id": "anat-045",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The foramen ovale in the fetal heart connects the:",
+      "options": [
+        "Right and left ventricles",
+        "Right and left atria",
+        "Pulmonary artery and aorta",
+        "Umbilical vein and IVC"
+      ],
+      "answer": 1,
+      "explanation": "In the fetus the foramen ovale allows blood to pass from right atrium to left atrium."
+    },
+    {
+      "id": "anat-046",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which bone contains the external auditory meatus?",
+      "options": [
+        "Frontal",
+        "Parietal",
+        "Temporal",
+        "Occipital"
+      ],
+      "answer": 2,
+      "explanation": "The external acoustic meatus is in the temporal bone."
+    },
+    {
+      "id": "anat-047",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The thoracic duct drains lymph into the:",
+      "options": [
+        "Right subclavian vein",
+        "Left subclavian vein (near junction with internal jugular)",
+        "Superior vena cava directly",
+        "Azygos vein"
+      ],
+      "answer": 1,
+      "explanation": "The thoracic duct empties into the venous angle on the left side."
+    },
+    {
+      "id": "anat-048",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which part of the stomach is nearest the oesophagus?",
+      "options": [
+        "Pylorus",
+        "Fundus",
+        "Cardia",
+        "Antrum"
+      ],
+      "answer": 2,
+      "explanation": "The cardia is the region around the oesophageal opening."
+    },
+    {
+      "id": "anat-049",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The normal number of permanent teeth in an adult is:",
+      "options": [
+        "28",
+        "30",
+        "32",
+        "36"
+      ],
+      "answer": 2,
+      "explanation": "A complete adult dentition has 32 permanent teeth."
+    },
+    {
+      "id": "anat-050",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which meningeal layer is the outermost and toughest?",
+      "options": [
+        "Pia mater",
+        "Arachnoid mater",
+        "Dura mater",
+        "Ependyma"
+      ],
+      "answer": 2,
+      "explanation": "The dura mater is the tough outer meningeal layer."
+    },
+    {
+      "id": "anat-051",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The coronary arteries arise from the:",
+      "options": [
+        "Pulmonary trunk",
+        "Ascending aorta",
+        "Descending aorta",
+        "Brachiocephalic trunk"
+      ],
+      "answer": 1,
+      "explanation": "The right and left coronary arteries originate from the ascending aorta just above the aortic valve."
+    },
+    {
+      "id": "anat-052",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which structure is known as the 'voice box'?",
+      "options": [
+        "Pharynx",
+        "Larynx",
+        "Trachea",
+        "Epiglottis"
+      ],
+      "answer": 1,
+      "explanation": "The larynx houses the vocal cords and is commonly called the voice box."
+    },
+    {
+      "id": "anat-053",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The olecranon is part of which bone?",
+      "options": [
+        "Humerus",
+        "Radius",
+        "Ulna",
+        "Scapula"
+      ],
+      "answer": 2,
+      "explanation": "The olecranon is the proximal bony prominence of the ulna (the tip of the elbow)."
+    },
+    {
+      "id": "anat-054",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which gland produces melatonin?",
+      "options": [
+        "Pituitary",
+        "Pineal",
+        "Thyroid",
+        "Adrenal"
+      ],
+      "answer": 1,
+      "explanation": "The pineal gland secretes melatonin, which helps regulate sleep–wake cycles."
+    },
+    {
+      "id": "anat-055",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The porta hepatis is found on the:",
+      "options": [
+        "Superior surface of the liver",
+        "Inferior surface of the liver",
+        "Spleen",
+        "Pancreas"
+      ],
+      "answer": 1,
+      "explanation": "The porta hepatis on the inferior liver surface transmits the portal vein, hepatic artery and bile ducts."
+    },
+    {
+      "id": "anat-056",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which spinal level is commonly used for lumbar puncture in adults?",
+      "options": [
+        "T12–L1",
+        "L1–L2",
+        "L3–L4 or L4–L5",
+        "S1–S2"
+      ],
+      "answer": 2,
+      "explanation": "Lumbar puncture is performed below the termination of the spinal cord, typically at L3–L4 or L4–L5."
+    },
+    {
+      "id": "anat-057",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The brachial artery is a continuation of the:",
+      "options": [
+        "Subclavian artery",
+        "Axillary artery",
+        "Radial artery",
+        "Ulnar artery"
+      ],
+      "answer": 1,
+      "explanation": "The axillary artery becomes the brachial artery at the lower border of teres major."
+    },
+    {
+      "id": "anat-058",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which structure covers the lungs?",
+      "options": [
+        "Pericardium",
+        "Peritoneum",
+        "Pleura",
+        "Perineurium"
+      ],
+      "answer": 2,
+      "explanation": "The visceral and parietal pleura cover the lungs and line the thoracic cavity."
+    },
+    {
+      "id": "anat-059",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The ischium, ilium and pubis together form the:",
+      "options": [
+        "Femur",
+        "Hip bone (os coxae)",
+        "Sacrum",
+        "Patella"
+      ],
+      "answer": 1,
+      "explanation": "Each hip bone is formed by the fusion of ilium, ischium and pubis."
+    },
+    {
+      "id": "anat-060",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which cranial nerve carries the sense of smell?",
+      "options": [
+        "CN I",
+        "CN II",
+        "CN V",
+        "CN VII"
+      ],
+      "answer": 0,
+      "explanation": "CN I (olfactory) transmits smell."
+    },
+    {
+      "id": "anat-061",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The ductus arteriosus in the fetus connects the:",
+      "options": [
+        "Pulmonary trunk and aorta",
+        "Right and left atria",
+        "Umbilical vein and IVC",
+        "Right and left ventricles"
+      ],
+      "answer": 0,
+      "explanation": "The ductus arteriosus shunts blood from the pulmonary trunk to the aorta, bypassing the lungs."
+    },
+    {
+      "id": "anat-062",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which organ has both endocrine and exocrine functions?",
+      "options": [
+        "Spleen",
+        "Liver",
+        "Pancreas",
+        "Kidney"
+      ],
+      "answer": 2,
+      "explanation": "The pancreas secretes digestive enzymes (exocrine) and hormones such as insulin and glucagon (endocrine)."
+    },
+    {
+      "id": "anat-063",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The zygomatic bone is also called the:",
+      "options": [
+        "Jawbone",
+        "Cheekbone",
+        "Collarbone",
+        "Kneecap"
+      ],
+      "answer": 1,
+      "explanation": "The zygomatic bone forms the prominence of the cheek."
+    },
+    {
+      "id": "anat-064",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which chamber has the thickest myocardial wall?",
+      "options": [
+        "Right atrium",
+        "Right ventricle",
+        "Left atrium",
+        "Left ventricle"
+      ],
+      "answer": 3,
+      "explanation": "The left ventricle has the thickest wall because it pumps against systemic resistance."
+    },
+    {
+      "id": "anat-065",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The renal pyramids are located in the:",
+      "options": [
+        "Renal cortex",
+        "Renal medulla",
+        "Renal pelvis",
+        "Ureter"
+      ],
+      "answer": 1,
+      "explanation": "The renal pyramids form the medulla of the kidney."
+    },
+    {
+      "id": "anat-066",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which nerve is compressed in carpal tunnel syndrome?",
+      "options": [
+        "Ulnar",
+        "Radial",
+        "Median",
+        "Musculocutaneous"
+      ],
+      "answer": 2,
+      "explanation": "The median nerve is compressed in the carpal tunnel."
+    },
+    {
+      "id": "anat-067",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The epiglottis is composed mainly of:",
+      "options": [
+        "Hyaline cartilage",
+        "Elastic cartilage",
+        "Fibrocartilage",
+        "Bone"
+      ],
+      "answer": 1,
+      "explanation": "The epiglottis is elastic cartilage that covers the laryngeal inlet during swallowing."
+    },
+    {
+      "id": "anat-068",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which vessel is commonly used to measure blood pressure in the arm?",
+      "options": [
+        "Radial artery",
+        "Brachial artery",
+        "Ulnar artery",
+        "Axillary artery"
+      ],
+      "answer": 1,
+      "explanation": "Blood pressure is usually measured over the brachial artery."
+    },
+    {
+      "id": "anat-069",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The corpus callosum connects the:",
+      "options": [
+        "Cerebellum and cerebrum",
+        "Two cerebral hemispheres",
+        "Thalamus and hypothalamus",
+        "Midbrain and pons"
+      ],
+      "answer": 1,
+      "explanation": "The corpus callosum is the major commissure linking the left and right cerebral hemispheres."
+    },
+    {
+      "id": "anat-070",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which structure is the site of fertilization in humans?",
+      "options": [
+        "Uterus",
+        "Ovary",
+        "Ampulla of the fallopian tube",
+        "Cervix"
+      ],
+      "answer": 2,
+      "explanation": "Fertilization most often occurs in the ampulla of the uterine (fallopian) tube."
+    },
+    {
+      "id": "anat-071",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The manubrium, body and xiphoid process are parts of the:",
+      "options": [
+        "Scapula",
+        "Sternum",
+        "Clavicle",
+        "Rib"
+      ],
+      "answer": 1,
+      "explanation": "These three parts make up the sternum."
+    },
+    {
+      "id": "anat-072",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which white blood cell is most abundant in normal peripheral blood?",
+      "options": [
+        "Lymphocyte",
+        "Neutrophil",
+        "Monocyte",
+        "Eosinophil"
+      ],
+      "answer": 1,
+      "explanation": "Neutrophils are the most numerous circulating leukocytes in healthy adults."
+    },
+    {
+      "id": "anat-073",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The pituitary gland is suspended from the:",
+      "options": [
+        "Thalamus",
+        "Hypothalamus",
+        "Pineal",
+        "Midbrain"
+      ],
+      "answer": 1,
+      "explanation": "The pituitary is attached to the hypothalamus by the pituitary stalk (infundibulum)."
+    },
+    {
+      "id": "anat-074",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which bone does not articulate with any other bone?",
+      "options": [
+        "Hyoid",
+        "Patella",
+        "Sesamoid of the hand",
+        "Coccyx"
+      ],
+      "answer": 0,
+      "explanation": "The hyoid bone is suspended by ligaments and muscles and does not form a joint with other bones."
+    },
+    {
+      "id": "anat-075",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The pulmonary arteries carry:",
+      "options": [
+        "Oxygenated blood to the lungs",
+        "Deoxygenated blood to the lungs",
+        "Oxygenated blood to the body",
+        "Deoxygenated blood to the body"
+      ],
+      "answer": 1,
+      "explanation": "Pulmonary arteries carry deoxygenated blood from the right ventricle to the lungs."
+    },
+    {
+      "id": "anat-076",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which layer of the uterus is shed during menstruation?",
+      "options": [
+        "Myometrium",
+        "Perimetrium",
+        "Endometrium",
+        "Serosa"
+      ],
+      "answer": 2,
+      "explanation": "The functional layer of the endometrium is shed in menstruation."
+    },
+    {
+      "id": "anat-077",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The cauda equina is found at the:",
+      "options": [
+        "Cervical enlargement",
+        "Lower end of the spinal cord",
+        "Brainstem",
+        "Thoracic cord only"
+      ],
+      "answer": 1,
+      "explanation": "Below the conus medullaris, lumbar and sacral nerve roots form the cauda equina."
+    },
+    {
+      "id": "anat-078",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which sinus is most commonly involved in sinusitis?",
+      "options": [
+        "Frontal",
+        "Maxillary",
+        "Ethmoid",
+        "Sphenoid"
+      ],
+      "answer": 1,
+      "explanation": "The maxillary sinuses are the most frequently inflamed."
+    },
+    {
+      "id": "anat-079",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The tendon of Achilles inserts into the:",
+      "options": [
+        "Talus",
+        "Calcaneus",
+        "Navicular",
+        "Cuboid"
+      ],
+      "answer": 1,
+      "explanation": "The Achilles (calcaneal) tendon inserts on the calcaneus."
+    },
+    {
+      "id": "anat-080",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which structure produces surfactant in the lung?",
+      "options": [
+        "Type I pneumocytes",
+        "Type II pneumocytes",
+        "Macrophages",
+        "Clara cells only"
+      ],
+      "answer": 1,
+      "explanation": "Type II alveolar cells produce surfactant that reduces surface tension."
+    },
+    {
+      "id": "anat-081",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The internal carotid artery enters the skull through the:",
+      "options": [
+        "Foramen magnum",
+        "Carotid canal",
+        "Jugular foramen",
+        "Foramen ovale"
+      ],
+      "answer": 1,
+      "explanation": "The internal carotid artery ascends through the carotid canal in the temporal bone."
+    },
+    {
+      "id": "anat-082",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which part of the large intestine is S-shaped?",
+      "options": [
+        "Ascending colon",
+        "Transverse colon",
+        "Descending colon",
+        "Sigmoid colon"
+      ],
+      "answer": 3,
+      "explanation": "The sigmoid colon is the S-shaped segment leading to the rectum."
+    },
+    {
+      "id": "anat-083",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The sinoatrial node is located in the wall of the:",
+      "options": [
+        "Left atrium",
+        "Right atrium",
+        "Left ventricle",
+        "Interventricular septum"
+      ],
+      "answer": 1,
+      "explanation": "The SA node lies in the upper wall of the right atrium near the superior vena cava."
+    },
+    {
+      "id": "anat-084",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which cranial nerve is tested by the pupillary light reflex (afferent limb)?",
+      "options": [
+        "CN II",
+        "CN III",
+        "CN IV",
+        "CN VI"
+      ],
+      "answer": 0,
+      "explanation": "The afferent limb of the pupillary light reflex is CN II; the efferent limb is CN III."
+    },
+    {
+      "id": "anat-085",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The greater omentum is attached to the:",
+      "options": [
+        "Liver",
+        "Stomach",
+        "Spleen only",
+        "Kidney"
+      ],
+      "answer": 1,
+      "explanation": "The greater omentum hangs from the greater curvature of the stomach."
+    },
+    {
+      "id": "anat-086",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which bone forms the heel?",
+      "options": [
+        "Talus",
+        "Calcaneus",
+        "Cuboid",
+        "Navicular"
+      ],
+      "answer": 1,
+      "explanation": "The calcaneus is the heel bone."
+    },
+    {
+      "id": "anat-087",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The tricuspid valve has how many cusps?",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "One"
+      ],
+      "answer": 1,
+      "explanation": "The tricuspid valve has three cusps."
+    },
+    {
+      "id": "anat-088",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which structure is the primary pacemaker if the SA node fails?",
+      "options": [
+        "AV node",
+        "Bundle of His",
+        "Purkinje fibres",
+        "Left bundle branch"
+      ],
+      "answer": 0,
+      "explanation": "The AV node can take over as a secondary pacemaker at a slower rate."
+    },
+    {
+      "id": "anat-089",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The pleural cavity normally contains:",
+      "options": [
+        "Air",
+        "A small amount of lubricating fluid",
+        "Blood",
+        "Lymph only"
+      ],
+      "answer": 1,
+      "explanation": "A thin film of pleural fluid allows the lungs to slide during respiration."
+    },
+    {
+      "id": "anat-090",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which artery is palpated in the neck to assess the pulse?",
+      "options": [
+        "Subclavian",
+        "Common carotid",
+        "Vertebral",
+        "Facial"
+      ],
+      "answer": 1,
+      "explanation": "The common carotid pulse is felt in the neck beside the trachea."
+    },
+    {
+      "id": "anat-091",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The endometrium lines the:",
+      "options": [
+        "Vagina",
+        "Uterus",
+        "Fallopian tube",
+        "Ovary"
+      ],
+      "answer": 1,
+      "explanation": "The endometrium is the inner lining of the uterus."
+    },
+    {
+      "id": "anat-092",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which structure closes the larynx during swallowing?",
+      "options": [
+        "Soft palate",
+        "Epiglottis",
+        "Uvula",
+        "Tongue only"
+      ],
+      "answer": 1,
+      "explanation": "The epiglottis folds back to cover the laryngeal inlet during swallowing."
+    },
+    {
+      "id": "anat-093",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The radius is lateral to the ulna when the arm is in:",
+      "options": [
+        "Pronation",
+        "Anatomical position",
+        "Flexion",
+        "Adduction"
+      ],
+      "answer": 1,
+      "explanation": "In the anatomical position the radius is lateral and the ulna is medial."
+    },
+    {
+      "id": "anat-094",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which organ is both the largest gland and important for metabolism and detoxification?",
+      "options": [
+        "Pancreas",
+        "Liver",
+        "Spleen",
+        "Thyroid"
+      ],
+      "answer": 1,
+      "explanation": "The liver is the largest internal gland and has major metabolic and detoxifying roles."
+    },
+    {
+      "id": "anat-095",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The spinal cord ends in adults approximately at the level of:",
+      "options": [
+        "L1–L2",
+        "L3–L4",
+        "S1",
+        "T12"
+      ],
+      "answer": 0,
+      "explanation": "In adults the spinal cord typically terminates at L1–L2."
+    },
+    {
+      "id": "anat-096",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which chamber receives blood from the pulmonary veins?",
+      "options": [
+        "Right atrium",
+        "Right ventricle",
+        "Left atrium",
+        "Left ventricle"
+      ],
+      "answer": 2,
+      "explanation": "The four pulmonary veins empty into the left atrium."
+    },
+    {
+      "id": "anat-097",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The gallbladder is located on the:",
+      "options": [
+        "Left side of the liver",
+        "Inferior surface of the right lobe of the liver",
+        "Superior surface of the liver",
+        "Hilum of the spleen"
+      ],
+      "answer": 1,
+      "explanation": "The gallbladder sits in a fossa on the inferior surface of the right lobe of the liver."
+    },
+    {
+      "id": "anat-098",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which type of joint is the knee primarily?",
+      "options": [
+        "Ball-and-socket",
+        "Hinge",
+        "Pivot",
+        "Gliding"
+      ],
+      "answer": 1,
+      "explanation": "The knee is primarily a hinge joint (with some rotation when flexed)."
+    },
+    {
+      "id": "anat-099",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "The auditory (Eustachian) tube connects the middle ear to the:",
+      "options": [
+        "Outer ear",
+        "Nasopharynx",
+        "Oropharynx",
+        "Inner ear"
+      ],
+      "answer": 1,
+      "explanation": "The Eustachian tube equalises pressure between the middle ear and the nasopharynx."
+    },
+    {
+      "id": "anat-100",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Anatomy",
+      "access": "free",
+      "q": "Which blood cells are responsible for oxygen transport?",
+      "options": [
+        "Leukocytes",
+        "Platelets",
+        "Erythrocytes",
+        "Plasma cells"
+      ],
+      "answer": 2,
+      "explanation": "Erythrocytes (red blood cells) contain haemoglobin that carries oxygen."
+    },
+    {
+      "id": "phys-001",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The normal resting heart rate in a healthy adult is approximately:",
+      "options": [
+        "40–50 beats/min",
+        "60–100 beats/min",
+        "110–130 beats/min",
+        "140–160 beats/min"
+      ],
+      "answer": 1,
+      "explanation": "Normal adult resting heart rate is typically 60–100 beats per minute."
+    },
+    {
+      "id": "phys-002",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Oxygen is carried in the blood mainly by:",
+      "options": [
+        "Dissolving in plasma",
+        "Binding to haemoglobin",
+        "Binding to albumin",
+        "As bicarbonate"
+      ],
+      "answer": 1,
+      "explanation": "About 97–98% of oxygen is transported bound to haemoglobin in red blood cells."
+    },
+    {
+      "id": "phys-003",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The first heart sound (S1) is caused by:",
+      "options": [
+        "Opening of the AV valves",
+        "Closure of the AV valves",
+        "Closure of the semilunar valves",
+        "Opening of the semilunar valves"
+      ],
+      "answer": 1,
+      "explanation": "S1 is produced by closure of the mitral and tricuspid (AV) valves at the start of systole."
+    },
+    {
+      "id": "phys-004",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which hormone lowers blood glucose by promoting cellular uptake of glucose?",
+      "options": [
+        "Glucagon",
+        "Insulin",
+        "Cortisol",
+        "Adrenaline"
+      ],
+      "answer": 1,
+      "explanation": "Insulin promotes glucose uptake into cells and lowers blood glucose."
+    },
+    {
+      "id": "phys-005",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The normal arterial blood pH range is:",
+      "options": [
+        "7.15–7.25",
+        "7.25–7.35",
+        "7.35–7.45",
+        "7.45–7.55"
+      ],
+      "answer": 2,
+      "explanation": "Normal arterial pH is 7.35–7.45."
+    },
+    {
+      "id": "phys-006",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which ion is most important for the resting membrane potential of nerves and muscle?",
+      "options": [
+        "Calcium",
+        "Sodium",
+        "Potassium",
+        "Chloride"
+      ],
+      "answer": 2,
+      "explanation": "The resting membrane potential depends largely on potassium conductance and the K+ concentration gradient."
+    },
+    {
+      "id": "phys-007",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Surfactant in the alveoli functions to:",
+      "options": [
+        "Increase surface tension",
+        "Reduce surface tension and prevent alveolar collapse",
+        "Carry oxygen",
+        "Kill pathogens"
+      ],
+      "answer": 1,
+      "explanation": "Surfactant reduces surface tension, stabilising alveoli and preventing atelectasis."
+    },
+    {
+      "id": "phys-008",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The primary stimulus for breathing under normal conditions is:",
+      "options": [
+        "Low oxygen",
+        "High carbon dioxide (and low pH)",
+        "High oxygen",
+        "Low blood pressure"
+      ],
+      "answer": 1,
+      "explanation": "Central chemoreceptors respond mainly to rising PaCO2 and the resulting fall in CSF pH."
+    },
+    {
+      "id": "phys-009",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which part of the nephron is impermeable to water in the absence of ADH?",
+      "options": [
+        "Proximal tubule",
+        "Descending loop of Henle",
+        "Ascending loop of Henle",
+        "Collecting duct only when ADH is present"
+      ],
+      "answer": 2,
+      "explanation": "The thick ascending limb is impermeable to water; ADH acts on the collecting duct."
+    },
+    {
+      "id": "phys-010",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Cardiac output equals:",
+      "options": [
+        "Stroke volume × heart rate",
+        "Stroke volume ÷ heart rate",
+        "Blood pressure × resistance",
+        "End-diastolic volume only"
+      ],
+      "answer": 0,
+      "explanation": "Cardiac output = stroke volume × heart rate."
+    },
+    {
+      "id": "phys-011",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The fight-or-flight response is mediated mainly by the:",
+      "options": [
+        "Parasympathetic nervous system",
+        "Sympathetic nervous system",
+        "Somatic nervous system",
+        "Enteric nervous system"
+      ],
+      "answer": 1,
+      "explanation": "Sympathetic activation produces the fight-or-flight response."
+    },
+    {
+      "id": "phys-012",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which blood type is the universal donor for red cell transfusion (in basic ABO terms)?",
+      "options": [
+        "AB positive",
+        "O negative",
+        "A positive",
+        "B negative"
+      ],
+      "answer": 1,
+      "explanation": "Group O negative red cells lack A, B and RhD antigens and are used as universal donor red cells in emergencies."
+    },
+    {
+      "id": "phys-013",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "ADH (vasopressin) primarily acts on the kidney to:",
+      "options": [
+        "Increase sodium excretion",
+        "Increase water reabsorption",
+        "Increase potassium secretion",
+        "Decrease GFR"
+      ],
+      "answer": 1,
+      "explanation": "ADH increases water permeability of the collecting ducts, concentrating the urine."
+    },
+    {
+      "id": "phys-014",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The plateau phase of the cardiac action potential is mainly due to:",
+      "options": [
+        "Sodium influx",
+        "Potassium efflux only",
+        "Calcium influx",
+        "Chloride influx"
+      ],
+      "answer": 2,
+      "explanation": "The plateau is largely due to inward calcium current through L-type Ca2+ channels."
+    },
+    {
+      "id": "phys-015",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which enzyme converts angiotensin I to angiotensin II?",
+      "options": [
+        "Renin",
+        "ACE (angiotensin-converting enzyme)",
+        "Aldosterone synthase",
+        "ADH"
+      ],
+      "answer": 1,
+      "explanation": "ACE, mainly in the lung, converts angiotensin I to the active angiotensin II."
+    },
+    {
+      "id": "phys-016",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Most carbon dioxide is transported in the blood as:",
+      "options": [
+        "Dissolved CO2",
+        "Carbaminohaemoglobin",
+        "Bicarbonate ions",
+        "Carbonic acid only"
+      ],
+      "answer": 2,
+      "explanation": "About 70% of CO2 is transported as bicarbonate."
+    },
+    {
+      "id": "phys-017",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The normal stroke volume of the adult heart is approximately:",
+      "options": [
+        "20–30 mL",
+        "50–60 mL",
+        "70–80 mL",
+        "120–150 mL"
+      ],
+      "answer": 2,
+      "explanation": "Typical resting stroke volume is about 70 mL."
+    },
+    {
+      "id": "phys-018",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which hormone is released from the posterior pituitary?",
+      "options": [
+        "ACTH",
+        "TSH",
+        "ADH (and oxytocin)",
+        "Growth hormone"
+      ],
+      "answer": 2,
+      "explanation": "The posterior pituitary releases ADH and oxytocin."
+    },
+    {
+      "id": "phys-019",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Glomerular filtration rate (GFR) in a healthy adult is approximately:",
+      "options": [
+        "50 mL/min",
+        "90–120 mL/min",
+        "200 mL/min",
+        "500 mL/min"
+      ],
+      "answer": 1,
+      "explanation": "Normal GFR is about 90–120 mL/min/1.73 m²."
+    },
+    {
+      "id": "phys-020",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The QRS complex on the ECG represents:",
+      "options": [
+        "Atrial depolarisation",
+        "Ventricular depolarisation",
+        "Ventricular repolarisation",
+        "Atrial repolarisation"
+      ],
+      "answer": 1,
+      "explanation": "The QRS complex corresponds to ventricular depolarisation."
+    },
+    {
+      "id": "phys-021",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Parasympathetic stimulation of the heart causes:",
+      "options": [
+        "Increased heart rate",
+        "Decreased heart rate",
+        "Increased force of contraction only",
+        "No effect on rate"
+      ],
+      "answer": 1,
+      "explanation": "Vagal (parasympathetic) stimulation slows the heart rate."
+    },
+    {
+      "id": "phys-022",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which vitamin is required for clotting factor synthesis in the liver?",
+      "options": [
+        "Vitamin C",
+        "Vitamin K",
+        "Vitamin D",
+        "Vitamin B12"
+      ],
+      "answer": 1,
+      "explanation": "Vitamin K is needed for synthesis of factors II, VII, IX and X."
+    },
+    {
+      "id": "phys-023",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Aldosterone mainly causes the kidney to:",
+      "options": [
+        "Excrete sodium and retain potassium",
+        "Retain sodium and excrete potassium",
+        "Excrete both sodium and potassium",
+        "Retain water only via aquaporins"
+      ],
+      "answer": 1,
+      "explanation": "Aldosterone promotes sodium reabsorption and potassium excretion in the distal nephron."
+    },
+    {
+      "id": "phys-024",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The oxygen–haemoglobin dissociation curve shifts to the right when there is:",
+      "options": [
+        "Low CO2, low temperature, high pH",
+        "High CO2, high temperature, low pH",
+        "Low 2,3-DPG",
+        "Fetal haemoglobin only"
+      ],
+      "answer": 1,
+      "explanation": "A right shift (easier unloading of O2) occurs with increased CO2, temperature, 2,3-DPG and decreased pH."
+    },
+    {
+      "id": "phys-025",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which cells produce intrinsic factor?",
+      "options": [
+        "Chief cells",
+        "Parietal cells",
+        "G cells",
+        "Goblet cells"
+      ],
+      "answer": 1,
+      "explanation": "Parietal cells secrete HCl and intrinsic factor (needed for B12 absorption)."
+    },
+    {
+      "id": "phys-026",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Starling's law of the heart states that:",
+      "options": [
+        "Heart rate determines cardiac output alone",
+        "Stroke volume increases with increased end-diastolic fibre length (within limits)",
+        "Blood pressure is independent of venous return",
+        "The heart cannot change contractility"
+      ],
+      "answer": 1,
+      "explanation": "Within physiological limits, greater preload increases stroke volume (Frank–Starling mechanism)."
+    },
+    {
+      "id": "phys-027",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The main intracellular cation is:",
+      "options": [
+        "Sodium",
+        "Potassium",
+        "Calcium",
+        "Magnesium"
+      ],
+      "answer": 1,
+      "explanation": "Potassium is the predominant cation inside cells; sodium is predominant outside."
+    },
+    {
+      "id": "phys-028",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which hormone raises blood calcium by increasing bone resorption and renal Ca2+ reabsorption?",
+      "options": [
+        "Calcitonin",
+        "Parathyroid hormone (PTH)",
+        "Thyroxine",
+        "Insulin"
+      ],
+      "answer": 1,
+      "explanation": "PTH increases serum calcium by effects on bone, kidney and (via vitamin D) gut."
+    },
+    {
+      "id": "phys-029",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "During exercise, blood flow to skeletal muscle:",
+      "options": [
+        "Decreases",
+        "Increases markedly",
+        "Remains unchanged",
+        "Is redirected only to skin"
+      ],
+      "answer": 1,
+      "explanation": "Local metabolites and neural mechanisms greatly increase muscle blood flow during exercise."
+    },
+    {
+      "id": "phys-030",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The T wave on the ECG represents:",
+      "options": [
+        "Atrial depolarisation",
+        "Ventricular depolarisation",
+        "Ventricular repolarisation",
+        "AV nodal delay"
+      ],
+      "answer": 2,
+      "explanation": "The T wave corresponds to ventricular repolarisation."
+    },
+    {
+      "id": "phys-031",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which gas has the highest affinity for haemoglobin?",
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Carbon monoxide",
+        "Nitrogen"
+      ],
+      "answer": 2,
+      "explanation": "Carbon monoxide binds haemoglobin with much higher affinity than oxygen."
+    },
+    {
+      "id": "phys-032",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Renin is secreted by the:",
+      "options": [
+        "Adrenal cortex",
+        "Juxtaglomerular cells of the kidney",
+        "Posterior pituitary",
+        "Liver"
+      ],
+      "answer": 1,
+      "explanation": "Juxtaglomerular cells release renin in response to low perfusion, low NaCl and sympathetic input."
+    },
+    {
+      "id": "phys-033",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The main function of platelets is:",
+      "options": [
+        "Oxygen transport",
+        "Antibody production",
+        "Haemostasis (clot formation)",
+        "Phagocytosis"
+      ],
+      "answer": 2,
+      "explanation": "Platelets are essential for primary haemostasis and plug formation."
+    },
+    {
+      "id": "phys-034",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which phase of the cardiac cycle is longer at normal heart rates?",
+      "options": [
+        "Systole",
+        "Diastole",
+        "They are equal",
+        "Isovolumetric contraction only"
+      ],
+      "answer": 1,
+      "explanation": "At rest, diastole lasts longer than systole."
+    },
+    {
+      "id": "phys-035",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Thyroid hormones (T3/T4) primarily increase:",
+      "options": [
+        "Blood glucose storage",
+        "Basal metabolic rate",
+        "Sodium excretion",
+        "Calcium deposition only"
+      ],
+      "answer": 1,
+      "explanation": "Thyroid hormones raise basal metabolic rate and stimulate oxygen consumption."
+    },
+    {
+      "id": "phys-036",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The gag reflex tests which cranial nerves?",
+      "options": [
+        "CN V and VII",
+        "CN IX and X",
+        "CN XI and XII",
+        "CN II and III"
+      ],
+      "answer": 1,
+      "explanation": "Afferent limb is mainly CN IX; efferent limb is CN X."
+    },
+    {
+      "id": "phys-037",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which buffer system is the most important in extracellular fluid?",
+      "options": [
+        "Phosphate",
+        "Protein",
+        "Bicarbonate",
+        "Haemoglobin only"
+      ],
+      "answer": 2,
+      "explanation": "The bicarbonate–carbonic acid system is the primary ECF buffer."
+    },
+    {
+      "id": "phys-038",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Erythropoietin is produced mainly by the:",
+      "options": [
+        "Liver",
+        "Kidney",
+        "Spleen",
+        "Bone marrow"
+      ],
+      "answer": 1,
+      "explanation": "The kidneys produce most erythropoietin in response to hypoxia."
+    },
+    {
+      "id": "phys-039",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The absolute refractory period in cardiac muscle:",
+      "options": [
+        "Allows tetanus",
+        "Prevents tetanus and allows filling",
+        "Is shorter than in skeletal muscle",
+        "Does not exist"
+      ],
+      "answer": 1,
+      "explanation": "A long refractory period prevents tetanic contraction and permits diastolic filling."
+    },
+    {
+      "id": "phys-040",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which immunoglobulin is the most abundant in serum?",
+      "options": [
+        "IgA",
+        "IgE",
+        "IgG",
+        "IgM"
+      ],
+      "answer": 2,
+      "explanation": "IgG is the predominant circulating antibody."
+    },
+    {
+      "id": "phys-041",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Mean arterial pressure is approximately:",
+      "options": [
+        "Systolic pressure",
+        "Diastolic + 1/3 pulse pressure",
+        "Diastolic + 1/2 pulse pressure",
+        "Systolic − diastolic"
+      ],
+      "answer": 1,
+      "explanation": "MAP ≈ diastolic pressure + one-third of pulse pressure."
+    },
+    {
+      "id": "phys-042",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which structure detects changes in blood pressure in the carotid sinus?",
+      "options": [
+        "Chemoreceptors",
+        "Baroreceptors",
+        "Osmoreceptors",
+        "Proprioceptors"
+      ],
+      "answer": 1,
+      "explanation": "Baroreceptors in the carotid sinus and aortic arch sense stretch (pressure)."
+    },
+    {
+      "id": "phys-043",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Insulin is secreted by which pancreatic cells?",
+      "options": [
+        "Alpha cells",
+        "Beta cells",
+        "Delta cells",
+        "PP cells"
+      ],
+      "answer": 1,
+      "explanation": "Beta cells of the islets secrete insulin."
+    },
+    {
+      "id": "phys-044",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The primary purpose of the urea cycle is to:",
+      "options": [
+        "Produce glucose",
+        "Detoxify ammonia to urea",
+        "Synthesise proteins",
+        "Store nitrogen"
+      ],
+      "answer": 1,
+      "explanation": "The urea cycle converts toxic ammonia into urea for excretion."
+    },
+    {
+      "id": "phys-045",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which ion enters the neuron during the upstroke of the action potential?",
+      "options": [
+        "Potassium",
+        "Sodium",
+        "Chloride",
+        "Calcium only"
+      ],
+      "answer": 1,
+      "explanation": "Rapid sodium influx causes the depolarising phase of the neuronal action potential."
+    },
+    {
+      "id": "phys-046",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Haematocrit is the:",
+      "options": [
+        "Number of white cells",
+        "Percentage of blood volume occupied by red cells",
+        "Amount of haemoglobin per red cell",
+        "Plasma protein concentration"
+      ],
+      "answer": 1,
+      "explanation": "Haematocrit is the packed cell volume (fraction of blood that is erythrocytes)."
+    },
+    {
+      "id": "phys-047",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which hormone is responsible for milk ejection?",
+      "options": [
+        "Prolactin",
+        "Oxytocin",
+        "Oestrogen",
+        "Progesterone"
+      ],
+      "answer": 1,
+      "explanation": "Oxytocin causes contraction of myoepithelial cells and milk let-down."
+    },
+    {
+      "id": "phys-048",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The normal adult respiratory rate at rest is approximately:",
+      "options": [
+        "6–8 breaths/min",
+        "12–20 breaths/min",
+        "24–30 breaths/min",
+        "40–50 breaths/min"
+      ],
+      "answer": 1,
+      "explanation": "Resting respiratory rate in adults is typically 12–20 breaths per minute."
+    },
+    {
+      "id": "phys-049",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which factor increases oxygen unloading in tissues?",
+      "options": [
+        "Alkalosis",
+        "Hypothermia",
+        "Increased 2,3-DPG and acidosis",
+        "Fetal haemoglobin"
+      ],
+      "answer": 2,
+      "explanation": "Acidosis, raised temperature and 2,3-DPG shift the O2 curve to the right, aiding unloading."
+    },
+    {
+      "id": "phys-050",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The main site of nutrient absorption is the:",
+      "options": [
+        "Stomach",
+        "Small intestine",
+        "Large intestine",
+        "Oesophagus"
+      ],
+      "answer": 1,
+      "explanation": "Most digestion and absorption of nutrients occur in the small intestine."
+    },
+    {
+      "id": "phys-051",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Sympathetic stimulation of the bronchi causes:",
+      "options": [
+        "Bronchoconstriction",
+        "Bronchodilation",
+        "Increased mucus only",
+        "No effect"
+      ],
+      "answer": 1,
+      "explanation": "Beta-2 sympathetic stimulation relaxes bronchial smooth muscle."
+    },
+    {
+      "id": "phys-052",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which plasma protein is most important for maintaining oncotic pressure?",
+      "options": [
+        "Globulin",
+        "Fibrinogen",
+        "Albumin",
+        "Haemoglobin"
+      ],
+      "answer": 2,
+      "explanation": "Albumin is the major contributor to plasma colloid osmotic (oncotic) pressure."
+    },
+    {
+      "id": "phys-053",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The PR interval on the ECG represents:",
+      "options": [
+        "Ventricular depolarisation",
+        "Time from atrial to ventricular depolarisation (including AV delay)",
+        "Ventricular recovery",
+        "Atrial recovery only"
+      ],
+      "answer": 1,
+      "explanation": "The PR interval reflects conduction from atria through the AV node to the ventricles."
+    },
+    {
+      "id": "phys-054",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which hormone stimulates gastric acid secretion?",
+      "options": [
+        "Secretin",
+        "Gastrin",
+        "CCK",
+        "Somatostatin"
+      ],
+      "answer": 1,
+      "explanation": "Gastrin stimulates parietal cells to secrete HCl."
+    },
+    {
+      "id": "phys-055",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "In metabolic acidosis the respiratory compensation is:",
+      "options": [
+        "Hypoventilation",
+        "Hyperventilation",
+        "No change",
+        "Apnoea"
+      ],
+      "answer": 1,
+      "explanation": "Hyperventilation lowers PaCO2 and helps raise pH toward normal."
+    },
+    {
+      "id": "phys-056",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The normal fasting blood glucose range is approximately:",
+      "options": [
+        "1–2 mmol/L",
+        "3.5–5.5 mmol/L",
+        "8–10 mmol/L",
+        "12–15 mmol/L"
+      ],
+      "answer": 1,
+      "explanation": "Typical fasting plasma glucose is about 3.5–5.5 mmol/L (lab ranges vary slightly)."
+    },
+    {
+      "id": "phys-057",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which cells are the first line of cellular defence against bacteria?",
+      "options": [
+        "Lymphocytes",
+        "Neutrophils",
+        "Eosinophils",
+        "Basophils"
+      ],
+      "answer": 1,
+      "explanation": "Neutrophils are rapid phagocytes that form the first cellular response to most bacteria."
+    },
+    {
+      "id": "phys-058",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Stroke volume decreases when:",
+      "options": [
+        "Preload increases moderately",
+        "Afterload increases markedly",
+        "Contractility increases",
+        "Heart rate falls slightly"
+      ],
+      "answer": 1,
+      "explanation": "High afterload makes it harder to eject blood and can reduce stroke volume."
+    },
+    {
+      "id": "phys-059",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The hormone that stimulates red blood cell production is:",
+      "options": [
+        "Thrombopoietin",
+        "Erythropoietin",
+        "G-CSF",
+        "Interleukin-1"
+      ],
+      "answer": 1,
+      "explanation": "Erythropoietin stimulates erythropoiesis in the bone marrow."
+    },
+    {
+      "id": "phys-060",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which phase of swallowing is under voluntary control?",
+      "options": [
+        "Oesophageal phase",
+        "Pharyngeal phase",
+        "Oral (buccal) phase",
+        "All phases are involuntary"
+      ],
+      "answer": 2,
+      "explanation": "The oral phase is voluntary; pharyngeal and oesophageal phases are reflex."
+    },
+    {
+      "id": "phys-061",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Calcitonin is produced by the:",
+      "options": [
+        "Parathyroid glands",
+        "C cells of the thyroid",
+        "Adrenal cortex",
+        "Kidney"
+      ],
+      "answer": 1,
+      "explanation": "Thyroid C (parafollicular) cells secrete calcitonin, which lowers blood calcium."
+    },
+    {
+      "id": "phys-062",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The main intracellular anion is:",
+      "options": [
+        "Chloride",
+        "Bicarbonate",
+        "Phosphate and proteins",
+        "Sulphate"
+      ],
+      "answer": 2,
+      "explanation": "Organic phosphates and proteins are the major intracellular anions."
+    },
+    {
+      "id": "phys-063",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which factor initiates the intrinsic pathway of coagulation?",
+      "options": [
+        "Tissue factor",
+        "Contact activation (e.g. factor XII)",
+        "Factor VII alone",
+        "Vitamin K only"
+      ],
+      "answer": 1,
+      "explanation": "The intrinsic pathway begins with contact activation involving factor XII."
+    },
+    {
+      "id": "phys-064",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Venous return increases when:",
+      "options": [
+        "Intrathoracic pressure rises in inspiration",
+        "Skeletal muscle pump is active",
+        "Venous compliance increases markedly",
+        "Person stands still for a long time"
+      ],
+      "answer": 1,
+      "explanation": "Muscle contraction compresses veins and aids return of blood to the heart."
+    },
+    {
+      "id": "phys-065",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The normal adult blood volume is approximately:",
+      "options": [
+        "2 litres",
+        "5 litres",
+        "10 litres",
+        "15 litres"
+      ],
+      "answer": 1,
+      "explanation": "Adult blood volume is roughly 5 litres (about 70 mL/kg)."
+    },
+    {
+      "id": "phys-066",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which receptor type is activated by acetylcholine at the neuromuscular junction?",
+      "options": [
+        "Muscarinic",
+        "Nicotinic",
+        "Adrenergic",
+        "Dopaminergic"
+      ],
+      "answer": 1,
+      "explanation": "Nicotinic ACh receptors mediate transmission at the skeletal neuromuscular junction."
+    },
+    {
+      "id": "phys-067",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Respiratory alkalosis is caused by:",
+      "options": [
+        "Hypoventilation",
+        "Hyperventilation",
+        "Diabetic ketoacidosis",
+        "Renal failure"
+      ],
+      "answer": 1,
+      "explanation": "Hyperventilation blows off CO2, raising pH (respiratory alkalosis)."
+    },
+    {
+      "id": "phys-068",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The main site of action of loop diuretics is the:",
+      "options": [
+        "Proximal tubule",
+        "Thick ascending limb of the loop of Henle",
+        "Distal convoluted tubule",
+        "Collecting duct"
+      ],
+      "answer": 1,
+      "explanation": "Loop diuretics inhibit the Na-K-2Cl cotransporter in the thick ascending limb."
+    },
+    {
+      "id": "phys-069",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which statement about fetal haemoglobin (HbF) is correct?",
+      "options": [
+        "It binds 2,3-DPG more tightly than HbA",
+        "It has higher affinity for oxygen than adult Hb",
+        "It is the main haemoglobin after age 5 years",
+        "It cannot carry oxygen"
+      ],
+      "answer": 1,
+      "explanation": "HbF has higher O2 affinity, facilitating oxygen transfer from mother to fetus."
+    },
+    {
+      "id": "phys-070",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The Bainbridge reflex is triggered by:",
+      "options": [
+        "High arterial pressure",
+        "Increased venous return / atrial stretch",
+        "Low oxygen",
+        "High CO2"
+      ],
+      "answer": 1,
+      "explanation": "Atrial stretch from increased venous return can increase heart rate (Bainbridge reflex)."
+    },
+    {
+      "id": "phys-071",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which enzyme breaks down acetylcholine in the synaptic cleft?",
+      "options": [
+        "MAO",
+        "COMT",
+        "Acetylcholinesterase",
+        "Choline acetyltransferase"
+      ],
+      "answer": 2,
+      "explanation": "Acetylcholinesterase rapidly hydrolyses ACh, ending transmission."
+    },
+    {
+      "id": "phys-072",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "In the proximal tubule, most filtered glucose is reabsorbed by:",
+      "options": [
+        "Simple diffusion",
+        "Secondary active transport (SGLT)",
+        "Facilitated diffusion only",
+        "Exocytosis"
+      ],
+      "answer": 1,
+      "explanation": "Sodium–glucose linked transporters (SGLT) reabsorb glucose in the proximal tubule."
+    },
+    {
+      "id": "phys-073",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which hormone peaks just before ovulation and triggers it?",
+      "options": [
+        "FSH only",
+        "LH surge",
+        "Progesterone",
+        "Prolactin"
+      ],
+      "answer": 1,
+      "explanation": "The mid-cycle LH surge triggers ovulation."
+    },
+    {
+      "id": "phys-074",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Dead space in the respiratory system is the volume of air that:",
+      "options": [
+        "Reaches the alveoli and exchanges gas",
+        "Does not participate in gas exchange",
+        "Is always zero",
+        "Only exists in disease"
+      ],
+      "answer": 1,
+      "explanation": "Anatomical dead space is the conducting airway volume where no gas exchange occurs."
+    },
+    {
+      "id": "phys-075",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The main cation in extracellular fluid is:",
+      "options": [
+        "Potassium",
+        "Sodium",
+        "Calcium",
+        "Magnesium"
+      ],
+      "answer": 1,
+      "explanation": "Sodium is the principal extracellular cation."
+    },
+    {
+      "id": "phys-076",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which statement about the action potential in skeletal muscle is true?",
+      "options": [
+        "It lasts as long as cardiac muscle",
+        "It is much shorter than in cardiac muscle",
+        "It has a long plateau due to calcium",
+        "It does not involve sodium channels"
+      ],
+      "answer": 1,
+      "explanation": "Skeletal muscle action potentials are brief; cardiac ones have a long plateau."
+    },
+    {
+      "id": "phys-077",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Secretin stimulates the pancreas to release:",
+      "options": [
+        "Enzyme-rich fluid",
+        "Bicarbonate-rich fluid",
+        "Insulin",
+        "Glucagon"
+      ],
+      "answer": 1,
+      "explanation": "Secretin causes the pancreas to secrete bicarbonate-rich juice to neutralise duodenal acid."
+    },
+    {
+      "id": "phys-078",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which factor decreases haemoglobin's affinity for oxygen (right shift)?",
+      "options": [
+        "Decreased temperature",
+        "Decreased 2,3-DPG",
+        "Increased H+ (acidosis)",
+        "Alkalosis"
+      ],
+      "answer": 2,
+      "explanation": "Acidosis reduces Hb–O2 affinity (Bohr effect), facilitating unloading."
+    },
+    {
+      "id": "phys-079",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The primary pacemaker of the heart depolarises spontaneously because of:",
+      "options": [
+        "Stable resting potential",
+        "Funny current (If) and calcium currents",
+        "Only potassium currents",
+        "External neural input only"
+      ],
+      "answer": 1,
+      "explanation": "Pacemaker cells have spontaneous diastolic depolarisation driven by If and calcium currents."
+    },
+    {
+      "id": "phys-080",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which vitamin deficiency causes megaloblastic anaemia due to impaired DNA synthesis?",
+      "options": [
+        "Vitamin C",
+        "Vitamin B12 or folate",
+        "Vitamin A",
+        "Vitamin E"
+      ],
+      "answer": 1,
+      "explanation": "B12 and folate are required for DNA synthesis; deficiency causes megaloblastic anaemia."
+    },
+    {
+      "id": "phys-081",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Compliance of the lung is reduced in:",
+      "options": [
+        "Emphysema",
+        "Pulmonary fibrosis",
+        "Normal ageing only",
+        "Asthma between attacks"
+      ],
+      "answer": 1,
+      "explanation": "Fibrosis stiffens the lung and reduces compliance."
+    },
+    {
+      "id": "phys-082",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The intrinsic rate of the AV node is approximately:",
+      "options": [
+        "60–100/min",
+        "40–60/min",
+        "20–40/min",
+        "10–20/min"
+      ],
+      "answer": 1,
+      "explanation": "If the SA node fails, the AV node can pace at about 40–60 beats/min."
+    },
+    {
+      "id": "phys-083",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which process describes water movement across a semi-permeable membrane due to solute concentration?",
+      "options": [
+        "Diffusion",
+        "Osmosis",
+        "Active transport",
+        "Filtration"
+      ],
+      "answer": 1,
+      "explanation": "Osmosis is the net movement of water toward higher solute concentration."
+    },
+    {
+      "id": "phys-084",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Cortisol is produced in the:",
+      "options": [
+        "Adrenal medulla",
+        "Adrenal cortex (zona fasciculata)",
+        "Anterior pituitary",
+        "Thyroid"
+      ],
+      "answer": 1,
+      "explanation": "Glucocorticoids such as cortisol are synthesised in the zona fasciculata of the adrenal cortex."
+    },
+    {
+      "id": "phys-085",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The main force driving glomerular filtration is:",
+      "options": [
+        "Oncotic pressure in Bowman's capsule",
+        "Hydrostatic pressure in the glomerular capillaries",
+        "Hydrostatic pressure in the tubule",
+        "Active transport"
+      ],
+      "answer": 1,
+      "explanation": "Glomerular capillary hydrostatic pressure is the primary driving force for filtration."
+    },
+    {
+      "id": "phys-086",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which lipoprotein carries cholesterol from the liver to peripheral tissues?",
+      "options": [
+        "HDL",
+        "LDL",
+        "Chylomicrons",
+        "VLDL only"
+      ],
+      "answer": 1,
+      "explanation": "LDL transports cholesterol to tissues; elevated LDL is associated with atherosclerosis."
+    },
+    {
+      "id": "phys-087",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "During isovolumetric contraction of the left ventricle:",
+      "options": [
+        "The aortic valve is open",
+        "Both AV and aortic valves are closed",
+        "The mitral valve is open",
+        "Ejection is occurring"
+      ],
+      "answer": 1,
+      "explanation": "Isovolumetric contraction occurs with all valves closed until ventricular pressure exceeds aortic pressure."
+    },
+    {
+      "id": "phys-088",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which neurotransmitter is deficient in Parkinson's disease?",
+      "options": [
+        "Acetylcholine",
+        "Dopamine",
+        "Serotonin",
+        "GABA only"
+      ],
+      "answer": 1,
+      "explanation": "Loss of dopaminergic neurons in the substantia nigra causes Parkinsonian features."
+    },
+    {
+      "id": "phys-089",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The Hering–Breuer reflex is triggered by:",
+      "options": [
+        "Low oxygen",
+        "Lung stretch receptors",
+        "High CO2 only",
+        "Baroreceptors"
+      ],
+      "answer": 1,
+      "explanation": "Stretch receptors in the lung mediate the Hering–Breuer inflation reflex."
+    },
+    {
+      "id": "phys-090",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which ion is essential for excitation–contraction coupling in skeletal muscle?",
+      "options": [
+        "Sodium only",
+        "Calcium",
+        "Chloride",
+        "Magnesium only"
+      ],
+      "answer": 1,
+      "explanation": "Calcium release from the sarcoplasmic reticulum initiates contraction."
+    },
+    {
+      "id": "phys-091",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Plasma oncotic pressure opposes:",
+      "options": [
+        "Venous return",
+        "Glomerular filtration and capillary filtration",
+        "Arterial pressure only",
+        "Lymph flow only"
+      ],
+      "answer": 1,
+      "explanation": "Oncotic pressure pulls fluid into the capillary and opposes filtration."
+    },
+    {
+      "id": "phys-092",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which hormone increases basal metabolic rate and is essential for normal growth and development?",
+      "options": [
+        "Insulin",
+        "Thyroid hormones (T3/T4)",
+        "ADH",
+        "Aldosterone"
+      ],
+      "answer": 1,
+      "explanation": "Thyroid hormones regulate metabolic rate and are critical for growth and CNS development."
+    },
+    {
+      "id": "phys-093",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The normal ratio of bicarbonate to carbonic acid in blood is approximately:",
+      "options": [
+        "1:1",
+        "5:1",
+        "20:1",
+        "50:1"
+      ],
+      "answer": 2,
+      "explanation": "The normal HCO3− : H2CO3 ratio is about 20:1, which maintains pH near 7.4."
+    },
+    {
+      "id": "phys-094",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which statement about smooth muscle is correct?",
+      "options": [
+        "It is under voluntary control",
+        "It lacks sarcomeres and is involuntary",
+        "It has intercalated discs",
+        "It never uses calcium"
+      ],
+      "answer": 1,
+      "explanation": "Smooth muscle is non-striated and involuntary."
+    },
+    {
+      "id": "phys-095",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The main site of ADH action is the:",
+      "options": [
+        "Proximal tubule",
+        "Loop of Henle",
+        "Collecting duct",
+        "Glomerulus"
+      ],
+      "answer": 2,
+      "explanation": "ADH inserts aquaporins in the collecting duct epithelium."
+    },
+    {
+      "id": "phys-096",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which blood component is primarily responsible for humoral immunity?",
+      "options": [
+        "Neutrophils",
+        "B lymphocytes (and plasma cells)",
+        "Platelets",
+        "Eosinophils"
+      ],
+      "answer": 1,
+      "explanation": "B cells differentiate into plasma cells that secrete antibodies."
+    },
+    {
+      "id": "phys-097",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Afterload is best described as:",
+      "options": [
+        "End-diastolic volume",
+        "The pressure the ventricle must overcome to eject blood",
+        "Heart rate",
+        "Venous return"
+      ],
+      "answer": 1,
+      "explanation": "Afterload is the load against which the ventricle contracts (approximated by aortic pressure)."
+    },
+    {
+      "id": "phys-098",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which condition shifts the oxygen–haemoglobin curve to the left?",
+      "options": [
+        "Exercise",
+        "Acidosis",
+        "Hypothermia / alkalosis",
+        "Increased 2,3-DPG"
+      ],
+      "answer": 2,
+      "explanation": "Left shift (higher affinity, less unloading) occurs with alkalosis, hypothermia and low 2,3-DPG."
+    },
+    {
+      "id": "phys-099",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "The functional residual capacity (FRC) is the volume of air:",
+      "options": [
+        "After maximal inspiration",
+        "Remaining after normal expiration",
+        "Remaining after maximal expiration",
+        "Moved in one breath"
+      ],
+      "answer": 1,
+      "explanation": "FRC is the volume left in the lungs after a normal tidal expiration."
+    },
+    {
+      "id": "phys-100",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Human Anatomy & Physiology",
+      "group": "Physiology",
+      "access": "free",
+      "q": "Which process requires ATP at the carrier protein itself?",
+      "options": [
+        "Simple diffusion",
+        "Facilitated diffusion",
+        "Primary active transport",
+        "Osmosis"
+      ],
+      "answer": 2,
+      "explanation": "Primary active transport uses ATP directly (e.g. Na+/K+ ATPase)."
+    }
+  ],
+  "events": []
+}
