@@ -1,0 +1,2641 @@
+{
+  "hideSamples": true,
+  "questions": [
+    {
+      "id": "ped-001",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "A 6-week-old is brought for review. Birth weight was 3.2 kg; current weight is 3.0 kg. Feeding is reported as 'on demand' but wet nappies are only 2/day. The nurse’s priority is to:",
+      "options": [
+        "Reassure that weight loss after birth always continues for 2 months",
+        "Assess feeding technique/intake thoroughly and escalate for failure to thrive / dehydration risk",
+        "Advise switching to adult food immediately",
+        "Discharge without weighing again"
+      ],
+      "answer": 1,
+      "explanation": "Ongoing weight below birth weight with few wet nappies suggests inadequate intake or illness — needs full assessment and action."
+    },
+    {
+      "id": "ped-002",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "Which finding in a 9-month-old is most concerning and needs prompt review?",
+      "options": [
+        "Sits without support and babbles",
+        "No social smile ever observed and no interest in people",
+        "Transfers objects hand to hand",
+        "Stranger anxiety"
+      ],
+      "answer": 1,
+      "explanation": "Absent social engagement by this age is a red flag for developmental or social-emotional concern."
+    },
+    {
+      "id": "ped-003",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "A mother asks when to start complementary foods for a healthy term breastfed infant. The best evidence-based reply is:",
+      "options": [
+        "From 2 weeks with porridge only",
+        "Around 6 months, while continuing breastfeeding, starting iron-rich soft foods",
+        "Only after 18 months",
+        "Fruit juice from 1 month"
+      ],
+      "answer": 1,
+      "explanation": "Exclusive breastfeeding to about 6 months, then complementary foods with continued breastfeeding."
+    },
+    {
+      "id": "ped-004",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "A 14-month-old’s weight has fallen across two major centile lines since 6 months. The priority nursing action is to:",
+      "options": [
+        "Ignore if the child looks active in clinic once",
+        "Take a detailed diet/illness/social history and ensure urgent clinical review for faltering growth",
+        "Start adult portion sizes immediately without assessment",
+        "Advise complete fasting"
+      ],
+      "answer": 1,
+      "explanation": "Crossing centiles downward needs systematic evaluation of intake, illness and environment."
+    },
+    {
+      "id": "ped-005",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "Which sign in severe acute malnutrition needs the most urgent recognition?",
+      "options": [
+        "Mild thinness only",
+        "Bilateral pitting oedema, lethargy, or inability to complete a feed (complicated SAM)",
+        "Occasional fussiness after meals",
+        "Normal play and appetite"
+      ],
+      "answer": 1,
+      "explanation": "Oedema, lethargy and poor feeding mark complicated SAM requiring urgent care."
+    },
+    {
+      "id": "ped-006",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "A 2-year-old has barky cough, hoarse cry, and stridor at rest. The priority is to:",
+      "options": [
+        "Examine the throat with a tongue depressor immediately",
+        "Keep the child calm, give oxygen if hypoxic, and escalate for croup management — avoid agitating the airway",
+        "Force the child flat on the bed",
+        "Give oral fluids only and send home without review"
+      ],
+      "answer": 1,
+      "explanation": "Stridor at rest is moderate–severe croup; keep calm and treat; do not instrument the throat casually."
+    },
+    {
+      "id": "ped-007",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "A 6-month-old with bronchiolitis has RR 68, oxygen saturation 88% in air, and poor feeding. The nurse’s priority is to:",
+      "options": [
+        "Encourage unlimited activity",
+        "Support airway/oxygen as protocol, minimise handling, and ensure urgent medical review",
+        "Feed large volumes quickly while supine",
+        "Discharge for home steam only"
+      ],
+      "answer": 1,
+      "explanation": "Hypoxia, tachypnoea and poor feeding indicate need for oxygen and hospital-level care."
+    },
+    {
+      "id": "ped-008",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "Which child with asthma needs the most immediate intervention?",
+      "options": [
+        "Mild wheeze, speaking full sentences, saturations 97%",
+        "Silent chest, exhaustion, saturations 90%, able to say only one word",
+        "Night cough only, normal daytime activity",
+        "Wheeze that responds fully to one bronchodilator dose"
+      ],
+      "answer": 1,
+      "explanation": "Silent chest and exhaustion signal life-threatening asthma."
+    },
+    {
+      "id": "ped-009",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "A toddler swallowed a small battery. He is drooling and refusing solids. The priority is to:",
+      "options": [
+        "Encourage bread to 'push it down'",
+        "Keep NPO, avoid inducing vomiting, and arrange urgent emergency/ENT evaluation for button battery",
+        "Wait 48 hours at home",
+        "Give ipecac"
+      ],
+      "answer": 1,
+      "explanation": "Button batteries can cause severe oesophageal injury within hours — urgent removal pathway."
+    },
+    {
+      "id": "ped-010",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "A 4-year-old with pneumonia is on oxygen. Which observation must be reported immediately?",
+      "options": [
+        "Playing quietly between feeds",
+        "Sudden increase in work of breathing and desaturation to 85%",
+        "Mild cough after physio",
+        "Temperature 37.6°C"
+      ],
+      "answer": 1,
+      "explanation": "Worsening respiratory distress and hypoxia need immediate escalation."
+    },
+    {
+      "id": "ped-011",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "Teaching for home nebuliser/inhaler use is effective when the caregiver says:",
+      "options": [
+        "I stop the inhaler as soon as the child feels better mid-course without advice",
+        "I use a spacer for the MDI, give doses as prescribed, and seek care if the child is not improving",
+        "I share the same inhaler mouthpiece with siblings without cleaning",
+        "I only treat after the child turns blue"
+      ],
+      "answer": 1,
+      "explanation": "Correct device technique and clear escalation advice are essential."
+    },
+    {
+      "id": "ped-012",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "A child with suspected epiglottitis is sitting forward, drooling, and toxic-looking. The nurse should:",
+      "options": [
+        "Lie the child flat and inspect the throat with a spatula",
+        "Do not agitate, keep in preferred position, give oxygen as tolerated, and call for urgent airway-capable help",
+        "Force oral antibiotics only",
+        "Send to the waiting area alone"
+      ],
+      "answer": 1,
+      "explanation": "Suspected epiglottitis is an airway emergency — no throat exam by unprepared staff."
+    },
+    {
+      "id": "ped-013",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A 6-week-old has temperature 38.5°C, is irritable, and feeds poorly. The priority is to:",
+      "options": [
+        "Advise only tepid sponging at home for 3 days",
+        "Treat as possible serious bacterial infection — urgent assessment and septic work-up pathway",
+        "Give aspirin for fever",
+        "Wait until a rash appears"
+      ],
+      "answer": 1,
+      "explanation": "Fever in young infants is high risk; prompt medical evaluation is required."
+    },
+    {
+      "id": "ped-014",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "Which febrile child is highest priority for immediate review?",
+      "options": [
+        "3-year-old playing, fever 38.2°C after immunisation yesterday",
+        "9-month-old lethargic, non-blanching rash, and cold hands",
+        "5-year-old with mild cold symptoms",
+        "School-age child with fever day 1 and good oral intake"
+      ],
+      "answer": 1,
+      "explanation": "Lethargy plus purpuric rash suggests meningococcal disease until proven otherwise."
+    },
+    {
+      "id": "ped-015",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child is on IV antibiotics for meningitis. Which nursing assessment is most critical ongoing?",
+      "options": [
+        "Preferred toy colour",
+        "Neurological status, fontanelle (if open), seizures, and fluid balance",
+        "Only hair length",
+        "Sibling school grade"
+      ],
+      "answer": 1,
+      "explanation": "Neuro observations and complications of raised ICP/seizures drive monitoring."
+    },
+    {
+      "id": "ped-016",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "Caregiver teaching after a simple febrile seizure should include:",
+      "options": [
+        "The child will definitely develop epilepsy",
+        "Most simple febrile seizures are self-limiting; protect airway during the event, seek care for prolonged/focal seizures, and treat the cause of fever",
+        "Never use antipyretics again",
+        "Avoid all immunisations forever"
+      ],
+      "answer": 1,
+      "explanation": "Education reduces fear while highlighting when emergency care is needed."
+    },
+    {
+      "id": "ped-017",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child with measles is admitted. Priority nursing measures include:",
+      "options": [
+        "No isolation considerations",
+        "Airborne/appropriate isolation, vitamin A as protocol, eye care, and monitoring for complications",
+        "Only dietary advice",
+        "Stopping all fluids"
+      ],
+      "answer": 1,
+      "explanation": "Measles needs isolation, supportive care and complication surveillance."
+    },
+    {
+      "id": "ped-018",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "Which statement about oral rehydration for diarrhoea is correct?",
+      "options": [
+        "ORS is withheld if the child is thirsty",
+        "ORS is first-line for most dehydration; continue breastfeeding; escalate if severe dehydration or shock",
+        "IV fluids are required for every watery stool",
+        "Antibiotics are always needed for watery diarrhoea"
+      ],
+      "answer": 1,
+      "explanation": "ORS and continued feeding are central; severe disease needs IV and higher care."
+    },
+    {
+      "id": "ped-019",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child with diarrhoea has sunken eyes, skin pinch going back slowly, and drinks eagerly. This is best classified as:",
+      "options": [
+        "No dehydration",
+        "Some dehydration — needs ORS plan under observation",
+        "Severe dehydration only if weight is normal",
+        "Shock requiring immediate surgery"
+      ],
+      "answer": 1,
+      "explanation": "WHO some-dehydration signs guide ORS treatment plans."
+    },
+    {
+      "id": "ped-020",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child with severe dehydration is lethargic and unable to drink. The priority is to:",
+      "options": [
+        "Force oral ORS only",
+        "IV (or intraosseous) fluids urgently per protocol and continuous monitoring",
+        "Wait for laboratory results before any fluid",
+        "Give fruit juice"
+      ],
+      "answer": 1,
+      "explanation": "Severe dehydration with inability to drink requires parenteral fluids."
+    },
+    {
+      "id": "ped-021",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Cardiac",
+      "access": "free",
+      "q": "An infant with a known VSD is sweaty, tachypnoeic, and poor at feeding. The nurse suspects:",
+      "options": [
+        "Normal newborn behaviour only",
+        "Possible heart failure — prioritise feeding support, oxygen if needed, and medical review",
+        "Overfeeding only",
+        "Need for immediate solid foods"
+      ],
+      "answer": 1,
+      "explanation": "Effort intolerance with feeds suggests cardiac failure in infants with shunts."
+    },
+    {
+      "id": "ped-022",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Cardiac",
+      "access": "free",
+      "q": "During a tet spell, the priority nursing action is to:",
+      "options": [
+        "Lay the infant flat and start vigorous crying encouragement",
+        "Knee–chest position, calm the child, oxygen, and call for help / follow protocol",
+        "Give a large bottle feed first",
+        "Ignore until the spell ends alone always"
+      ],
+      "answer": 1,
+      "explanation": "Knee–chest and calming reduce right-to-left shunting in hypercyanotic spells."
+    },
+    {
+      "id": "ped-023",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Cardiac",
+      "access": "free",
+      "q": "Before giving digoxin to a child, the nurse must:",
+      "options": [
+        "Give it with any heart rate",
+        "Check apical pulse for a full minute and hold if below the ordered threshold; check recent electrolytes if relevant",
+        "Crush and mix into a full litre of milk always",
+        "Skip assessment if the child is asleep"
+      ],
+      "answer": 1,
+      "explanation": "Digoxin requires rate check and caution with electrolytes."
+    },
+    {
+      "id": "ped-024",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Cardiac",
+      "access": "free",
+      "q": "A child post-cardiac catheterisation has a cool, pulseless foot on the catheter side. The priority is to:",
+      "options": [
+        "Apply heat and reassess tomorrow",
+        "Report immediately — possible arterial compromise",
+        "Encourage running in the corridor",
+        "Remove all dressings without orders"
+      ],
+      "answer": 1,
+      "explanation": "Limb ischaemia after catheterisation is an emergency."
+    },
+    {
+      "id": "ped-025",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Neurology",
+      "access": "free",
+      "q": "A toddler has a generalised seizure lasting 8 minutes. After protecting the head and positioning, the next priority is to:",
+      "options": [
+        "Force objects into the mouth",
+        "Time the seizure, maintain airway, give oxygen if available, and prepare rescue medication per protocol if prolonged",
+        "Restrain all limbs tightly",
+        "Give oral fluids during the seizure"
+      ],
+      "answer": 1,
+      "explanation": "Prolonged seizures need airway support and emergency antiseizure treatment pathways."
+    },
+    {
+      "id": "ped-026",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Neurology",
+      "access": "free",
+      "q": "Which post-ictal finding needs urgent review?",
+      "options": [
+        "Sleepiness for 20 minutes after a brief seizure",
+        "Persistent focal weakness or failure to return toward baseline mental status",
+        "Mild headache",
+        "Wanting a parent"
+      ],
+      "answer": 1,
+      "explanation": "Todd’s paresis lasting unusually or altered consciousness needs evaluation for complications."
+    },
+    {
+      "id": "ped-027",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Neurology",
+      "access": "free",
+      "q": "A child with suspected raised ICP should be positioned:",
+      "options": [
+        "Head down Trendelenburg routinely",
+        "Head midline, head of bed elevated ~30° if not contraindicated",
+        "Prone flat always",
+        "Sitting with neck hyperflexed"
+      ],
+      "answer": 1,
+      "explanation": "Neutral head elevation supports venous drainage."
+    },
+    {
+      "id": "ped-028",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Neurology",
+      "access": "free",
+      "q": "A 3-year-old has acute ataxia after a viral illness. The nurse should:",
+      "options": [
+        "Assume intentional behaviour only",
+        "Ensure safety, full assessment, and medical review — post-infectious cerebellar ataxia is a diagnosis of exclusion",
+        "Start unsupervised outdoor climbing",
+        "Withhold all history taking"
+      ],
+      "answer": 1,
+      "explanation": "Acute ataxia needs careful evaluation to exclude serious causes."
+    },
+    {
+      "id": "ped-029",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Gastrointestinal",
+      "access": "free",
+      "q": "A 4-week-old has progressive projectile non-bilious vomiting and a palpable olive mass. The nurse anticipates:",
+      "options": [
+        "Simple reflux advice only",
+        "Evaluation for pyloric stenosis — fluid/electrolyte correction and surgical referral",
+        "Immediate solid feeding",
+        "High-dose iron"
+      ],
+      "answer": 1,
+      "explanation": "Projectile non-bilious vomiting with olive mass is classic pyloric stenosis."
+    },
+    {
+      "id": "ped-030",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Gastrointestinal",
+      "access": "free",
+      "q": "An infant has bilious vomiting and abdominal distension. The priority is to:",
+      "options": [
+        "Reassure that bilious vomiting is always normal",
+        "NPO, IV access, urgent surgical review — bilious vomiting is obstruction until proven otherwise",
+        "Give a large formula feed",
+        "Discharge home"
+      ],
+      "answer": 1,
+      "explanation": "Bilious vomiting in an infant is a surgical emergency until proven otherwise."
+    },
+    {
+      "id": "ped-031",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Gastrointestinal",
+      "access": "free",
+      "q": "A 10-month-old has intermittent severe crying, drawing up legs, and currant-jelly stool. The nurse suspects:",
+      "options": [
+        "Normal teething only",
+        "Intussusception — urgent medical/surgical assessment",
+        "Simple constipation always",
+        "Only nappy rash"
+      ],
+      "answer": 1,
+      "explanation": "Intermittent pain and currant-jelly stool suggest intussusception."
+    },
+    {
+      "id": "ped-032",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Gastrointestinal",
+      "access": "free",
+      "q": "A child with gastroenteritis is ready for discharge when:",
+      "options": [
+        "Still in shock",
+        "Hydration improved, taking ORS/feeds, urine output returning, and caregivers understand danger signs",
+        "Has not voided for 24 hours",
+        "Parents refuse all follow-up advice"
+      ],
+      "answer": 1,
+      "explanation": "Stable hydration and caregiver education are discharge requirements."
+    },
+    {
+      "id": "ped-033",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Gastrointestinal",
+      "access": "free",
+      "q": "Post-op care after repair of tracheo-oesophageal fistula prioritises:",
+      "options": [
+        "Early solid foods on day 0 always",
+        "Airway protection, careful feeding per protocol, and monitoring for aspiration/anastomotic problems",
+        "No suction ever under any order",
+        "Prone unsupervised feeding"
+      ],
+      "answer": 1,
+      "explanation": "Airway and staged feeding are central after TOF repair."
+    },
+    {
+      "id": "ped-034",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Renal & fluids",
+      "access": "free",
+      "q": "A child with nephrotic syndrome has sudden severe abdominal pain and fever. The nurse should:",
+      "options": [
+        "Attribute all pain to 'gas'",
+        "Escalate — risk of peritonitis/thrombosis complications",
+        "Stop all steroids without advice",
+        "Encourage contact sports today"
+      ],
+      "answer": 1,
+      "explanation": "Nephrotic children are at risk of infection and clotting complications."
+    },
+    {
+      "id": "ped-035",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Renal & fluids",
+      "access": "free",
+      "q": "Which assessment is most important in a child receiving IV fluids for dehydration?",
+      "options": [
+        "Favourite cartoon",
+        "Weight trends, hydration signs, urine output, and signs of overload",
+        "Only the IV colour",
+        "Sibling presence"
+      ],
+      "answer": 1,
+      "explanation": "Fluid therapy needs ongoing hydration and overload assessment."
+    },
+    {
+      "id": "ped-036",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Renal & fluids",
+      "access": "free",
+      "q": "A child with acute glomerulonephritis has BP rising and headache. Priority action:",
+      "options": [
+        "Encourage high-salt snacks",
+        "Report hypertension and neurological symptoms promptly — risk of complications",
+        "Stop all BP monitoring",
+        "Force ambulation"
+      ],
+      "answer": 1,
+      "explanation": "Hypertension in AGN can cause encephalopathy; escalate early."
+    },
+    {
+      "id": "ped-037",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Haematology",
+      "access": "free",
+      "q": "A child with sickle cell disease has severe chest pain, fever, and tachypnoea. The priority is to:",
+      "options": [
+        "Treat as simple muscle strain only",
+        "Oxygen, pain control, cultures/antibiotics as ordered — manage as acute chest syndrome pathway",
+        "Restrict fluids always without orders",
+        "Discharge for oral paracetamol only"
+      ],
+      "answer": 1,
+      "explanation": "Acute chest syndrome is life-threatening and needs urgent protocolised care."
+    },
+    {
+      "id": "ped-038",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Haematology",
+      "access": "free",
+      "q": "A haemophiliac child hits his head. He is drowsy. The nurse should:",
+      "options": [
+        "Observe at home without review",
+        "Urgent assessment and factor replacement as protocol — intracranial bleed risk",
+        "Give IM injection in the buttock for pain",
+        "Encourage contact sport next day"
+      ],
+      "answer": 1,
+      "explanation": "Head injury in haemophilia requires urgent factor and evaluation."
+    },
+    {
+      "id": "ped-039",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Haematology",
+      "access": "free",
+      "q": "A child on chemotherapy has ANC 0.2 × 10⁹/L and a fever. Priority is to:",
+      "options": [
+        "Wait 48 hours before acting",
+        "Urgent medical review and empiric antibiotics per febrile neutropenia protocol",
+        "Send to a crowded playroom",
+        "Stop hand hygiene"
+      ],
+      "answer": 1,
+      "explanation": "Febrile neutropenia is an emergency."
+    },
+    {
+      "id": "ped-040",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Haematology",
+      "access": "free",
+      "q": "Which nursing action is appropriate for a child with thrombocytopenia?",
+      "options": [
+        "IM injections and rectal temperatures routinely",
+        "Avoid trauma, use soft toothbrush, monitor for bleeding",
+        "Encourage skateboarding",
+        "Give aspirin for mild pain"
+      ],
+      "answer": 1,
+      "explanation": "Bleeding precautions are essential when platelets are low."
+    },
+    {
+      "id": "ped-041",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Endocrine",
+      "access": "free",
+      "q": "A child with type 1 diabetes is sweaty, shaky, and confused. Capillary glucose is 2.4 mmol/L. The priority is to:",
+      "options": [
+        "Give rapid-acting insulin immediately",
+        "Give fast-acting carbohydrate (or glucagon/IV glucose if unable to swallow) per protocol",
+        "Encourage exercise first",
+        "Ignore until the next scheduled check"
+      ],
+      "answer": 1,
+      "explanation": "Hypoglycaemia is treated with glucose, not insulin."
+    },
+    {
+      "id": "ped-042",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Endocrine",
+      "access": "free",
+      "q": "Teaching for sick-day management in childhood diabetes is correct when the caregiver says:",
+      "options": [
+        "I stop insulin whenever the child is ill",
+        "I check glucose more often, never stop basal insulin without advice, and seek help for vomiting or persistent highs",
+        "I only use water and skip all insulin",
+        "Illness never affects glucose"
+      ],
+      "answer": 1,
+      "explanation": "Illness needs more monitoring and planned insulin adjustment — not abrupt cessation."
+    },
+    {
+      "id": "ped-043",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Endocrine",
+      "access": "free",
+      "q": "A child with DKA is on insulin infusion. Which finding needs the most urgent attention?",
+      "options": [
+        "Gradual fall in glucose as expected",
+        "Sudden drop in consciousness or ECG changes from hypokalaemia",
+        "Mild thirst improving",
+        "Stable heart rate"
+      ],
+      "answer": 1,
+      "explanation": "Cerebral oedema risk and potassium shifts are major DKA hazards."
+    },
+    {
+      "id": "ped-044",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Injury & MSK",
+      "access": "free",
+      "q": "A child in a cast complains of severe pain unrelieved by elevation and analgesia; toes are cool and dusky. The priority is to:",
+      "options": [
+        "Reassure that pain is always normal",
+        "Notify immediately — possible compartment syndrome",
+        "Apply ice tightly over the whole cast without review",
+        "Ignore neurovascular checks"
+      ],
+      "answer": 1,
+      "explanation": "Pain out of proportion with neurovascular change is compartment syndrome until proven otherwise."
+    },
+    {
+      "id": "ped-045",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Injury & MSK",
+      "access": "free",
+      "q": "Suspected non-accidental injury is suggested when:",
+      "options": [
+        "History matches a single bruise on the shin of a walking toddler",
+        "Injuries are inconsistent with the history or developmental stage, or there are patterned burns/bruises",
+        "A reported fall in a mobile school-age child with one abrasion",
+        "Parents ask many questions"
+      ],
+      "answer": 1,
+      "explanation": "Inconsistency with history/development and patterned injuries raise safeguarding concern."
+    },
+    {
+      "id": "ped-046",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Injury & MSK",
+      "access": "free",
+      "q": "Nursing priority when NAI is suspected includes:",
+      "options": [
+        "Confronting parents aggressively in the corridor",
+        "Treat injuries, document carefully, and follow safeguarding reporting pathways",
+        "Ignoring mandatory reporting duties",
+        "Discharging without documentation"
+      ],
+      "answer": 1,
+      "explanation": "Safety, accurate records and formal safeguarding processes are required."
+    },
+    {
+      "id": "ped-047",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Injury & MSK",
+      "access": "free",
+      "q": "A child with a fracture is in traction. Which finding must be reported?",
+      "options": [
+        "Mild muscle aches",
+        "Loss of sensation or pulses distal to the injury",
+        "Watching television",
+        "Asking for a parent"
+      ],
+      "answer": 1,
+      "explanation": "Neurovascular compromise needs urgent action."
+    },
+    {
+      "id": "ped-048",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Young infant",
+      "access": "free",
+      "q": "A 5-day-old has yellow sclera, poor feeding, and is hard to rouse. The priority is to:",
+      "options": [
+        "Assume physiological jaundice without checks",
+        "Urgent review for possible pathological jaundice / sepsis / metabolic disease",
+        "Advise sunlight only for a week at home",
+        "Stop breastfeeding permanently without assessment"
+      ],
+      "answer": 1,
+      "explanation": "Early jaundice with poor feeding and lethargy is not 'watch and wait'."
+    },
+    {
+      "id": "ped-049",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Young infant",
+      "access": "free",
+      "q": "Apnoea in a preterm neonate that does not respond to stimulation requires:",
+      "options": [
+        "Continued observation only",
+        "Airway support / PPV as trained and escalation",
+        "Oral feeding during apnoea",
+        "Cold bath"
+      ],
+      "answer": 1,
+      "explanation": "Unresponsive apnoea needs ventilation support."
+    },
+    {
+      "id": "ped-050",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Young infant",
+      "access": "free",
+      "q": "A neonate has not passed meconium by 48 hours and has abdominal distension. The nurse should:",
+      "options": [
+        "Reassure always normal to day 7",
+        "Report for evaluation of obstruction / Hirschsprung / other pathology",
+        "Give honey",
+        "Increase formula volume forcibly"
+      ],
+      "answer": 1,
+      "explanation": "Delayed meconium with distension needs investigation."
+    },
+    {
+      "id": "ped-051",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "A child with croup improves with nebulised adrenaline then worsens 2 hours later. The nurse should:",
+      "options": [
+        "Discharge immediately without observation",
+        "Continue observation — rebound can occur; escalate if stridor/distress returns",
+        "Stop all monitoring",
+        "Give a large solid meal mid-distress"
+      ],
+      "answer": 1,
+      "explanation": "Post-adrenaline observation is required because symptoms can return."
+    },
+    {
+      "id": "ped-052",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "Which immunisation teaching is appropriate?",
+      "options": [
+        "Skip all vaccines if the child had a mild cold without fever once",
+        "Mild illness is not usually a reason to defer; discuss true contraindications with the clinician",
+        "Vaccines cause autism so refuse all",
+        "Only one vaccine is ever needed in life"
+      ],
+      "answer": 1,
+      "explanation": "Mild intercurrent illness rarely contraindicates vaccination."
+    },
+    {
+      "id": "ped-053",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "A school-age child with asthma uses a preventer. Correct understanding is shown by:",
+      "options": [
+        "Using the preventer only during attacks",
+        "Taking the preventer daily as prescribed and using the reliever for symptoms",
+        "Sharing preventer doses with friends",
+        "Stopping preventer when playing sport always"
+      ],
+      "answer": 1,
+      "explanation": "Preventers are maintenance therapy; relievers treat acute symptoms."
+    },
+    {
+      "id": "ped-054",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Haematology",
+      "access": "free",
+      "q": "Priority nursing diagnosis for a child in vaso-occlusive sickle crisis is often related to:",
+      "options": [
+        "Acute pain and tissue perfusion",
+        "Need for immediate immunisation only",
+        "Cosmetic concerns only",
+        "Hyperactivity"
+      ],
+      "answer": 0,
+      "explanation": "Pain and ischaemia drive acute crisis care."
+    },
+    {
+      "id": "ped-055",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "A toddler is post-tonsillectomy and is swallowing repeatedly, pale, and tachycardic. The nurse suspects:",
+      "options": [
+        "Normal thirst only",
+        "Possible haemorrhage — urgent review",
+        "Need for solid chips immediately",
+        "Over-sedation only without bleeding risk"
+      ],
+      "answer": 1,
+      "explanation": "Frequent swallowing after tonsillectomy can signal bleeding."
+    },
+    {
+      "id": "ped-056",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "Which fluid is generally preferred for ORS?",
+      "options": [
+        "Sugary soda only",
+        "Standard ORS formulation as recommended",
+        "Undiluted fruit juice exclusively",
+        "Plain water for severe dehydration instead of IV when the child cannot drink"
+      ],
+      "answer": 1,
+      "explanation": "ORS has defined electrolyte composition; soft drinks are inappropriate as primary ORS."
+    },
+    {
+      "id": "ped-057",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Injury & MSK",
+      "access": "free",
+      "q": "A child with burns to the face and singed nasal hairs is at greatest risk for:",
+      "options": [
+        "Only skin scarring",
+        "Airway oedema and respiratory compromise",
+        "Immediate full diet",
+        "Hyperthermia only"
+      ],
+      "answer": 1,
+      "explanation": "Inhalation injury risk requires airway vigilance."
+    },
+    {
+      "id": "ped-058",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "Pain assessment in a non-verbal toddler is best supported by:",
+      "options": [
+        "Ignoring behavioural cues",
+        "Behavioural tools (e.g. FLACC) plus caregiver input",
+        "Only asking complex numeric scales",
+        "Assuming no pain if not crying at that second"
+      ],
+      "answer": 1,
+      "explanation": "Observational scales are validated for young children."
+    },
+    {
+      "id": "ped-059",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child on long-term steroids is exposed to chickenpox. The nurse should:",
+      "options": [
+        "Ignore exposure",
+        "Seek urgent advice — immunocompromised children may need prophylaxis/treatment pathways",
+        "Arrange a chickenpox party",
+        "Stop steroids abruptly without advice"
+      ],
+      "answer": 1,
+      "explanation": "Varicella exposure on steroids can be serious."
+    },
+    {
+      "id": "ped-060",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Renal & fluids",
+      "access": "free",
+      "q": "Which sign suggests dehydration is improving?",
+      "options": [
+        "Persistent doughy skin and no tears",
+        "Fewer wet nappies",
+        "Improved alertness, moist mucous membranes, and urine output increasing",
+        "Worsening sunken eyes"
+      ],
+      "answer": 2,
+      "explanation": "Clinical hydration markers should trend toward normal."
+    },
+    {
+      "id": "ped-061",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "A 2-year-old with suspected foreign body aspiration who is coughing effectively should:",
+      "options": [
+        "Have blind finger sweeps",
+        "Be encouraged to keep coughing; intervene with protocol back blows/thrusts only if effective cough is lost",
+        "Be given water to 'wash it down' while cyanosed",
+        "Be left alone outside"
+      ],
+      "answer": 1,
+      "explanation": "Effective cough is protective; interventions follow choking algorithms when cough becomes ineffective."
+    },
+    {
+      "id": "ped-062",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "Parent teaching for ORS is correct when they say:",
+      "options": [
+        "I give ORS only once then stop",
+        "I give small frequent amounts as advised and continue breastfeeding",
+        "I use only tea",
+        "I stop ORS when diarrhoea is still present on day 1 always"
+      ],
+      "answer": 1,
+      "explanation": "Frequent small ORS volumes improve tolerance."
+    },
+    {
+      "id": "ped-063",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child with meningitis is on droplet precautions. The nurse should:",
+      "options": [
+        "Skip hand hygiene if gloves are used",
+        "Use appropriate PPE and hand hygiene; continue until cleared per policy",
+        "Leave the door open to the playroom always",
+        "Share toys without cleaning"
+      ],
+      "answer": 1,
+      "explanation": "Transmission-based precautions protect other children and staff."
+    },
+    {
+      "id": "ped-064",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "Which infant feeding pattern is concerning?",
+      "options": [
+        "8–12 breastfeeds in 24 hours with regular wet nappies",
+        "Sleeping 6 hours between feeds on day 2 with few wet nappies and lethargy",
+        "Cluster feeding in the evening",
+        "Audible swallowing during feeds"
+      ],
+      "answer": 1,
+      "explanation": "Long intervals with oliguria and lethargy in a newborn need review."
+    },
+    {
+      "id": "ped-065",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Renal & fluids",
+      "access": "free",
+      "q": "A child with nephrotic syndrome is discharged. Priority teaching includes:",
+      "options": [
+        "Stopping prednisolone when oedema improves without advice",
+        "Daily weights, infection precautions, medication adherence, and when to seek care",
+        "High-salt diet",
+        "Avoiding all school forever"
+      ],
+      "answer": 1,
+      "explanation": "Monitoring and infection awareness are central at home."
+    },
+    {
+      "id": "ped-066",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Haematology",
+      "access": "free",
+      "q": "During a febrile neutropenia admission, which nursing action is essential?",
+      "options": [
+        "Rectal temperatures daily",
+        "Strict hand hygiene, avoid unnecessary invasive procedures, monitor fever",
+        "Fresh flowers at the bedside",
+        "Crowded ward bay without isolation consideration"
+      ],
+      "answer": 1,
+      "explanation": "Infection prevention is critical when neutrophils are very low."
+    },
+    {
+      "id": "ped-067",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Gastrointestinal",
+      "access": "free",
+      "q": "A child has suspected appendicitis. Which action is inappropriate?",
+      "options": [
+        "NPO and IV access as ordered",
+        "Giving analgesia as prescribed while awaiting review",
+        "Applying heat to the abdomen and giving a laxative to 'clear the blockage'",
+        "Serial observations"
+      ],
+      "answer": 2,
+      "explanation": "Laxatives/heat can be harmful if appendicitis is present."
+    },
+    {
+      "id": "ped-068",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Injury & MSK",
+      "access": "free",
+      "q": "Priority in paediatric burns first aid is to:",
+      "options": [
+        "Apply ice directly for 30 minutes",
+        "Cool with running water (as protocol), cover cleanly, assess airway and circulation",
+        "Break all blisters immediately",
+        "Apply toothpaste"
+      ],
+      "answer": 1,
+      "explanation": "Cool running water and airway/circulation assessment are first-line."
+    },
+    {
+      "id": "ped-069",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Endocrine",
+      "access": "free",
+      "q": "A child with diabetes is found unresponsive. Glucose is not immediately available. The nurse should:",
+      "options": [
+        "Give insulin first",
+        "Treat as hypoglycaemia with glucagon/IV glucose per protocol if unable to take oral sugar",
+        "Force oral tablets into a closed airway",
+        "Wait 30 minutes"
+      ],
+      "answer": 1,
+      "explanation": "Unresponsive hypoglycaemia needs parenteral glucose/glucagon."
+    },
+    {
+      "id": "ped-070",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "Which developmental approach helps a preschooler cope with a procedure?",
+      "options": [
+        "Detailed lectures on pathophysiology",
+        "Simple honest explanation, play demonstration, and parent presence when possible",
+        "Lying about pain ('it will not hurt at all') if it will",
+        "Forcing restraint without explanation ever"
+      ],
+      "answer": 1,
+      "explanation": "Age-appropriate preparation reduces fear."
+    },
+    {
+      "id": "ped-071",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child with severe malaria is prostrate with delayed capillary refill. Priority is:",
+      "options": [
+        "Oral antimalarials only at home",
+        "Emergency ABC support and urgent parenteral treatment pathway",
+        "Waiting for parasite count before any care",
+        "Encouraging free play"
+      ],
+      "answer": 1,
+      "explanation": "Severe malaria is a medical emergency."
+    },
+    {
+      "id": "ped-072",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "Post-operative tonsillectomy diet teaching includes:",
+      "options": [
+        "Sharp crisps on day 0",
+        "Cool soft diet, avoid trauma to the operative site, report bleeding",
+        "Hot spicy soup immediately",
+        "Using straws vigorously if advised against"
+      ],
+      "answer": 1,
+      "explanation": "Soft diet and bleeding vigilance are standard."
+    },
+    {
+      "id": "ped-073",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "A 15-month-old is not walking and has low tone. The nurse should:",
+      "options": [
+        "Wait until age 5 without assessment",
+        "Refer for developmental evaluation",
+        "Assume laziness",
+        "Start adult protein shakes only"
+      ],
+      "answer": 1,
+      "explanation": "Not walking by 15–18 months warrants assessment."
+    },
+    {
+      "id": "ped-074",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "Which oxygen delivery approach is often preferred for a distressed infant who needs moderate oxygen?",
+      "options": [
+        "Asking the infant to hold a mask tightly alone",
+        "Appropriate age device (e.g. nasal prongs) with saturation targeting per protocol",
+        "No monitoring of saturations",
+        "100% oxygen indefinitely without targets"
+      ],
+      "answer": 1,
+      "explanation": "Device choice and saturation targets guide oxygen therapy."
+    },
+    {
+      "id": "ped-075",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A caregiver reports the child had a brief seizure with fever, recovered fully, and is playful. Teaching should emphasise:",
+      "options": [
+        "No need to ever seek care for fever again",
+        "Treat fever source, safety during seizures, and red flags (prolonged, focal, repeated, incomplete recovery)",
+        "Stopping all antipyretics permanently",
+        "Avoiding medical care for future fevers"
+      ],
+      "answer": 1,
+      "explanation": "Safety-netting after febrile seizure is essential."
+    },
+    {
+      "id": "ped-076",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "A child with a tracheostomy develops sudden respiratory distress. First actions include:",
+      "options": [
+        "Ignoring the tube",
+        "Suction as indicated, check tube patency, oxygen, and call for help",
+        "Removing the tube without training or equipment ready",
+        "Feeding milk during distress"
+      ],
+      "answer": 1,
+      "explanation": "Tube obstruction is a common cause of acute distress."
+    },
+    {
+      "id": "ped-077",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Renal & fluids",
+      "access": "free",
+      "q": "Which finding in acute glomerulonephritis is expected?",
+      "options": [
+        "Massive proteinuria with normal urine colour always",
+        "Tea-coloured urine, oliguria, and hypertension",
+        "Painless bright red heavy bleeding only as in adult trauma",
+        "Polyuria of 5 L/day always"
+      ],
+      "answer": 1,
+      "explanation": "AGN typically features cola urine, oliguria and hypertension."
+    },
+    {
+      "id": "ped-078",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Haematology",
+      "access": "free",
+      "q": "A child is receiving a blood transfusion and develops fever, chills, and back pain. Priority is to:",
+      "options": [
+        "Increase the rate",
+        "Stop the transfusion, keep IV line with normal saline, and notify the clinician",
+        "Give the remaining blood faster",
+        "Ignore if BP is normal once"
+      ],
+      "answer": 1,
+      "explanation": "Suspected transfusion reaction → stop transfusion and escalate."
+    },
+    {
+      "id": "ped-079",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "Best initial nursing action for mild croup without stridor at rest is often:",
+      "options": [
+        "Emergency intubation for every barky cough",
+        "Calm environment, supportive care, and escalation advice if worsening",
+        "Throat culture with forceful restraint",
+        "Opioids for cough suppression routinely"
+      ],
+      "answer": 1,
+      "explanation": "Mild croup is managed supportively with clear return precautions."
+    },
+    {
+      "id": "ped-080",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Endocrine",
+      "access": "free",
+      "q": "A child with diabetes has ketones and glucose 22 mmol/L, is drinking and alert. The nurse anticipates:",
+      "options": [
+        "Stopping all insulin",
+        "Sick-day rules: insulin adjustment, fluids, frequent monitoring, and review if vomiting/drowsiness",
+        "Exercise only",
+        "High-sugar drinks without insulin"
+      ],
+      "answer": 1,
+      "explanation": "Hyperglycaemia with ketones needs structured sick-day management."
+    },
+    {
+      "id": "ped-081",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "Which play is most appropriate for a 2-year-old in hospital?",
+      "options": [
+        "Complex board strategy games alone",
+        "Parallel play with simple toys and caregiver involvement",
+        "Long lectures",
+        "Competitive exams"
+      ],
+      "answer": 1,
+      "explanation": "Toddlers engage in parallel play with simple exploration."
+    },
+    {
+      "id": "ped-082",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Young infant",
+      "access": "free",
+      "q": "A neonate of a diabetic mother is jittery at 2 hours of life. Priority is to:",
+      "options": [
+        "Delay feeding for 12 hours",
+        "Check blood glucose and treat hypoglycaemia per protocol",
+        "Give insulin to the neonate",
+        "Start phototherapy without assessment"
+      ],
+      "answer": 1,
+      "explanation": "IDM infants are at high risk of hypoglycaemia."
+    },
+    {
+      "id": "ped-083",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Injury & MSK",
+      "access": "free",
+      "q": "Care of a child with a cast includes teaching families to report:",
+      "options": [
+        "Mild itching under the cast",
+        "Foul smell, fever, or increasing pain/numbness of digits",
+        "Wanting a different TV channel",
+        "Normal toe movement and pink colour"
+      ],
+      "answer": 1,
+      "explanation": "Infection and neurovascular symptoms need urgent review."
+    },
+    {
+      "id": "ped-084",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child with HIV is admitted with pneumonia. Nursing priorities include:",
+      "options": [
+        "Avoiding confidentiality",
+        "Infection care, nutrition support, ART adherence support, and preventing opportunistic exposure as relevant",
+        "Stopping ART without advice",
+        "Sharing diagnosis publicly"
+      ],
+      "answer": 1,
+      "explanation": "Holistic HIV care includes medical treatment and confidentiality."
+    },
+    {
+      "id": "ped-085",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Renal & fluids",
+      "access": "free",
+      "q": "Which assessment finding suggests moderate dehydration rather than mild?",
+      "options": [
+        "Slightly dry lips, normal behaviour",
+        "Sunken eyes, reduced urine, lethargy or irritability, skin pinch slow",
+        "Shock, unresponsiveness",
+        "Normal tears and moist mucosa only"
+      ],
+      "answer": 1,
+      "explanation": "Clinical scales distinguish some vs severe dehydration."
+    },
+    {
+      "id": "ped-086",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child has acute otitis media. Parent teaching includes:",
+      "options": [
+        "Stopping antibiotics when pain improves at 24 hours always",
+        "Completing prescribed antibiotics if given, analgesia, and review if worsening",
+        "Inserting oil under pressure into the ear canal at home routinely",
+        "Swimming underwater during acute perforation pain without advice"
+      ],
+      "answer": 1,
+      "explanation": "Analgesia and adherence matter; avoid harmful ear practices."
+    },
+    {
+      "id": "ped-087",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "Priority for a child with anaphylaxis after a drug is to:",
+      "options": [
+        "Give oral antihistamine only and leave",
+        "IM adrenaline as protocol, airway support, call emergency help",
+        "Wait to see if symptoms pass for 30 minutes before acting",
+        "Induce vomiting"
+      ],
+      "answer": 1,
+      "explanation": "IM adrenaline is first-line for anaphylaxis."
+    },
+    {
+      "id": "ped-088",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Neurology",
+      "access": "free",
+      "q": "A school child with epilepsy is seizing in the ward. After timing and safety, if the seizure continues beyond the protocol threshold the nurse prepares to:",
+      "options": [
+        "Give oral tablets during active seizure",
+        "Administer prescribed rescue medication by the correct route",
+        "Restrain on the floor with a spoon in the mouth",
+        "Leave to find a relative first only"
+      ],
+      "answer": 1,
+      "explanation": "Rescue medication is used for prolonged seizures per protocol."
+    },
+    {
+      "id": "ped-089",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Young infant",
+      "access": "free",
+      "q": "Which newborn screening discussion is accurate?",
+      "options": [
+        "Screening replaces all clinical care",
+        "Early detection of selected conditions allows timely treatment; timing of the blood spot matters",
+        "Parents should never be informed",
+        "Screening is optional paperwork with no health value"
+      ],
+      "answer": 1,
+      "explanation": "Newborn screening enables early intervention when timed correctly."
+    },
+    {
+      "id": "ped-090",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "A child with severe malnutrition is started on feeds. The nurse watches closely for:",
+      "options": [
+        "Refeeding complications (e.g. electrolyte shifts), tolerance, and fluid overload",
+        "Immediate high-protein adult diet on hour 1 always",
+        "Complete fluid restriction always",
+        "Stopping all monitoring once the first sip is taken"
+      ],
+      "answer": 1,
+      "explanation": "Refeeding must be careful and monitored."
+    },
+    {
+      "id": "ped-091",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A toddler with a history of eczema has a severe flare with oozing and fever. Priority is to:",
+      "options": [
+        "Ignore infection signs",
+        "Assess for secondary infection and continue appropriate skin care / medical review",
+        "Stop all emollients permanently",
+        "Use undiluted bleach baths daily without advice"
+      ],
+      "answer": 1,
+      "explanation": "Infected eczema needs assessment and treatment."
+    },
+    {
+      "id": "ped-092",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "Which action reduces hospital-acquired infection in a paediatric ward?",
+      "options": [
+        "Sharing teats without sterilisation",
+        "Hand hygiene before and after every child contact",
+        "Using the same suction catheter on multiple children without cleaning",
+        "Overcrowding without cleaning schedules"
+      ],
+      "answer": 1,
+      "explanation": "Hand hygiene is the single most effective measure."
+    },
+    {
+      "id": "ped-093",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Endocrine",
+      "access": "free",
+      "q": "A child in DKA has K+ 2.9 mmol/L before insulin is started. The nurse anticipates:",
+      "options": [
+        "Insulin first without potassium consideration",
+        "Potassium replacement planning with insulin as per protocol because insulin drives K+ intracellularly",
+        "Ignoring ECG",
+        "Oral potassium only after discharge"
+      ],
+      "answer": 1,
+      "explanation": "Hypokalaemia must be addressed carefully around insulin therapy."
+    },
+    {
+      "id": "ped-094",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "Best response when a parent is angry about waiting is to:",
+      "options": [
+        "Argue loudly",
+        "Stay calm, acknowledge concern, explain safety triage, and keep the child monitored",
+        "Ignore the child",
+        "Refuse any information"
+      ],
+      "answer": 1,
+      "explanation": "De-escalation and clear communication maintain safety."
+    },
+    {
+      "id": "ped-095",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Haematology",
+      "access": "free",
+      "q": "A child with a Wilms tumour is being prepared for surgery. The nurse should avoid:",
+      "options": [
+        "Gentle handling and vital signs",
+        "Unnecessary abdominal palpation",
+        "Explaining the plan simply",
+        "Monitoring urine output"
+      ],
+      "answer": 1,
+      "explanation": "Excessive palpation risks tumour rupture."
+    },
+    {
+      "id": "ped-096",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "Which sign indicates effective response to asthma treatment?",
+      "options": [
+        "Worsening silent chest",
+        "Improved air entry, reduced accessory muscle use, better saturations",
+        "Increasing exhaustion",
+        "Inability to speak"
+      ],
+      "answer": 1,
+      "explanation": "Clinical improvement guides response assessment."
+    },
+    {
+      "id": "ped-097",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Endocrine",
+      "access": "free",
+      "q": "A 7-day-old with vomiting, lethargy and virilisation signs may need urgent evaluation for:",
+      "options": [
+        "Simple overfeeding only",
+        "Possible congenital adrenal hyperplasia / salt-wasting crisis",
+        "Delayed teething",
+        "Normal behaviour"
+      ],
+      "answer": 1,
+      "explanation": "Salt-wasting CAH presents early with crisis risk."
+    },
+    {
+      "id": "ped-098",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "Home oxygen teaching is successful when caregivers state:",
+      "options": [
+        "We increase flow freely without targets",
+        "We use the prescribed flow, monitor the child, and know emergency contacts / cylinder safety",
+        "We smoke near the oxygen",
+        "We stop oxygen when the child is cyanosed"
+      ],
+      "answer": 1,
+      "explanation": "Safety and prescribed use are essential."
+    },
+    {
+      "id": "ped-099",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child with acute diarrhoea is not dehydrated. The mainstay of care is:",
+      "options": [
+        "Immediate IV fluids for all",
+        "Continued feeding, ORS for replacement of losses, zinc as protocol where recommended",
+        "Complete starvation for 5 days",
+        "Antibiotics for every case"
+      ],
+      "answer": 1,
+      "explanation": "Feeding + ORS (± zinc) is standard for no dehydration."
+    },
+    {
+      "id": "ped-100",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Neurology",
+      "access": "free",
+      "q": "Which finding after ventriculoperitoneal shunt insertion needs urgent reporting?",
+      "options": [
+        "Mild incision tenderness day 1",
+        "Bulging fontanelle, vomiting, irritability, or altered consciousness",
+        "Wanting parents",
+        "Sleeping after analgesia"
+      ],
+      "answer": 1,
+      "explanation": "Signs of raised ICP or shunt failure need urgent review."
+    },
+    {
+      "id": "ped-101",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child with suspected meningitis is waiting for LP. The nurse prioritises:",
+      "options": [
+        "Forcing oral intake",
+        "Antibiotics without delay if indicated by protocol even if LP is deferred, plus monitoring",
+        "No observations",
+        "Playground leave"
+      ],
+      "answer": 1,
+      "explanation": "Early antibiotics save lives when LP is delayed."
+    },
+    {
+      "id": "ped-102",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Cardiac",
+      "access": "free",
+      "q": "Kawasaki disease concern is greatest regarding:",
+      "options": [
+        "Only mild rash without systemic illness",
+        "Coronary artery complications — needs specialist treatment pathway (e.g. IVIG as ordered)",
+        "Simple viral care only always",
+        "Avoiding all medical care"
+      ],
+      "answer": 1,
+      "explanation": "Coronary involvement drives urgency of treatment."
+    },
+    {
+      "id": "ped-103",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "A child is on morphine PCA/NCA. RR falls to 8/min and is hard to rouse. Priority is to:",
+      "options": [
+        "Give another bolus",
+        "Support airway, oxygen, stop opioid, give naloxone as ordered",
+        "Encourage deep sleep without assessment",
+        "Walk the child immediately"
+      ],
+      "answer": 1,
+      "explanation": "Opioid depression needs reversal and airway support."
+    },
+    {
+      "id": "ped-104",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "Which toddler behaviour after hospitalisation is common and usually temporary?",
+      "options": [
+        "Advanced calculus skills",
+        "Regression (e.g. bedwetting) and clinginess",
+        "Permanent loss of all language",
+        "Complete independence overnight"
+      ],
+      "answer": 1,
+      "explanation": "Regression under stress is common; support caregivers."
+    },
+    {
+      "id": "ped-105",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Haematology",
+      "access": "free",
+      "q": "A child with severe anaemia is pale and tachycardic. Nursing care while awaiting transfusion includes:",
+      "options": [
+        "Forced exercise",
+        "Minimise oxygen demand, monitor vitals, prepare for transfusion as ordered",
+        "Withholding all monitoring",
+        "High-altitude simulation"
+      ],
+      "answer": 1,
+      "explanation": "Reduce demand and prepare safe transfusion."
+    },
+    {
+      "id": "ped-106",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Gastrointestinal",
+      "access": "free",
+      "q": "Correct position for a child with gastro-oesophageal reflux symptoms often includes:",
+      "options": [
+        "Flat supine after feeds always",
+        "Upright positioning after feeds as advised; smaller frequent feeds",
+        "Prone unsupervised sleep against safe-sleep guidance",
+        "Large volume feeds quickly"
+      ],
+      "answer": 1,
+      "explanation": "Upright posture and feed pattern changes help reflux symptoms."
+    },
+    {
+      "id": "ped-107",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Young infant",
+      "access": "free",
+      "q": "A neonate has respiratory distress and a scaphoid abdomen. The nurse suspects possible:",
+      "options": [
+        "Simple nasal blockage only",
+        "Congenital diaphragmatic hernia — avoid bag-mask if suspected, call advanced help",
+        "Overfeeding",
+        "Normal examination"
+      ],
+      "answer": 1,
+      "explanation": "CDH needs specialised airway management — avoid gut distension with bag-mask when suspected."
+    },
+    {
+      "id": "ped-108",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "Parent teaching for iron supplementation is correct when they say:",
+      "options": [
+        "I give iron with milk only to improve absorption",
+        "I give as advised, may use vitamin C–containing fluids if recommended, and expect darker stools",
+        "I stop if stools darken",
+        "Iron is unnecessary in complementary feeding age always"
+      ],
+      "answer": 1,
+      "explanation": "Adherence and expected stool changes should be explained."
+    },
+    {
+      "id": "ped-109",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child with a central line has fever and redness at the exit site. Priority is to:",
+      "options": [
+        "Ignore",
+        "Report possible line infection — cultures/antibiotics per protocol",
+        "Use the line for routine blood draws without assessment",
+        "Remove without aseptic plan"
+      ],
+      "answer": 1,
+      "explanation": "Line infection risk requires prompt action."
+    },
+    {
+      "id": "ped-110",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "Which immunisation route teaching is accurate?",
+      "options": [
+        "All vaccines are oral",
+        "Route, site and age schedule matter; use the correct limb and technique",
+        "Any muscle is fine for any volume",
+        "Recap needles using two hands toward the body"
+      ],
+      "answer": 1,
+      "explanation": "Correct route/site and sharps safety are essential."
+    },
+    {
+      "id": "ped-111",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "A child with acute asthma is on continuous nebulisers. Nursing priorities include:",
+      "options": [
+        "No vital signs",
+        "Airway, saturations, work of breathing, and response to treatment",
+        "Encouraging sprinting",
+        "Stopping oxygen if saturations are 85%"
+      ],
+      "answer": 1,
+      "explanation": "Continuous assessment drives escalation."
+    },
+    {
+      "id": "ped-112",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Gastrointestinal",
+      "access": "free",
+      "q": "Suspected intussusception is a priority because:",
+      "options": [
+        "It never needs treatment",
+        "Bowel ischaemia can develop — urgent diagnosis and reduction/surgery pathway",
+        "It is treated with high-fibre diet alone at home",
+        "Antibiotics alone always cure it"
+      ],
+      "answer": 1,
+      "explanation": "Time-critical bowel compromise risk."
+    },
+    {
+      "id": "ped-113",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Injury & MSK",
+      "access": "free",
+      "q": "A child with burns has urine output of 0.2 mL/kg/h despite fluids. The nurse should:",
+      "options": [
+        "Celebrate low urine",
+        "Report — possible inadequate resuscitation or complications",
+        "Stop fluids",
+        "Ignore weight-based targets"
+      ],
+      "answer": 1,
+      "explanation": "Urine output guides burn fluid resuscitation."
+    },
+    {
+      "id": "ped-114",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Injury & MSK",
+      "access": "free",
+      "q": "Developmental dysplasia of the hip screening includes:",
+      "options": [
+        "Ignoring asymmetrical thigh creases",
+        "Ortolani/Barlow by trained staff and follow-up of risk factors",
+        "Encouraging tight swaddling with hips extended adducted",
+        "Avoiding all newborn checks"
+      ],
+      "answer": 1,
+      "explanation": "Early detection prevents long-term disability."
+    },
+    {
+      "id": "ped-115",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "A child with pneumonia on antibiotics still has saturations 86% in air. Priority is to:",
+      "options": [
+        "Stop oxygen thinking antibiotics are enough",
+        "Provide oxygen, reassess work of breathing, escalate",
+        "Discharge",
+        "Start PE in the corridor"
+      ],
+      "answer": 1,
+      "explanation": "Hypoxia needs oxygen regardless of antibiotic status."
+    },
+    {
+      "id": "ped-116",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Young infant",
+      "access": "free",
+      "q": "Which is a danger sign in a young infant under IMCI-style assessment?",
+      "options": [
+        "Strong cry and normal feeding",
+        "Not feeding, convulsions, severe chest indrawing, or abnormally sleepy",
+        "Occasional sneeze",
+        "Mild nasal congestion only"
+      ],
+      "answer": 1,
+      "explanation": "General danger signs require urgent referral/treatment."
+    },
+    {
+      "id": "ped-117",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Haematology",
+      "access": "free",
+      "q": "A child receiving chemotherapy vomits a dose of oral medication within 10 minutes. The nurse should:",
+      "options": [
+        "Automatically double the next dose without orders",
+        "Follow protocol for re-dosing and antiemetic review; do not guess",
+        "Skip documentation",
+        "Give IM injection of the same tablet"
+      ],
+      "answer": 1,
+      "explanation": "Re-dosing rules are protocol-specific."
+    },
+    {
+      "id": "ped-118",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "Best practice when communicating with an adolescent about care is to:",
+      "options": [
+        "Exclude them from all decisions always",
+        "Offer appropriate privacy and involve them in plans with consent/confidentiality limits explained",
+        "Speak only to parents in secret about everything without legal/ethical framework",
+        "Use baby talk"
+      ],
+      "answer": 1,
+      "explanation": "Respect and appropriate confidentiality support adherence."
+    },
+    {
+      "id": "ped-119",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Renal & fluids",
+      "access": "free",
+      "q": "A child with severe dehydration is started on IV fluids. After 1 hour he is more alert but develops puffy eyelids. The nurse should:",
+      "options": [
+        "Increase fluid rate further without review",
+        "Reassess for overhydration and report — adjust fluids as ordered",
+        "Ignore oedema",
+        "Give a salt load"
+      ],
+      "answer": 1,
+      "explanation": "Oedema during rehydration may signal excess fluid."
+    },
+    {
+      "id": "ped-120",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Endocrine",
+      "access": "free",
+      "q": "Which action is appropriate for mild hypoglycaemia in a conscious child with diabetes?",
+      "options": [
+        "Insulin bolus",
+        "15 g fast carbohydrate, recheck glucose, then complex carb as protocol",
+        "Exercise vigorously first",
+        "No follow-up check"
+      ],
+      "answer": 1,
+      "explanation": "Rule of 15-style treatment for conscious hypoglycaemia."
+    },
+    {
+      "id": "ped-121",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Injury & MSK",
+      "access": "free",
+      "q": "A child has a near-drowning event and is now breathing but drowsy. Priority is to:",
+      "options": [
+        "Discharge immediately",
+        "ABC support, oxygen, temperature care, and hospital evaluation for delayed complications",
+        "Feed a large meal at the scene",
+        "No monitoring needed if coughing once"
+      ],
+      "answer": 1,
+      "explanation": "Secondary drowning/aspiration risks need observation."
+    },
+    {
+      "id": "ped-122",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "Parent teaching for oral morphine at home (palliative) is correct when they say:",
+      "options": [
+        "I save doses for when pain is unbearable only if prescribed regularly",
+        "I give doses on schedule for continuous pain and use breakthrough as prescribed",
+        "I stop if the child is sleepy without advice when pain is severe",
+        "I share medicine with siblings"
+      ],
+      "answer": 1,
+      "explanation": "Regular dosing plus breakthrough is standard for continuous pain."
+    },
+    {
+      "id": "ped-123",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Haematology",
+      "access": "free",
+      "q": "A child with acute lymphoblastic leukaemia has platelets 8 × 10⁹/L. Priority nursing includes:",
+      "options": [
+        "Contact sports",
+        "Bleeding precautions and reporting headache/visual change (possible ICH)",
+        "IM injections for all meds",
+        "Rectal suppositories routinely"
+      ],
+      "answer": 1,
+      "explanation": "Severe thrombocytopenia → prevent and detect bleeding."
+    },
+    {
+      "id": "ped-124",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Young infant",
+      "access": "free",
+      "q": "Which statement about SIDS risk reduction is correct?",
+      "options": [
+        "Prone sleep on soft pillows is safest",
+        "Supine sleep, firm surface, no smoke exposure, avoid overheating",
+        "Co-sleeping with soft duvet always recommended for all",
+        "Side sleep with loose blankets is ideal"
+      ],
+      "answer": 1,
+      "explanation": "Back to sleep and safe sleep environment reduce SIDS risk."
+    },
+    {
+      "id": "ped-125",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Injury & MSK",
+      "access": "free",
+      "q": "A child with suspected testicular torsion has sudden scrotal pain. The nurse should:",
+      "options": [
+        "Apply ice and review next week",
+        "Urgent surgical referral — time-critical ischaemia",
+        "Give antibiotics only and wait",
+        "Assume epididymitis without review"
+      ],
+      "answer": 1,
+      "explanation": "Torsion is a surgical emergency."
+    },
+    {
+      "id": "ped-126",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "During peak flow teaching for an older child with asthma, success is shown when they:",
+      "options": [
+        "Blow gently once without effort",
+        "Stand, seal lips, blow hard and fast, record best of three as taught",
+        "Share the meter mouthpiece without cleaning",
+        "Use peak flow only during sleep"
+      ],
+      "answer": 1,
+      "explanation": "Correct technique yields useful readings."
+    },
+    {
+      "id": "ped-127",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "A malnourished child develops congestive findings after aggressive feeding. This most likely indicates:",
+      "options": [
+        "Underfeeding",
+        "Possible refeeding syndrome / fluid overload — urgent review",
+        "Need for more salt",
+        "Normal recovery always"
+      ],
+      "answer": 1,
+      "explanation": "Refeeding complications need immediate recognition."
+    },
+    {
+      "id": "ped-128",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "Which child needs droplet precautions?",
+      "options": [
+        "Healed eczema only",
+        "Suspected meningococcal disease or influenza as per policy",
+        "Simple fracture",
+        "Well child immunisation visit only"
+      ],
+      "answer": 1,
+      "explanation": "Certain respiratory/meningococcal illnesses need droplet precautions."
+    },
+    {
+      "id": "ped-129",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Neurology",
+      "access": "free",
+      "q": "A child has a Guedel airway in situ post-seizure. Nursing care includes:",
+      "options": [
+        "Taping the mouth shut",
+        "Airway patency, positioning, and removal as consciousness returns per practice",
+        "Feeding through the airway",
+        "No oxygen ever"
+      ],
+      "answer": 1,
+      "explanation": "Airways are temporising until protective reflexes return."
+    },
+    {
+      "id": "ped-130",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "Priority teaching for caregivers of a child with a new permanent tracheostomy includes:",
+      "options": [
+        "No need to learn suction",
+        "Suction, tube change emergency plan, and recognising obstruction",
+        "Swimming underwater unsupervised immediately",
+        "Avoiding all humidification discussion"
+      ],
+      "answer": 1,
+      "explanation": "Caregivers must manage airway emergencies."
+    },
+    {
+      "id": "ped-131",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Renal & fluids",
+      "access": "free",
+      "q": "A child with acute post-streptococcal glomerulonephritis should have which nursing focus?",
+      "options": [
+        "High-salt snacks and free fluids always",
+        "BP monitoring, fluid balance, and activity as ordered",
+        "Contact rugby daily",
+        "Stopping antibiotics if still prescribed without advice"
+      ],
+      "answer": 1,
+      "explanation": "BP and fluid status drive complications risk."
+    },
+    {
+      "id": "ped-132",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "Which is the best indicator that ORS therapy is working?",
+      "options": [
+        "Increasing lethargy",
+        "Child becomes more alert and starts passing urine",
+        "Worsening skin turgor",
+        "Persistent inability to drink"
+      ],
+      "answer": 1,
+      "explanation": "Clinical improvement and urine output show response."
+    },
+    {
+      "id": "ped-133",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Neurology",
+      "access": "free",
+      "q": "A child is receiving IV acyclovir for encephalitis. Nursing priorities include:",
+      "options": [
+        "No renal observations",
+        "Hydration, renal function awareness, and neuro observations",
+        "Stopping IV fluids always",
+        "Ignoring seizure activity"
+      ],
+      "answer": 1,
+      "explanation": "Acyclovir and encephalitis both need careful monitoring."
+    },
+    {
+      "id": "ped-134",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "A toddler refuses oral medication. The best approach is to:",
+      "options": [
+        "Mix into a full bottle so the dose is uncertain",
+        "Use honest simple explanation, appropriate format, and caregiver help — avoid forcing into a fighting child without a plan",
+        "Hold the nose until they gasp every time as first line",
+        "Skip essential medicines without informing the team"
+      ],
+      "answer": 1,
+      "explanation": "Developmental approach improves success and safety."
+    },
+    {
+      "id": "ped-135",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "A child with severe asthma has been given three bronchodilator treatments. Still distressed, saturations 91%. Next step is to:",
+      "options": [
+        "Discharge",
+        "Escalate to senior review / next-line therapy per protocol without delay",
+        "Stop oxygen",
+        "Start PE class"
+      ],
+      "answer": 1,
+      "explanation": "Poor response requires escalation."
+    },
+    {
+      "id": "ped-136",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Young infant",
+      "access": "free",
+      "q": "Which newborn weight pattern is concerning by day 10?",
+      "options": [
+        "Back to birth weight or above with good feeds",
+        "Still 12% below birth weight with poor urine output",
+        "Initial 5% loss then regain",
+        "Steady gain after day 4"
+      ],
+      "answer": 1,
+      "explanation": "Failure to regain with oliguria needs assessment."
+    },
+    {
+      "id": "ped-137",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Haematology",
+      "access": "free",
+      "q": "A child with haemophilia needs dental extraction. Priority planning includes:",
+      "options": [
+        "No factor cover discussion",
+        "Haematology plan for factor replacement and bleeding risk minimisation",
+        "Aspirin for pain",
+        "IM sedation in the cheek without plan"
+      ],
+      "answer": 1,
+      "explanation": "Procedures need haematology-coordinated cover."
+    },
+    {
+      "id": "ped-138",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Endocrine",
+      "access": "free",
+      "q": "Best initial measure for mild hypoglycaemia symptoms at school (conscious child) is:",
+      "options": [
+        "Wait for parents only",
+        "Fast-acting sugar per plan, supervise, recheck as protocol",
+        "Insulin injection",
+        "Vigorous sport first"
+      ],
+      "answer": 1,
+      "explanation": "Immediate carbohydrate is first-line if safe to swallow."
+    },
+    {
+      "id": "ped-139",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child has petechiae, fever, and headache. The nurse’s priority is to:",
+      "options": [
+        "Assume viral illness and discharge",
+        "Urgent review for possible meningococcal disease / sepsis",
+        "Give aspirin",
+        "Encourage community sports day"
+      ],
+      "answer": 1,
+      "explanation": "Fever + purpura is an emergency until proven otherwise."
+    },
+    {
+      "id": "ped-140",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "Which nursing action supports a child with chronic illness psychologically?",
+      "options": [
+        "Excluding them from age-appropriate activities always",
+        "Encouraging normalised routines and honest communication",
+        "Promising no further procedures ever",
+        "Avoiding all school contact permanently without need"
+      ],
+      "answer": 1,
+      "explanation": "Normalisation and honesty support coping."
+    },
+    {
+      "id": "ped-141",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "A child with a chest drain: continuous bubbling in the water seal with respiratory distress may indicate:",
+      "options": [
+        "Normal intermittent tidalling only",
+        "Air leak — assess connections and escalate",
+        "Need to clamp permanently without orders",
+        "Ready for immediate discharge"
+      ],
+      "answer": 1,
+      "explanation": "Continuous bubbling can mean ongoing leak; assess and escalate."
+    },
+    {
+      "id": "ped-142",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "Priority in paediatric septic shock is to:",
+      "options": [
+        "Delay antibiotics until all cultures return in 48 hours always",
+        "Oxygen, rapid fluid resuscitation as protocol, early antibiotics, and senior help",
+        "Oral fluids only",
+        "No vascular access attempts"
+      ],
+      "answer": 1,
+      "explanation": "Sepsis bundles prioritise oxygen, fluids, antibiotics and escalation."
+    },
+    {
+      "id": "ped-143",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child with acute otitis media and a bulging red tympanic membrane is in severe pain. Nursing priority includes:",
+      "options": [
+        "No analgesia until antibiotics finish",
+        "Adequate analgesia and medical treatment plan",
+        "Ear candling",
+        "Swimming lesson same day if perforated and painful"
+      ],
+      "answer": 1,
+      "explanation": "Pain control is essential alongside specific therapy."
+    },
+    {
+      "id": "ped-144",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Gastrointestinal",
+      "access": "free",
+      "q": "Which feeding advice is appropriate after cleft palate repair (as commonly ordered)?",
+      "options": [
+        "Hard bottle nipples immediately against surgical advice",
+        "Follow surgical feeding protocol; protect the repair",
+        "Utensils that trauma the suture line",
+        "Unsupervised rough play with toys in the mouth day 1"
+      ],
+      "answer": 1,
+      "explanation": "Protecting the repair is the feeding priority."
+    },
+    {
+      "id": "ped-145",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Endocrine",
+      "access": "free",
+      "q": "A child with diabetes is sweating during sport. First action:",
+      "options": [
+        "Give extra insulin immediately without checking",
+        "Check glucose if possible and treat hypo if indicated; take sugar if typical hypo symptoms",
+        "Continue to exhaustion",
+        "Ignore symptoms"
+      ],
+      "answer": 1,
+      "explanation": "Exercise-related hypo needs glucose check/treatment."
+    },
+    {
+      "id": "ped-146",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Young infant",
+      "access": "free",
+      "q": "Safe sleep counselling includes avoiding:",
+      "options": [
+        "Supine position",
+        "Soft bedding, prone sleep, and smoke exposure",
+        "Firm mattress",
+        "Room-sharing without bed-sharing as advised"
+      ],
+      "answer": 1,
+      "explanation": "Soft bedding and prone sleep increase SIDS risk."
+    },
+    {
+      "id": "ped-147",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child with a known latex allergy needs:",
+      "options": [
+        "Latex gloves for all care",
+        "Latex-free environment and alert labelling",
+        "No documentation of allergy",
+        "Balloon play in the treatment room"
+      ],
+      "answer": 1,
+      "explanation": "Avoidance and clear alerts prevent anaphylaxis."
+    },
+    {
+      "id": "ped-148",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Neurology",
+      "access": "free",
+      "q": "Which observation after head injury in a child needs urgent return to ED?",
+      "options": [
+        "One episode of crying then normal play",
+        "Repeated vomiting, increasing drowsiness, or unequal pupils",
+        "Minor bump with immediate crying then normal behaviour",
+        "Wanting a plaster"
+      ],
+      "answer": 1,
+      "explanation": "Red flags for intracranial injury require urgent care."
+    },
+    {
+      "id": "ped-149",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "A child on long-term oxygen has saturations of 78% with increased work of breathing. Priority is to:",
+      "options": [
+        "Reassure without action",
+        "Follow escalation plan: check supply/connections, support breathing, emergency help",
+        "Reduce oxygen further",
+        "Start a long walk"
+      ],
+      "answer": 1,
+      "explanation": "Acute desaturation needs structured emergency response."
+    },
+    {
+      "id": "ped-150",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Growth & nutrition",
+      "access": "free",
+      "q": "Best nursing approach to medication error discovery is to:",
+      "options": [
+        "Hide the error",
+        "Ensure child safety first, then report via formal system and inform as required",
+        "Blame a colleague publicly",
+        "Alter the chart to hide doses"
+      ],
+      "answer": 1,
+      "explanation": "Safety, honesty and formal reporting protect patients."
+    },
+    {
+      "id": "ped-151",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Haematology",
+      "access": "free",
+      "q": "A child with sickle cell disease should seek urgent care for:",
+      "options": [
+        "Mild delayed puberty counselling only",
+        "Fever, severe pain not responding to home plan, neurological signs, or respiratory distress",
+        "Routine playfulness",
+        "One bruise after known trauma that is typical"
+      ],
+      "answer": 1,
+      "explanation": "Fever and organ crises need urgent pathways."
+    },
+    {
+      "id": "ped-152",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "Which measure helps prevent vertical transmission topics that overlap paediatric follow-up?",
+      "options": [
+        "Ignoring maternal HIV status",
+        "Following national PMTCT infant testing and prophylaxis guidelines",
+        "Avoiding all infant testing",
+        "Stopping infant care at birth"
+      ],
+      "answer": 1,
+      "explanation": "Paediatric HIV prevention follows national testing/prophylaxis schedules."
+    },
+    {
+      "id": "ped-153",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Infection & fever",
+      "access": "free",
+      "q": "A child with acute diarrhoea has blood in stool and high fever. The nurse should:",
+      "options": [
+        "Assume viral only and avoid assessment",
+        "Assess dehydration and escalate — possible invasive diarrhoea needing specific evaluation",
+        "Give antimotility drugs routinely to all toddlers",
+        "Withhold ORS always"
+      ],
+      "answer": 1,
+      "explanation": "Bloody diarrhoea needs careful assessment and selective investigation/treatment."
+    },
+    {
+      "id": "ped-154",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Respiratory",
+      "access": "free",
+      "q": "Priority airway support for a child with severe croup and fatigue is to:",
+      "options": [
+        "Leave them alone in a noisy room",
+        "Urgent senior airway support — fatigue signals impending obstruction",
+        "Force examination with tongue depressor now",
+        "Oral fluids push"
+      ],
+      "answer": 1,
+      "explanation": "Fatigue in upper airway obstruction is ominous."
+    },
+    {
+      "id": "ped-155",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Pediatric Nursing / Child Health",
+      "group": "Young infant",
+      "access": "free",
+      "q": "A caregiver asks why hand hygiene matters before neonatal care. The best answer is:",
+      "options": [
+        "It is only for staff convenience",
+        "Newborns have immature immunity; hands are a major source of harmful microbes",
+        "It replaces the need for clean equipment",
+        "It is optional if gloves are worn sometimes"
+      ],
+      "answer": 1,
+      "explanation": "Hand hygiene protects vulnerable neonates."
+    }
+  ],
+  "events": []
+}
