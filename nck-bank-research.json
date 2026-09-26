@@ -1,0 +1,204 @@
+{
+  "questions": [
+    {
+      "id": "research-krchn-01",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "Evidence-based practice (EBP) is best defined as:",
+      "options": ["Integrating the best available research evidence with clinical expertise and client values/preferences", "Relying solely on personal experience regardless of research", "Using only textbook knowledge with no client input", "Following tradition because 'it has always been done this way'"],
+      "answer": 0,
+      "explanation": "EBP combines the best current research evidence, the clinician's expertise, and the individual client's preferences and values to guide care decisions, rather than relying on any one source alone."
+    },
+    {
+      "id": "research-krchn-02",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "A study exploring clients' lived experiences of chronic pain through in-depth interviews is best described as:",
+      "options": ["Qualitative research", "Quantitative research", "A randomised controlled trial", "A systematic review"],
+      "answer": 0,
+      "explanation": "Qualitative research explores experiences, meanings and perspectives, often through interviews or observation, producing descriptive, narrative findings rather than numerical data."
+    },
+    {
+      "id": "research-krchn-03",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "The primary purpose of informed consent in research is to:",
+      "options": ["Ensure participants understand the study and voluntarily agree to take part", "Protect the researcher from any legal responsibility", "Guarantee a positive outcome for participants", "Speed up participant recruitment"],
+      "answer": 0,
+      "explanation": "Informed consent ensures potential participants understand the purpose, procedures, risks and benefits of a study, and that their participation is voluntary — a core ethical requirement in all human research."
+    },
+    {
+      "id": "research-krchn-04",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "A hypothesis in research is best described as:",
+      "options": ["A testable, proposed explanation or predicted relationship between variables", "A definite, proven fact", "A summary of all existing literature", "The final conclusion of a completed study"],
+      "answer": 0,
+      "explanation": "A hypothesis is a clear, testable statement predicting a relationship between variables, which the study is then designed to support or refute through data collection and analysis."
+    },
+    {
+      "id": "research-krchn-05",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "In a study testing whether a new teaching method (compared with the usual method) improves exam scores, the teaching method is the:",
+      "options": ["Independent variable", "Dependent variable", "Confounding variable", "Extraneous variable"],
+      "answer": 0,
+      "explanation": "The independent variable is what the researcher manipulates or compares (the teaching method); the outcome being measured (exam scores) is the dependent variable."
+    },
+    {
+      "id": "research-krchn-06",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "Which measure of central tendency is most affected by extreme outlier values in a data set?",
+      "options": ["The mean", "The median", "The mode", "None of them are affected by outliers"],
+      "answer": 0,
+      "explanation": "The mean (arithmetic average) is pulled strongly by extreme values, while the median (the middle value) is much less affected by outliers, which is why the median is often preferred for skewed data."
+    },
+    {
+      "id": "research-krchn-07",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "A 'sample' in research refers to:",
+      "options": ["A subset of individuals selected from a larger population to represent that population", "The entire group a researcher is interested in studying", "A single case study only", "The statistical test used to analyse data"],
+      "answer": 0,
+      "explanation": "A sample is a smaller, selected subset of the full population of interest; findings from a well-drawn sample are used to make inferences about the wider population."
+    },
+    {
+      "id": "research-krchn-08",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "A data collection tool that consistently produces the same results when repeated under similar conditions is described as having good:",
+      "options": ["Reliability", "Validity", "Generalisability alone", "Statistical power alone"],
+      "answer": 0,
+      "explanation": "Reliability refers to the consistency and reproducibility of a measurement tool; validity, by contrast, refers to whether the tool actually measures what it claims to measure."
+    },
+    {
+      "id": "research-krchn-09",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "The main purpose of a literature review at the start of a research study is to:",
+      "options": ["Identify what is already known and where gaps in knowledge exist", "Replace the need for data collection entirely", "Guarantee the study's results in advance", "Fulfil an administrative requirement only"],
+      "answer": 0,
+      "explanation": "A literature review situates a new study within existing knowledge, helping researchers avoid duplicating prior work, refine their research question and identify genuine gaps worth investigating."
+    },
+    {
+      "id": "research-krchn-10",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "Random sampling is used in research mainly to:",
+      "options": ["Reduce selection bias and increase the likelihood that the sample represents the population", "Make data collection faster with no other benefit", "Guarantee a large sample size", "Eliminate the need for informed consent"],
+      "answer": 0,
+      "explanation": "Random sampling gives each member of the population a known, generally equal chance of being selected, reducing selection bias and improving the sample's representativeness of the broader population."
+    },
+    {
+      "id": "research-bscn-01",
+      "cadre": "BScN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "In a study reporting a p-value of 0.03 for a treatment's effect, using a standard alpha of 0.05, the nurse should interpret this as:",
+      "options": ["Statistically significant, meaning the result is unlikely to have occurred by chance alone", "Not statistically significant", "Proof that the treatment definitely works in all clients", "A calculation error, since p-values must be above 0.05"],
+      "answer": 0,
+      "explanation": "With an alpha level of 0.05, a p-value below 0.05 (here, 0.03) is generally considered statistically significant, meaning the observed result is unlikely to be due to chance alone — though statistical significance alone doesn't guarantee clinical importance or certainty for every individual client."
+    },
+    {
+      "id": "research-bscn-02",
+      "cadre": "BScN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "In the hierarchy of evidence commonly used in EBP, which typically sits at or near the top?",
+      "options": ["Systematic reviews and meta-analyses of randomised controlled trials", "Individual expert opinion alone", "A single case report", "Anecdotal clinical experience alone"],
+      "answer": 0,
+      "explanation": "Systematic reviews and meta-analyses that synthesise multiple high-quality randomised controlled trials are generally considered the strongest form of evidence, while expert opinion and case reports sit lower on the hierarchy."
+    },
+    {
+      "id": "research-bscn-03",
+      "cadre": "BScN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "A researcher concludes there IS a significant difference between two treatments when, in reality, there is NOT. This is an example of a:",
+      "options": ["Type I error", "Type II error", "Sampling error only", "Measurement error only"],
+      "answer": 0,
+      "explanation": "A Type I error occurs when a true null hypothesis (no real difference) is incorrectly rejected — concluding there is an effect when there truly isn't one. A Type II error is the opposite: failing to detect a real effect that does exist."
+    },
+    {
+      "id": "research-bscn-04",
+      "cadre": "BScN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "A study reports a mean reduction in blood pressure of 10 mmHg, with a 95% confidence interval of 6 to 14 mmHg. This is best interpreted as:",
+      "options": ["We are 95% confident the true population effect lies somewhere between 6 and 14 mmHg", "The blood pressure reduction was exactly 10 mmHg in every participant", "There is a 95% chance the treatment does not work", "The confidence interval has no meaningful interpretation"],
+      "answer": 0,
+      "explanation": "A 95% confidence interval gives a plausible range within which the true population parameter is likely to fall, based on repeated sampling; a narrower interval generally reflects a more precise estimate."
+    },
+    {
+      "id": "research-bscn-05",
+      "cadre": "BScN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "A study finds that ice cream sales and drowning rates both rise in summer. This is a classic example of why researchers must be cautious about:",
+      "options": ["Mistaking correlation for causation, since a third factor (hot weather) likely explains both", "Definitive proof that ice cream causes drowning", "A perfectly designed experimental study", "An example of a randomised controlled trial"],
+      "answer": 0,
+      "explanation": "Two variables can be statistically correlated without one causing the other; here, warmer weather independently increases both ice cream sales and swimming (and therefore drowning risk) — a classic illustration of a confounding variable."
+    },
+    {
+      "id": "research-bscn-06",
+      "cadre": "BScN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "A screening test's ability to correctly identify people who truly HAVE a condition is called its:",
+      "options": ["Sensitivity", "Specificity", "Reliability", "Prevalence"],
+      "answer": 0,
+      "explanation": "Sensitivity is the proportion of people with the condition who are correctly identified as positive by the test; specificity, by contrast, is the proportion of people without the condition who are correctly identified as negative."
+    },
+    {
+      "id": "research-bscn-07",
+      "cadre": "BScN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "Among the core ethical principles guiding research with human participants, 'beneficence' refers to:",
+      "options": ["The obligation to maximise possible benefits and minimise possible harms to participants", "Ensuring fair selection of participants across social groups", "Obtaining signed consent forms only", "Publishing results as quickly as possible"],
+      "answer": 0,
+      "explanation": "Beneficence is the ethical principle requiring researchers to maximise benefit and minimise harm to participants; it works alongside respect for persons (autonomy, informed consent) and justice (fair distribution of research burdens and benefits)."
+    },
+    {
+      "id": "research-bscn-08",
+      "cadre": "BScN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "A study that follows the same group of nursing graduates and measures their career outcomes every five years for twenty years is an example of a:",
+      "options": ["Longitudinal study", "Cross-sectional study", "Case-control study only", "Randomised controlled trial"],
+      "answer": 0,
+      "explanation": "A longitudinal study follows the same participants over an extended period, allowing researchers to observe changes over time, unlike a cross-sectional study, which captures data from different people at a single point in time."
+    },
+    {
+      "id": "research-bscn-09",
+      "cadre": "BScN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "Standard deviation is best described as a measure of:",
+      "options": ["How spread out data values are around the mean", "The exact midpoint of a data set", "The most frequently occurring value", "The total number of participants in a study"],
+      "answer": 0,
+      "explanation": "Standard deviation quantifies the average amount data values differ from the mean; a small standard deviation indicates values are clustered closely around the mean, while a large one indicates greater spread."
+    },
+    {
+      "id": "research-bscn-10",
+      "cadre": "BScN",
+      "type": "topic",
+      "topic": "Nursing Research & Biostatistics",
+      "q": "In the PICO framework used to formulate a clear evidence-based practice question, the 'C' typically stands for:",
+      "options": ["Comparison (an alternative intervention being compared)", "Client confidentiality", "Cost-effectiveness", "Clinical setting only"],
+      "answer": 0,
+      "explanation": "PICO stands for Population/Patient, Intervention, Comparison and Outcome — a structured way to frame a focused, searchable clinical question, with 'C' referring to what the intervention is being compared against."
+    }
+  ]
+}
