@@ -241,9 +241,29 @@
 
   /* ---------- ACCOUNT MODAL ---------- */
   #account-modal{position:fixed;inset:0;background:rgba(23,32,30,.55);z-index:65;display:none;align-items:center;justify-content:center;padding:20px;}
-  .google-btn-wrap{display:flex;justify-content:center;min-height:40px;margin-bottom:14px;}
-  .account-divider{display:flex;align-items:center;gap:10px;margin:0 0 16px;color:var(--ink-50);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;}
+  .google-btn-wrap{display:flex;justify-content:center;min-height:40px;width:100%;}
+  .google-btn-wrap > div{margin:0 auto !important;}
+  .social-auth{display:flex;flex-direction:column;gap:10px;margin-bottom:4px;}
+  .social-btn{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    width:100%;padding:11px 14px;border-radius:999px;font:inherit;font-size:.9rem;font-weight:600;
+    cursor:pointer;border:1px solid var(--line-strong);background:var(--paper);color:var(--ink);
+    transition:background .15s,border-color .15s;
+  }
+  .social-btn:hover{background:var(--paper-alt);border-color:var(--ink-50);}
+  .social-btn:disabled{opacity:.55;cursor:not-allowed;}
+  .social-btn svg{width:18px;height:18px;flex-shrink:0;}
+  .social-btn.apple{background:#000;color:#fff;border-color:#000;}
+  .social-btn.apple:hover{background:#222;border-color:#222;}
+  .social-btn.google-custom{background:#fff;color:#1f1f1f;border-color:#dadce0;}
+  .account-divider{display:flex;align-items:center;gap:10px;margin:14px 0 16px;color:var(--ink-50);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;}
   .account-divider::before,.account-divider::after{content:"";flex:1;height:1px;background:var(--line);}
+  .forgot-link{background:none;border:none;color:var(--green-dark);font:inherit;font-size:.82rem;font-weight:600;cursor:pointer;padding:0;text-align:left;align-self:flex-start;}
+  .forgot-link:hover{text-decoration:underline;}
+  .account-form .form-actions{display:flex;flex-direction:column;gap:10px;}
+  #forgotForm,#resetForm{display:none;flex-direction:column;gap:12px;}
+  #forgotForm.active,#resetForm.active{display:flex;}
+  .account-hint{font-size:.8rem;color:var(--ink-50);margin:0;line-height:1.4;}
   .account-tabs{display:flex;gap:4px;margin-bottom:18px;border-bottom:1px solid var(--line);}
   .account-tab{background:none;border:none;padding:10px 4px;margin-right:20px;font-size:.9rem;font-weight:600;color:var(--ink-50);border-bottom:2px solid transparent;cursor:pointer;}
   .account-tab.active{color:var(--green-dark);border-bottom-color:var(--coral);}
@@ -1487,23 +1507,47 @@
 <div id="account-modal">
   <div class="modal-card">
     <div id="accountLoggedOutView">
-      <div id="googleSignInBtn" class="google-btn-wrap"></div>
+      <div class="social-auth" id="socialAuthBlock">
+        <div id="googleSignInBtn" class="google-btn-wrap" aria-label="Continue with Google"></div>
+        <button type="button" class="social-btn apple" id="appleSignInBtn" onclick="startAppleSignIn()">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.365 1.43c0 1.14-.42 2.2-1.18 3.02-.8.86-2.12 1.52-3.24 1.43-.1-1.1.43-2.28 1.15-3.06.8-.88 2.2-1.52 3.27-1.39zM20.7 17.4c-.55 1.26-.82 1.82-1.53 2.94-.99 1.55-2.38 3.48-4.1 3.5-1.53.02-1.93-.99-4.02-.98-2.1.01-2.53 1-4.06.98-1.72-.02-3.04-1.76-4.03-3.3C1.2 17.4.2 13.55 1.95 10.9c1.12-1.7 2.9-2.7 4.55-2.7 1.7 0 2.77 1 4.18 1 1.37 0 2.2-1 4.2-1 1.5 0 3.1.82 4.22 2.24-3.7 2.02-3.1 7.28.6 9.0z"/></svg>
+          Continue with Apple
+        </button>
+      </div>
       <div class="account-divider">or use email</div>
       <div class="account-tabs">
         <button class="account-tab active" id="tabLogin" onclick="switchAccountTab('login')">Log In</button>
         <button class="account-tab" id="tabSignup" onclick="switchAccountTab('signup')">Sign Up</button>
       </div>
       <form class="account-form active" id="loginForm" onsubmit="event.preventDefault(); doLogin();">
-        <input type="email" id="loginEmail" placeholder="Email" required />
-        <input type="password" id="loginPassword" placeholder="Password" required />
+        <input type="email" id="loginEmail" placeholder="Email" required autocomplete="email" />
+        <input type="password" id="loginPassword" placeholder="Password" required autocomplete="current-password" />
+        <button type="button" class="forgot-link" onclick="switchAccountTab('forgot')">Forgot password?</button>
         <p class="account-error" id="loginError"></p>
         <button class="btn-solid" type="submit" id="loginSubmitBtn">Log In</button>
       </form>
       <form class="account-form" id="signupForm" onsubmit="event.preventDefault(); doSignup();">
-        <input type="email" id="signupEmail" placeholder="Email" required />
-        <input type="password" id="signupPassword" placeholder="Password (min 8 characters)" required minlength="8" />
+        <input type="email" id="signupEmail" placeholder="Email" required autocomplete="email" />
+        <input type="password" id="signupPassword" placeholder="Password (min 8 characters)" required minlength="8" autocomplete="new-password" />
+        <p class="account-hint">You can also create an account with Google or Apple above.</p>
         <p class="account-error" id="signupError"></p>
         <button class="btn-solid" type="submit" id="signupSubmitBtn">Create Account</button>
+      </form>
+      <form class="account-form" id="forgotForm" onsubmit="event.preventDefault(); doForgotPassword();">
+        <p class="account-hint">Enter the email on your account. If it exists, we’ll send a reset link.</p>
+        <input type="email" id="forgotEmail" placeholder="Email" required autocomplete="email" />
+        <p class="account-error" id="forgotError"></p>
+        <p class="account-hint" id="forgotSuccess" style="display:none;color:var(--green-dark);font-weight:600;"></p>
+        <button class="btn-solid" type="submit" id="forgotSubmitBtn">Send reset link</button>
+        <button type="button" class="forgot-link" onclick="switchAccountTab('login')">← Back to log in</button>
+      </form>
+      <form class="account-form" id="resetForm" onsubmit="event.preventDefault(); doResetPassword();">
+        <p class="account-hint">Choose a new password (at least 8 characters).</p>
+        <input type="password" id="resetPassword" placeholder="New password" required minlength="8" autocomplete="new-password" />
+        <input type="password" id="resetPassword2" placeholder="Confirm new password" required minlength="8" autocomplete="new-password" />
+        <p class="account-error" id="resetError"></p>
+        <button class="btn-solid" type="submit" id="resetSubmitBtn">Update password</button>
+        <button type="button" class="forgot-link" onclick="switchAccountTab('login')">← Back to log in</button>
       </form>
     </div>
     <div id="accountLoggedInView" style="display:none;">
@@ -1536,6 +1580,7 @@
 
 <script src="https://js.paystack.co/v2/inline.js"></script>
 <script src="https://accounts.google.com/gsi/client" async defer onload="initGoogleSignIn()"></script>
+<script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js" async defer onload="initAppleSignIn()"></script>
 <script>
   // ====================== PAYMENT CONFIG ======================
   // 1. Replace with your real Paystack public key (Settings > API Keys & Webhooks
@@ -1559,6 +1604,9 @@
   //    Your accounts worker also needs a matching "/google-auth" route;
   //    see google-auth-worker-snippet.js for that half.
   const GOOGLE_CLIENT_ID = "148017714851-0vd9mb3j2c5q4icj3kqttsb1q3nri53t.apps.googleusercontent.com";
+  // Apple Services ID (Sign in with Apple). Set this after creating one in Apple Developer.
+  // Until then the Apple button explains that setup is needed.
+  const APPLE_CLIENT_ID = "REPLACE_WITH_APPLE_SERVICES_ID";
 
   // Subscription pricing shown on the page — keep these in sync with
   // PLAN_PRICE_KES / PLAN_DAYS in nursevault-auth-worker.js.
@@ -2395,10 +2443,31 @@
     document.getElementById("account-modal").style.display = "none";
   }
   function switchAccountTab(which){
-    document.getElementById("tabLogin").classList.toggle("active", which === "login");
-    document.getElementById("tabSignup").classList.toggle("active", which === "signup");
-    document.getElementById("loginForm").classList.toggle("active", which === "login");
-    document.getElementById("signupForm").classList.toggle("active", which === "signup");
+    const isAuthTabs = which === "login" || which === "signup";
+    const tabLogin = document.getElementById("tabLogin");
+    const tabSignup = document.getElementById("tabSignup");
+    if (tabLogin) tabLogin.classList.toggle("active", which === "login");
+    if (tabSignup) tabSignup.classList.toggle("active", which === "signup");
+    const loginForm = document.getElementById("loginForm");
+    const signupForm = document.getElementById("signupForm");
+    const forgotForm = document.getElementById("forgotForm");
+    const resetForm = document.getElementById("resetForm");
+    if (loginForm) loginForm.classList.toggle("active", which === "login");
+    if (signupForm) signupForm.classList.toggle("active", which === "signup");
+    if (forgotForm) forgotForm.classList.toggle("active", which === "forgot");
+    if (resetForm) resetForm.classList.toggle("active", which === "reset");
+    const tabs = document.querySelector("#accountLoggedOutView .account-tabs");
+    const social = document.getElementById("socialAuthBlock");
+    const divider = document.querySelector("#accountLoggedOutView .account-divider");
+    if (tabs) tabs.style.display = isAuthTabs ? "" : "none";
+    if (social) social.style.display = isAuthTabs ? "" : "none";
+    if (divider) divider.style.display = isAuthTabs ? "" : "none";
+    ["loginError","signupError","forgotError","resetError"].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) { el.classList.remove("show"); el.textContent = ""; }
+    });
+    const fs = document.getElementById("forgotSuccess");
+    if (fs) { fs.style.display = "none"; fs.textContent = ""; }
   }
 
   function updateAccountUI(){
@@ -2536,6 +2605,202 @@
       errEl.textContent = "Could not reach the server.";
       errEl.classList.add("show");
     }
+  }
+
+  // ---------- Apple sign-in ----------
+  function startAppleSignIn(){
+    const errEl = document.getElementById("loginError") || document.getElementById("signupError");
+    if (APPLE_CLIENT_ID.includes("REPLACE_WITH") || AUTH_URL.includes("REPLACE_WITH")) {
+      if (errEl) {
+        errEl.textContent = "Apple sign-in needs an Apple Services ID and worker support. Use Google or email for now.";
+        errEl.classList.add("show");
+        switchAccountTab("login");
+      }
+      return;
+    }
+    if (!window.AppleID || !AppleID.auth) {
+      if (errEl) {
+        errEl.textContent = "Apple sign-in script is still loading. Try again in a moment.";
+        errEl.classList.add("show");
+      }
+      return;
+    }
+    try {
+      AppleID.auth.signIn();
+    } catch (e) {
+      if (errEl) {
+        errEl.textContent = "Could not start Apple sign-in.";
+        errEl.classList.add("show");
+      }
+    }
+  }
+
+  function initAppleSignIn(){
+    if (APPLE_CLIENT_ID.includes("REPLACE_WITH") || !window.AppleID) return;
+    try {
+      AppleID.auth.init({
+        clientId: APPLE_CLIENT_ID,
+        scope: "name email",
+        redirectURI: window.location.origin + window.location.pathname,
+        usePopup: true
+      });
+      document.addEventListener("AppleIDSignInOnSuccess", async function(ev) {
+        const errEl = document.getElementById("loginError");
+        try {
+          const res = await fetch(`${AUTH_URL}/apple-auth`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              id_token: ev.detail && ev.detail.authorization && ev.detail.authorization.id_token,
+              code: ev.detail && ev.detail.authorization && ev.detail.authorization.code,
+              user: ev.detail && ev.detail.user
+            })
+          });
+          const data = await res.json();
+          if (data.token) {
+            sessionToken = data.token;
+            localStorage.setItem("nv_session", sessionToken);
+            sessionInfo = {
+              loggedIn: true,
+              email: data.email,
+              subscriptionActive: data.subscriptionActive,
+              subscriptionExpiry: data.subscriptionExpiry
+            };
+            updateAccountUI();
+            closeAccountModal();
+          } else if (errEl) {
+            errEl.textContent = data.error || "Could not sign in with Apple.";
+            errEl.classList.add("show");
+            switchAccountTab("login");
+          }
+        } catch (e) {
+          if (errEl) {
+            errEl.textContent = "Could not reach the server.";
+            errEl.classList.add("show");
+            switchAccountTab("login");
+          }
+        }
+      });
+      document.addEventListener("AppleIDSignInOnFailure", function() {
+        const errEl = document.getElementById("loginError");
+        if (errEl) {
+          errEl.textContent = "Apple sign-in was cancelled or failed.";
+          errEl.classList.add("show");
+          switchAccountTab("login");
+        }
+      });
+    } catch (e) { /* ignore */ }
+  }
+
+  // ---------- Forgot / reset password ----------
+  async function doForgotPassword(){
+    const email = (document.getElementById("forgotEmail") || {}).value.trim();
+    const errEl = document.getElementById("forgotError");
+    const okEl = document.getElementById("forgotSuccess");
+    const btn = document.getElementById("forgotSubmitBtn");
+    if (errEl) { errEl.classList.remove("show"); errEl.textContent = ""; }
+    if (okEl) { okEl.style.display = "none"; okEl.textContent = ""; }
+    if (!email) return;
+    if (AUTH_URL.includes("REPLACE_WITH")) {
+      if (errEl) { errEl.textContent = "Accounts aren't set up on this copy of the site yet."; errEl.classList.add("show"); }
+      return;
+    }
+    btn.disabled = true; btn.textContent = "Sending…";
+    try {
+      const res = await fetch(`${AUTH_URL}/forgot-password`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email })
+      });
+      let data = {};
+      try { data = await res.json(); } catch(e) {}
+      if (res.ok || data.ok) {
+        if (okEl) {
+          okEl.style.display = "block";
+          okEl.textContent = data.message || "If that email is registered, a reset link has been sent. Check your inbox.";
+        }
+      } else if (res.status === 404) {
+        if (errEl) {
+          errEl.textContent = "Password reset is not enabled on the server yet. Email nursesvault@gmail.com for help.";
+          errEl.classList.add("show");
+        }
+      } else {
+        if (errEl) {
+          errEl.textContent = data.error || "Could not send reset email.";
+          errEl.classList.add("show");
+        }
+      }
+    } catch (e) {
+      if (errEl) { errEl.textContent = "Could not reach the server."; errEl.classList.add("show"); }
+    }
+    btn.disabled = false; btn.textContent = "Send reset link";
+  }
+
+  let pendingResetToken = null;
+  async function doResetPassword(){
+    const p1 = (document.getElementById("resetPassword") || {}).value;
+    const p2 = (document.getElementById("resetPassword2") || {}).value;
+    const errEl = document.getElementById("resetError");
+    const btn = document.getElementById("resetSubmitBtn");
+    if (errEl) { errEl.classList.remove("show"); errEl.textContent = ""; }
+    if (!p1 || p1.length < 8) {
+      if (errEl) { errEl.textContent = "Password must be at least 8 characters."; errEl.classList.add("show"); }
+      return;
+    }
+    if (p1 !== p2) {
+      if (errEl) { errEl.textContent = "Passwords do not match."; errEl.classList.add("show"); }
+      return;
+    }
+    if (!pendingResetToken) {
+      if (errEl) { errEl.textContent = "Reset link is missing or expired. Request a new one."; errEl.classList.add("show"); }
+      return;
+    }
+    btn.disabled = true; btn.textContent = "Updating…";
+    try {
+      const res = await fetch(`${AUTH_URL}/reset-password`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ token: pendingResetToken, password: p1 })
+      });
+      let data = {};
+      try { data = await res.json(); } catch(e) {}
+      if (res.ok && (data.ok || data.token || data.success)) {
+        pendingResetToken = null;
+        if (data.token) {
+          sessionToken = data.token;
+          localStorage.setItem("nv_session", sessionToken);
+          await checkSession();
+  checkResetTokenFromUrl();
+        }
+        showToast("Password updated. You can log in now.", "ok");
+        switchAccountTab("login");
+      } else {
+        if (errEl) {
+          errEl.textContent = data.error || "Could not update password. Request a new reset link.";
+          errEl.classList.add("show");
+        }
+      }
+    } catch (e) {
+      if (errEl) { errEl.textContent = "Could not reach the server."; errEl.classList.add("show"); }
+    }
+    btn.disabled = false; btn.textContent = "Update password";
+  }
+
+  function checkResetTokenFromUrl(){
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const hash = window.location.hash || "";
+      let token = params.get("reset_token") || params.get("token");
+      if (!token && hash.includes("reset_token=")) {
+        const m = hash.match(/reset_token=([^&]+)/);
+        if (m) token = decodeURIComponent(m[1]);
+      }
+      if (token) {
+        pendingResetToken = token;
+        openAccountModal();
+        switchAccountTab("reset");
+      }
+    } catch (e) {}
   }
 
   function startSubscription(plan){
