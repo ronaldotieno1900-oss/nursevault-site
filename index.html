@@ -283,43 +283,61 @@
   section.hero:has(> .shell){padding-bottom:0;}
 
   /* Left category column paints the full height of the site; nav sticks while scrolling. */
-  /* Page fills the viewport so the footer sits at the bottom on short pages (Tools, etc.) */
-  html{height:100%;}
-  body{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-  }
-  section.hero:has(> .shell){
-    flex:1 0 auto;
-    display:flex;
-    flex-direction:column;
-    padding-bottom:0;
-  }
   .shell{
-    flex:1 0 auto;
     display:grid;
     grid-template-columns:270px 1fr;
     align-items:stretch;
     width:100%;
-    min-height:calc(100vh - var(--nv-header-h, 64px) - 100px);
+    min-height:calc(100vh - var(--nv-header-h, 64px));
     background:linear-gradient(to right, var(--surface) 0, var(--surface) 270px, transparent 270px);
   }
-  .shell-main{min-width:0;}
+  .shell-main{
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    min-height:calc(100vh - var(--nv-header-h, 64px));
+  }
+  /* Footer lives in the content column only (not under the sidebar) */
+  .shell-main > footer{
+    margin-top:auto;
+    width:100%;
+  }
 
   .side-nav{
     background:var(--surface);
-    position:sticky;
-    top:var(--nv-header-h, 64px);
-    align-self:start;
     width:100%;
-    height:calc(100vh - var(--nv-header-h, 64px));
-    max-height:calc(100vh - var(--nv-header-h, 64px));
     overflow-y:auto;
     border-right:1px solid var(--line);
     display:flex;
     flex-direction:column;
     z-index:30;
+  }
+
+  /* Desktop: sidebar locked under header; content+footer in the right column only */
+  @media (min-width:761px){
+    body.sub-page .side-nav{
+      position:fixed;
+      left:0;
+      top:var(--nv-header-h, 64px);
+      width:270px;
+      height:calc(100vh - var(--nv-header-h, 64px));
+      max-height:calc(100vh - var(--nv-header-h, 64px));
+    }
+    body.sub-page .shell{
+      display:block;
+      padding-left:270px;
+      box-sizing:border-box;
+      width:100%;
+      min-height:calc(100vh - var(--nv-header-h, 64px));
+      background:var(--paper);
+    }
+    body.sub-page .shell-main{
+      display:flex;
+      flex-direction:column;
+      min-height:calc(100vh - var(--nv-header-h, 64px));
+      width:100%;
+      box-sizing:border-box;
+    }
   }
   .side-nav .cat-list{flex:1 1 auto; max-height:none;}
   .side-nav .cat-list.collapsed{flex:0 0 auto;}
@@ -990,10 +1008,6 @@
     color:rgba(255,255,255,.72);
     padding:44px 0;
     width:100%;
-    max-width:100%;
-    margin:0;
-    margin-left:0 !important;
-    padding-left:0 !important;
     position:relative;
     clear:both;
     flex-shrink:0;
@@ -1086,17 +1100,25 @@
   .dl-btn:hover{background:var(--coral-hover);}
 
   @media (max-width:760px){
-    .shell{
-      grid-template-columns:1fr;
-      background:none;
+    .shell, body.sub-page .shell{
+      grid-template-columns:1fr !important;
+      display:block !important;
+      padding-left:0 !important;
+      background:none !important;
       min-height:0;
     }
-    .side-nav{
-      position:static;
-      height:auto;
-      max-height:none;
+    .side-nav, body.sub-page .side-nav{
+      position:static !important;
+      left:auto !important;
+      top:auto !important;
+      width:100% !important;
+      height:auto !important;
+      max-height:none !important;
       border-right:none;
       border-bottom:1px solid var(--line);
+    }
+    .shell-main{
+      min-height:0;
     }
     .feature-grid{grid-template-columns:1fr 1fr;}
     .shop-grid{grid-template-columns:1fr 1fr;}
@@ -1884,10 +1906,6 @@
   </div>
 </section>
 
-</div><!-- /.shell-main -->
-</div><!-- /.shell -->
-</section><!-- /.hero shell wrapper -->
-
 <footer>
   <div class="wrap footer-row">
     <div class="footer-word">NurseVault</div>
@@ -1902,6 +1920,11 @@
     <p class="footer-copy">© 2026 NurseVault. Digital study resources for nursing students.</p>
   </div>
 </footer>
+
+</div><!-- /.shell-main -->
+</div><!-- /.shell -->
+</section><!-- /.hero shell wrapper -->
+
 
   </div>
 </div>
