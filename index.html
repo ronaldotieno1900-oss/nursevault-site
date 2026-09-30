@@ -287,21 +287,42 @@
     display:grid;
     grid-template-columns:270px 1fr;
     align-items:stretch;
-    min-height:calc(100vh - 64px);
+    min-height:calc(100vh - var(--nv-header-h, 64px));
     background:linear-gradient(to right, var(--surface) 0, var(--surface) 270px, transparent 270px);
   }
   .shell-main{min-width:0;}
 
   .side-nav{
     background:var(--surface);
-    position:sticky;top:64px;
+    position:sticky;
+    top:var(--nv-header-h, 64px);
     align-self:start;
     width:100%;
-    height:calc(100vh - 64px);
-    max-height:calc(100vh - 64px);
+    height:calc(100vh - var(--nv-header-h, 64px));
+    max-height:calc(100vh - var(--nv-header-h, 64px));
     overflow-y:auto;
     border-right:1px solid var(--line);
     display:flex;flex-direction:column;
+    z-index:30;
+  }
+  /* Desktop catalog/tools/etc: pin sidebar to the viewport under the green header so it never scrolls away */
+  @media (min-width:761px){
+    body.sub-page .side-nav{
+      position:fixed;
+      left:0;
+      top:var(--nv-header-h, 64px);
+      width:270px;
+      height:calc(100vh - var(--nv-header-h, 64px));
+      max-height:calc(100vh - var(--nv-header-h, 64px));
+    }
+    /* Fixed nav is out of flow — keep a permanent left gutter so content never slides under it */
+    body.sub-page .shell{
+      grid-template-columns:1fr;
+      padding-left:270px;
+      background:var(--surface);
+      background:linear-gradient(to right, var(--surface) 0, var(--surface) 270px, var(--paper) 270px);
+    }
+    body.sub-page .shell-main{min-width:0;}
   }
   .side-nav .cat-list{flex:1 1 auto; max-height:none;}
   .side-nav .cat-list.collapsed{flex:0 0 auto;}
@@ -2449,7 +2470,20 @@
     document.body.dataset.page = name;
     document.body.classList.toggle('sub-page', name !== 'home');
     document.title = title || BASE_TITLE;
+    if (typeof syncHeaderOffset === 'function') setTimeout(syncHeaderOffset, 0);
   }
+
+  function syncHeaderOffset(){
+    try {
+      const h = document.querySelector('header');
+      if (!h) return;
+      const px = Math.ceil(h.getBoundingClientRect().height);
+      document.documentElement.style.setProperty('--nv-header-h', px + 'px');
+    } catch(e){}
+  }
+  window.addEventListener('resize', syncHeaderOffset);
+  window.addEventListener('load', syncHeaderOffset);
+
 
   function selectSidebarCat(cat){
     const target = '#/' + cat;
@@ -5914,6 +5948,7 @@
   updateMobileNav();
   updateContinueStudyCard();
   hideSplash();
+  syncHeaderOffset();
 
   // Rotating a phone (or resizing) shouldn't leave the list stuck shut on desktop.
   let wasNarrow = isNarrow();
