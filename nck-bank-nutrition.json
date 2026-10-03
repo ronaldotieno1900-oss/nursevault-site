@@ -1,0 +1,175 @@
+{
+  "hideSamples": false,
+  "questions": [
+    {
+      "id": "nut-krchn-001",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Human Nutrition & Dietetics",
+      "group": "set 1",
+      "access": "free",
+      "q": "A woman planning pregnancy asks about folic acid. According to current guidelines, what is the standard daily recommendation for women of childbearing age with no special risk factors?",
+      "options": [
+        "5 mg daily",
+        "400 mcg daily",
+        "1 mg daily",
+        "No supplement needed if diet is good"
+      ],
+      "answer": 1,
+      "explanation": "WHO, NICE and most national guidelines recommend 400 mcg (0.4 mg) folic acid daily, starting at least one month before conception and continuing through the first trimester, to reduce neural-tube defects. Higher doses (5 mg) are reserved for high-risk women."
+    },
+    {
+      "id": "nut-krchn-002",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Human Nutrition & Dietetics",
+      "group": "set 1",
+      "access": "free",
+      "q": "A pregnant woman at 24 weeks with a pre-pregnancy BMI of 22 asks how much total weight she should gain. What is the recommended range?",
+      "options": [
+        "5–9 kg",
+        "11.5–16 kg",
+        "16–20 kg",
+        "20–25 kg"
+      ],
+      "answer": 1,
+      "explanation": "Institute of Medicine / current guidelines recommend 11.5–16 kg (25–35 lb) total weight gain for women with normal pre-pregnancy BMI (18.5–24.9)."
+    },
+    {
+      "id": "nut-krchn-003",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Human Nutrition & Dietetics",
+      "group": "set 1",
+      "access": "free",
+      "q": "A breastfeeding mother of a 2-month-old asks about extra energy needs. What is the approximate additional daily calorie requirement during exclusive breastfeeding?",
+      "options": [
+        "No extra calories needed",
+        "+100–150 kcal",
+        "+330–500 kcal",
+        "+800 kcal"
+      ],
+      "answer": 2,
+      "explanation": "Most guidelines advise approximately 330–500 extra kcal per day during exclusive breastfeeding to support milk production and maternal recovery, depending on activity level and milk volume."
+    },
+    {
+      "id": "nut-krchn-004",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Human Nutrition & Dietetics",
+      "group": "set 1",
+      "access": "free",
+      "q": "A midwife is counselling a mother about complementary feeding. At what age does WHO currently recommend introducing complementary foods while continuing breastfeeding?",
+      "options": [
+        "3 months",
+        "4 months",
+        "6 months",
+        "8 months"
+      ],
+      "answer": 2,
+      "explanation": "WHO recommends exclusive breastfeeding for the first 6 months, followed by continued breastfeeding with safe, nutrient-dense complementary foods from 6 months of age."
+    },
+    {
+      "id": "nut-krchn-005",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Human Nutrition & Dietetics",
+      "group": "set 1",
+      "access": "free",
+      "q": "A pregnant woman is found to have iron-deficiency anaemia (Hb 9.5 g/dL). What is the recommended daily elemental iron intake during pregnancy according to current standards?",
+      "options": [
+        "15 mg",
+        "27 mg",
+        "60 mg only if symptomatic",
+        "100 mg routinely"
+      ],
+      "answer": 1,
+      "explanation": "The recommended dietary allowance / standard supplementation target for iron in pregnancy is 27 mg elemental iron daily to meet the increased requirements of expanded blood volume and fetal stores."
+    },
+    {
+      "id": "nut-krchn-006",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Human Nutrition & Dietetics",
+      "group": "set 1",
+      "access": "free",
+      "q": "Which food should a pregnant woman be advised to avoid because of the risk of Listeria?",
+      "options": [
+        "Pasteurized yoghurt",
+        "Soft cheeses made from unpasteurized milk",
+        "Cooked poultry",
+        "Washed fruits"
+      ],
+      "answer": 1,
+      "explanation": "Soft cheeses made from unpasteurized milk, deli meats (unless reheated), and other unpasteurized dairy products carry a risk of Listeria monocytogenes, which can cause severe fetal infection."
+    },
+    {
+      "id": "nut-krchn-007",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Human Nutrition & Dietetics",
+      "group": "set 1",
+      "access": "free",
+      "q": "A preterm infant is receiving expressed breast milk. What is the current recommendation regarding vitamin D supplementation for breastfed infants?",
+      "options": [
+        "No supplementation needed",
+        "Daily vitamin D (usually 400 IU / 10 mcg)",
+        "Only if the mother is deficient",
+        "One single high dose at birth is sufficient"
+      ],
+      "answer": 1,
+      "explanation": "Most guidelines (including NICE and AAP-aligned recommendations) advise daily vitamin D supplementation of approximately 400 IU (10 mcg) for breastfed infants because breast milk alone often provides insufficient amounts."
+    },
+    {
+      "id": "nut-krchn-008",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Human Nutrition & Dietetics",
+      "group": "set 1",
+      "access": "free",
+      "q": "A woman with gestational diabetes is learning about carbohydrate distribution. What is a key principle of medical nutrition therapy in GDM?",
+      "options": [
+        "Completely eliminate all carbohydrates",
+        "Distribute carbohydrates evenly across meals and snacks and choose high-fibre sources",
+        "Restrict protein more than carbohydrates",
+        "Eat only fruit for carbohydrates"
+      ],
+      "answer": 1,
+      "explanation": "Current GDM nutrition guidance emphasises consistent carbohydrate distribution throughout the day, preference for complex/high-fibre carbohydrates, and monitoring of blood-glucose response rather than total carbohydrate elimination."
+    },
+    {
+      "id": "nut-krchn-009",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Human Nutrition & Dietetics",
+      "group": "set 1",
+      "access": "free",
+      "q": "During the first 6 months of exclusive breastfeeding, what is the recommended advice regarding additional water or other fluids for a healthy term infant in a temperate climate?",
+      "options": [
+        "Offer water several times a day",
+        "No additional fluids are needed",
+        "Offer diluted juice",
+        "Offer herbal teas"
+      ],
+      "answer": 1,
+      "explanation": "Exclusive breastfeeding meets all fluid requirements of a healthy term infant in the first 6 months; additional water or other fluids are unnecessary and may interfere with milk intake."
+    },
+    {
+      "id": "nut-krchn-010",
+      "cadre": "KRCHN",
+      "type": "topic",
+      "topic": "Human Nutrition & Dietetics",
+      "group": "set 1",
+      "access": "free",
+      "q": "A postnatal mother asks when she can safely resume a low-calorie weight-loss diet. What is the most appropriate advice while she is exclusively breastfeeding?",
+      "options": [
+        "Start a very-low-calorie diet immediately",
+        "Gradual weight loss is acceptable after milk supply is established; avoid severe restriction",
+        "Wait until complete weaning before any calorie reduction",
+        "Fast every other day"
+      ],
+      "answer": 1,
+      "explanation": "Modest, gradual weight loss (approximately 0.5 kg per week) is generally considered safe once breastfeeding is well established, provided nutrient intake remains adequate. Severe calorie restriction can reduce milk supply."
+    }
+  ]
+}
