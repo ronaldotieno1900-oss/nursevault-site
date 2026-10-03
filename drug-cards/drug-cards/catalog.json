@@ -1,0 +1,158 @@
+{
+  "_comment": "Edit this file when you upload a new drug-card class. Do NOT edit index.html. Price = cardCount x kesPerCard (unless you set price explicitly, e.g. bundles). Put the zip at fileUrl and optional sample JPG at sample.",
+  "kesPerCard": 10,
+  "items": [
+    {
+      "id": 101,
+      "name": "Beta-Blockers",
+      "cardCount": 6,
+      "description": "6 cards — Class overview, Metoprolol, Carvedilol, Bisoprolol, Atenolol, Propranolol.",
+      "fileUrl": "drug-cards/beta-blockers.zip",
+      "sample": "samples/sample-1.jpg",
+      "sampleDrug": "Metoprolol",
+      "ready": true
+    },
+    {
+      "id": 102,
+      "name": "ACE Inhibitors & ARBs",
+      "cardCount": 12,
+      "description": "12 cards — class overviews plus Lisinopril, Enalapril, Captopril, Ramipril, Benazepril, Losartan, Valsartan, Irbesartan, Candesartan, Olmesartan.",
+      "fileUrl": "drug-cards/ACE Inhibitors & ARBs.zip",
+      "sample": "samples/sample-2.jpg",
+      "sampleDrug": "Lisinopril",
+      "ready": true
+    },
+    {
+      "id": 103,
+      "name": "Calcium Channel Blockers",
+      "cardCount": 6,
+      "description": "6 cards — class overview plus Amlodipine, Nifedipine, Felodipine, Diltiazem, Verapamil.",
+      "fileUrl": "drug-cards/Calcium Channel Blockers.zip",
+      "sample": "samples/sample-3.jpg",
+      "sampleDrug": "Amlodipine",
+      "ready": true
+    },
+    {
+      "id": 116,
+      "name": "Diuretics",
+      "cardCount": 10,
+      "description": "10 cards — Furosemide, Bumetanide, Torsemide, Hydrochlorothiazide, Chlorthalidone, Spironolactone, Amiloride, Triamterene, Mannitol, Acetazolamide.",
+      "fileUrl": "drug-cards/Diuretics.zip",
+      "sample": "samples/sample-4.jpg",
+      "sampleDrug": "Furosemide",
+      "ready": true
+    },
+    {
+      "id": 104,
+      "name": "Penicillins",
+      "cardCount": 6,
+      "description": "Amoxicillin through flucloxacillin.",
+      "fileUrl": "#",
+      "sample": null,
+      "ready": false
+    },
+    {
+      "id": 105,
+      "name": "Cephalosporins",
+      "cardCount": 6,
+      "description": "1st through 4th generation.",
+      "fileUrl": "#",
+      "sample": null,
+      "ready": false
+    },
+    {
+      "id": 106,
+      "name": "Macrolides & Other Antibiotics",
+      "cardCount": 6,
+      "description": "Macrolides plus other common antibacterials.",
+      "fileUrl": "#",
+      "sample": null,
+      "ready": false
+    },
+    {
+      "id": 107,
+      "name": "Quinolones, Aminoglycosides & Tetracyclines",
+      "cardCount": 7,
+      "description": "Three classes frequently compared on exams.",
+      "fileUrl": "#",
+      "sample": null,
+      "ready": false
+    },
+    {
+      "id": 108,
+      "name": "NSAIDs",
+      "cardCount": 9,
+      "description": "9 cards — Aspirin, Ibuprofen, Naproxen, Diclofenac, Ketorolac, Indomethacin, Mefenamic acid, Meloxicam, Celecoxib.",
+      "fileUrl": "drug-cards/nsaids.zip",
+      "sample": "samples/sample-6.jpg",
+      "sampleDrug": "Ibuprofen",
+      "ready": true
+    },
+    {
+      "id": 109,
+      "name": "Opioids",
+      "cardCount": 10,
+      "description": "10 cards — Codeine, Fentanyl, Pethidine, Tramadol, Oxycodone, Hydromorphone, Methadone, Buprenorphine, Nalbuphine, Naloxone.",
+      "fileUrl": "drug-cards/opioids.zip",
+      "sample": "samples/sample-8.jpg",
+      "sampleDrug": "Tramadol",
+      "ready": true
+    },
+    {
+      "id": 110,
+      "name": "Antidiabetics",
+      "cardCount": 8,
+      "description": "8 cards — Metformin, Glipizide, Sitagliptin, Empagliflozin, Semaglutide, Insulin Lispro, Insulin NPH, Insulin Glargine.",
+      "fileUrl": "drug-cards/Antidiabetics.zip",
+      "sample": "samples/sample-7.jpg",
+      "sampleDrug": "Metformin",
+      "ready": true
+    },
+    {
+      "id": 111,
+      "name": "Respiratory",
+      "cardCount": 5,
+      "description": "Bronchodilators and other respiratory agents.",
+      "fileUrl": "#",
+      "sample": null,
+      "ready": false
+    },
+    {
+      "id": 112,
+      "name": "Gastrointestinal",
+      "cardCount": 5,
+      "description": "PPIs, H2 blockers, antiemetics, and more.",
+      "fileUrl": "#",
+      "sample": null,
+      "ready": false
+    },
+    {
+      "id": 113,
+      "name": "CNS",
+      "cardCount": 6,
+      "description": "Anticonvulsants, sedatives, antidepressants.",
+      "fileUrl": "#",
+      "sample": null,
+      "ready": false
+    },
+    {
+      "id": 114,
+      "name": "Anticoagulants & Antiplatelets",
+      "cardCount": 12,
+      "description": "12 cards — anticoagulants and antiplatelets including Heparin, Enoxaparin, Warfarin, Rivaroxaban, Apixaban, Clopidogrel, Ticagrelor, Prasugrel, Dipyridamole, Cilostazol.",
+      "fileUrl": "drug-cards/Anticoagulants & Antipletlets.zip",
+      "sample": "samples/sample-5.jpg",
+      "sampleDrug": "Warfarin",
+      "ready": true
+    },
+    {
+      "id": 115,
+      "name": "Complete Bundle (All Classes)",
+      "price": 600,
+      "description": "Every class above, once complete — cheaper than buying each separately.",
+      "fileUrl": "#",
+      "sample": null,
+      "ready": false
+    }
+  ]
+}
