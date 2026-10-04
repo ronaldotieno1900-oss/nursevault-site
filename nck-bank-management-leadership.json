@@ -1,0 +1,805 @@
+{
+  "hideSamples": false,
+  "questions": [
+    {
+      "id": "mgmt-lead-001",
+      "cadre": "BScN",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A county hospital Nursing Officer in Charge observes persistently high staff turnover among KRCHN cadres and declining documentation quality. According to the National Nursing and Midwifery Policy 2022–2032 and NCK Code of Conduct for managers, which strategic action best addresses both retention and professional standards simultaneously?",
+      "options": [
+        "Link mentorship and CPD programmes to appraisal systems and succession planning",
+        "Increase overtime allowances and issue structured verbal warnings for documentation gaps",
+        "Restrict leave allocations and reassign senior staff only to clinical duties",
+        "Outsource documentation audits to an external firm with quarterly reporting"
+      ],
+      "answer": 0,
+      "explanation": "The Policy prioritises strengthening nursing leadership capacity, workforce management and CPD to reduce attrition and improve quality. The Code requires mentoring, enabling environments, professional appraisal systems and succession management."
+    },
+    {
+      "id": "mgmt-lead-002",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "Under the Nurses and Midwives Act Cap 257, which function of the Nursing Council of Kenya most directly empowers a facility Nursing Manager to enforce professional standards of care and staffing within a health institution?",
+      "options": [
+        "Prescribing uniforms, badges and insignia for registered practitioners",
+        "Conducting licensing examinations and student indexing processes",
+        "Having regard to standards of nursing care, qualified staff, facilities and environment",
+        "Approving training institutions and regulating their curricula"
+      ],
+      "answer": 2,
+      "explanation": "Section 9(1)(i) explicitly gives NCK the mandate to monitor and take measures regarding standards of nursing care, qualified staff, facilities and environment."
+    },
+    {
+      "id": "mgmt-lead-003",
+      "cadre": "BScN",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "In applying the Kenya Quality Model for Health (KQMH) Dimension 1 (Leadership), a facility manager must demonstrate which of the following as the highest-priority governance action?",
+      "options": [
+        "Publishing the hospital mission statement on notice boards",
+        "Holding monthly staff motivational and recognition meetings",
+        "Purchasing new equipment for all nursing work stations",
+        "Ensuring regulatory compliance and establishing legal governance structures"
+      ],
+      "answer": 3,
+      "explanation": "KQMH Standards 1.1.1 and 1.1.2 require management to ensure regulatory compliance and put in place governance structures aligned with legislation."
+    },
+    {
+      "id": "mgmt-lead-004",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A newly qualified KRCHN is asked by a senior nurse to administer a medication outside the documented scope for that cadre without counter-checking. According to NCK Scope of Practice principles and the Code of Conduct, the most appropriate professional response is:",
+      "options": [
+        "Administer the medication to avoid conflict and report later",
+        "Perform the task only under direct senior nurse supervision",
+        "Refuse, document the request and escalate citing scope limitations",
+        "Accept the task if the patient is currently clinically stable"
+      ],
+      "answer": 2,
+      "explanation": "Scope of Practice documents emphasise that nurses practise within the limits of their education, licence and competence. The Code requires upholding standards."
+    },
+    {
+      "id": "mgmt-lead-005",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "Which leadership approach is most consistent with effective change management during implementation of a new nursing documentation system required by recent NCK policy briefs?",
+      "options": [
+        "Autocratic directive with immediate sanctions for non-compliance",
+        "Staff involvement in barrier identification plus training and support",
+        "Laissez-faire allowing each unit to adopt or reject the system",
+        "Transactional rewards given only to the earliest adopters"
+      ],
+      "answer": 1,
+      "explanation": "National Policy and leadership development programmes emphasise change management skills, quality improvement methodology and creating enabling environments."
+    },
+    {
+      "id": "mgmt-lead-006",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A BScN-prepared Nursing Services Manager is developing a facility staffing plan. Which combination best reflects current Kenyan norms, Scheme of Service principles and NCK policy briefs on nurse-to-patient ratios?",
+      "options": [
+        "Fixed national ratios applied uniformly across all service areas",
+        "Minimum staffing calculated solely from available bed capacity",
+        "Staffing levels set exclusively by the current budget allocation",
+        "Context-specific ratios based on acuity, skill mix and outcomes"
+      ],
+      "answer": 3,
+      "explanation": "NCK policy briefs and the National Policy emphasise optimum nurse-to-patient ratios that vary by service area and evidence-based workforce planning."
+    },
+    {
+      "id": "mgmt-lead-007",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "According to the NCK Code of Conduct for nurse/midwife managers, which responsibility is specifically emphasised toward the profession itself?",
+      "options": [
+        "Ensuring licensed practitioners, research support and ethical values",
+        "Providing direct clinical care on every allocated shift",
+        "Negotiating annual salary and allowance increments",
+        "Limiting staff access to external training opportunities"
+      ],
+      "answer": 0,
+      "explanation": "The Code explicitly lists duties to the profession: uphold standards, ensure only qualified/licensed practitioners practise, foster research, promote ethical values and professional associations."
+    },
+    {
+      "id": "mgmt-lead-008",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "In the WHO health system building blocks framework as applied in Kenyan governance and leadership training materials, which block is most directly strengthened when a Nursing Manager improves duty rostering transparency, performance feedback and CPD access?",
+      "options": [
+        "Health financing mechanisms and resource allocation",
+        "Medical products, vaccines and technology systems",
+        "Human resources for health with service delivery linkages",
+        "Health information systems and data management"
+      ],
+      "answer": 2,
+      "explanation": "Transparent rostering, feedback and CPD address the human resources building block while supporting service delivery quality and governance."
+    },
+    {
+      "id": "mgmt-lead-009",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A facility experiences recurrent medication errors. The most appropriate leadership response consistent with KQMH management review and continual improvement standards is:",
+      "options": [
+        "Identify and publicly reprimand the individual nurses involved",
+        "Suspend all medication privileges pending external audit",
+        "Increase frequency of random drug counts and checks only",
+        "Conduct systems-based root-cause analysis and monitor learning"
+      ],
+      "answer": 3,
+      "explanation": "KQMH requires management to continually review operations and support staff engagement in continuous quality improvement. Systems thinking aligns with modern patient safety principles."
+    },
+    {
+      "id": "mgmt-lead-010",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "Which statement correctly reflects the differentiated leadership expectation between a KRCHN and a BScN graduate under current NCK Scope of Practice and Scheme of Service?",
+      "options": [
+        "Both cadres hold identical leadership authority at facility level",
+        "KRCHN focuses on unit-level supervision; BScN on broader managerial roles",
+        "Only BScN-prepared nurses may supervise any nursing staff",
+        "KRCHN has no formal leadership role beyond direct patient care"
+      ],
+      "answer": 1,
+      "explanation": "Scope of Practice and Scheme of Service differentiate preparation levels. Diploma prepares for clinical and unit supervision; degree adds managerial, educational and higher administrative roles."
+    },
+    {
+      "id": "mgmt-lead-011",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "When resolving inter-professional conflict over task allocation in a multidisciplinary team, the Nursing Manager’s approach most consistent with NCK ethical leadership and good governance principles is:",
+      "options": [
+        "Unilaterally reassign tasks based on existing hierarchy",
+        "Escalate immediately to the County Director without local attempt",
+        "Facilitate dialogue based on scopes, safety and documented agreements",
+        "Ignore the conflict to maintain surface team harmony"
+      ],
+      "answer": 2,
+      "explanation": "Code of Conduct and Policy emphasise collaboration, respect for professional boundaries, patient-centred care and positive workplace culture."
+    },
+    {
+      "id": "mgmt-lead-012",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A County Nursing Officer is tasked with cascading the National Nursing and Midwifery Policy 2022–2032. The highest-leverage leadership action is:",
+      "options": [
+        "Translating policy into county plans, indicators and capacity activities",
+        "Distributing printed copies of the policy to all facilities",
+        "Holding a single high-profile launch ceremony for stakeholders",
+        "Focusing solely on uniform and insignia compliance measures"
+      ],
+      "answer": 0,
+      "explanation": "The Policy is a framework requiring translation into actionable strategies at national and county levels."
+    },
+    {
+      "id": "mgmt-lead-013",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A Nursing Officer in Charge discovers that several newly indexed KRCHN interns are performing procedures beyond the documented entry-level scope without structured supervision. The most appropriate immediate managerial action is:",
+      "options": [
+        "Allow the practices to continue if no adverse events occurred",
+        "Issue a verbal warning only and continue as before",
+        "Reassign the interns permanently to non-clinical duties",
+        "Stop out-of-scope work, assess competence and escalate formally"
+      ],
+      "answer": 3,
+      "explanation": "Scope of Practice and the Code require that only competent, licensed practitioners perform procedures within defined limits."
+    },
+    {
+      "id": "mgmt-lead-014",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "Under KQMH Leadership standards, which of the following best demonstrates “management review and continual improvement”?",
+      "options": [
+        "Holding an annual staff party to boost overall morale",
+        "Purchasing new uniforms for all nursing staff members",
+        "Reviewing performance data, closing gaps and documenting progress",
+        "Restricting staff meetings to maximise clinical work time"
+      ],
+      "answer": 2,
+      "explanation": "KQMH Standard 1.2 requires management to continually review operations and support continuous quality improvement."
+    },
+    {
+      "id": "mgmt-lead-015",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A facility is experiencing high rates of missed nursing care. The Nursing Manager applies a leadership theory that matches style to staff competence and commitment. Which theory is being applied, and what is the most appropriate first step?",
+      "options": [
+        "Trait theory – identify innate leader characteristics among staff",
+        "Situational leadership – assess readiness and adapt style accordingly",
+        "Great Man theory – wait for a natural leader to emerge",
+        "Transactional leadership – introduce financial penalties for missed care"
+      ],
+      "answer": 1,
+      "explanation": "Situational leadership (Hersey-Blanchard) is widely taught in Kenyan nursing leadership curricula."
+    },
+    {
+      "id": "mgmt-lead-016",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "When delegating a complex wound dressing to a junior KRCHN, the delegating nurse must ensure which of the following to remain accountable under NCK standards?",
+      "options": [
+        "The task is completed regardless of the junior’s competence",
+        "Competence, clear instructions, supervision and retained accountability",
+        "The junior accepts the task verbally without further discussion",
+        "Documentation of delegation is optional if the patient is stable"
+      ],
+      "answer": 1,
+      "explanation": "Delegation principles require assessment of competence, clear communication, appropriate supervision and retained accountability."
+    },
+    {
+      "id": "mgmt-lead-017",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "According to the NCK Code of Conduct for nurse/midwife managers, which of the following is a specific duty “to the public”?",
+      "options": [
+        "Prioritising staff leave requests over patient care needs",
+        "Limiting family involvement in all care decision processes",
+        "Focusing exclusively on facility cost-containment measures",
+        "Respecting dignity, privacy, information and resource advocacy"
+      ],
+      "answer": 3,
+      "explanation": "The Code explicitly outlines public-facing responsibilities: dignity, privacy, confidentiality, information provision, quality promotion and resource advocacy."
+    },
+    {
+      "id": "mgmt-lead-018",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A County Director of Nursing Services is preparing a briefing on nursing workforce challenges. Drawing on recent NCK policy briefs and the National Nursing and Midwifery Policy, which combination of issues should receive highest priority?",
+      "options": [
+        "Uniform colour variations across different health facilities",
+        "Preference for private-sector employment among nurses",
+        "Staffing gaps, ratios by area, documentation and leadership capacity",
+        "Elimination of all diploma-level training programmes"
+      ],
+      "answer": 2,
+      "explanation": "Recent NCK policy briefs address staffing status, nurse-to-patient ratios, documentation gaps and CPD uptake."
+    },
+    {
+      "id": "mgmt-lead-019",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "Which of the following best reflects the relationship between leadership and management in the Kenyan nursing context as presented in standard leadership and management curricula?",
+      "options": [
+        "Leadership and management are identical and interchangeable",
+        "Only leadership is needed; management skills are now obsolete",
+        "Management is for BScN only; leadership is for KRCHN only",
+        "Management handles resources and processes; leadership influences people"
+      ],
+      "answer": 3,
+      "explanation": "Kenyan training materials treat leadership and management as distinct yet interdependent competencies."
+    },
+    {
+      "id": "mgmt-lead-020",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A senior nurse manager is pressured by facility administration to falsify staffing returns submitted to the county and NCK. The most appropriate professional response guided by the Code of Conduct and Cap 257 is:",
+      "options": [
+        "Refuse, document pressure, uphold accuracy and escalate properly",
+        "Comply to protect the facility’s funding and reputation",
+        "Alter only the figures least likely to be audited later",
+        "Resign immediately without further action or documentation"
+      ],
+      "answer": 0,
+      "explanation": "The Code requires managers to uphold professional ethical values and ensure accurate data. Cap 257 mandates regard to standards of qualified staff."
+    },
+    {
+      "id": "mgmt-lead-021",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "In the context of health facility governance structures required by KQMH and relevant legislation, the Nursing Manager’s primary accountability is best described as:",
+      "options": [
+        "Solely to the medical superintendent for all clinical and administrative decisions",
+        "Accountability only to the county nursing director",
+        "Dual accountability — operational within the facility hierarchy and professional to NCK",
+        "No formal accountability beyond personal clinical practice"
+      ],
+      "answer": 2,
+      "explanation": "Nurse managers operate within facility governance while remaining professionally accountable to NCK regulatory standards."
+    },
+    {
+      "id": "mgmt-lead-022",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A facility introduces a new electronic nursing documentation system. Six months later, uptake remains low and documentation quality has not improved. The most effective leadership response consistent with change management and KQMH is:",
+      "options": [
+        "Mandate 100% compliance with immediate sanctions for non-users",
+        "Abandon the system and return to paper records",
+        "Replace all resistant staff with new recruits",
+        "Assess barriers, co-design solutions with users and monitor iteratively"
+      ],
+      "answer": 3,
+      "explanation": "Effective change management requires diagnosis of barriers, participatory problem-solving, support and continuous monitoring."
+    },
+    {
+      "id": "mgmt-lead-023",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A Nursing Manager notices that staff consistently bypass the official referral pathway for critically ill patients. The most appropriate first managerial action consistent with KQMH governance and patient safety standards is:",
+      "options": [
+        "Issue a facility-wide memo threatening disciplinary action",
+        "Conduct a rapid systems review of barriers and redesign the pathway",
+        "Instruct nurses to stop all referrals until further notice",
+        "Report every individual nurse who bypasses the pathway to NCK"
+      ],
+      "answer": 1,
+      "explanation": "KQMH emphasises systems thinking, continual improvement and governance structures that support safe care."
+    },
+    {
+      "id": "mgmt-lead-024",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "According to the NCK Code of Conduct, a nurse manager’s duty “to the practice” most clearly includes:",
+      "options": [
+        "Ensuring every nurse works overtime without compensation",
+        "Restricting all staff from joining professional associations",
+        "Promoting quality care, appraisal systems, CPD, mentoring and safe practice conditions",
+        "Focusing exclusively on reducing the facility’s wage bill"
+      ],
+      "answer": 2,
+      "explanation": "The Code explicitly lists these responsibilities under the manager’s duty to the practice."
+    },
+    {
+      "id": "mgmt-lead-025",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "Which statement correctly reflects the application of accountability when a BScN Nursing Officer delegates a task to a KRCHN?",
+      "options": [
+        "Once delegated, the BScN officer has no further responsibility",
+        "The KRCHN becomes fully accountable and the BScN officer is absolved",
+        "Accountability is shared equally with no clear primary responsibility",
+        "The BScN officer retains ultimate accountability while the KRCHN performs within scope"
+      ],
+      "answer": 3,
+      "explanation": "Professional standards maintain that the delegator retains accountability."
+    },
+    {
+      "id": "mgmt-lead-026",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A facility is preparing for an external quality assessment under KQMH. The Nursing Manager’s highest-priority leadership action is:",
+      "options": [
+        "Coaching staff on how to give “correct” answers during interviews",
+        "Ensuring actual compliance with standards and closing identified gaps",
+        "Hiding non-compliant records from assessors",
+        "Focusing only on physical appearance of the wards"
+      ],
+      "answer": 1,
+      "explanation": "Genuine compliance and continuous improvement are the intent of KQMH."
+    },
+    {
+      "id": "mgmt-lead-027",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "In the context of the National Nursing and Midwifery Policy 2022–2032, which leadership capacity area is identified as critical for reducing attrition and improving service quality?",
+      "options": [
+        "Advanced clinical procedure skills only",
+        "Exclusive focus on industrial action skills",
+        "Skills in leadership, change management, QI and positive workplace environments",
+        "Mastery of financial accounting software only"
+      ],
+      "answer": 2,
+      "explanation": "The Policy recognises gaps in managerial confidence and skills as drivers of attrition and suboptimal care."
+    },
+    {
+      "id": "mgmt-lead-028",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A KRCHN unit in-charge is asked to prepare the monthly nursing returns for submission. The most professionally correct approach is:",
+      "options": [
+        "Estimate figures to make the unit look fully staffed",
+        "Omit sections that show shortages",
+        "Delay submission until the next quarter",
+        "Submit accurate data on staffing, workload and gaps, and use it to advocate"
+      ],
+      "answer": 3,
+      "explanation": "Accurate reporting is a professional and regulatory obligation."
+    },
+    {
+      "id": "mgmt-lead-029",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "Which of the following best describes the relationship between the Nursing Council of Kenya and a facility Nursing Manager regarding standards of care?",
+      "options": [
+        "NCK has no interest in facility-level practice",
+        "Only the County Director of Nursing can interact with NCK",
+        "Managers may ignore NCK standards if the facility has its own policies",
+        "NCK has statutory authority over standards; the manager is the first-line implementer"
+      ],
+      "answer": 3,
+      "explanation": "Section 9(1)(i) of Cap 257 gives NCK this explicit mandate."
+    },
+    {
+      "id": "mgmt-lead-030",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "When introducing a new infection prevention protocol, the most effective leadership sequence consistent with change management principles is:",
+      "options": [
+        "Announce the protocol and immediately discipline non-compliant staff",
+        "Assess readiness and barriers, involve staff, train, implement, monitor and adjust",
+        "Leave implementation entirely to individual nurses",
+        "Implement only on day shifts"
+      ],
+      "answer": 1,
+      "explanation": "Structured change management produces more sustainable adoption than pure authority or laissez-faire approaches."
+    },
+    {
+      "id": "mgmt-lead-031",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A BScN-prepared manager is developing a unit-level quality improvement project. Which starting point is most consistent with KQMH and modern QI methodology?",
+      "options": [
+        "Selecting a problem based on personal preference",
+        "Waiting for the county to prescribe the project",
+        "Using available data to identify a high-impact measurable problem then applying PDSA",
+        "Focusing only on problems that require no resources"
+      ],
+      "answer": 2,
+      "explanation": "Data-driven problem selection and structured improvement cycles are core to KQMH continual improvement."
+    },
+    {
+      "id": "mgmt-lead-032",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "According to the Scheme of Service and Scope of Practice differentiation, which leadership function is more characteristically expected of a BScN Nursing Officer than a KRCHN?",
+      "options": [
+        "Direct patient care only",
+        "Broader involvement in policy interpretation, programme coordination and higher-level planning",
+        "No leadership responsibility",
+        "Exclusive responsibility for laundry and catering services"
+      ],
+      "answer": 1,
+      "explanation": "Degree preparation equips nurses for expanded managerial, educational and strategic roles."
+    },
+    {
+      "id": "mgmt-lead-033",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A nurse manager observes bullying behaviour by a senior staff member toward juniors. The most appropriate response guided by the Code of Conduct is:",
+      "options": [
+        "Ignore it because the senior is clinically competent",
+        "Transfer the juniors to another unit without investigation",
+        "Address the behaviour promptly, protect affected staff and apply fair process",
+        "Publicly shame the senior nurse"
+      ],
+      "answer": 2,
+      "explanation": "Managers are required to promote positive working environments and uphold professional conduct."
+    },
+    {
+      "id": "mgmt-lead-034",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "Which of the following is the strongest indicator that a Nursing Manager is practising ethical leadership under NCK standards?",
+      "options": [
+        "Popularity among staff",
+        "Ability to avoid all conflict",
+        "Success in reducing the nursing wage bill",
+        "Consistent alignment of decisions with ethics, safety, equity and accountability"
+      ],
+      "answer": 3,
+      "explanation": "Ethical leadership is demonstrated by principled decision-making that upholds the Code and patient interests."
+    },
+    {
+      "id": "mgmt-lead-035",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "In applying the management function of “controlling,” a Nursing Manager should primarily:",
+      "options": [
+        "Focus only on punishing errors",
+        "Set standards, measure performance, identify variances and take corrective action",
+        "Avoid any form of monitoring to maintain staff morale",
+        "Delegate all monitoring to external auditors only"
+      ],
+      "answer": 1,
+      "explanation": "Controlling closes the loop between planning and results when linked to standards, measurement and improvement."
+    },
+    {
+      "id": "mgmt-lead-036",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A facility has chronic shortages of basic nursing supplies. The most professional managerial response is:",
+      "options": [
+        "Instruct nurses to improvise indefinitely without documentation",
+        "Blame the procurement officer publicly",
+        "Accurately document stock-outs, escalate and participate in solutions while maintaining safe practice",
+        "Stop all procedures that require the missing supplies without communication"
+      ],
+      "answer": 2,
+      "explanation": "Accurate documentation, escalation and advocacy are professional responsibilities."
+    },
+    {
+      "id": "mgmt-lead-037",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "Which leadership style is generally most effective when leading a team of highly experienced, competent and committed nurses through a complex quality improvement initiative?",
+      "options": [
+        "Highly directive (telling)",
+        "Coaching or supporting/participative styles that leverage their expertise",
+        "Laissez-faire with no guidance",
+        "Purely transactional rewards and punishments"
+      ],
+      "answer": 1,
+      "explanation": "High-readiness staff benefit from participative and supportive approaches."
+    },
+    {
+      "id": "mgmt-lead-038",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "Under Cap 257 and NCK functions, which of the following is a legitimate basis for NCK to take action regarding a health facility?",
+      "options": [
+        "The facility’s profit margin",
+        "Standards of nursing care, qualified staff, facilities, conditions and environment",
+        "The political affiliation of the facility manager",
+        "The colour of the nurses’ uniforms only"
+      ],
+      "answer": 1,
+      "explanation": "Section 9(1)(i) explicitly gives NCK this mandate."
+    },
+    {
+      "id": "mgmt-lead-039",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A Nursing Manager is asked to implement a new national guideline that conflicts with long-standing local practice. The most appropriate leadership approach is:",
+      "options": [
+        "Ignore the national guideline",
+        "Force immediate 100% compliance without discussion",
+        "Analyse the guideline, engage staff, support transition and monitor outcomes",
+        "Allow each nurse to choose whether to follow it"
+      ],
+      "answer": 2,
+      "explanation": "Effective translation of national guidelines requires analysis, engagement, supported implementation and evaluation."
+    },
+    {
+      "id": "mgmt-lead-040",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "Which of the following best demonstrates a Nursing Manager fulfilling the duty “to the profession” under the NCK Code of Conduct?",
+      "options": [
+        "Discouraging staff from joining professional associations",
+        "Ensuring only qualified and licensed nurses provide services, upholding standards and promoting ethical values",
+        "Prioritising facility loyalty over professional standards",
+        "Limiting staff access to NCK communications"
+      ],
+      "answer": 1,
+      "explanation": "These actions are explicitly listed in the Code as duties to the profession."
+    },
+    {
+      "id": "mgmt-lead-041",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "In the context of health systems strengthening, when a Nursing Manager improves duty roster transparency, fair workload distribution and access to CPD, which WHO building block is most directly strengthened?",
+      "options": [
+        "Health financing in isolation",
+        "Human resources for health (with positive effects on service delivery and governance)",
+        "Medical products and technologies only",
+        "Leadership and governance alone without HRH impact"
+      ],
+      "answer": 1,
+      "explanation": "These actions primarily address the HRH building block."
+    },
+    {
+      "id": "mgmt-lead-042",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A newly appointed KRCHN unit in-charge feels unprepared for the leadership demands of the role. The most constructive professional action is:",
+      "options": [
+        "Avoid all decision-making",
+        "Seek structured mentorship, utilise leadership development opportunities and build competence progressively",
+        "Resign immediately",
+        "Rely solely on personal clinical experience without further development"
+      ],
+      "answer": 1,
+      "explanation": "The National Policy and NCK emphasise continuous professional development and leadership capacity building."
+    },
+    {
+      "id": "mgmt-lead-043",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A Nursing Manager is informed that a senior nurse has been practising without a valid practising licence for three months. The most appropriate immediate action is:",
+      "options": [
+        "Allow the nurse to continue because of clinical experience",
+        "Quietly advise the nurse to renew the licence without formal action",
+        "Immediately stop the nurse from practising, verify status with NCK and escalate",
+        "Transfer the nurse to a non-clinical role without further investigation"
+      ],
+      "answer": 2,
+      "explanation": "Only licensed practitioners may provide nursing services. Managers must ensure only qualified and licensed nurses practise."
+    },
+    {
+      "id": "mgmt-lead-044",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "Which of the following best illustrates effective application of the management function of “organising” in a nursing unit?",
+      "options": [
+        "Writing a vision statement",
+        "Clarifying roles, responsibilities, reporting lines and resource allocation",
+        "Conducting end-of-month performance appraisals only",
+        "Motivating staff through speeches"
+      ],
+      "answer": 1,
+      "explanation": "Organising translates plans into structured work by defining roles, authority relationships and resource deployment."
+    },
+    {
+      "id": "mgmt-lead-045",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A BScN Nursing Officer is leading a multidisciplinary quality improvement team. Conflict arises between nursing and medical staff over task allocation. The most constructive leadership response is:",
+      "options": [
+        "Unilaterally decide in favour of the nursing position",
+        "Facilitate structured dialogue grounded in scopes of practice, safety and mutual respect",
+        "Withdraw nursing participation from the team",
+        "Escalate immediately to the County Director without local resolution attempt"
+      ],
+      "answer": 1,
+      "explanation": "Effective inter-professional leadership uses scope-informed dialogue and shared patient-centred goals."
+    },
+    {
+      "id": "mgmt-lead-046",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "According to recent NCK policy briefs and the National Nursing and Midwifery Policy, which factor is most strongly associated with improved retention of nurses?",
+      "options": [
+        "Strict enforcement of uniform guidelines only",
+        "Supportive leadership, CPD opportunities, fair workload and positive workplace culture",
+        "Longer working hours with higher overtime pay exclusively",
+        "Restriction of professional association membership"
+      ],
+      "answer": 1,
+      "explanation": "Policy documents identify supportive leadership, CPD access, manageable workload and positive culture as key retention drivers."
+    },
+    {
+      "id": "mgmt-lead-047",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "When a Nursing Manager applies “directing” as a management function, the core activities include:",
+      "options": [
+        "Only writing policies",
+        "Guiding, supervising, motivating, communicating expectations and leading staff",
+        "Counting stock at the end of the month",
+        "Designing the facility organogram alone"
+      ],
+      "answer": 1,
+      "explanation": "Directing involves the human side of getting work done through people."
+    },
+    {
+      "id": "mgmt-lead-048",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "A KRCHN in-charge discovers that documentation of nursing care is consistently incomplete across the unit. The most appropriate initial managerial response is:",
+      "options": [
+        "Publicly reprimand all staff at the next meeting",
+        "Conduct a structured assessment of barriers, provide support and monitor improvement",
+        "Stop all clinical work until documentation is perfect",
+        "Ignore the issue because the facility is understaffed"
+      ],
+      "answer": 1,
+      "explanation": "Documentation gaps are a recognised NCK priority. Systems-oriented assessment and supportive improvement are more effective."
+    },
+    {
+      "id": "mgmt-lead-049",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "Which statement correctly reflects dual accountability of a facility Nursing Manager in Kenya?",
+      "options": [
+        "Accountability only to the facility CEO",
+        "Operational accountability within the facility hierarchy and professional accountability to NCK",
+        "Accountability solely to the County Nursing Director",
+        "No formal accountability beyond personal clinical competence"
+      ],
+      "answer": 1,
+      "explanation": "Nurse managers operate within institutional governance while remaining professionally regulated by NCK."
+    },
+    {
+      "id": "mgmt-lead-050",
+      "cadre": "All",
+      "type": "topic",
+      "topic": "Health Services Management and Leadership",
+      "group": "set 1",
+      "q": "In situational leadership, when staff demonstrate high competence but variable commitment to a new protocol, the most appropriate style is:",
+      "options": [
+        "Highly directive (telling)",
+        "Supporting or participating — sharing decision-making and providing encouragement",
+        "Delegating with no further involvement",
+        "Coercive punishment"
+      ],
+      "answer": 1,
+      "explanation": "High competence with variable commitment calls for supportive/participative behaviours."
+    }
+  ]
+}
