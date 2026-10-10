@@ -1,0 +1,47 @@
+# Auto-chunk knowledge files whenever you upload to knowledge/incoming/
+name: Update knowledge base
+
+on:
+  push:
+    paths:
+      - "knowledge/incoming/**"
+      - "knowledge/samples/**"
+      - "knowledge/auto_chunk.py"
+  workflow_dispatch: {}
+
+jobs:
+  chunk:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+          pip install pypdf
+
+      - name: Run auto-chunker
+        run: |
+          mkdir -p knowledge/incoming knowledge/samples
+          python3 knowledge/auto_chunk.py --out kb.json
+
+      - name: Commit updated kb.json
+        run: |
+          git config user.name "knowledge-bot"
+          git config user.email "knowledge-bot@users.noreply.github.com"
+          git add kb.json
+          if git diff --staged --quiet; then
+            echo "No kb.json changes"
+          else
+            git commit -m "chore: auto-update kb.json from knowledge/incoming"
+            git push
+          fi
