@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "chunk_count": 4393,
+  "chunk_count": 4406,
   "chunks": [
     {
       "id": "ahd-tb-art-guidelines-dissemination-2-0001",
@@ -8105,6 +8105,204 @@
       "page": "173",
       "text": "USAID\nMoi Teaching & Referral Hospital\nMakueni\nSave the Children\nNEST360 - Rice University\nKibwezi Subcounty Hospital\nMachakos Level 5 Hospital",
       "hash": "708e810686744e08"
+    },
+    {
+      "id": "gestational-diabetes-cheat-sheet-0001",
+      "title": "Gestational Diabetes Cheat Sheet ›  + 5 Interventions & Client",
+      "source": "PDF:Gestational Diabetes Cheat Sheet.pdf",
+      "type": "guideline",
+      "topics": [
+        "diabetes"
+      ],
+      "section": " + 5 Interventions & Client",
+      "page": "1",
+      "text": "Table of Contents:\n\n1. Pathophysiology\n2. Risk Factors\n3. Clinical Manifestations\n4. Diagnostic Studies\n5. Interventions & Client\nTeaching\n\nGestational Diabetes",
+      "flags": [
+        "table"
+      ],
+      "hash": "7a3f36ca3364261f"
+    },
+    {
+      "id": "gestational-diabetes-cheat-sheet-0002",
+      "title": "Gestational Diabetes Cheat Sheet › 1 Pathophysiology + 3 Clinical Manifestations",
+      "source": "PDF:Gestational Diabetes Cheat Sheet.pdf",
+      "type": "guideline",
+      "topics": [
+        "diabetes"
+      ],
+      "section": "1 Pathophysiology + 3 Clinical Manifestations",
+      "page": "1",
+      "text": "1. Pathophysiology\nDiabetes mellitus = impaired glucose metabolism.\ny Glucose can’t reach cells  Cells starve +\nGlucose builds up in blood\nFIGURE 1. DIABETES\n\n3. Clinical Manifestations\ny Hyperglycemia:\n\ny 3 “Ps”: Polyuria, polyphagia, polydipsia\n\ny  fundal height from fetal macrosomia and\npolyhydramnios (excess amniotic fluid):\nFIGURE 2. INCREASED FUNDAL HEIGHT",
+      "hash": "6d7107e99ed10c44"
+    },
+    {
+      "id": "gestational-diabetes-cheat-sheet-0003",
+      "title": "Gestational Diabetes Cheat Sheet › 2 Risk Factors",
+      "source": "PDF:Gestational Diabetes Cheat Sheet.pdf",
+      "type": "guideline",
+      "topics": [
+        "diabetes",
+        "obstetric"
+      ],
+      "section": "2 Risk Factors",
+      "page": "1",
+      "text": "2. Risk Factors\ny Overweight\ny History of GDM or signs of GDM in previous\npregnancy (macrosomia)\ny Maternal age >25 years\ny High-risk ethnic groups (Hispanic, Black)\ny First-degree relative with diabetes",
+      "hash": "f475d7cd1072cdc6"
+    },
+    {
+      "id": "gestational-diabetes-cheat-sheet-0004",
+      "title": "Gestational Diabetes Cheat Sheet › 4 Diagnostic Studies + Maternal & Newborn",
+      "source": "PDF:Gestational Diabetes Cheat Sheet.pdf",
+      "type": "guideline",
+      "topics": [
+        "diabetes",
+        "obstetric",
+        "neonatal"
+      ],
+      "section": "4 Diagnostic Studies + Maternal & Newborn",
+      "page": "1–2",
+      "text": "4. Diagnostic Studies\n\u0001 Clients are screened for GDM between\n24-28 weeks gestation.\n\ny GDM is diagnosed if:\ny Positive screening result for two-step oral\nglucose challenge test (GCT) (FIGURE 3)\n\nMaternal & Newborn\ny Diabetes mellitus is classified as type 1 (T1DM),\ntype 2 (T2DM), or gestational diabetes (GDM) (see\nDIABETES CHEAT SHEET).\ny GDM:\ny Higher levels of placental hormones (estrogen,\nprogesterone) and cortisol in the 2nd and 3rd\ntrimester insulin resistance \ncirculating glucose (hyperglycemia)\ny Usually resolves postpartum\n\n\u0002 GDM screening: Screen for GDM between 24-28 weeks gestation using a non-fasting 1-hour\noral glucose challenge test (GCT). If 1-hour GCT is positive, a fasting 2-hour CGT is performed.\n\n4. Diagnostic Studies, Continued",
+      "hash": "ac037de3a806eeb4"
+    },
+    {
+      "id": "gestational-diabetes-cheat-sheet-0005",
+      "title": "Gestational Diabetes Cheat Sheet › 4 Diagnostic Studies > Maternal & Newborn",
+      "source": "PDF:Gestational Diabetes Cheat Sheet.pdf",
+      "type": "guideline",
+      "topics": [
+        "diabetes",
+        "obstetric",
+        "neonatal"
+      ],
+      "section": "4 Diagnostic Studies > Maternal & Newborn",
+      "page": "2",
+      "text": "oral glucose challenge test (GCT). If 1-hour GCT is positive, a fasting 2-hour CGT is performed.\n\n4. Diagnostic Studies, Continued\ny Blood sugar management:\ny Blood glucose levels are monitored to\nevaluate whether blood sugar can be\ncontrolled with diet and exercise alone.\ny Teach client to monitor blood glucose as\nprescribed (usually four times daily):\ny Measure post-prandial glucose 1-2 hr\nafter eating.\n\u0001 If hyperglycemia persists despite healthy\ndiet and exercise:\ny Insulin may become necessary for T2DM\nand GDM.\ny doses of insulin will be required during\npregnancy for clients who have T1DM.\ny Monitor for signs of hypoglycemia (shaky,\nclammy, confused).\ny Treat hypoglycemia by following the “Rule\nof 15”: 15 grams of carbohydrates +\nRecheck glucose in 15 min (see DIABETES\nCHEAT SHEET).",
+      "hash": "c12abc38fa3304a4"
+    },
+    {
+      "id": "gestational-diabetes-cheat-sheet-0006",
+      "title": "Gestational Diabetes Cheat Sheet › 5 Interventions & Client Teaching",
+      "source": "PDF:Gestational Diabetes Cheat Sheet.pdf",
+      "type": "guideline",
+      "topics": [
+        "diabetes",
+        "obstetric"
+      ],
+      "section": "5 Interventions & Client Teaching",
+      "page": "2",
+      "text": "5. Interventions & Client Teaching\nThe #1 priority for clients with diabetes during pregnancy\n= maintaining tight glycemic control to ensure maternal\nand fetal well-being and prevent complications like\nspontaneous abortion and neural tube defects.\nInterventions for GDM focus on:",
+      "hash": "29825081bcf884c9"
+    },
+    {
+      "id": "gestational-diabetes-cheat-sheet-0007",
+      "title": "Gestational Diabetes Cheat Sheet › 3 Managing birth and newborn complications",
+      "source": "PDF:Gestational Diabetes Cheat Sheet.pdf",
+      "type": "guideline",
+      "topics": [
+        "diabetes",
+        "neonatal"
+      ],
+      "section": "3 Managing birth and newborn complications",
+      "page": "2",
+      "text": "1. Teaching diabetes management\n2. Monitoring maternal and fetal well-being\n3. Managing birth and newborn complications\n1. Teach diabetes management:\ny Diet and exercise:\n\u0001 GDM is treated with diet and exercise first,\nthen insulin as needed.\n\u0001 Exercise 30-60 min daily.\ny Eat a balanced diet:\n\u0001 Divide daily caloric needs between 3 meals\nand 2-3 snacks (never skip meals).\n\u0001 Eat high-fiber, complex carbohydrates\n(brown rice) and limit simple sugars (white\nbread, candy).\ny Consult with a registered dietician.\n\n2.",
+      "hash": "a6fb90da19b7333a"
+    },
+    {
+      "id": "gestational-diabetes-cheat-sheet-0008",
+      "title": "Gestational Diabetes Cheat Sheet › 3 Managing birth and newborn complications – part 2",
+      "source": "PDF:Gestational Diabetes Cheat Sheet.pdf",
+      "type": "guideline",
+      "topics": [
+        "diabetes",
+        "obstetric",
+        "neonatal"
+      ],
+      "section": "3 Managing birth and newborn complications",
+      "page": "2",
+      "text": "and 2-3 snacks (never skip meals).\n\u0001 Eat high-fiber, complex carbohydrates\n(brown rice) and limit simple sugars (white\nbread, candy).\ny Consult with a registered dietician.\n\n2.\nMonitor maternal and fetal well-being:\ny Uncontrolled hyperglycemia in pregnancy can\ncause several maternal and fetal complications\n(FIGURE 4).\ny Fetal complications:\ny Spontaneous abortions\ny Congenital malformations (neural\ntube defects)\ny Intrauterine growth restriction (IUGR)\n\u0001 Macrosomia (newborn weight ≥4,000 g\n[8 lbs 13 oz])\ny Maternal complications:\n\u0001 Preeclampsia (BP ≥140/90, vision changes,\nheadaches)\ny Frequent UTIs: Glucosuriabacterial growth\ny Assess for complications:\ny Monitor blood glucose as prescribed.\ny Perform early and frequent fetal surveillance:\ny Ultrasound measurements to assess fetal\ngrowth and amniotic fluid volumes\ny Non-stress tests and biophysical\nprofiles to assess fetal well-being\n\n\u0003 Lifestyle changes: Teach clients with GDM to manage blood glucose with diet and exercise.\nDivide daily calorie needs between 3 meals and 2-3 snacks.\n\n© Bootcamp.com\n\nMaternal & Newborn",
+      "hash": "227dc0bac6872a13"
+    },
+    {
+      "id": "gestational-diabetes-cheat-sheet-0009",
+      "title": "Gestational Diabetes Cheat Sheet › 3 Managing birth and newborn complications – part 3",
+      "source": "PDF:Gestational Diabetes Cheat Sheet.pdf",
+      "type": "guideline",
+      "topics": [
+        "diabetes",
+        "obstetric",
+        "neonatal"
+      ],
+      "section": "3 Managing birth and newborn complications",
+      "page": "2–3",
+      "text": "\u0003 Lifestyle changes: Teach clients with GDM to manage blood glucose with diet and exercise.\nDivide daily calorie needs between 3 meals and 2-3 snacks.\n\n© Bootcamp.com\n\nMaternal & Newborn\nFIGURE 3. SCREENING FOR GESTATIONAL DIABETES\n\n5. Interventions & Client Teaching, Continued\nManage birth and newborn\ncomplications:\n\nFIGURE 4. COMPLICATIONS OF GDM\n\ny During labor, strict glycemic\ncontrol is necessary torisk of\nneonatal hypoglycemia (FIGURE 4).\ny Monitor maternal blood\nglucose levels every hour.\ny Administer IV fluids with\ndextrose (D5NS) and insulin\nas needed to maintain normal\nglucose levels during labor.\ny Clients with GDM are at risk\nfor birth complications of\nmacrosomia:\n\u0001 Postpartum hemorrhage\n(PPH): Uterine overdistention =\nrisk for uterine atony  PPH\ny Birth injuries (perineal lacerations,\nshoulder dystocia)\ny After birth, assess newborn blood glucose and\nmonitor for complications due to GDM:\ny Assess newborn\nblood glucose per\nfacility policy:\n\u0001 Place heel warmer\non newborn to\nimprove blood\nflow and prevent\nfalse\nlow results.\n\u0001 Obtain blood\nsample from the\nlateral heel.",
+      "flags": [
+        "table"
+      ],
+      "hash": "80d48c3220030be9"
+    },
+    {
+      "id": "gestational-diabetes-cheat-sheet-0010",
+      "title": "Gestational Diabetes Cheat Sheet › 3 Managing birth and newborn complications – part 4",
+      "source": "PDF:Gestational Diabetes Cheat Sheet.pdf",
+      "type": "guideline",
+      "topics": [
+        "diabetes",
+        "neonatal",
+        "respiratory",
+        "pharmacology",
+        "obstetric"
+      ],
+      "section": "3 Managing birth and newborn complications",
+      "page": "3",
+      "text": "y Assess newborn\nblood glucose per\nfacility policy:\n\u0001 Place heel warmer\non newborn to\nimprove blood\nflow and prevent\nfalse\nlow results.\n\u0001 Obtain blood\nsample from the\nlateral heel.\n\u0004 Risk for preeclampsia and PPH: Clients with\nGDM are at increased risk for preeclampsia and\nPPH. Monitor the client for uterine atony and\nteach client to report signs of preeclampsia such\nas BP ≥140/90, headaches, and visual changes.\n\ny Hypoglycemia = <45 mg/dL (2.5 mmol/L)\nin the first 72 hr of life\n\u0001 If newborn is hypoglycemic and alert,\ngive oral feedings (breastfeed).\n\u0001 If newborn cannot feed or\nhypoglycemia persists, treat with IV\ndextrose instead.\ny Newborn complications:\ny Hypoglycemia:\n\u0001 Persistent jitters or tremors\ny Hypothermia\n\u0001 Respiratory distress: Insulin inhibits\nsurfactant production in the fetal lungs:\ny Monitor newborn for grunting,\ntachypnea.\n\nMaternal & Newborn\n\n3.",
+      "flags": [
+        "table"
+      ],
+      "hash": "993cc38ed96fceae"
+    },
+    {
+      "id": "gestational-diabetes-cheat-sheet-0011",
+      "title": "Gestational Diabetes Cheat Sheet › 3 Managing birth and newborn complications – part 5",
+      "source": "PDF:Gestational Diabetes Cheat Sheet.pdf",
+      "type": "guideline",
+      "topics": [
+        "diabetes",
+        "neonatal",
+        "respiratory"
+      ],
+      "section": "3 Managing birth and newborn complications",
+      "page": "3–4",
+      "text": "\u0001 Persistent jitters or tremors\ny Hypothermia\n\u0001 Respiratory distress: Insulin inhibits\nsurfactant production in the fetal lungs:\ny Monitor newborn for grunting,\ntachypnea.\n\nMaternal & Newborn\n\n3.\n\u0005 Newborn hypoglycemia symptoms: If a newborn\nhas signs of hypoglycemia, such as persistent\njitters or hypothermia, assess blood glucose by\nwarming the heel to promote blood flow, then\ncollect a blood sample from the lateral heel.\n\u0006 Newborn hypoglycemia treatment: If the\nnewborn is hypoglycemic and alert, give oral\nfeedings. If hypoglycemia persists, give IV\nglucose.\n\n\u0002 Screen for GDM between __-__ weeks gestation\nusing a _____ (fasting or nonfasting?) 1-hour oral\nglucose challenge test.\n\n\u0005 If the newborn has persistent jitters or\nhypothermia, assess for _____, but first,\nprevent falsely low glucose values by warming\nthe newborn’s _____.\n\n\u0003 Teach clients diagnosed with GDM to first\nmanage blood sugars with _____ and _____.\nDivide daily caloric needs between _____ meals\nand _____ to _____ snacks.",
+      "hash": "7817f57bac012529"
+    },
+    {
+      "id": "gestational-diabetes-cheat-sheet-0012",
+      "title": "Gestational Diabetes Cheat Sheet › 3 Managing birth and newborn complications – part 6",
+      "source": "PDF:Gestational Diabetes Cheat Sheet.pdf",
+      "type": "guideline",
+      "topics": [
+        "diabetes",
+        "obstetric",
+        "neonatal"
+      ],
+      "section": "3 Managing birth and newborn complications",
+      "page": "4",
+      "text": "the newborn’s _____.\n\n\u0003 Teach clients diagnosed with GDM to first\nmanage blood sugars with _____ and _____.\nDivide daily caloric needs between _____ meals\nand _____ to _____ snacks.\n\u0006 If a newborn has hypoglycemia and is alert,\ntreat with oral feedings. Treat persistent\nhypoglycemia with ____.\n\n\u0004 Monitor the postpartum client for uterine _____\nand teach clients to report signs of preeclampsia,\nincluding BP ≥___/___, headaches, and\n______ changes.",
+      "hash": "7ec356a987778bd0"
+    },
+    {
+      "id": "gestational-diabetes-cheat-sheet-0013",
+      "title": "Gestational Diabetes Cheat Sheet › 3 Managing birth and newborn complications > Maternal & Newborn",
+      "source": "PDF:Gestational Diabetes Cheat Sheet.pdf",
+      "type": "guideline",
+      "topics": [
+        "diabetes",
+        "neonatal"
+      ],
+      "section": "3 Managing birth and newborn complications > Maternal & Newborn",
+      "page": "4",
+      "text": "Maternal & Newborn\nAnswers: 1. 24-28 weeks, non-fasting 2. diet, exercise, 3, 2 to 3 3. atony, 140/90, vision 4. hypoglycemia, heel 5. IV glucose\n\nReferences:\nKeenan-Lindsay, L., Sams, C., & O’Connor, C. (2022). Perry’s\nmaternal child nursing care in Canada (3rd ed.). Elsevier\nHealth Sciences.\nLowdermilk, D., Cashion, M. C., Alden, K. R., Olshansky, E.F., &\nPerry, S. (2023). Maternity and women’s health care (13th\ned.). Elsevier Health Sciences (US).\n\nMcKinney, E., Mau, K., Murray, S., James, S., Nelson, K., Ashwill,\nJ., & Caroll, J. (2022). Maternal-child nursing (6th ed.).\nElsevier Health Sciences.\nAttributions:\n•\n\nHeel Stick: Modified from BioRender.com",
+      "hash": "b73da0d10319c818"
     },
     {
       "id": "guideline-for-the-management-of-breech-ct-guidel-0001",
@@ -61358,6 +61556,14 @@
       "pages": 45,
       "pages_dropped": 0,
       "warning": "almost no text found (scanned PDF? it needs OCR first)"
+    },
+    {
+      "file": "Gestational Diabetes Cheat Sheet.pdf",
+      "chunks": 13,
+      "ok": true,
+      "pages": 4,
+      "pages_dropped": 0,
+      "table_chunks": 3
     },
     {
       "file": "Guideline for the Management of Breech_CT Guideline 2020 (2).pdf",
