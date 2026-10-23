@@ -1,0 +1,26 @@
+# Cloudflare Pages security headers (upload next to index.html in the GitHub repo)
+# https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), payment=(), usb=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self' https://checkout.paystack.com https://api.paystack.co; script-src 'self' 'unsafe-inline' https://js.paystack.co https://accounts.google.com https://appleid.cdn-apple.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://*.ronaldotieno1900.workers.dev https://api.paystack.co https://accounts.google.com https://appleid.apple.com; frame-src https://js.paystack.co https://checkout.paystack.com https://accounts.google.com https://appleid.apple.com; worker-src 'self' blob: https://cdnjs.cloudflare.com; media-src 'self' blob:
+
+# Do not cache HTML aggressively (session / catalog updates)
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Question banks and catalogs: short cache (still public until moved behind a Worker)
+/nck-bank*.json
+  Cache-Control: public, max-age=300
+  X-Robots-Tag: noindex
+
+/drug-cards/*
+  Cache-Control: public, max-age=3600
