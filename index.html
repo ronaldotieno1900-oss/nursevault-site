@@ -11172,7 +11172,24 @@ body[data-page="catalog"][data-dash="1"] .catalog-head .count{display:none}
         body: JSON.stringify({
           mode: "generate-mcq",
           sourceText: source,
-          cadre, topic, group, count
+          cadre, topic, group, count,
+          avoidStems: (function () {
+            const fromDrafts = (abState.questions || []).map(function (q) { return q && q.q; }).filter(Boolean);
+            const fromMem = Array.isArray(abState.avoidStems) ? abState.avoidStems : [];
+            const all = fromDrafts.concat(fromMem);
+            const seen = {};
+            const out = [];
+            for (let i = 0; i < all.length; i++) {
+              const s = String(all[i] || "").trim();
+              if (s.length < 20) continue;
+              const k = s.toLowerCase().slice(0, 80);
+              if (seen[k]) continue;
+              seen[k] = 1;
+              out.push(s);
+              if (out.length >= 60) break;
+            }
+            return out;
+          })()
         })
       });
       const data = await res.json().catch(() => ({}));
@@ -11194,6 +11211,12 @@ body[data-page="catalog"][data-dash="1"] .catalog-head .count{display:none}
         group: q.group || group,
         cadre: q.cadre || cadre
       }));
+      // Remember stems so the next Generate on this source avoids repeats
+      if (!Array.isArray(abState.avoidStems)) abState.avoidStems = [];
+      list.forEach(function (q) {
+        if (q && q.q) abState.avoidStems.push(q.q);
+      });
+      if (abState.avoidStems.length > 100) abState.avoidStems = abState.avoidStems.slice(-100);
       const dropped = data.droppedByVerifier != null ? data.droppedByVerifier : 0;
       const verNote = data.verified
         ? (dropped > 0 ? (" Verifier removed " + dropped + " weak item(s).") : " Verifier passed.")
