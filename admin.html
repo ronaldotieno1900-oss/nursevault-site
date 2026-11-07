@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Admin — NurseVault</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&family=Lora:ital,wght@1,600&display=swap" rel="stylesheet" />
+  <style>
+    :root { --green:#173f35; --paper:#f5f1e7; --ink:#21382f; --muted:#64746b; --line:#d9d4c7; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center;
+      font: 15px/1.5 "IBM Plex Sans", system-ui, sans-serif;
+      color: var(--ink); background: var(--paper);
+    }
+    .card {
+      width: min(420px, calc(100% - 32px));
+      background: #fcfaf5; border: 1px solid var(--line); border-radius: 16px;
+      padding: 28px 24px; text-align: center;
+      box-shadow: 0 10px 30px rgba(23,63,53,.08);
+    }
+    .mark {
+      width: 44px; height: 44px; margin: 0 auto 14px; border-radius: 12px;
+      border: 1px solid rgba(23,63,53,.25); display: grid; place-items: center;
+      color: #c98a2c; background: #fff;
+    }
+    h1 {
+      margin: 0 0 8px; font-family: Lora, Georgia, serif; font-style: italic;
+      font-size: 1.4rem; color: var(--green);
+    }
+    p { margin: 0 0 18px; color: var(--muted); font-size: .92rem; }
+    a.btn {
+      display: inline-block; text-decoration: none; background: var(--green); color: #fff;
+      padding: 12px 18px; border-radius: 999px; font-weight: 600;
+    }
+    .hint { margin-top: 14px; font-size: .8rem; color: var(--muted); }
+  </style>
+  <script>
+    // Full admin (question builder, banks, users, flags, audit) lives in the main app.
+    location.replace("https://nursevault.co.ke/#/admin-bank");
+  </script>
+</head>
+<body>
+  <div class="card">
+    <div class="mark">✦</div>
+    <h1>NurseVault Admin</h1>
+    <p>Opening the full control panel (question generator, banks, users, flags, audit)…</p>
+    <a class="btn" href="https://nursevault.co.ke/#/admin-bank">Open admin</a>
+    <p class="hint">If nothing happens, use the button. Unlock with Worker <b>ADMIN_KEY</b>.</p>
+  </div>
+</body>
+</html>
