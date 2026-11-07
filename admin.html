@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Admin — NurseVault</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #f5f1e7;
+      --card: #fcfaf5;
+      --green: #173f35;
+      --green-2: #245c4d;
+      --ink: #21382f;
+      --muted: #64746b;
+      --line: #d9d4c7;
+      --ok: #1b6b4a;
+      --err: #b42318;
+      --shadow: 0 10px 30px rgba(23, 63, 53, 0.08);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font: 15px/1.55 "IBM Plex Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse 80% 50% at 10% -10%, rgba(36, 92, 77, 0.12), transparent 55%),
+        radial-gradient(ellipse 60% 40% at 100% 0%, rgba(201, 138, 44, 0.08), transparent 50%),
+        var(--paper);
+    }
+    .topbar {
+      background: var(--green);
+      color: #fbf8f0;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+    .topbar-inner {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 11px;
+      border: 1px solid rgba(255,255,255,.28);
+      display: grid;
+      place-items: center;
+      color: #f4d39b;
+    }
+    .brand-name {
+      font-family: Lora, Georgia, serif;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 1.15rem;
+      letter-spacing: -0.03em;
+    }
+    .brand-name b { color: #f27956; font-style: normal; }
+    .brand-sub {
+      display: block;
+      margin-top: 2px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(251,248,240,.62);
+    }
+    .pill {
+      display: inline-flex;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.22);
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(251,248,240,.88);
+    }
+    .wrap {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 64px;
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-family: Lora, Georgia, serif;
+      font-size: 1.75rem;
+      letter-spacing: -0.03em;
+      color: var(--green);
+    }
+    .lede {
+      margin: 0 0 22px;
+      color: var(--muted);
+      max-width: 42rem;
+    }
+    .grid { display: grid; gap: 16px; }
+    @media (min-width: 840px) {
+      .grid-2 { grid-template-columns: 1.1fr 0.9fr; align-items: start; }
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+    .card h2 {
+      margin: 0 0 14px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--green);
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.82rem;
+      margin: 0 0 6px;
+    }
+    .field { margin-bottom: 14px; }
+    input[type="password"], input[type="text"] {
+      width: 100%;
+      padding: 11px 13px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      font: inherit;
+      color: var(--ink);
+    }
+    input:focus {
+      outline: 3px solid rgba(36, 92, 77, 0.2);
+      border-color: var(--green-2);
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+    button {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      padding: 11px 18px;
+      font: 600 0.92rem/1 "IBM Plex Sans", system-ui, sans-serif;
+      cursor: pointer;
+    }
+    button:disabled { opacity: 0.55; cursor: not-allowed; }
+    .btn-primary { background: var(--green); color: #fff; }
+    .btn-primary:hover { background: var(--green-2); }
+    .btn-ghost {
+      background: transparent;
+      color: var(--green);
+      border: 1.5px solid var(--green);
+    }
+    .msg {
+      margin-top: 12px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+    }
+    .msg.err { background: rgba(180, 35, 24, 0.08); color: var(--err); }
+    .msg.ok { background: rgba(27, 107, 74, 0.1); color: var(--ok); }
+    .hint {
+      margin: 12px 0 0;
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    @media (min-width: 640px) {
+      .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+    .stat {
+      background: linear-gradient(180deg, #fff, var(--paper, #f5f1e7));
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 12px;
+    }
+    .stat .k {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .stat .v {
+      font-family: Lora, Georgia, serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: var(--green);
+      letter-spacing: -0.03em;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th, td {
+      text-align: left;
+      padding: 10px 8px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: rgba(23, 63, 53, 0.1);
+      color: var(--green);
+    }
+    .badge.warn { background: rgba(228, 87, 46, 0.12); color: #a33a1c; }
+    pre {
+      margin: 14px 0 0;
+      background: #10251f;
+      color: #d7efe6;
+      padding: 14px 16px;
+      border-radius: 14px;
+      overflow: auto;
+      font-size: 12px;
+      line-height: 1.5;
+      max-height: 360px;
+    }
+    .section-title {
+      margin: 22px 0 10px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--green);
+    }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="https://nursevault.co.ke/">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>
+          <span class="brand-name">Nurse<b>Vault</b></span>
+          <span class="brand-sub">Admin</span>
+        </span>
+      </a>
+      <span class="pill" id="statusPill">Locked</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Control panel</h1>
+    <p class="lede">Private admin surface for accounts snapshot and health. Protect this URL with Cloudflare Access. Not linked from the public student site.</p>
+
+    <div class="grid grid-2">
+      <section class="card">
+        <h2>Unlock</h2>
+        <div class="field">
+          <label for="adminKey">ADMIN_KEY</label>
+          <input id="adminKey" type="password" autocomplete="off" placeholder="Worker secret ADMIN_KEY" />
+        </div>
+        <div class="field">
+          <label for="authUrl">Accounts Worker URL</label>
+          <input id="authUrl" type="text" value="https://accounts.nursevault.co.ke" />
+        </div>
+        <div class="actions">
+          <button type="button" class="btn-primary" id="btnUnlock">Unlock</button>
+          <button type="button" class="btn-ghost" id="btnClear">Clear key</button>
+          <button type="button" class="btn-ghost" id="btnHealth">Health</button>
+        </div>
+        <div id="msg" class="msg" hidden></div>
+        <p class="hint">Key stays in this tab’s sessionStorage only. Prefer Cloudflare Access on this path so only your email can open the page.</p>
+      </section>
+
+      <section class="card">
+        <h2>Quick status</h2>
+        <div class="stats">
+          <div class="stat"><div class="k">Users</div><div class="v" id="sUsers">—</div></div>
+          <div class="stat"><div class="k">Verified</div><div class="v" id="sVerified">—</div></div>
+          <div class="stat"><div class="k">Active subs</div><div class="v" id="sActive">—</div></div>
+          <div class="stat"><div class="k">Signups 7d</div><div class="v" id="sSignups">—</div></div>
+        </div>
+        <div class="actions">
+          <button type="button" class="btn-primary" id="btnSnapshot" disabled>Load snapshot</button>
+        </div>
+        <p class="hint" id="healthLine">Health not checked yet.</p>
+      </section>
+    </div>
+
+    <section class="card" id="resultsCard" style="margin-top:16px" hidden>
+      <h2>Snapshot</h2>
+      <div id="summary"></div>
+      <p class="section-title">Raw JSON</p>
+      <pre id="out"></pre>
+    </section>
+
+    <footer>NurseVault admin · not for public use</footer>
+  </main>
+
+  <script>
+    const KEY = "nv_admin_key";
+    const $ = (id) => document.getElementById(id);
+    function getKey(){ try { return sessionStorage.getItem(KEY) || ""; } catch(e){ return ""; } }
+    function setKey(k){ try { sessionStorage.setItem(KEY, k || ""); } catch(e){} }
+    function clearKey(){ try { sessionStorage.removeItem(KEY); } catch(e){} }
+    function apiBase(){ return ($("authUrl").value || "").replace(/\/$/, ""); }
+
+    function setMsg(type, text){
+      const el = $("msg");
+      if (!text) { el.hidden = true; el.textContent = ""; el.className = "msg"; return; }
+      el.hidden = false;
+      el.className = "msg " + (type === "ok" ? "ok" : "err");
+      el.textContent = text;
+    }
+    function setUnlocked(on){
+      $("btnSnapshot").disabled = !on;
+      $("statusPill").textContent = on ? "Unlocked" : "Locked";
+      if (!on) $("resultsCard").hidden = true;
+    }
+    function esc(s){
+      return String(s == null ? "" : s).replace(/[&<>"']/g, c => (
+        { "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" }[c]
+      ));
+    }
+    function fillQuick(data){
+      $("sUsers").textContent = data.users != null ? data.users : "—";
+      $("sVerified").textContent = data.verifiedAccounts != null ? data.verifiedAccounts : "—";
+      $("sActive").textContent = data.activeSubscriptions != null ? data.activeSubscriptions : "—";
+      $("sSignups").textContent = data.signups7d != null ? data.signups7d : "—";
+    }
+    function renderSnapshot(data){
+      fillQuick(data);
+      const events = data.recentEvents || data.events || [];
+      let html = "<div class='stats'>";
+      const cards = [
+        ["Users", data.users],
+        ["Verified", data.verifiedAccounts],
+        ["Active subs", data.activeSubscriptions],
+        ["Expired/inactive", data.expiredOrInactiveSubs],
+        ["Signups 7d", data.signups7d],
+        ["Deleted 7d", data.deleted7d],
+        ["Waitlist", data.waitlistEntries],
+        ["Generated", data.at || data.generatedAt]
+      ];
+      cards.forEach(([k,v]) => {
+        if (v == null || v === "") return;
+        html += "<div class='stat'><div class='k'>" + esc(k) + "</div><div class='v' style='font-size:1.1rem'>" + esc(v) + "</div></div>";
+      });
+      html += "</div>";
+      if (Array.isArray(events) && events.length) {
+        html += "<p class='section-title'>Recent events</p>";
+        html += "<table><thead><tr><th>Type</th><th>Detail</th><th>When</th></tr></thead><tbody>";
+        events.slice(0, 20).forEach(ev => {
+          const type = ev.type || ev.t || "";
+          const email = ev.email || "";
+          const note = ev.note || "";
+          const at = ev.at || "";
+          const badgeClass = type === "delete" ? "badge warn" : "badge";
+          html += "<tr>";
+          html += "<td><span class='" + badgeClass + "'>" + esc(type) + "</span></td>";
+          html += "<td>" + esc(email) + (note ? " · " + esc(note) : "") + "</td>";
+          html += "<td>" + esc(at) + "</td>";
+          html += "</tr>";
+        });
+        html += "</tbody></table>";
+      }
+      $("summary").innerHTML = html;
+      $("out").textContent = JSON.stringify(data, null, 2);
+      $("resultsCard").hidden = false;
+    }
+    async function unlock(){
+      const key = $("adminKey").value.trim();
+      if (!key || key.length < 16) {
+        setMsg("err", "Use the full ADMIN_KEY (16+ characters).");
+        return;
+      }
+      $("btnUnlock").disabled = true;
+      try {
+        const r = await fetch(apiBase() + "/admin/snapshot", {
+          headers: { "Authorization": "Bearer " + key }
+        });
+        const data = await r.json().catch(() => ({}));
+        if (!r.ok) {
+          setMsg("err", data.error || ("HTTP " + r.status));
+          setUnlocked(false);
+          return;
+        }
+        setKey(key);
+        setMsg("ok", "Unlocked — snapshot loaded.");
+        setUnlocked(true);
+        renderSnapshot(data);
+      } catch (e) {
+        setMsg("err", "Could not reach the accounts worker. Check the URL and CORS.");
+        setUnlocked(false);
+      } finally {
+        $("btnUnlock").disabled = false;
+      }
+    }
+    async function health(){
+      try {
+        const r = await fetch(apiBase() + "/health");
+        const d = await r.json();
+        $("healthLine").textContent = "Health: " + JSON.stringify(d);
+        setMsg("ok", "Worker reachable.");
+      } catch (e) {
+        $("healthLine").textContent = "Health check failed.";
+        setMsg("err", "Health check failed.");
+      }
+    }
+    $("btnUnlock").onclick = unlock;
+    $("btnSnapshot").onclick = unlock;
+    $("btnHealth").onclick = health;
+    $("btnClear").onclick = () => {
+      clearKey();
+      $("adminKey").value = "";
+      setUnlocked(false);
+      fillQuick({});
+      setMsg("ok", "Key cleared for this tab.");
+    };
+    const existing = getKey();
+    if (existing) {
+      $("adminKey").value = existing;
+      setUnlocked(true);
+    }
+  </script>
+</body>
+</html>
