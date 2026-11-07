@@ -1,0 +1,1985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Admin — NurseVault</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #f5f1e7;
+      --paper-alt: #ebe5d8;
+      --surface: #fcfaf5;
+      --green: #173f35;
+      --green-2: #245c4d;
+      --green-dark: #173f35;
+      --ink: #21382f;
+      --ink-70: #64746b;
+      --line: #d9d4c7;
+      --line-strong: #c9c2b2;
+      --coral: #e4572e;
+      --gold: #c98a2c;
+      --btn-fill: #173f35;
+      --btn-fill-ink: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 15px/1.55 "IBM Plex Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse 80% 50% at 10% -10%, rgba(36, 92, 77, 0.1), transparent 55%),
+        var(--paper);
+    }
+    .topbar {
+      background: var(--green);
+      color: #fbf8f0;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+    .topbar-inner {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none; color: inherit;
+    }
+    .brand-mark {
+      width: 34px; height: 34px; border-radius: 10px;
+      border: 1px solid rgba(255,255,255,.28);
+      display: grid; place-items: center; color: #f4d39b;
+    }
+    .brand-name {
+      font-family: Lora, Georgia, serif; font-style: italic; font-weight: 600;
+      font-size: 1.1rem; letter-spacing: -0.03em;
+    }
+    .brand-name b { color: #f27956; font-style: normal; }
+    .brand-sub {
+      display: block; margin-top: 2px; font-size: 10px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase; color: rgba(251,248,240,.62);
+    }
+    .pill {
+      font-size: 12px; font-weight: 600; padding: 6px 12px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.22); color: rgba(251,248,240,.9);
+    }
+    .admin-bank-page { display: block !important; padding: 8px 0 40px; min-height: 60vh; }
+  .admin-bank-page{padding:44px 0 70px;min-height:60vh;}
+  .admin-bank-page .ab-box{background:var(--surface,#fff);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:0 0 16px;}
+  .admin-bank-page label{display:block;font-weight:600;font-size:.85rem;margin:0 0 6px;color:var(--ink);}
+  .admin-bank-page input[type=text],.admin-bank-page input[type=password],.admin-bank-page select,.admin-bank-page textarea{
+    width:100%;max-width:100%;box-sizing:border-box;padding:10px 12px;border-radius:10px;border:1px solid var(--line);
+    background:var(--paper,#fafafa);color:var(--ink);font:inherit;margin:0 0 12px;}
+  .admin-bank-page textarea{min-height:160px;resize:vertical;line-height:1.45;}
+  .admin-bank-page .ab-row{display:flex;flex-wrap:wrap;gap:12px;}
+  .admin-bank-page .ab-row > div{flex:1;min-width:140px;}
+  .admin-bank-page .ab-q{border:1px solid var(--line);border-radius:12px;padding:14px;margin:0 0 12px;background:var(--paper,#faf8f4);}
+  .admin-bank-page .ab-q.rejected{opacity:.45;}
+  .admin-bank-page .ab-q.accepted{border-color:var(--green);}
+  .admin-bank-page .ab-acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+  .admin-bank-page .ab-hint{font-size:.85rem;color:var(--ink-70);margin:0 0 14px;line-height:1.5;}
+  .admin-bank-page .ab-status{font-size:.9rem;margin:8px 0;color:var(--ink-70);}
+  .admin-bank-page .ab-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;}
+  .admin-bank-page .ab-tab{border:1px solid var(--line);background:var(--surface,#fff);color:var(--ink);padding:8px 14px;border-radius:999px;font-weight:600;font-size:.85rem;cursor:pointer;}
+  .admin-bank-page .ab-tab.on{background:var(--green);color:#fff;border-color:var(--green);}
+  .admin-bank-page .ab-table{width:100%;border-collapse:collapse;font-size:.9rem;}
+  .admin-bank-page .ab-table th,.admin-bank-page .ab-table td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top;}
+  .admin-bank-page .ab-table th{font-size:.75rem;text-transform:uppercase;letter-spacing:.03em;color:var(--ink-70);}
+  .admin-bank-page .ab-pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:.75rem;font-weight:600;background:color-mix(in srgb,var(--green) 12%,transparent);color:var(--green-dark);}
+  .admin-bank-page .ab-pill.warn{background:color-mix(in srgb,#c45c26 15%,transparent);color:#8a3a12;}
+  .admin-bank-page .ab-check{list-style:none;padding:0;margin:0;}
+  .admin-bank-page .ab-check li{padding:8px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:flex-start;}
+  .admin-bank-page .ab-check .ok{color:var(--green-dark);font-weight:700;}
+  .admin-bank-page .ab-check .bad{color:#b42318;font-weight:700;}
+
+
+  body[data-page="catalog"] .cat-crumb{display:flex;}
+  body[data-page="catalog"] .cat-desc{display:block;}
+
+  body[data-page="catalog"] .catalog-head{padding-top:12px;}
+  body[data-page="catalog"] .catalog-head h2{font-size:2rem;}
+  body[data-page="catalog"] .catalog{min-height:60vh;}
+
+  /* Shop, Categories, NCK, Tools stay hidden on the home page. */
+  .shell-main > section.shop-section,
+  .shell-main > section.categories-page,
+  .shell-main > section.nck-page,
+  .shell-main > section.tools-page,
+  .shell-main > section.osce-page,
+  .shell-main > section.careplan-page,
+  .shell-main > section.admin-bank-page{display:none;}
+
+  /* Every page other than home shows just its own section (plus the footer). */
+  body.sub-page .shell-main > section{display:none !important;}
+  body[data-page="catalog"] .shell-main > section.catalog,
+  body[data-page="shop"] .shell-main > section.shop-section,
+  body[data-page="categories"] .shell-main > section.categories-page,
+  body[data-page="nck"] .shell-main > section.nck-page,
+  body[data-page="tools"] .shell-main > section.tools-page,
+  body[data-page="osce"] .shell-main > section.osce-page,
+  body[data-page="careplan"] .shell-main > section.careplan-page,
+  body[data-page="admin-bank"] .shell-main > section.admin-bank-page{display:block !important;}
+
+  /* Shared page header (Shop, Categories) */
+
+
+  .nck-btn{background:var(--green,#173f35);color:#fff;border:none;border-radius:999px;padding:10px 17px;font-weight:600;font-size:.88rem;cursor:pointer;font-family:inherit;}
+  .nck-btn:hover{background:var(--green-2,#245c4d);}
+  .nck-btn-ghost{background:none;color:var(--green-dark,#173f35);border:1.5px solid var(--line,#d9d4c7);border-radius:999px;padding:9px 16px;font-weight:600;font-size:.86rem;cursor:pointer;font-family:inherit;}
+  .nck-btn-ghost:hover{border-color:var(--green,#173f35);background:rgba(23,63,53,.06);}
+  .nck-btn:disabled,.nck-btn-ghost:disabled{opacity:.55;cursor:not-allowed;}
+  .page-title{font-family:Lora,Georgia,serif;font-size:1.6rem;color:var(--green,#173f35);margin:0 0 6px;}
+  .page-sub{color:var(--ink-70,#64746b);margin:0 0 18px;max-width:40rem;}
+  .page-crumb{font-size:.85rem;color:var(--ink-70,#64746b);margin:0 0 12px;}
+  .page-crumb a{color:var(--green-2,#245c4d);}
+  .crumb-sep{margin:0 6px;opacity:.6;}
+  .wrap{width:min(1100px,calc(100% - 32px));margin:0 auto;padding:24px 0 60px;}
+
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="https://nursevault.co.ke/">
+        <span class="brand-mark">✦</span>
+        <span>
+          <span class="brand-name">Nurse<b>Vault</b></span>
+          <span class="brand-sub">Admin</span>
+        </span>
+      </a>
+      <span class="pill">Separate control panel</span>
+    </div>
+  </header>
+
+  <section class="admin-bank-page" id="admin-bank-page">
+    <div class="wrap">
+      <nav class="page-crumb" aria-label="Breadcrumb">
+        <a href="https://nursevault.co.ke/">Site</a>
+        <span class="crumb-sep">/</span>
+        <span>Admin</span>
+      </nav>
+      <h2 class="page-title">Admin</h2>
+      <p class="page-sub ab-hint">Standalone control panel (question generator, banks, users, flags, audit). Unlock with Worker <b>ADMIN_KEY</b>. Not linked from the student site.</p>
+      <div id="adminBankRoot"></div>
+    </div>
+  </section>
+
+  <script>
+  // ---- Config (same workers as the main site) ----
+  const AUTH_URL = "https://accounts.nursevault.co.ke";
+  const NCK_EXPLAIN_URL = "https://ai.nursevault.co.ke";
+  const NCK_BANK_API_URL = "https://nck.nursevault.co.ke";
+
+  // Stubs so topic/group helpers work without the full SPA
+  let catalog = [];
+  let nckBank = { sets: [] };
+  function parseCadreSubject(name) {
+    return { subject: String(name || "").replace(/^[^—–-]+[—–-]\s*/, "").trim() };
+  }
+  function setPage() {}
+  function renderSideNav() {}
+
+  // ---------- Admin question builder (#/admin-bank) — not in main nav ----------
+  const AB_KEY = "nv_admin_key";
+  let abState = { questions: [], status: "", tab: "overview", banks: null, banksStatus: "" };
+
+  function abGetKey(){ try { return sessionStorage.getItem(AB_KEY) || ""; } catch(e){ return ""; } }
+  function abSetKey(k){ try { sessionStorage.setItem(AB_KEY, k || ""); } catch(e){} }
+  function abClearKey(){ try { sessionStorage.removeItem(AB_KEY); } catch(e){} }
+
+  function openAdminBankPage(){
+    renderAdminBank();
+    window.scrollTo(0, 0);
+  }
+
+  function abSetTab(tab){
+    abSaveForm();
+    abState.tab = tab || "overview";
+    renderAdminBank();
+    if (tab === "overview") abRefreshOverview();
+    if (tab === "banks") { abLoadBanksCatalog(); abLoadBankFiles(); }
+    if (tab === "flags") abLoadFlags();
+    if (tab === "errors") abLoadErrors();
+    if (tab === "users") abLoadUsers();
+  }
+
+  function abEsc(s){
+    return String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  }
+
+  function abTopicList(){
+    const base = [
+      "Human Anatomy & Physiology",
+      "Medical-Surgical Nursing",
+      "Clinical Pharmacology & Therapeutics",
+      "Maternal and Newborn Health / Midwifery",
+      "Community Health Nursing",
+      "Pediatric Nursing / Child Health",
+      "Mental Health & Psychiatric Nursing",
+      "Medical Microbiology & Immunology",
+      "Fundamentals of Nursing (Theory & Practicum)",
+      "General & Clinical Pathology",
+      "Human Nutrition & Dietetics",
+      "Nursing Research & Biostatistics",
+      "Health Services Management & Leadership",
+      "Psychology & Sociology"
+    ];
+    const extra = [];
+    try {
+      if (typeof catalog !== "undefined" && catalog) {
+        const parent = catalog.find(p => p.id === "nck-prep-parent");
+        if (parent && parent.subItems) {
+          parent.subItems.forEach(it => {
+            const sub = (typeof parseCadreSubject === "function")
+              ? parseCadreSubject(it.name).subject
+              : String(it.name || "").replace(/^[^—–-]+[—–-]\s*/, "").trim();
+            if (sub && !base.includes(sub) && !extra.includes(sub)) extra.push(sub);
+          });
+        }
+      }
+      if (typeof nckBank !== "undefined" && nckBank && Array.isArray(nckBank.sets)) {
+        nckBank.sets.forEach(s => {
+          if (s.subject && !base.includes(s.subject) && !extra.includes(s.subject)) extra.push(s.subject);
+        });
+      }
+    } catch (e) {}
+    return base.concat(extra.sort());
+  }
+
+  /** Groups the bank loader understands (topic sets use group; "General" is default). */
+  function abGroupList(){
+    return [
+      "General",
+      "Cardiovascular",
+      "Respiratory",
+      "Gastrointestinal",
+      "Renal / Urinary",
+      "Endocrine",
+      "Neurological",
+      "Musculoskeletal",
+      "Integumentary",
+      "Haematology / Oncology",
+      "Infection & Immunity",
+      "Emergency / Critical care",
+      "Antenatal",
+      "Intrapartum / Labour",
+      "Postnatal & Newborn",
+      "Family planning & Gynaecology",
+      "IMCI & Child health",
+      "Immunisation (KEPI)",
+      "HIV / TB / Malaria",
+      "Mental health",
+      "Community & PHC",
+      "Pharmacology & calculations",
+      "Nursing process & fundamentals",
+      "Ethics, law & scope",
+      "Leadership & management",
+      "Research & biostatistics"
+    ];
+  }
+
+  function abSaveForm(){
+    try {
+      abState.form = {
+        cadre: (document.getElementById("abCadre") || {}).value || "KRCHN",
+        topic: (document.getElementById("abTopic") || {}).value || "",
+        group: (document.getElementById("abGroup") || {}).value || "General",
+        count: (document.getElementById("abCount") || {}).value || "8",
+        source: (document.getElementById("abSource") || {}).value || ""
+      };
+    } catch (e) {}
+  }
+
+  function renderAdminBank(){
+    const root = document.getElementById("adminBankRoot");
+    if (!root) return;
+    const key = abGetKey();
+    if (!key) {
+      root.innerHTML = `
+        <div class="ab-box">
+          <p class="ab-hint">Enter the same secret you set as <code>ADMIN_KEY</code> on the AI Worker and NCK Worker (Cloudflare → Variables → Secret).</p>
+          <label for="abKey">Admin key</label>
+          <input type="password" id="abKey" autocomplete="current-password" placeholder="Admin key" />
+          <button type="button" class="nck-btn" id="abUnlockBtn" onclick="abUnlock()">Unlock</button>
+          <p class="ab-status" id="abStatus">${abState.status ? abEsc(abState.status) : ""}</p>
+        </div>`;
+      return;
+    }
+    const tab = abState.tab || "builder";
+    const tabs = [
+      ["overview", "Overview"],
+      ["builder", "Question builder"],
+      ["banks", "Banks"],
+      ["flags", "Flags"],
+      ["errors", "Errors"],
+      ["users", "Users"],
+      ["status", "Site status"],
+      ["tools", "Tools"]
+    ];
+    root.innerHTML = `
+      <div class="ab-tabs" role="tablist">
+        ${tabs.map(([id, label]) =>
+          `<button type="button" class="ab-tab ${tab === id ? "on" : ""}" onclick="abSetTab('${id}')">${label}</button>`
+        ).join("")}
+        <button type="button" class="ab-tab" onclick="abLock()" title="Lock admin">Lock</button>
+      </div>
+      <div id="abTabPanel"></div>`;
+    const panel = document.getElementById("abTabPanel");
+    if (!panel) return;
+    if (tab === "overview") panel.innerHTML = abOverviewHTML();
+    else if (tab === "banks") panel.innerHTML = abBanksHTML();
+    else if (tab === "flags") panel.innerHTML = abFlagsHTML();
+    else if (tab === "errors") panel.innerHTML = abErrorsHTML();
+    else if (tab === "users") panel.innerHTML = abUsersHTML();
+    else if (tab === "status") panel.innerHTML = abStatusHTML();
+    else if (tab === "tools") panel.innerHTML = abToolsHTML();
+    else panel.innerHTML = abBuilderHTML();
+  }
+
+  function abBuilderHTML(){
+    const topics = abTopicList();
+    const groups = abGroupList();
+    const f = abState.form || {};
+    const qs = abState.questions || [];
+    const topicOpts = topics.map(t => `<option value="${abEsc(t)}"${f.topic === t ? " selected" : ""}>${abEsc(t)}</option>`).join("");
+    const groupOpts = groups.map(g => `<option value="${abEsc(g)}"${(f.group || "General") === g ? " selected" : ""}>${abEsc(g)}</option>`).join("");
+    const counts = [5, 8, 10, 12, 15, 20];
+    const countOpts = counts.map(n => `<option value="${n}"${String(f.count || "8") === String(n) ? " selected" : ""}>${n}</option>`).join("");
+    const cadre = f.cadre || "KRCHN";
+    return `
+      <div class="ab-box">
+        <p class="ab-status" style="color:var(--green-dark);font-weight:600;margin:0 0 12px">✓ Admin unlocked.</p>
+        <p class="ab-hint">Paste or upload study notes / guidelines. Generation is source-only: each draft needs an exact source quote and must pass independent answer, explanation and wording checks. Questions are original practice items, not official NCK questions. Review each draft before downloading or publishing to R2.</p>
+        <div class="ab-row">
+          <div>
+            <label for="abCadre">Cadre</label>
+            <select id="abCadre">
+              ${["KRCHN","BScN"].map(c => `<option${cadre === c ? " selected" : ""}>${c}</option>`).join("")}
+            </select>
+          </div>
+          <div>
+            <label for="abTopic">Topic / unit</label>
+            <select id="abTopic">${topicOpts}</select>
+          </div>
+          <div>
+            <label for="abGroup">Group / sub-topic</label>
+            <select id="abGroup">${groupOpts}</select>
+          </div>
+          <div>
+            <label for="abCount">How many</label>
+            <select id="abCount">${countOpts}</select>
+          </div>
+        </div>
+        <label for="abSource">Source text</label>
+        <textarea id="abSource" placeholder="Paste notes, or upload a file below…">${abEsc(f.source || "")}</textarea>
+        <div class="ab-row" style="margin-top:10px;align-items:end">
+          <div style="flex:1">
+            <label for="abFile">Or upload a file</label>
+            <input type="file" id="abFile" accept=".txt,.md,.text,.csv,.json,.pdf,.docx,.pptx,text/plain,text/markdown,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+              onchange="abLoadFile(this)" />
+            <p class="ab-hint" style="margin:6px 0 0;font-size:.85rem">Supports <b>.txt</b>, <b>.md</b>, <b>.pdf</b>, and <b>.docx</b>. Large or scanned PDFs may need paste instead.</p>
+          </div>
+        </div>
+        <div class="ab-acts">
+          <button type="button" class="nck-btn" id="abGenBtn" onclick="abGenerate()">Generate questions</button>
+        </div>
+        <p class="ab-status" id="abStatus">${abState.status ? abEsc(abState.status) : ""}</p>
+        <div id="abBusy" class="ab-status" style="display:none;font-weight:600"></div>
+      </div>
+      <div id="abReview">${qs.length ? abReviewHTML(qs) : ""}</div>`;
+  }
+
+
+
+
+  function abOverviewHTML(){
+    const banksN = Array.isArray(abState.banks) ? abState.banks.length : "—";
+    const flagsN = Array.isArray(abState.flags) ? abState.flags.length : "—";
+    const errN = Array.isArray(abState.errors) ? abState.errors.length : "—";
+    const snap = abState.usersSnap;
+    const usersN = snap && snap.ok ? (snap.users || 0) : "—";
+    const subsN = snap && snap.ok ? (snap.activeSubscriptions || 0) : "—";
+    const drafts = (abState.questions || []).length;
+    const accepted = (abState.questions || []).filter(q => q._status === "accepted").length;
+    return `<div class="ab-box">
+      <p class="ab-hint">At-a-glance controls for NurseVault. Use the tabs for detail. Click <b>Refresh overview</b> to pull live numbers.</p>
+      <div class="ab-row" style="margin:12px 0">
+        <div class="ab-box" style="flex:1;margin:0;cursor:pointer" onclick="abSetTab('banks')"><b>${abEsc(banksN)}</b><br><span class="ab-hint">Bank sets</span></div>
+        <div class="ab-box" style="flex:1;margin:0;cursor:pointer" onclick="abSetTab('flags')"><b>${abEsc(flagsN)}</b><br><span class="ab-hint">Flags</span></div>
+        <div class="ab-box" style="flex:1;margin:0;cursor:pointer" onclick="abSetTab('errors')"><b>${abEsc(errN)}</b><br><span class="ab-hint">Errors</span></div>
+        <div class="ab-box" style="flex:1;margin:0;cursor:pointer" onclick="abSetTab('users')"><b>${abEsc(usersN)}</b><br><span class="ab-hint">Accounts</span></div>
+        <div class="ab-box" style="flex:1;margin:0;cursor:pointer" onclick="abSetTab('users')"><b>${abEsc(subsN)}</b><br><span class="ab-hint">Active subs</span></div>
+      </div>
+      <p class="ab-hint">Builder drafts this session: <b>${drafts}</b> · accepted: <b>${accepted}</b></p>
+      <div class="ab-acts">
+        <button type="button" class="nck-btn" onclick="abRefreshOverview()">Refresh overview</button>
+        <button type="button" class="nck-btn-ghost" onclick="abSetTab('builder')">Question builder</button>
+        <button type="button" class="nck-btn-ghost" onclick="location.hash='#/nck-prep'">Open NCK Prep</button>
+      </div>
+      <p class="ab-status" id="abOverviewStatus">${abEsc(abState.overviewStatus || "")}</p>
+    </div>`;
+  }
+
+  async function abRefreshOverview(){
+    abState.overviewStatus = "Refreshing…";
+    const el = document.getElementById("abOverviewStatus");
+    if (el) el.textContent = abState.overviewStatus;
+    await Promise.all([
+      abLoadBanksCatalog(true).catch(function(){}),
+      abLoadFlags().catch(function(){}),
+      abLoadErrors().catch(function(){}),
+      abLoadUsers().catch(function(){})
+    ]);
+    abState.overviewStatus = "Updated " + new Date().toLocaleString();
+    if (abState.tab === "overview") renderAdminBank();
+  }
+
+
+  function abStatusHTML(){
+    const explain = (typeof NCK_EXPLAIN_URL === "string" && NCK_EXPLAIN_URL) ? NCK_EXPLAIN_URL : "(not set)";
+    const bank = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL) ? NCK_BANK_API_URL : "(not set)";
+    const auth = (typeof AUTH_URL === "string" && AUTH_URL) ? AUTH_URL : "(not set)";
+    const items = [
+      ["Admin session", abGetKey() ? "Unlocked in this browser tab" : "Locked"],
+      ["AI Worker URL", explain],
+      ["NCK Bank API URL", bank],
+      ["Accounts URL", auth],
+      ["Publish to R2", "NCK Worker /publish-bank + ADMIN_KEY"],
+      ["Bank file edit", "Admin · Banks → Refresh files → Edit questions"],
+      ["Flags", "NCK Prep Flag → Admin · Flags (status / note / dismiss)"],
+      ["Errors", "Failed generate/publish → Admin · Errors"],
+      ["Users / subs", "Accounts /admin/snapshot → Admin · Users"],
+      ["Student visibility", "This page is only at #/admin-bank (not in main menu)"]
+    ];
+    return `<div class="ab-box">
+      <p class="ab-hint">Deployment checklist. Open Worker URLs to confirm they respond. Use the same <code>ADMIN_KEY</code> secret on AI, NCK, and Accounts workers.</p>
+      <ul class="ab-check">
+        ${items.map(([k,v]) => `<li><span class="ok">•</span><div><b>${abEsc(k)}</b><br><span class="ab-hint">${abEsc(v)}</span></div></li>`).join("")}
+      </ul>
+      <div class="ab-acts" style="margin-top:14px">
+        <button type="button" class="nck-btn-ghost" onclick="window.open(String(NCK_EXPLAIN_URL||'').replace(/\\/$/,''),'_blank')">Open AI Worker</button>
+        <button type="button" class="nck-btn-ghost" onclick="window.open(String(NCK_BANK_API_URL||'').replace(/\\/$/,'')+'/health','_blank')">NCK /health</button>
+        <button type="button" class="nck-btn-ghost" onclick="window.open(String(AUTH_URL||'').replace(/\\/$/,''),'_blank')">Accounts Worker</button>
+      </div>
+      <p class="ab-status" id="abStatus"></p>
+    </div>`;
+  }
+
+  function abToolsHTML(){
+    const drafts = (abState.questions || []).length;
+    const accepted = (abState.questions || []).filter(q => q._status === "accepted").length;
+    return `<div class="ab-box">
+      <p class="ab-hint">Session helpers. These do not delete R2 files or student accounts.</p>
+      <p class="ab-hint">Builder drafts: <b>${drafts}</b> · accepted: <b>${accepted}</b></p>
+      <div class="ab-acts">
+        <button type="button" class="nck-btn" onclick="location.hash='#/nck-prep'">Open NCK Prep</button>
+        <button type="button" class="nck-btn-ghost" onclick="abSetTab('builder')">Question builder</button>
+        <button type="button" class="nck-btn-ghost" onclick="abSetTab('banks')">Banks editor</button>
+        <button type="button" class="nck-btn-ghost" onclick="abClearDrafts()">Clear question drafts</button>
+        <button type="button" class="nck-btn-ghost" onclick="abExport()">Download accepted JSON</button>
+        <button type="button" class="nck-btn-ghost" onclick="abRefreshOverview()">Refresh overview data</button>
+        <button type="button" class="nck-btn-ghost" onclick="abLock()">Lock admin</button>
+      </div>
+      <p class="ab-hint" style="margin-top:16px">Tip: after publishing or saving a bank file, use <b>Force Worker reload</b> on the Banks tab so NCK Prep picks up changes quickly.</p>
+      <p class="ab-status" id="abStatus">${abState.status ? abEsc(abState.status) : ""}</p>
+    </div>`;
+  }
+
+  function abLogError(message, detail, source){
+    try {
+      const api = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL && !NCK_BANK_API_URL.includes("REPLACE"))
+        ? NCK_BANK_API_URL.replace(/\/$/, "") : "";
+      if (!api || !message) return;
+      fetch(api + "/log-error", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: String(message).slice(0, 500),
+          detail: String(detail || "").slice(0, 400),
+          source: source || "admin",
+          path: (location && location.hash) || ""
+        })
+      }).catch(function(){});
+    } catch (e) {}
+  }
+
+  function abErrorsHTML(){
+    const st = abState.errorsStatus || "Open this tab to load errors…";
+    const rows = abState.errors || [];
+    let body = `<p class="ab-status" id="abErrorsStatus">${abEsc(st)}</p>`;
+    if (rows.length) {
+      body += `<div style="overflow-x:auto"><table class="ab-table">
+        <thead><tr><th>When</th><th>Source</th><th>Message</th></tr></thead>
+        <tbody>
+        ${rows.map(r => `<tr>
+          <td style="white-space:nowrap;font-size:.8rem">${abEsc((r.at || "").replace("T"," ").slice(0,19))}</td>
+          <td>${abEsc(r.source || "—")}</td>
+          <td>${abEsc(r.message || "")}${r.detail ? `<br><span class="ab-hint">${abEsc(String(r.detail).slice(0,180))}</span>` : ""}</td>
+        </tr>`).join("")}
+        </tbody></table></div>`;
+    } else if (abState.errorsLoaded) {
+      body += `<p class="ab-hint">No errors logged yet. Failed generates and similar issues will appear here.</p>`;
+    }
+    return `<div class="ab-box">
+      <p class="ab-hint">Recent client/server issues reported to the NCK Worker (last ~150).</p>
+      <div class="ab-acts">
+        <button type="button" class="nck-btn" onclick="abLoadErrors(true)">Refresh errors</button>
+        <button type="button" class="nck-btn-ghost" onclick="abClearErrors()">Clear log</button>
+      </div>
+      ${body}
+    </div>`;
+  }
+
+  async function abLoadErrors(){
+    abState.errorsStatus = "Loading…";
+    const el = document.getElementById("abErrorsStatus");
+    if (el) el.textContent = abState.errorsStatus;
+    const key = abGetKey();
+    const api = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL) ? NCK_BANK_API_URL.replace(/\/$/, "") : "";
+    if (!api || !key) {
+      abState.errors = [];
+      abState.errorsLoaded = true;
+      abState.errorsStatus = !api ? "NCK_BANK_API_URL missing." : "Unlock admin first.";
+      if (abState.tab === "errors") renderAdminBank();
+      return;
+    }
+    try {
+      const r = await fetch(api + "/admin/errors", { headers: { "Authorization": "Bearer " + key } });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) {
+        abState.errors = [];
+        abState.errorsStatus = data.error || ("HTTP " + r.status);
+      } else {
+        abState.errors = Array.isArray(data.errors) ? data.errors : [];
+        abState.errorsStatus = "Loaded " + abState.errors.length + " error(s).";
+      }
+      abState.errorsLoaded = true;
+    } catch (e) {
+      abState.errors = [];
+      abState.errorsLoaded = true;
+      abState.errorsStatus = "Could not load: " + (e && e.message ? e.message : "error");
+    }
+    if (abState.tab === "errors") renderAdminBank();
+  }
+
+  async function abClearErrors(){
+    const key = abGetKey();
+    const api = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL) ? NCK_BANK_API_URL.replace(/\/$/, "") : "";
+    if (!api || !key) return;
+    try {
+      await fetch(api + "/admin/errors", {
+        method: "DELETE",
+        headers: { "Authorization": "Bearer " + key }
+      });
+    } catch (e) {}
+    await abLoadErrors();
+  }
+
+  function abUsersHTML(){
+    const st = abState.usersStatus || "Open this tab to load snapshot…";
+    const snap = abState.usersSnap;
+    let body = `<p class="ab-status" id="abUsersStatus">${abEsc(st)}</p>`;
+    if (snap && snap.ok) {
+      body += `<div class="ab-row" style="margin:12px 0">
+        <div class="ab-box" style="flex:1;margin:0"><b>${snap.users || 0}</b><br><span class="ab-hint">Accounts</span></div>
+        <div class="ab-box" style="flex:1;margin:0"><b>${snap.activeSubscriptions || 0}</b><br><span class="ab-hint">Active subs</span></div>
+        <div class="ab-box" style="flex:1;margin:0"><b>${snap.expiredOrInactiveSubs || 0}</b><br><span class="ab-hint">Expired / inactive</span></div>
+        <div class="ab-box" style="flex:1;margin:0"><b>${snap.waitlistEntries || 0}</b><br><span class="ab-hint">Waitlist rows</span></div>
+      </div>
+      <div class="ab-row" style="margin:12px 0">
+        <div class="ab-box" style="flex:1;margin:0"><b>${snap.verifiedAccounts || 0}</b><br><span class="ab-hint">Email confirmed</span></div>
+        <div class="ab-box" style="flex:1;margin:0"><b>${snap.signups7d || 0}</b><br><span class="ab-hint">New sign-ups (7 days)</span></div>
+        <div class="ab-box" style="flex:1;margin:0"><b>${snap.deleted7d || 0}</b><br><span class="ab-hint">Accounts deleted (7 days)</span></div>
+      </div>`;
+      const evs = Array.isArray(snap.recentEvents) ? snap.recentEvents : [];
+      body += `<h4 style="margin:16px 0 6px;">Recent activity</h4>`;
+      if (evs.length) {
+        body += `<div style="overflow-x:auto"><table class="ab-table">
+          <thead><tr><th>When</th><th>Event</th><th>Account</th><th>Note</th></tr></thead>
+          <tbody>${evs.map(e => `<tr>
+            <td style="font-size:.8rem">${abEsc((e.at || "").replace("T"," ").slice(0,19))}</td>
+            <td>${e.type === "delete" ? '<span class="ab-pill warn">deleted</span>' : '<span class="ab-pill">new sign-up</span>'}</td>
+            <td>${abEsc(e.email || "")}</td>
+            <td style="font-size:.8rem">${abEsc(e.note === "had-sub" ? "had an active subscription" : (e.note || ""))}</td>
+          </tr>`).join("")}</tbody></table></div>
+        <p class="ab-hint">Deleted accounts show a masked email on purpose, so the address is really gone. Activity is kept for 90 days.</p>`;
+      } else {
+        body += `<p class="ab-hint">No sign-ups or deletions recorded yet.</p>`;
+      }
+      const sample = Array.isArray(snap.sample) ? snap.sample : [];
+      if (sample.length) {
+        body += `<div style="overflow-x:auto"><table class="ab-table">
+          <thead><tr><th>Email</th><th>Confirmed</th><th>Sub</th><th>Expiry</th><th>Created</th></tr></thead>
+          <tbody>
+          ${sample.map(u => `<tr>
+            <td>${abEsc(u.email || "")}</td>
+            <td>${u.verified ? '<span class="ab-pill">yes</span>' : '<span class="ab-pill warn">no</span>'}</td>
+            <td>${u.subscriptionActive ? '<span class="ab-pill">active</span>' : '<span class="ab-pill warn">no</span>'}</td>
+            <td style="font-size:.8rem">${abEsc(u.subscriptionExpiry || "—")}</td>
+            <td style="font-size:.8rem">${abEsc((u.createdAt || "").replace("T"," ").slice(0,19) || "—")}</td>
+          </tr>`).join("")}
+          </tbody></table></div>
+          <p class="ab-hint">Showing up to 50 most recent accounts (by createdAt when present).</p>`;
+      }
+    }
+    return `<div class="ab-box">
+      <p class="ab-hint">Snapshot from accounts Worker <code>/admin/snapshot</code>. Requires the same <code>ADMIN_KEY</code> on <b>nursevault-accounts</b>.</p>
+      <div class="ab-acts">
+        <button type="button" class="nck-btn" onclick="abLoadUsers(true)">Refresh users</button>
+      </div>
+      ${body}
+    </div>`;
+  }
+
+  async function abLoadUsers(){
+    abState.usersStatus = "Loading…";
+    const el = document.getElementById("abUsersStatus");
+    if (el) el.textContent = abState.usersStatus;
+    const key = abGetKey();
+    const api = (typeof AUTH_URL === "string" && AUTH_URL && !AUTH_URL.includes("REPLACE"))
+      ? AUTH_URL.replace(/\/$/, "") : "";
+    if (!api || !key) {
+      abState.usersSnap = null;
+      abState.usersStatus = !api ? "AUTH_URL missing." : "Unlock admin first.";
+      if (abState.tab === "users") renderAdminBank();
+      return;
+    }
+    try {
+      const r = await fetch(api + "/admin/snapshot", {
+        method: "GET",
+        headers: { "Authorization": "Bearer " + key }
+      });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) {
+        abState.usersSnap = null;
+        abState.usersStatus = (data.error || ("HTTP " + r.status)) +
+          (r.status === 401 ? " — set ADMIN_KEY on nursevault-accounts to the same secret." : "");
+      } else {
+        abState.usersSnap = data;
+        abState.usersStatus = "Updated " + (data.at || "").replace("T", " ").slice(0, 19);
+      }
+    } catch (e) {
+      abState.usersSnap = null;
+      abState.usersStatus = "Could not load: " + (e && e.message ? e.message : "error");
+    }
+    if (abState.tab === "users") renderAdminBank();
+  }
+
+  function abFlagsHTML(){
+    const st = abState.flagsStatus || "Open this tab to load reports…";
+    const filter = abState.flagsFilter || "all";
+    let rows = abState.flags || [];
+    if (filter === "open") rows = rows.filter(r => !r.status || r.status === "open");
+    else if (filter === "reviewing") rows = rows.filter(r => r.status === "reviewing");
+    else if (filter === "fixed") rows = rows.filter(r => r.status === "fixed");
+    else if (filter === "wont_fix") rows = rows.filter(r => r.status === "wont_fix");
+
+    const statusPill = (s) => {
+      const v = s || "open";
+      if (v === "fixed") return '<span class="ab-pill">fixed</span>';
+      if (v === "reviewing") return '<span class="ab-pill warn">reviewing</span>';
+      if (v === "wont_fix") return '<span class="ab-pill warn">won\'t fix</span>';
+      return '<span class="ab-pill warn">open</span>';
+    };
+
+    let body = `<p class="ab-status" id="abFlagsStatus">${abEsc(st)}</p>`;
+    body += `<div class="ab-acts" style="margin-bottom:10px">
+      <button type="button" class="ab-tab ${filter==="all"?"on":""}" onclick="abFlagsFilter('all')">All</button>
+      <button type="button" class="ab-tab ${filter==="open"?"on":""}" onclick="abFlagsFilter('open')">Open</button>
+      <button type="button" class="ab-tab ${filter==="reviewing"?"on":""}" onclick="abFlagsFilter('reviewing')">Reviewing</button>
+      <button type="button" class="ab-tab ${filter==="fixed"?"on":""}" onclick="abFlagsFilter('fixed')">Fixed</button>
+    </div>`;
+
+    if (rows.length) {
+      body += rows.map((r, i) => {
+        const id = abEsc(r.id);
+        const full = abEsc(r.questionText || "");
+        const note = abEsc(r.adminNote || "");
+        return `<div class="ab-q" id="abFlagCard-${id}" style="margin-bottom:12px">
+          <div class="ab-row" style="align-items:center;margin-bottom:8px">
+            <div style="flex:1">
+              ${statusPill(r.status)}
+              <span class="ab-hint" style="margin-left:8px">${abEsc((r.at || "").replace("T"," ").slice(0,19))}</span>
+              · <b>${abEsc(r.subject || r.cadre || "—")}</b>
+            </div>
+          </div>
+          <p style="margin:0 0 10px;line-height:1.45">${full}</p>
+          ${r.questionId ? `<p class="ab-hint" style="margin:0 0 8px">ID: <code>${abEsc(r.questionId)}</code>${r.setId ? " · set: " + abEsc(r.setId) : ""}</p>` : ""}
+          <label>Admin note</label>
+          <textarea id="abFlagNote-${id}" rows="2" placeholder="What is wrong / how you'll fix it…">${note}</textarea>
+          <div class="ab-acts">
+            <button type="button" class="nck-btn" onclick="abFlagAction('${id}','reviewing')">Mark reviewing</button>
+            <button type="button" class="nck-btn" onclick="abFlagAction('${id}','fixed')">Mark fixed</button>
+            <button type="button" class="nck-btn-ghost" onclick="abFlagAction('${id}','open')">Reopen</button>
+            <button type="button" class="nck-btn-ghost" onclick="abFlagAction('${id}','wont_fix')">Won't fix</button>
+            <button type="button" class="nck-btn-ghost" onclick="abCopyFlag('${id}')">Copy text</button>
+            <button type="button" class="nck-btn-ghost" onclick="abSendFlagToBuilder('${id}')">Send to builder</button>
+            <button type="button" class="nck-btn-ghost" onclick="abDismissFlag('${id}')">Dismiss</button>
+          </div>
+        </div>`;
+      }).join("");
+    } else if (abState.flagsLoaded) {
+      body += `<p class="ab-hint">No flags in this filter. Students use <b>Flag question</b> in NCK Prep.</p>`;
+    }
+    return `<div class="ab-box">
+      <p class="ab-hint">Student flags from NCK Prep. You can review, note, mark status, copy, or pull the text into the question builder. <b>Dismiss</b> deletes the report.</p>
+      <div class="ab-acts">
+        <button type="button" class="nck-btn" onclick="abLoadFlags(true)">Refresh flags</button>
+      </div>
+      ${body}
+    </div>`;
+  }
+
+  function abFlagsFilter(f){
+    abState.flagsFilter = f || "all";
+    if (abState.tab === "flags") renderAdminBank();
+  }
+
+  async function abFlagAction(id, status){
+    const key = abGetKey();
+    const api = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL) ? NCK_BANK_API_URL.replace(/\/$/, "") : "";
+    if (!api || !key || !id) return;
+    const noteEl = document.getElementById("abFlagNote-" + id);
+    const adminNote = noteEl ? noteEl.value : "";
+    const st = document.getElementById("abFlagsStatus");
+    if (st) st.textContent = "Updating…";
+    try {
+      const r = await fetch(api + "/admin/reports/update", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + key },
+        body: JSON.stringify({ id, status, adminNote })
+      });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) {
+        if (st) st.textContent = data.error || ("Update failed (" + r.status + ")");
+        return;
+      }
+      // patch local list
+      abState.flags = (abState.flags || []).map(x => x.id === id ? Object.assign({}, x, data.report || { status, adminNote }) : x);
+      if (st) st.textContent = "Updated " + id + " → " + status;
+      if (abState.tab === "flags") renderAdminBank();
+    } catch (e) {
+      if (st) st.textContent = "Update failed: " + (e && e.message ? e.message : "error");
+    }
+  }
+
+  function abCopyFlag(id){
+    const rec = (abState.flags || []).find(r => r.id === id);
+    const text = rec ? (rec.questionText || "") : "";
+    const st = document.getElementById("abFlagsStatus");
+    if (!text) { if (st) st.textContent = "Nothing to copy."; return; }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function(){
+        if (st) st.textContent = "Copied question text.";
+      }).catch(function(){
+        if (st) st.textContent = "Could not copy.";
+      });
+    } else {
+      if (st) st.textContent = text.slice(0, 120) + "…";
+    }
+  }
+
+  function abSendFlagToBuilder(id){
+    const rec = (abState.flags || []).find(r => r.id === id);
+    if (!rec) return;
+    abState.form = abState.form || {};
+    abState.form.source = (rec.questionText || "") +
+      (rec.adminNote ? ("\n\n[Admin note] " + rec.adminNote) : "") +
+      "\n\n[Flagged item — rewrite or fix based on this stem.]";
+    if (rec.subject) abState.form.topic = rec.subject;
+    abState.tab = "builder";
+    abState.status = "Loaded flagged question into source text. Edit or generate a replacement, then publish.";
+    renderAdminBank();
+  }
+
+  async function abLoadFlags(){
+    abState.flagsStatus = "Loading flags…";
+    const el = document.getElementById("abFlagsStatus");
+    if (el) el.textContent = abState.flagsStatus;
+    const key = abGetKey();
+    const api = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL && !NCK_BANK_API_URL.includes("REPLACE"))
+      ? NCK_BANK_API_URL.replace(/\/$/, "") : "";
+    if (!api || !key) {
+      abState.flags = [];
+      abState.flagsLoaded = true;
+      abState.flagsStatus = !api ? "NCK_BANK_API_URL missing." : "Unlock admin first.";
+      if (abState.tab === "flags") renderAdminBank();
+      return;
+    }
+    try {
+      const r = await fetch(api + "/admin/reports", {
+        method: "GET",
+        headers: { "Authorization": "Bearer " + key }
+      });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) {
+        abState.flags = [];
+        abState.flagsStatus = (data.error || ("HTTP " + r.status)) +
+          (r.status === 401 ? " — ADMIN_KEY on nursevault-nck must match the key you used to unlock." : "");
+      } else {
+        abState.flags = Array.isArray(data.reports) ? data.reports : [];
+        abState.flagsStatus = "Loaded " + abState.flags.length + " report(s).";
+      }
+      abState.flagsLoaded = true;
+    } catch (e) {
+      abState.flags = [];
+      abState.flagsLoaded = true;
+      abState.flagsStatus = "Could not load flags: " + (e && e.message ? e.message : "error");
+    }
+    if (abState.tab === "flags") renderAdminBank();
+  }
+
+  async function abDismissFlag(id){
+    const key = abGetKey();
+    const api = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL) ? NCK_BANK_API_URL.replace(/\/$/, "") : "";
+    if (!api || !key || !id) return;
+    try {
+      await fetch(api + "/admin/reports", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + key },
+        body: JSON.stringify({ id })
+      });
+    } catch (e) {}
+    await abLoadFlags(true);
+  }
+
+  function abBanksHTML(){
+    const st = abState.banksStatus || "";
+    const files = abState.bankFiles || [];
+    const edit = abState.bankEdit;
+    let body = `<p class="ab-status" id="abBanksStatus">${abEsc(st)}</p>`;
+
+    if (edit && edit.key) {
+      const qs = edit.questions || [];
+      body += `<div class="ab-box" style="margin-top:12px">
+        <p class="ab-hint"><b>Editing</b> <code>${abEsc(edit.key)}</code> · ${qs.length} question(s)</p>
+        <div class="ab-row">
+          <div><label>Subject</label><input type="text" id="abEditSubject" value="${abEsc(edit.subject || "")}" /></div>
+          <div><label>Title</label><input type="text" id="abEditTitle" value="${abEsc(edit.title || "")}" /></div>
+          <div><label>Cadre</label><input type="text" id="abEditCadre" value="${abEsc(edit.cadre || "KRCHN")}" /></div>
+        </div>
+        <div class="ab-acts">
+          <button type="button" class="nck-btn" onclick="abSaveBankFile()">Save to R2</button>
+          <button type="button" class="nck-btn-ghost" onclick="abCloseBankEdit()">Close editor</button>
+        </div>
+        <p class="ab-status" id="abEditStatus"></p>
+        ${qs.map((q, i) => `
+          <div class="ab-q" id="abEditQ${i}">
+            <p class="ab-hint">#${i + 1} · <button type="button" class="nck-btn-ghost" onclick="abDeleteBankQuestion(${i})">Delete question</button></p>
+            <label>Question</label>
+            <textarea onchange="abPatchBankQ(${i},'q',this.value)">${abEsc(q.q || "")}</textarea>
+            <label>Options (one per line)</label>
+            <textarea onchange="abPatchBankOpts(${i},this.value)">${abEsc((q.options || []).join("\n"))}</textarea>
+            <div class="ab-row">
+              <div><label>Answer index</label><input type="text" value="${abEsc(q.answer)}" onchange="abPatchBankQ(${i},'answer',this.value)" /></div>
+              <div><label>Topic</label><input type="text" value="${abEsc(q.topic || "")}" onchange="abPatchBankQ(${i},'topic',this.value)" /></div>
+              <div><label>Group</label><input type="text" value="${abEsc(q.group || "")}" onchange="abPatchBankQ(${i},'group',this.value)" /></div>
+            </div>
+            <label>Explanation</label>
+            <textarea onchange="abPatchBankQ(${i},'explanation',this.value)">${abEsc(q.explanation || "")}</textarea>
+          </div>`).join("")}
+      </div>`;
+    } else {
+      const catalogRows = abState.banks;
+      if (Array.isArray(catalogRows) && catalogRows.length) {
+        body += `<p class="ab-hint">Catalog sets (student-facing):</p>
+          <div style="overflow-x:auto"><table class="ab-table">
+          <thead><tr><th>Subject / set</th><th>Cadre</th><th>Q</th><th>Access</th></tr></thead>
+          <tbody>
+          ${catalogRows.map(r => `<tr>
+            <td><b>${abEsc(r.title || r.subject || r.id || "—")}</b></td>
+            <td>${abEsc(r.cadre || "—")}</td>
+            <td>${r.questionCount != null ? r.questionCount : "—"}</td>
+            <td>${r.locked ? '<span class="ab-pill warn">locked</span>' : '<span class="ab-pill">ok</span>'}</td>
+          </tr>`).join("")}
+          </tbody></table></div>`;
+      }
+      const totals = abState.bankTotals;
+      if (totals) {
+        body += `<div class="ab-row" style="margin:12px 0">
+          <div class="ab-box" style="flex:1;margin:0"><b>${totals.totalFiles || 0}</b><br><span class="ab-hint">R2 bank files</span></div>
+          <div class="ab-box" style="flex:1;margin:0"><b>${totals.totalQuestions || 0}</b><br><span class="ab-hint">Total questions in R2</span></div>
+          <div class="ab-box" style="flex:1;margin:0"><b>${(totals.subjects || []).length}</b><br><span class="ab-hint">Subjects / topics</span></div>
+        </div>`;
+        if ((totals.subjects || []).length) {
+          body += `<p class="ab-hint">Questions per subject (from file metadata):</p>
+            <div style="overflow-x:auto"><table class="ab-table">
+            <thead><tr><th>Subject / topic</th><th>Files</th><th>Questions</th></tr></thead>
+            <tbody>
+            ${totals.subjects.map(s => `<tr>
+              <td><b>${abEsc(s.subject || "—")}</b></td>
+              <td>${s.files != null ? s.files : "—"}</td>
+              <td><b>${s.questions != null ? s.questions : "—"}</b></td>
+            </tr>`).join("")}
+            </tbody></table></div>`;
+        }
+      }
+      body += abAuditHTML();
+      body += `<p class="ab-hint" style="margin-top:14px">R2 bank files (edit in place):</p>`;
+      if (files.length) {
+        body += `<div style="overflow-x:auto"><table class="ab-table">
+          <thead><tr><th>File</th><th>Subject</th><th>Questions</th><th>Size</th><th></th></tr></thead>
+          <tbody>
+          ${files.map(f => `<tr>
+            <td><code style="font-size:.78rem">${abEsc(f.key)}</code></td>
+            <td>${abEsc(f.subject || "—")}</td>
+            <td>${f.questionCount != null ? f.questionCount : "—"}</td>
+            <td>${f.size != null ? Math.round(f.size / 100) / 10 + " KB" : "—"}</td>
+            <td><button type="button" class="nck-btn" onclick="abOpenBankFile('${abEsc(f.key)}')">Edit questions</button></td>
+          </tr>`).join("")}
+          </tbody></table></div>`;
+      } else {
+        body += `<p class="ab-hint">No bank files listed yet. Click <b>Refresh files</b>.</p>`;
+      }
+    }
+
+    return `<div class="ab-box">
+      <p class="ab-hint">Manage NCK banks in R2. Open a file to edit or delete individual questions, then <b>Save to R2</b>.</p>
+      <div class="ab-acts">
+        <button type="button" class="nck-btn" onclick="abLoadBanksCatalog(true)">Refresh catalog</button>
+        <button type="button" class="nck-btn" onclick="abLoadBankFiles()">Refresh files</button>
+        <button type="button" class="nck-btn-ghost" onclick="abReloadBanksWorker()">Force Worker reload</button>
+      </div>
+      ${body}
+    </div>`;
+  }
+
+  function abPatchBankQ(i, field, val){
+    if (!abState.bankEdit || !abState.bankEdit.questions[i]) return;
+    if (field === "answer") abState.bankEdit.questions[i].answer = parseInt(val, 10) || 0;
+    else abState.bankEdit.questions[i][field] = val;
+  }
+  function abPatchBankOpts(i, val){
+    if (!abState.bankEdit || !abState.bankEdit.questions[i]) return;
+    abState.bankEdit.questions[i].options = String(val).split("\n").map(s => s.trim()).filter(Boolean);
+  }
+  function abCloseBankEdit(){
+    abState.bankEdit = null;
+    if (abState.tab === "banks") renderAdminBank();
+  }
+
+  async function abLoadBankFiles(){
+    const st = document.getElementById("abBanksStatus");
+    const key = abGetKey();
+    const api = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL) ? NCK_BANK_API_URL.replace(/\/$/, "") : "";
+    if (!api || !key) {
+      abState.banksStatus = !api ? "NCK_BANK_API_URL missing." : "Unlock admin first.";
+      if (abState.tab === "banks") renderAdminBank();
+      return;
+    }
+    if (st) st.textContent = "Loading R2 files…";
+    try {
+      const r = await fetch(api + "/admin/files", { headers: { "Authorization": "Bearer " + key } });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) {
+        abState.banksStatus = data.error || ("HTTP " + r.status);
+        abState.bankFiles = [];
+        abState.bankTotals = null;
+      } else {
+        abState.bankFiles = Array.isArray(data.files) ? data.files : [];
+        abState.bankTotals = {
+          totalFiles: data.totalFiles != null ? data.totalFiles : abState.bankFiles.length,
+          totalQuestions: data.totalQuestions != null ? data.totalQuestions : 0,
+          subjects: Array.isArray(data.subjects) ? data.subjects : []
+        };
+        abState.banksStatus = "Files: " + abState.bankTotals.totalFiles + " · Questions in R2: " + abState.bankTotals.totalQuestions;
+      }
+    } catch (e) {
+      abState.bankFiles = [];
+      abState.banksStatus = "Could not list files: " + (e && e.message ? e.message : "error");
+    }
+    if (abState.tab === "banks") renderAdminBank();
+  }
+
+  async function abOpenBankFile(fileKey){
+    const st = document.getElementById("abBanksStatus");
+    const key = abGetKey();
+    const api = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL) ? NCK_BANK_API_URL.replace(/\/$/, "") : "";
+    if (!api || !key || !fileKey) return;
+    if (st) st.textContent = "Opening " + fileKey + "…";
+    try {
+      const r = await fetch(api + "/admin/file?key=" + encodeURIComponent(fileKey), {
+        headers: { "Authorization": "Bearer " + key }
+      });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) {
+        abState.banksStatus = data.error || ("HTTP " + r.status);
+        if (abState.tab === "banks") renderAdminBank();
+        return;
+      }
+      abState.bankEdit = {
+        key: data.key || fileKey,
+        subject: data.subject || "",
+        title: data.title || "",
+        cadre: data.cadre || "KRCHN",
+        questions: Array.isArray(data.questions) ? data.questions.map(q => Object.assign({}, q)) : []
+      };
+      abState.banksStatus = "Editing " + (data.key || fileKey);
+      if (abState.tab === "banks") renderAdminBank();
+    } catch (e) {
+      abState.banksStatus = "Open failed: " + (e && e.message ? e.message : "error");
+      if (abState.tab === "banks") renderAdminBank();
+    }
+  }
+
+  async function abSaveBankFile(){
+    const edit = abState.bankEdit;
+    const st = document.getElementById("abEditStatus") || document.getElementById("abBanksStatus");
+    const key = abGetKey();
+    const api = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL) ? NCK_BANK_API_URL.replace(/\/$/, "") : "";
+    if (!edit || !api || !key) return;
+    const subject = (document.getElementById("abEditSubject") || {}).value || edit.subject;
+    const title = (document.getElementById("abEditTitle") || {}).value || edit.title;
+    const cadre = (document.getElementById("abEditCadre") || {}).value || edit.cadre;
+    if (st) st.textContent = "Saving…";
+    try {
+      const r = await fetch(api + "/admin/file", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + key },
+        body: JSON.stringify({
+          key: edit.key,
+          subject, title, cadre,
+          questions: edit.questions || []
+        })
+      });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) {
+        if (st) st.textContent = data.error || ("Save failed " + r.status);
+        return;
+      }
+      if (st) st.textContent = "Saved " + (data.questionCount != null ? data.questionCount : "") + " questions to " + (data.key || edit.key);
+      abState.banksStatus = st.textContent;
+    } catch (e) {
+      if (st) st.textContent = "Save failed: " + (e && e.message ? e.message : "error");
+    }
+  }
+
+  async function abDeleteBankQuestion(index){
+    const edit = abState.bankEdit;
+    if (!edit || !edit.questions || index < 0 || index >= edit.questions.length) return;
+    if (!confirm("Delete question #" + (index + 1) + " from this file? Save afterwards to write R2.")) return;
+    edit.questions.splice(index, 1);
+    if (abState.tab === "banks") renderAdminBank();
+  }
+
+  /* ---------- Option audit: questions whose options give the answer away ---------- */
+  function abAuditHTML(){
+    const a = abState.audit;
+    let html = `<div class="ab-box" style="margin:14px 0">
+      <p class="ab-hint"><b>Option audit</b> — finds questions where the correct option is the longest, has extra words, or repeats stem wording the other options lack. These are the questions students can answer without knowing the content.</p>
+      <div class="ab-acts">
+        <button type="button" class="nck-btn" onclick="abRunAudit()">${a && a.loading ? "Scanning…" : "Scan all banks"}</button>
+      </div>
+      <p class="ab-status" id="abAuditStatus">${abEsc((a && a.status) || "")}</p>`;
+    if (a && a.data) {
+      const d = a.data;
+      const r = d.keyLengthRank || [0, 0, 0, 0];
+      const four = r.reduce((x, y) => x + y, 0) || 1;
+      const pct = (n) => Math.round((n / four) * 100) + "%";
+      html += `<div class="ab-row" style="margin:10px 0">
+        <div class="ab-box" style="flex:1;margin:0"><b>${d.flaggedCount}</b> of ${d.totalQuestions}<br><span class="ab-hint">questions flagged</span></div>
+        <div class="ab-box" style="flex:1;margin:0"><b>${d.keyIsLongestPct}%</b><br><span class="ab-hint">key is the strictly longest option (about 25% is normal)</span></div>
+      </div>
+      <p class="ab-hint">Key length rank across all 4-option questions — shortest: ${pct(r[0])} · 2nd shortest: ${pct(r[1])} · 2nd longest: ${pct(r[2])} · longest: ${pct(r[3])}. A healthy bank is close to 25% each.</p>`;
+      const files = (d.files || []).filter(f => f.flagged > 0);
+      if (files.length) {
+        html += `<div style="overflow-x:auto"><table class="ab-table"><thead><tr><th>File</th><th>Questions</th><th>Flagged</th><th></th></tr></thead><tbody>
+          ${files.map(f => `<tr><td><code style="font-size:.78rem">${abEsc(f.file)}</code></td><td>${f.questions}</td><td><b>${f.flagged}</b></td>
+          <td><button type="button" class="nck-btn-ghost" onclick="abAuditFilter('${abEsc(f.file)}')">Show</button></td></tr>`).join("")}
+        </tbody></table></div>
+        <div class="ab-acts" style="margin-top:8px">
+          <button type="button" class="nck-btn-ghost" onclick="abAuditFilter('')">Show all files</button>
+          <button type="button" class="nck-btn-ghost" onclick="abAuditToggleOnlyLongest()">${a.onlyLongest ? "Showing: key is longest only" : "Showing: all problems"} (toggle)</button>
+        </div>`;
+      }
+      let list = d.flagged || [];
+      if (a.file) list = list.filter(x => x.file === a.file);
+      if (a.onlyLongest) list = list.filter(x => (x.problems || []).indexOf("key is the longest option") >= 0);
+      const shown = a.shown || 25;
+      html += `<p class="ab-hint" style="margin-top:12px">Showing ${Math.min(shown, list.length)} of ${list.length}${d.truncated ? " (scan capped at 600)" : ""}. Open a question to edit it, then press <b>Save to R2</b>.</p>`;
+      html += list.slice(0, shown).map(x => `
+        <div class="ab-q" style="margin-top:10px">
+          <p class="ab-hint"><code style="font-size:.76rem">${abEsc(x.file)}</code> · #${x.index + 1} · ${abEsc(x.subject || "")} ${x.cadre ? "· " + abEsc(x.cadre) : ""}</p>
+          <p><b>${abEsc(x.q)}</b></p>
+          <div>${(x.options || []).map((o, i) => `<div style="padding:4px 8px;margin:3px 0;border-radius:6px;${i === x.answer ? "background:rgba(16,185,129,.15);font-weight:600" : ""}">
+            ${String.fromCharCode(65 + i)}. ${abEsc(o)} <span class="ab-hint">(${(x.lengths || [])[i]} chars)</span>${i === x.answer ? " ✓" : ""}</div>`).join("")}</div>
+          <p class="ab-hint">${(x.problems || []).map(p => `<span class="ab-pill warn">${abEsc(p)}</span>`).join(" ")}</p>
+          <div class="ab-acts">
+            <button type="button" class="nck-btn" onclick="abAuditRewrite('${abEsc(x.file)}', ${x.index})">Rewrite with AI</button>
+            <button type="button" class="nck-btn-ghost" onclick="abAuditOpen('${abEsc(x.file)}', ${x.index})">Open &amp; edit by hand</button>
+          </div>
+          ${abAuditProposalHTML(x)}
+        </div>`).join("");
+      if (list.length > shown) html += `<div class="ab-acts" style="margin-top:10px"><button type="button" class="nck-btn-ghost" onclick="abAuditMore()">Show 25 more</button></div>`;
+    }
+    return html + `</div>`;
+  }
+
+  async function abRunAudit(){
+    const key = abGetKey();
+    const api = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL) ? NCK_BANK_API_URL.replace(/\/$/, "") : "";
+    if (!api || !key) { abState.audit = { status: !api ? "NCK_BANK_API_URL missing." : "Unlock admin first." }; renderAdminBank(); return; }
+    abState.audit = Object.assign({}, abState.audit, { loading: true, status: "Scanning every bank file…" });
+    renderAdminBank();
+    try {
+      const r = await fetch(api + "/admin/audit-options", { headers: { "Authorization": "Bearer " + key } });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) {
+        abState.audit = { status: (data.error || ("HTTP " + r.status)) + (r.status === 404 ? " — redeploy the updated nursevault-nck worker." : "") };
+      } else {
+        abState.audit = { data, shown: 25, file: "", onlyLongest: false, status: "Scan complete." };
+      }
+    } catch (e) {
+      abState.audit = { status: "Scan failed: " + (e && e.message ? e.message : "error") };
+    }
+    if (abState.tab === "banks") renderAdminBank();
+  }
+  function abAuditFilter(file){ if (!abState.audit) return; abState.audit.file = file || ""; abState.audit.shown = 25; renderAdminBank(); }
+  function abAuditMore(){ if (!abState.audit) return; abState.audit.shown = (abState.audit.shown || 25) + 25; renderAdminBank(); }
+  function abAuditToggleOnlyLongest(){ if (!abState.audit) return; abState.audit.onlyLongest = !abState.audit.onlyLongest; abState.audit.shown = 25; renderAdminBank(); }
+  function abAuditRwKey(file, idx){ return file + "#" + idx; }
+  function abAuditFind(file, idx){
+    const d = abState.audit && abState.audit.data;
+    return d ? (d.flagged || []).find(x => x.file === file && x.index === idx) : null;
+  }
+  function abAuditProposalHTML(x){
+    const rw = (abState.auditRw || {})[abAuditRwKey(x.file, x.index)];
+    if (!rw) return "";
+    if (rw.loading) return `<p class="ab-status">Rewriting and checking (about 20–60 seconds)…</p>`;
+    if (rw.error) return `<p class="ab-status" style="color:#dc2626">${abEsc(rw.error)}</p>`;
+    const p = rw.proposal;
+    if (!p) return "";
+    const lens = (p.options || []).map(o => o.length);
+    const maxOther = Math.max.apply(null, lens.filter((_, i) => i !== p.answer));
+    return `<div class="ab-box" style="margin-top:10px;border:1px solid rgba(16,185,129,.5)">
+      <p class="ab-hint"><b>Proposed rewrite</b> — read it before saving. The AI had no source passage, so check the clinical facts.${p.flags && p.flags.length ? " Notes: " + abEsc(p.flags.join(", ")) : ""}</p>
+      <p><b>${abEsc(p.q)}</b></p>
+      ${(p.options || []).map((o, i) => `<div style="padding:4px 8px;margin:3px 0;border-radius:6px;${i === p.answer ? "background:rgba(16,185,129,.15);font-weight:600" : ""}">${String.fromCharCode(65 + i)}. ${abEsc(o)} <span class="ab-hint">(${o.length} chars)</span>${i === p.answer ? " ✓" : ""}</div>`).join("")}
+      <p class="ab-hint">${lens[p.answer] <= maxOther ? "Key is no longer the longest option." : "Key is still slightly longer than the longest distractor."}</p>
+      <label>Explanation</label>
+      <p class="ab-hint" style="white-space:pre-wrap">${abEsc(p.explanation)}</p>
+      <div class="ab-acts">
+        <button type="button" class="nck-btn" onclick="abAuditAccept('${abEsc(x.file)}', ${x.index})">${rw.saving ? "Saving…" : "Accept &amp; save to R2"}</button>
+        <button type="button" class="nck-btn-ghost" onclick="abAuditRewrite('${abEsc(x.file)}', ${x.index})">Try again</button>
+        <button type="button" class="nck-btn-ghost" onclick="abAuditDiscard('${abEsc(x.file)}', ${x.index})">Discard</button>
+      </div>
+    </div>`;
+  }
+  function abAuditDiscard(file, idx){
+    if (abState.auditRw) delete abState.auditRw[abAuditRwKey(file, idx)];
+    renderAdminBank();
+  }
+  async function abAuditRewrite(file, idx){
+    const key = abGetKey();
+    const x = abAuditFind(file, idx);
+    if (!key || !x) return;
+    abState.auditRw = abState.auditRw || {};
+    const k = abAuditRwKey(file, idx);
+    abState.auditRw[k] = { loading: true };
+    renderAdminBank();
+    try {
+      // fetch the full question (explanation is not in the audit list)
+      const api = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL) ? NCK_BANK_API_URL.replace(/\/$/, "") : "";
+      const fr = await fetch(api + "/admin/file?key=" + encodeURIComponent(file), { headers: { "Authorization": "Bearer " + key } });
+      const fd = await fr.json().catch(() => ({}));
+      const full = fr.ok && Array.isArray(fd.questions) ? fd.questions[idx] : null;
+      if (!full) throw new Error("Could not load that question from R2.");
+      const res = await fetch(NCK_EXPLAIN_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + key },
+        body: JSON.stringify({
+          mode: "rewrite-options",
+          items: [{ q: full.q || full.question || "", options: full.options || [], answer: x.answer, explanation: full.explanation || "", problems: x.problems || [] }]
+        })
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || ("HTTP " + res.status) + (res.status === 400 ? " (rewrite needs exactly 4 options)" : ""));
+      const r = (data.results || [])[0];
+      if (!r || !r.ok) {
+        abState.auditRw[k] = { error: "Could not produce a clean rewrite" + (r && r.note ? ": " + r.note : "") + ". Try again or edit by hand." };
+      } else {
+        abState.auditRw[k] = { proposal: r };
+      }
+    } catch (e) {
+      abState.auditRw[k] = { error: "Rewrite failed: " + (e && e.message ? e.message : "error") };
+    }
+    if (abState.tab === "banks") renderAdminBank();
+  }
+  async function abAuditAccept(file, idx){
+    const key = abGetKey();
+    const x = abAuditFind(file, idx);
+    const k = abAuditRwKey(file, idx);
+    const rw = (abState.auditRw || {})[k];
+    if (!key || !x || !rw || !rw.proposal) return;
+    const p = rw.proposal;
+    rw.saving = true;
+    renderAdminBank();
+    const api = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL) ? NCK_BANK_API_URL.replace(/\/$/, "") : "";
+    try {
+      const fr = await fetch(api + "/admin/file?key=" + encodeURIComponent(file), { headers: { "Authorization": "Bearer " + key } });
+      const fd = await fr.json().catch(() => ({}));
+      const qs = fr.ok && Array.isArray(fd.questions) ? fd.questions : null;
+      const cur = qs ? qs[idx] : null;
+      if (!cur || String(cur.q || cur.question || "").slice(0, 500) !== x.q) throw new Error("The file changed since the scan. Run the scan again.");
+      cur.q = p.q;
+      cur.options = p.options;
+      cur.answer = p.answer;
+      cur.explanation = p.explanation;
+      const sr = await fetch(api + "/admin/file", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + key },
+        body: JSON.stringify({ key: file, subject: fd.subject || "", title: fd.title || "", cadre: fd.cadre || "KRCHN", questions: qs })
+      });
+      const sd = await sr.json().catch(() => ({}));
+      if (!sr.ok) throw new Error(sd.error || ("Save failed " + sr.status));
+      const d = abState.audit.data;
+      d.flagged = (d.flagged || []).filter(f => !(f.file === file && f.index === idx));
+      d.flaggedCount = Math.max(0, (d.flaggedCount || 1) - 1);
+      const fr2 = (d.files || []).find(f => f.file === file);
+      if (fr2) fr2.flagged = Math.max(0, fr2.flagged - 1);
+      delete abState.auditRw[k];
+      abState.audit.status = "Saved to " + file + " (question #" + (idx + 1) + ").";
+    } catch (e) {
+      rw.saving = false;
+      rw.error = null;
+      abState.auditRw[k] = Object.assign({}, rw, { error: "Save failed: " + (e && e.message ? e.message : "error") });
+    }
+    if (abState.tab === "banks") renderAdminBank();
+  }
+
+  async function abAuditOpen(fileKey, index){
+    await abOpenBankFile(fileKey);
+    setTimeout(function(){
+      const el = document.getElementById("abEditQ" + index);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        el.style.outline = "2px solid #f59e0b";
+        el.style.borderRadius = "8px";
+      }
+    }, 120);
+  }
+
+  async function abLoadBanksCatalog(force){
+    const stEl = () => document.getElementById("abBanksStatus");
+    abState.banksStatus = "Loading catalog…";
+    if (stEl()) stEl().textContent = abState.banksStatus;
+    const api = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL && !NCK_BANK_API_URL.includes("REPLACE"))
+      ? NCK_BANK_API_URL.replace(/\/$/, "") : "";
+    if (!api) {
+      abState.banks = [];
+      abState.banksStatus = "NCK_BANK_API_URL is not set in the site.";
+      if (abState.tab === "banks") renderAdminBank();
+      return;
+    }
+    try {
+      const r = await fetch(api + "/catalog", { method: "GET", mode: "cors" });
+      const data = await r.json().catch(() => ({}));
+      let sets = [];
+      if (Array.isArray(data.sets)) sets = data.sets;
+      else if (Array.isArray(data.catalog)) sets = data.catalog;
+      else if (Array.isArray(data)) sets = data;
+      else if (data.sets && typeof data.sets === "object") sets = Object.values(data.sets);
+      abState.banks = sets.map(s => ({
+        id: s.id || s.setId || s.key || "",
+        title: s.title || s.name || s.subject || s.id || "",
+        subject: s.subject || s.topic || "",
+        cadre: s.cadre || s.level || "",
+        questionCount: s.questionCount != null ? s.questionCount : (s.count != null ? s.count : (Array.isArray(s.questions) ? s.questions.length : null)),
+        locked: !!(s.locked || s.access === "paid" && s.locked !== false),
+        key: s.key || s.r2Key || ""
+      }));
+      abState.banksStatus = "Loaded " + abState.banks.length + " set(s).";
+    } catch (e) {
+      abState.banks = [];
+      abState.banksStatus = "Could not load catalog: " + (e && e.message ? e.message : "error");
+      if (typeof abLogError === "function") abLogError(abState.banksStatus, "", "nck-catalog");
+    }
+    if (abState.tab === "banks" || abState.tab === "overview") renderAdminBank();
+  }
+
+  async function abReloadBanksWorker(){
+    const st = document.getElementById("abBanksStatus") || document.getElementById("abStatus");
+    const key = abGetKey();
+    const api = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL) ? NCK_BANK_API_URL.replace(/\/$/, "") : "";
+    if (!api) { if (st) st.textContent = "NCK_BANK_API_URL missing."; return; }
+    if (st) st.textContent = "Calling /reload…";
+    try {
+      const r = await fetch(api + "/reload", {
+        method: "POST",
+        headers: key ? { "Authorization": "Bearer " + key, "Content-Type": "application/json" } : { "Content-Type": "application/json" },
+        body: "{}"
+      });
+      const data = await r.json().catch(() => ({}));
+      if (st) st.textContent = r.ok
+        ? ("Reload ok — sets: " + (data.sets != null ? data.sets : "?") + ", questions: " + (data.questions != null ? data.questions : "?"))
+        : ("Reload failed: " + (data.error || r.status));
+      await abLoadBanksCatalog(true);
+    } catch (e) {
+      if (st) st.textContent = "Reload failed: " + (e && e.message ? e.message : "error");
+    }
+  }
+
+
+  async function abUnlock(){
+    const el = document.getElementById("abKey");
+    const st = document.getElementById("abStatus");
+    const btn = document.getElementById("abUnlockBtn");
+    const k = el ? el.value.trim() : "";
+    if (!k || k.length < 8) {
+      if (st) st.textContent = "Enter a key at least 8 characters (must match Worker ADMIN_KEY).";
+      return;
+    }
+    if (btn) { btn.disabled = true; btn.textContent = "Checking…"; }
+    if (st) st.textContent = "Verifying key with AI Worker…";
+    const url = (typeof NCK_EXPLAIN_URL === "string" && NCK_EXPLAIN_URL) ? NCK_EXPLAIN_URL.replace(/\/$/, "") : "";
+    if (!url) {
+      if (st) st.textContent = "Login failed: NCK_EXPLAIN_URL is not set in the site.";
+      if (btn) { btn.disabled = false; btn.textContent = "Unlock"; }
+      return;
+    }
+    try {
+      const res = await fetch(url, {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer " + k
+        },
+        body: JSON.stringify({ mode: "admin-check" })
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.status === 401 || data.ok === false) {
+        abClearKey();
+        if (st) st.textContent = "Login failed: wrong admin key (Worker rejected it). Check ADMIN_KEY in Cloudflare → nursevault-ai-explain → Variables (no extra spaces).";
+        if (btn) { btn.disabled = false; btn.textContent = "Unlock"; }
+        return;
+      }
+      if (!res.ok) {
+        abClearKey();
+        if (st) st.textContent = "Login failed: Worker returned " + res.status + " — " + (data.error || "deploy the latest AI Worker with admin-check support.");
+        if (btn) { btn.disabled = false; btn.textContent = "Unlock"; }
+        return;
+      }
+      if (!data.ok) {
+        abClearKey();
+        if (st) st.textContent = "Login failed: " + (data.error || "unexpected response from Worker.");
+        if (btn) { btn.disabled = false; btn.textContent = "Unlock"; }
+        return;
+      }
+      abSetKey(k);
+      abState.status = "";
+      abState.tab = "overview";
+      renderAdminBank();
+      abRefreshOverview();
+    } catch (e) {
+      abClearKey();
+      const tip = (e && e.message) ? String(e.message) : "network error";
+      if (st) st.textContent = "Login failed: browser could not call the AI Worker (" + tip + "). Open " + url + " in a new tab, hard-refresh this page (Ctrl+Shift+R), and confirm ADMIN_KEY is set on nursevault-ai-explain.";
+      if (btn) { btn.disabled = false; btn.textContent = "Unlock"; }
+    }
+  }
+
+  function abLock(){
+    abClearKey();
+    abState = { questions: [], status: "", form: abState.form || {} };
+    renderAdminBank();
+  }
+
+  function abReviewHTML(qs){
+    const accepted = qs.filter(q => q._status === "accepted").length;
+    const topics = abTopicList();
+    const groups = abGroupList();
+    return `
+      <div class="ab-box">
+        <h3 style="margin:0 0 10px">Review (${qs.length} drafted · <span id="abAcceptedCount">${accepted}</span> accepted)</h3>
+        <div class="ab-acts" style="margin-bottom:14px">
+          <button type="button" class="nck-btn" onclick="window.abAcceptAll()">Accept all</button>
+          <button type="button" class="nck-btn" onclick="abPublish()">Publish accepted to R2</button>
+          <button type="button" class="nck-btn-ghost" onclick="abExport()">Download accepted JSON</button>
+          <button type="button" class="nck-btn-ghost" onclick="abClearDrafts()">Clear drafts</button>
+        </div>
+        ${qs.map((q, i) => `
+          <div class="ab-q ${q._status || ""}" data-i="${i}" id="abQ${i}">
+            <label>Question</label>
+            <textarea onchange="abEdit(${i},'q',this.value)">${abEsc(q.q)}</textarea>
+            <label>Options (one per line; first line = A / index 0)</label>
+            <textarea onchange="abEditOpts(${i},this.value)">${abEsc((q.options||[]).join("\n"))}</textarea>
+            <div class="ab-row">
+              <div>
+                <label>Correct answer index (0–${Math.max(0,(q.options||[]).length-1)})</label>
+                <input type="text" value="${abEsc(q.answer)}" onchange="abEdit(${i},'answer',this.value,this)" />
+              </div>
+              <div>
+                <label>Topic</label>
+                <select onchange="abEdit(${i},'topic',this.value)">${topics.map(t => `<option value="${abEsc(t)}"${q.topic === t ? " selected" : ""}>${abEsc(t)}</option>`).join("")}</select>
+              </div>
+              <div>
+                <label>Group</label>
+                <select onchange="abEdit(${i},'group',this.value)">${groups.map(g => `<option value="${abEsc(g)}"${(q.group || "General") === g ? " selected" : ""}>${abEsc(g)}</option>`).join("")}</select>
+              </div>
+            </div>
+            <label>Explanation</label>
+            <textarea onchange="abEdit(${i},'explanation',this.value)">${abEsc(q.explanation)}</textarea>
+            ${q.level ? `<div class="ab-hint" style="margin:8px 0 0"><span class="ab-pill${q.level === "recall" ? " warn" : ""}">${abEsc(q.level)}</span></div>` : ""}
+            ${q.source_quote ? `<div class="ab-hint" style="margin:8px 0 0"><b>Source quote:</b> ${abEsc(q.source_quote)}</div>` : ""}
+            ${(q.flags && q.flags.length) ? `<div class="ab-hint" style="margin:6px 0 0"><span class="ab-pill warn">${abEsc(q.flags.join(", "))}</span> ${q.flags.every(function (f) { return f === "auto-repaired"; }) ? "Rewritten automatically after a quality check. Give it a quick read." : "Check this item by hand before accepting."}</div>` : ""}
+            <div class="ab-acts">
+              <button type="button" class="nck-btn" onclick="abSetStatus(${i},'accepted')">${q.flags && q.flags.some(function (f) { return f !== "auto-repaired"; }) ? "Accept after review" : "Accept"}</button>
+              <button type="button" class="nck-btn-ghost" onclick="abSetStatus(${i},'rejected')">Reject</button>
+              <span class="ab-status ab-q-label" id="abLabel${i}">${q._status === "accepted" ? "Accepted" : q._status === "rejected" ? "Rejected" : "Pending"}</span>
+            </div>
+          </div>`).join("")}
+      </div>`;
+  }
+
+  function abEdit(i, field, val, el){
+    const q = abState.questions[i]; if (!q) return;
+    if (field === "answer") {
+      const v = String(val).trim().toUpperCase();
+      const n = /^[0-3]$/.test(v) ? parseInt(v, 10) : /^[A-D]$/.test(v) ? v.charCodeAt(0) - 65 : -1;
+      if (n >= 0 && n < (q.options || []).length) { q.answer = n; abMarkQuestionEdited(q); }
+      else {
+        if (el) el.value = q.answer;
+        const st = document.getElementById("abStatus");
+        if (st) st.textContent = "Correct answer must be 0-3 (or A-D). Kept the previous value.";
+      }
+    }
+    else { q[field] = val; abMarkQuestionEdited(q); }
+  }
+  function abMarkQuestionEdited(q){
+    q.flags = Array.isArray(q.flags) ? q.flags : [];
+    if (!q.flags.includes("manually-edited-after-verification")) q.flags.push("manually-edited-after-verification");
+    const i = (abState.questions || []).indexOf(q);
+    if (q._status === "accepted") {
+      q._status = "pending";
+      if (i >= 0) abRefreshCard(i);
+    }
+    const card = i >= 0 ? document.getElementById("abQ" + i) : null;
+    const acceptBtn = card && card.querySelector(".ab-acts .nck-btn");
+    if (acceptBtn) acceptBtn.textContent = "Accept after review";
+    const st = document.getElementById("abStatus");
+    if (st) st.textContent = "This draft changed after AI verification. Recheck its source, key, options and explanation, then accept it individually.";
+  }
+  function abEditOpts(i, val){
+    const q = abState.questions[i]; if (!q) return;
+    q.options = String(val).split("\n").map(s => s.trim()).filter(Boolean);
+    abMarkQuestionEdited(q);
+  }
+
+  function abRefreshCard(i){
+    const q = abState.questions[i]; if (!q) return;
+    const el = document.getElementById("abQ" + i);
+    if (el) {
+      el.classList.remove("accepted", "rejected", "pending");
+      if (q._status) el.classList.add(q._status);
+    }
+    const lab = document.getElementById("abLabel" + i);
+    if (lab) lab.textContent = q._status === "accepted" ? "Accepted" : q._status === "rejected" ? "Rejected" : "Pending";
+    const cnt = document.getElementById("abAcceptedCount");
+    if (cnt) cnt.textContent = String((abState.questions || []).filter(x => x._status === "accepted").length);
+  }
+
+  function abSetStatus(i, st){
+    const q = abState.questions[i]; if (!q) return;
+    q._status = st;
+    abRefreshCard(i);
+    if (st === "accepted" && Array.isArray(q.flags) && q.flags.some(function (f) { return f !== "auto-repaired"; })) {
+      const status = document.getElementById("abStatus");
+      if (status) status.textContent = "Accepted after manual review. This item has quality flags; check its source quote, key, options and explanation before publishing.";
+    }
+  }
+  function abQuestionForExport(q){
+    const out = Object.assign({}, q || {});
+    delete out._status;
+    delete out._qualityVerified;
+    delete out._needsReview;
+    return out;
+  }
+  function abQuestionPublishError(q){
+    const options = Array.isArray(q && q.options) ? q.options.map(function (o) { return String(o || "").trim(); }) : [];
+    if (!q || !String(q.q || "").trim()) return "A question stem is empty.";
+    if (options.length !== 4 || options.some(function (o) { return !o; })) return "Every question must have exactly four non-empty options.";
+    if (new Set(options.map(function (o) { return o.toLowerCase().replace(/\s+/g, " ").trim(); })).size !== 4) return "A question has repeated options.";
+    if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer > 3) return "A question has an invalid answer index.";
+    if (!["KRCHN", "BScN"].includes(String(q.cadre || ""))) return 'Each question must be tagged exactly "KRCHN" or "BScN".';
+    if (!["recall", "application", "analysis"].includes(String(q.level || ""))) return "A question is missing its cognitive-level tag.";
+    if (!abTopicList().includes(String(q.topic || ""))) return "A question has a topic that is not in the existing NCK topic list.";
+    if (!abGroupList().includes(String(q.group || "General"))) return "A question has a group that is not in the NCK group list.";
+    const quote = String(q.source_quote || "").trim();
+    if (!quote || quote.split(/\s+/).filter(Boolean).length >= 25) return "A question needs an exact source quote under 25 words.";
+    if (!String(q.explanation || "").trim()) return "A question is missing its explanation.";
+    return "";
+  }
+  function abAcceptAll(){
+    const questions = Array.isArray(abState.questions) ? abState.questions : [];
+    if (!questions.length) {
+      abState.status = "There are no drafts to accept.";
+      const emptyStatus = document.getElementById("abStatus");
+      if (emptyStatus) emptyStatus.textContent = abState.status;
+      return;
+    }
+    const flagged = questions.filter(function (q) {
+      return Array.isArray(q.flags) && q.flags.some(function (f) { return f !== "auto-repaired"; });
+    }).length;
+    if (flagged && !window.confirm("Accept all " + questions.length + " draft(s), including " + flagged + " with quality flags? Review those flags before publishing. Continue?")) {
+      abState.status = "No drafts changed. Review flagged questions individually, or click Accept all and confirm to accept the full batch.";
+      const cancelStatus = document.getElementById("abStatus");
+      if (cancelStatus) cancelStatus.textContent = abState.status;
+      return;
+    }
+    questions.forEach((q, i) => {
+      q._status = "accepted";
+      abRefreshCard(i);
+    });
+    abState.status = "Accepted all " + questions.length + " draft(s)." + (flagged ? " " + flagged + " carry quality flags; review them before publishing." : "");
+    const st = document.getElementById("abStatus");
+    if (st) st.textContent = abState.status;
+  }
+  window.abAcceptAll = abAcceptAll;
+  function abClearDrafts(){
+    abSaveForm();
+    abState.questions = [];
+    abState.status = "";
+    renderAdminBank();
+  }
+
+
+  async function abPublish(){
+    const st = document.getElementById("abStatus");
+    const list = (abState.questions || []).filter(q => q._status === "accepted").map(abQuestionForExport);
+    if (!list.length) {
+      if (st) st.textContent = "Accept at least one question before publishing.";
+      return;
+    }
+    const invalid = list.map(abQuestionPublishError).find(Boolean);
+    if (invalid) {
+      if (st) st.textContent = "Cannot publish: " + invalid + " Correct it, then accept the question again.";
+      return;
+    }
+    if (list.some(function (q) { return q.cadre !== list[0].cadre; })) {
+      if (st) st.textContent = "Cannot publish a mixed-cadre batch. Keep KRCHN and BScN questions in separate banks.";
+      return;
+    }
+    const key = abGetKey();
+    if (!key) {
+      if (st) st.textContent = "Admin key missing. Unlock again.";
+      return;
+    }
+    const api = (typeof NCK_BANK_API_URL === "string" && NCK_BANK_API_URL && !NCK_BANK_API_URL.includes("REPLACE"))
+      ? NCK_BANK_API_URL.replace(/\/$/, "")
+      : "";
+    if (!api) {
+      if (st) st.textContent = "NCK_BANK_API_URL is not set — cannot publish to R2.";
+      return;
+    }
+    const topic = (list[0] && list[0].topic) || (document.getElementById("abTopic") || {}).value || "General";
+    const cadre = (list[0] && list[0].cadre) || (document.getElementById("abCadre") || {}).value || "KRCHN";
+    const safe = String(topic).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) || "bank";
+    // Unique name every publish so we APPEND banks instead of overwriting the same daily file
+    const stamp = new Date().toISOString().replace(/[-:TZ.]/g, "").slice(0, 14);
+    const rnd = Math.random().toString(36).slice(2, 6);
+    const filename = "nck-" + safe + "-" + stamp + "-" + rnd + ".json";
+    if (st) st.textContent = "Publishing " + list.length + " questions to R2…";
+    try {
+      const res = await fetch(api + "/publish-bank", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer " + key
+        },
+        body: JSON.stringify({
+          filename,
+          subject: topic,
+          topic,
+          cadre,
+          title: topic + " — generated",
+          questions: list
+        })
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.ok) {
+        const msg = "Publish failed: " + (data.error || ("HTTP " + res.status)) +
+          (res.status === 401 ? " — set the same ADMIN_KEY on nursevault-nck Worker." : "");
+        if (st) st.textContent = msg;
+        if (typeof abLogError === "function") abLogError(msg, data.error || "", "publish-bank");
+        return;
+      }
+      if (st) st.textContent = "Published " + (data.questionCount || list.length) +
+        " questions to R2 as " + (data.key || filename) + "." +
+        (data.skipped ? (" " + data.skipped + " skipped (did not meet the publish checks).") : "") +
+        ((data.warnings && data.warnings.length) ? (" " + data.warnings.length + " explanation(s) mention option letters: fix them in Banks.") : "") +
+        " Refreshing Banks…";
+      // Update admin counters immediately
+      try {
+        if (typeof abLoadBankFiles === "function") await abLoadBankFiles();
+        if (typeof abLoadBanksCatalog === "function") await abLoadBanksCatalog(true);
+        if (typeof abReloadBanksWorker === "function") await abReloadBanksWorker();
+      } catch (e2) {}
+      const tot = abState.bankTotals && abState.bankTotals.totalQuestions != null
+        ? abState.bankTotals.totalQuestions
+        : null;
+      if (st) st.textContent = "Published " + (data.questionCount || list.length) +
+        " questions → " + (data.key || filename) +
+        (tot != null ? (". R2 total now " + tot + " questions.") : ". Banks list updated.") +
+        (data.skipped ? (" " + data.skipped + " skipped (did not meet the publish checks).") : "") +
+        ((data.warnings && data.warnings.length) ? (" " + data.warnings.length + " explanation(s) mention option letters: fix them in Banks.") : "");
+    } catch (e) {
+      const msg = "Publish failed: " + (e && e.message ? e.message : "network error");
+      if (st) st.textContent = msg;
+      if (typeof abLogError === "function") abLogError(msg, "", "publish-bank");
+    }
+  }
+
+  function abExport(){
+    const list = (abState.questions || []).filter(q => q._status === "accepted").map(abQuestionForExport);
+    if (!list.length) {
+      const st = document.getElementById("abStatus");
+      if (st) st.textContent = "Accept at least one question before downloading.";
+      return;
+    }
+    const blob = new Blob([JSON.stringify({ questions: list }, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "nck-bank-generated.json";
+    a.click();
+    URL.revokeObjectURL(a.href);
+    const st = document.getElementById("abStatus");
+    if (st) st.textContent = "Downloaded " + list.length + " questions. Upload the file to R2 under nck-banks/.";
+  }
+
+  function abCapSource(text){
+    const t = String(text || "").replace(/\u0000/g, " ").trim();
+    const max = 25000;
+    if (t.length > max) return t.slice(0, max);
+    return t;
+  }
+
+  function abApplySource(text, fileName){
+    const ta = document.getElementById("abSource");
+    const st = document.getElementById("abStatus");
+    const full = String(text || "");
+    const capped = abCapSource(full);
+    if (!capped) {
+      if (st) st.textContent = "No readable text found in " + (fileName || "file") + ".";
+      return;
+    }
+    if (ta) ta.value = capped;
+    if (st) {
+      st.textContent = "Loaded " + (fileName || "file") +
+        (full.length > 25000 ? " (trimmed to 25,000 characters)." : " (" + full.length + " characters).");
+    }
+  }
+
+  function abLoadScript(src){
+    return new Promise(function(resolve, reject){
+      const existing = document.querySelector('script[data-ab-src="' + src + '"]');
+      if (existing) {
+        if (existing.getAttribute("data-ab-ready") === "1") return resolve();
+        existing.addEventListener("load", function(){ resolve(); });
+        existing.addEventListener("error", function(){ reject(new Error("Failed to load " + src)); });
+        return;
+      }
+      const s = document.createElement("script");
+      s.src = src;
+      s.async = true;
+      s.setAttribute("data-ab-src", src);
+      s.onload = function(){ s.setAttribute("data-ab-ready", "1"); resolve(); };
+      s.onerror = function(){ reject(new Error("Failed to load " + src)); };
+      document.head.appendChild(s);
+    });
+  }
+
+  async function abExtractPdf(arrayBuffer){
+    // pdf.js from cdnjs
+    await abLoadScript("https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js");
+    const pdfjsLib = window["pdfjs-dist/build/pdf"] || window.pdfjsLib;
+    if (!pdfjsLib) throw new Error("PDF library not available");
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+    const doc = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+    const maxPages = Math.min(doc.numPages, 40);
+    const parts = [];
+    for (let p = 1; p <= maxPages; p++) {
+      const page = await doc.getPage(p);
+      const content = await page.getTextContent();
+      const line = (content.items || []).map(function(it){ return it.str || ""; }).join(" ");
+      if (line.trim()) parts.push(line.trim());
+    }
+    return parts.join("\n\n");
+  }
+
+  async function abExtractDocx(arrayBuffer){
+    await abLoadScript("https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js");
+    if (!window.mammoth) throw new Error("Word library not available");
+    const result = await window.mammoth.extractRawText({ arrayBuffer: arrayBuffer });
+    return (result && result.value) || "";
+  }
+
+  async function abExtractPptx(arrayBuffer){
+    await abLoadScript("https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js");
+    if (!window.JSZip) throw new Error("ZIP library not available for PowerPoint");
+    const zip = await window.JSZip.loadAsync(arrayBuffer);
+    const slideNames = Object.keys(zip.files)
+      .filter(function(n){ return /^ppt\/slides\/slide\d+\.xml$/i.test(n); })
+      .sort(function(a, b){
+        const na = parseInt((a.match(/slide(\d+)/i) || [])[1] || "0", 10);
+        const nb = parseInt((b.match(/slide(\d+)/i) || [])[1] || "0", 10);
+        return na - nb;
+      });
+    if (!slideNames.length) throw new Error("No slides found in this PowerPoint file");
+    const parts = [];
+    for (let s = 0; s < slideNames.length; s++) {
+      const xml = await zip.files[slideNames[s]].async("string");
+      // Extract text from a:t nodes (DrawingML text runs)
+      const texts = [];
+      const re = /<a:t(?:>|\s[^>]*>)([\s\S]*?)<\/a:t>/gi;
+      let m;
+      while ((m = re.exec(xml)) !== null) {
+        const piece = String(m[1] || "")
+          .replace(/&amp;/g, "&")
+          .replace(/&lt;/g, "<")
+          .replace(/&gt;/g, ">")
+          .replace(/&quot;/g, '"')
+          .replace(/&#39;/g, "'")
+          .trim();
+        if (piece) texts.push(piece);
+      }
+      if (texts.length) {
+        parts.push("Slide " + (s + 1) + ":\n" + texts.join(" "));
+      }
+    }
+    const out = parts.join("\n\n").trim();
+    if (!out) throw new Error("No readable text in this PowerPoint (may be image-only slides)");
+    return out;
+  }
+
+
+  async function abLoadFile(input){
+    const file = input && input.files && input.files[0];
+    const st = document.getElementById("abStatus");
+    if (!file) return;
+    const name = (file.name || "").toLowerCase();
+    if (/\.(xlsx?|zip|png|jpe?g|gif|webp)$/i.test(name) || (/\.ppt$/i.test(name) && !/\.pptx$/i.test(name))) {
+      if (st) st.textContent = "Unsupported type. Use .txt, .md, .pdf, .docx, or .pptx.";
+      input.value = "";
+      return;
+    }
+    // Allow larger binaries (PDF/DOCX) but still cap extracted text
+    if (file.size > 12 * 1024 * 1024) {
+      if (st) st.textContent = "File too large (max about 12 MB).";
+      input.value = "";
+      return;
+    }
+    if (st) st.textContent = "Reading " + file.name + "…";
+    try {
+      if (/\.pdf$/i.test(name) || file.type === "application/pdf") {
+        const buf = await file.arrayBuffer();
+        if (st) st.textContent = "Extracting text from PDF…";
+        const text = await abExtractPdf(buf);
+        abApplySource(text, file.name);
+      } else if (/\.docx$/i.test(name) || /wordprocessingml/.test(file.type || "")) {
+        const buf = await file.arrayBuffer();
+        if (st) st.textContent = "Extracting text from Word…";
+        const text = await abExtractDocx(buf);
+        abApplySource(text, file.name);
+      } else if (/\.pptx$/i.test(name) || /presentationml\.presentation/.test(file.type || "")) {
+        const buf = await file.arrayBuffer();
+        if (st) st.textContent = "Extracting text from PowerPoint…";
+        const text = await abExtractPptx(buf);
+        abApplySource(text, file.name);
+      } else if (/\.ppt$/i.test(name) && !/\.pptx$/i.test(name)) {
+        if (st) st.textContent = "Old .ppt format is not supported. Save as .pptx or export text/PDF, or paste the text.";
+        input.value = "";
+      } else if (/\.doc$/i.test(name)) {
+        if (st) st.textContent = "Old .doc format is not supported. Save as .docx or .txt, or paste the text.";
+        input.value = "";
+      } else {
+        // plain text family
+        const text = await new Promise(function(resolve, reject){
+          const reader = new FileReader();
+          reader.onload = function(){ resolve(String(reader.result || "")); };
+          reader.onerror = function(){ reject(new Error("read failed")); };
+          reader.readAsText(file);
+        });
+        abApplySource(text, file.name);
+      }
+    } catch (e) {
+      if (st) st.textContent = "Could not read " + file.name + ": " + (e && e.message ? e.message : "error") +
+        ". Try exporting as .txt or paste the text.";
+    }
+    input.value = "";
+  }
+
+
+  function abSourceFingerprint(text) {
+    const t = String(text || "").toLowerCase().replace(/\s+/g, " ").trim().slice(0, 400);
+    let h = 0;
+    for (let i = 0; i < t.length; i++) h = ((h << 5) - h + t.charCodeAt(i)) | 0;
+    return "src_" + (h >>> 0).toString(16);
+  }
+
+  function abNormalizeStem(s) {
+    return String(s || "")
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, " ")
+      .replace(/\b(the|a|an|patient|nurse|which|what|when|where|how|most|first|priority|appropriate|following)\b/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 160);
+  }
+
+  function abLoadAvoidForSource(source) {
+    try {
+      const key = "nv_avoid_" + abSourceFingerprint(source);
+      const raw = localStorage.getItem(key);
+      const arr = raw ? JSON.parse(raw) : [];
+      return Array.isArray(arr) ? arr.filter(function (x) { return typeof x === "string" && x.length > 15; }).slice(-120) : [];
+    } catch (e) { return []; }
+  }
+
+  function abSaveAvoidForSource(source, stems) {
+    try {
+      const key = "nv_avoid_" + abSourceFingerprint(source);
+      const normSeen = {};
+      const out = [];
+      (stems || []).forEach(function (s) {
+        const n = abNormalizeStem(s);
+        if (!n || n.length < 12) return;
+        if (normSeen[n]) return;
+        normSeen[n] = 1;
+        out.push(String(s).trim().slice(0, 200));
+      });
+      localStorage.setItem(key, JSON.stringify(out.slice(-120)));
+      abState.avoidStems = out.slice(-120);
+    } catch (e) {}
+  }
+
+  async function abGenerate(){
+    const key = abGetKey();
+    if (!key) { renderAdminBank(); return; }
+    abSaveForm();
+    const source = (document.getElementById("abSource") || {}).value || "";
+    const cadre = (document.getElementById("abCadre") || {}).value || "KRCHN";
+    const topic = (document.getElementById("abTopic") || {}).value || "General";
+    const group = (document.getElementById("abGroup") || {}).value || "General";
+    const count = parseInt((document.getElementById("abCount") || {}).value || "8", 10);
+    const st = document.getElementById("abStatus");
+    const busy = document.getElementById("abBusy");
+    const btn = document.getElementById("abGenBtn");
+    if (source.trim().length < 80) {
+      if (st) st.textContent = "Paste a longer source passage first.";
+      return;
+    }
+    if (btn) { btn.disabled = true; btn.textContent = "Generating…"; }
+    if (st) st.textContent = "";
+    if (busy) {
+      busy.style.display = "block";
+      busy.textContent = "Generating " + count + " questions — often 30–90 seconds. Please wait…";
+    }
+    const started = Date.now();
+    const tick = setInterval(() => {
+      if (!busy) return;
+      const s = Math.round((Date.now() - started) / 1000);
+      busy.textContent = "Generating " + count + " questions… " + s + "s elapsed. Keep this tab open.";
+    }, 1000);
+    try {
+      const res = await fetch(NCK_EXPLAIN_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer " + key
+        },
+        body: JSON.stringify({
+          mode: "generate-mcq",
+          sourceText: source,
+          cadre, topic, group, count,
+          avoidStems: (function () {
+            const fromStore = abLoadAvoidForSource(source);
+            const fromDrafts = (abState.questions || []).map(function (q) { return q && q.q; }).filter(Boolean);
+            const fromMem = Array.isArray(abState.avoidStems) ? abState.avoidStems : [];
+            const all = fromStore.concat(fromDrafts).concat(fromMem);
+            const seen = {};
+            const out = [];
+            for (let i = 0; i < all.length; i++) {
+              const s = String(all[i] || "").trim();
+              if (s.length < 15) continue;
+              const k = abNormalizeStem(s);
+              if (!k || seen[k]) continue;
+              seen[k] = 1;
+              out.push(s);
+              if (out.length >= 80) break;
+            }
+            return out;
+          })()
+        })
+      });
+      const data = await res.json().catch(() => ({}));
+      clearInterval(tick);
+      if (!res.ok) {
+        abState.status = (data.error || ("Request failed (" + res.status + ")")) +
+          (data.detail ? (" — " + String(data.detail).slice(0, 160)) : "") +
+          " Tip: if it fails, retry or shorten the source.";
+        if (typeof abLogError === "function") abLogError(abState.status, data.detail || "", "generate-mcq");
+        if (busy) busy.style.display = "none";
+        if (btn) { btn.disabled = false; btn.textContent = "Generate questions"; }
+        if (st) st.textContent = abState.status;
+        return;
+      }
+      const list = Array.isArray(data.questions) ? data.questions : [];
+      abState.questions = list.map(q => Object.assign({}, q, {
+        _status: "pending",
+        topic: q.topic || topic,
+        group: q.group || group,
+        cadre: q.cadre || cadre
+      }));
+      // Persist stems for this source (survives refresh) so repeats are blocked
+      const prev = abLoadAvoidForSource(source);
+      const merged = prev.concat(list.map(function (q) { return q && q.q; }).filter(Boolean));
+      abSaveAvoidForSource(source, merged);
+      const dropped = data.droppedByVerifier != null ? data.droppedByVerifier : 0;
+      const vs = data.verifier || (data.verified ? "ran" : "");
+      const why = data.stats && data.stats.dropped ? Object.keys(data.stats.dropped).map(function (k) { return k + " " + data.stats.dropped[k]; }).join(", ") : "";
+      const verNote =
+        vs === "ran" ? (dropped > 0 ? (" Verifier removed " + dropped + " weak item(s).") : " Verifier passed.")
+        : vs === "partial" ? " Some candidates failed to complete every check and were discarded; review any flags on returned drafts."
+        : vs === "unavailable" ? " The independent verifier was unavailable, so no draft was cleared. Retry when the verifier is available."
+        : vs === "skipped" ? " Verifier skipped."
+        : "";
+      const whyNote = why ? (" Filtered: " + why + ".") : "";
+      const repNote = (data.stats && data.stats.repaired) ? (" Auto-rewrote " + data.stats.repaired + " weak item(s).") : "";
+      const shortNote = (data.requested && list.length < data.requested) ? (" Asked for " + data.requested + ", " + list.length + " passed the checks.") : "";
+      const tk = data.stats && data.stats.tokens ? data.stats.tokens : null;
+      const tokNote = tk ? (" Used " + (tk.input + tk.output).toLocaleString() + " tokens (" + tk.input.toLocaleString() + " in, " + tk.output.toLocaleString() + " out) over " + (data.stats.modelCalls || 0) + " model calls.") : "";
+      const detNote = (data.detail && list.length < (data.requested || 0)) ? (" " + data.detail) : "";
+      const avoidN = abLoadAvoidForSource(source).length;
+      abState.status = list.length
+        ? ("Drafted " + list.length + " in " + Math.round((Date.now() - started) / 1000) + "s." + verNote +
+           " Avoiding " + avoidN + " prior stem(s) for this source." + shortNote + repNote + whyNote + tokNote + detNote + " Review below.")
+        : ("No questions returned." + verNote + whyNote + detNote + tokNote + " Open the browser console or send me the 'Filtered' list above if this keeps happening.");
+      renderAdminBank();
+    } catch (e) {
+      clearInterval(tick);
+      abState.status = "Could not reach the AI Worker.";
+      if (typeof abLogError === "function") abLogError(abState.status, String(e && e.message || e), "generate-mcq");
+      if (busy) busy.style.display = "none";
+      if (btn) { btn.disabled = false; btn.textContent = "Generate questions"; }
+      if (st) st.textContent = abState.status;
+    }
+  }
+
+
+
+  // Boot
+  document.addEventListener("DOMContentLoaded", function () {
+    try { openAdminBankPage(); } catch (e) { console.error(e); }
+  });
+  </script>
+</body>
+</html>
