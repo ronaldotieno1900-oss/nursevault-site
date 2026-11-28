@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#173F35" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0D1614" media="(prefers-color-scheme: dark)" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+<title>NurseVault — Study materials for nursing & medical students</title>
+<meta name="description" content="Study with NurseVault: Drug Cards, NCK Prep, OSCE checklists, ward tools, and a Care Plan Builder for nursing and medical students in Kenya.">
+<meta property="og:title" content="NurseVault — Study materials for nursing & medical students">
+<meta property="og:description" content="Drug Cards, NCK Prep, OSCE checklists, ward tools, and a Care Plan Builder for nursing and medical students in Kenya.">
+
+<link rel="manifest" href="manifest.json" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="NurseVault" />
+<meta name="application-name" content="NurseVault" />
+<link rel="apple-touch-icon" href="icon-192.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=becca184">
+
+<script>
+  (function(){
+    window.__splashStart = Date.now(); // marks when the splash screen appeared, so it's shown for a decent minimum even on a fast/cached load
+    try{
+      var saved = localStorage.getItem('nv-theme');
+      if (saved === 'light' || saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
+    }catch(e){ /* private mode / storage blocked — fall back to System */ }
+  })();
+</script>
+
+</head>
+<body>
+
+<noscript></noscript>
+<div id="splash-screen" aria-hidden="true">
+  <div class="splash-word">Nurse<span>Vault</span></div>
+</div>
+
+<header>
+  <div class="header-row">
+    <a class="wordmark" href="#/" aria-label="NurseVault home">Nurse<span>Vault</span></a>
+    <nav class="main-nav" aria-label="Main">
+      <div class="nav-dd">
+        <button type="button" class="nav-dd-btn" aria-haspopup="true">Resources <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="nav-dd-menu">
+          <a href="#/categories">All categories</a>
+          <a href="#/osce">OSCE checklists</a>
+          <a href="#/tools">Ward tools</a>
+          <a href="#/careplan">Care plans</a>
+          <a href="#subscribe">Plans &amp; pricing</a>
+          <a href="#/shop">Shop</a>
+        </div>
+      </div>
+      <a href="#/nck-prep">NCK Prep</a>
+      <a href="#/drug-cards">Drug Cards</a>
+      <a href="#about">About</a>
+      <button type="button" class="nav-link" onclick="toggleSupport()" aria-haspopup="dialog" aria-controls="support-sidebar">Support</button>
+    </nav>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <a class="nav-cta" href="#/nck-prep">Start free practice <span aria-hidden="true">&#8599;</span></a>
+      <button class="search-btn" onclick="openSearch()" aria-label="Search resources" title="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <span class="theme-label">Search</span>
+      </button>
+      <button class="theme-btn" id="themeBtn" onclick="cycleTheme()" aria-label="Display mode">
+        <span class="theme-icon" id="themeIcon"></span>
+      </button>
+      <button class="account-btn" id="accountBtn" onclick="openAccountModal()">Log in</button>
+      <button class="cart-btn" onclick="toggleCart()">
+        <svg class="cart-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+        Cart
+        <span id="cart-count" class="cart-count">0</span>
+      </button>
+      <button class="support-btn" onclick="toggleSupport()" aria-haspopup="dialog" aria-controls="support-sidebar" aria-label="Support and settings">
+        <span class="theme-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+        <span class="theme-label">Support</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="welcome-back" role="status" data-tone="afternoon">
+  <div class="wb-ic" id="wbIcon" aria-hidden="true"></div>
+  <div class="wb-copy"><strong id="wbHead"></strong><span id="wbText"></span></div>
+  <button type="button" class="wb-go" onclick="dismissWelcome();continueStudying()">Continue studying</button>
+  <button type="button" class="wb-x" aria-label="Dismiss greeting" onclick="dismissWelcome()">&times;</button>
+</div>
+
+<section class="hero">
+<div class="shell">
+  <aside class="side-nav" id="categories">
+    <div class="side-nav-title" id="catToggle" role="button" tabindex="0"
+         aria-expanded="true" aria-controls="sideNavList"
+         onclick="toggleCategories()"
+         onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleCategories();}">
+      Categories
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+    <div class="cat-list" id="sideNavList"></div>
+  </aside>
+
+  <div class="shell-main">
+
+<script>if(!document.body.dataset.page)document.body.dataset.page='home';</script>
+
+<section class="fx fx-hero" id="fx-top" aria-labelledby="fx-h1">
+  <div class="fx-in">
+    <div class="fx-hero-grid">
+      <div>
+        <span class="fx-eyebrow fx-dash">Made for nursing students in Kenya</span>
+        <h1 id="fx-h1">Big ambitions.<br>A little more<br>pocket-sized.</h1>
+        <p class="fx-lead">Your study space, from classroom to ward.</p>
+        <p class="fx-sub">Prepare for NCK exams, make sense of drug classes, and build practical confidence &mdash; one focused study session at a time.</p>
+        <div class="fx-cta-row">
+          <a class="fx-btn" href="#/nck-prep">Start free NCK practice <span aria-hidden="true">&rarr;</span></a>
+          <a class="fx-btn ghost" href="#/drug-cards">Explore Drug Cards <span aria-hidden="true">&#8599;</span></a>
+        </div>
+        <p class="fx-note">Free account to get started. Drug Cards sold separately.</p>
+      </div>
+      <div class="fx-art" aria-hidden="true">
+        <span class="fx-art-eyebrow">A little clarity, always close.</span>
+        <div class="fx-dc back"><small>Drug Cards / Class 02</small><b>ACE Inhibitors &amp; ARBs</b><span class="ln"></span><span class="ln s"></span><span class="ln"></span><em>Class overview &middot; Key medicines</em></div>
+        <div class="fx-dc front"><small>Drug Cards / Class 01</small><b>Beta-Blockers</b><div class="chips"><span>Overview</span><span>Metoprolol</span><span>Carvedilol</span></div><p>One class. The essentials, organised.</p><em>PDF + editable PowerPoint</em></div>
+        <div class="fx-pill">Small format. Clear focus. Ready to study.</div>
+        <span class="fx-count">02 / 02</span>
+      </div>
+    </div>
+    <div class="fx-trust" id="about">
+      <span><b>Made by a nurse,</b> for nursing students</span>
+      <span>NCK practice</span>
+      <span>Practical preparation</span>
+      <span>M-Pesa &amp; card payments</span>
+    </div>
+  </div>
+</section>
+
+<section class="fx fx-res fx-sec" id="resources" aria-labelledby="fx-res-h">
+  <div class="fx-in">
+    <div class="fx-head">
+      <div><span class="fx-eyebrow">Your study space</span><h2 class="fx-h2" id="fx-res-h">For every part of the journey.</h2></div>
+      <p class="aside">Choose what you need today. Come back for what comes next.</p>
+    </div>
+    <div class="fx-res-grid">
+      <a class="fx-rc main" href="#/nck-prep"><small>01 / Licensing exam</small><h3>NCK Prep</h3><p>Free practice to get started. Topic revision, past papers and timed mock exams.</p><span class="go">Start practising &#8599;</span></a>
+      <a class="fx-rc" href="#/osce"><small>02 / Practicals</small><h3>OSCE checklists</h3><p>Step-by-step station checklists for your nursing practical exams.</p><span class="go">Explore checklists &#8599;</span></a>
+      <a class="fx-rc" href="#/tools"><small>03 / On the ward</small><h3>Ward tools</h3><p>Calculators and focused reference tools for time on the ward.</p><span class="go">Browse tools &#8599;</span></a>
+      <a class="fx-rc" href="#/careplan"><small>04 / Care planning</small><h3>Care Plan Builder</h3><p>Turn your nursing knowledge into a structured plan. Two free plans each month.</p><span class="go">Build a care plan &#8599;</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="fx fx-nck fx-sec" id="fx-nck" aria-labelledby="fx-nck-h">
+  <div class="fx-in">
+    <div class="fx-nck-grid">
+      <div>
+        <span class="fx-eyebrow">NCK Prep / How it works</span>
+        <h2 class="fx-h2" id="fx-nck-h">Less cramming.<br>More understanding.</h2>
+        <p class="lead">Build a revision routine that works for you. Start free, test what you know, and give the tricky topics a little more time.</p>
+        <ol class="fx-steps">
+          <li><i>01</i><div><b>Choose your focus</b><span>Pick an NCK topic or a past paper.</span></div></li>
+          <li><i>02</i><div><b>Practise with purpose</b><span>Try topic questions or a timed mock exam.</span></div></li>
+          <li><i>03</i><div><b>Understand the why</b><span>Read explanations, ask Vault AI, track your gaps.</span></div></li>
+        </ol>
+        <a class="fx-btn" href="#/nck-prep">Start free NCK practice <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="fx-mock" aria-hidden="true">
+        <div class="fx-mock-bar"><b>NurseVault / NCK Prep</b><span>STEP PREVIEW</span></div>
+        <div class="fx-mock-body">
+          <h3>Make today a focused one.</h3>
+          <p>Choose how you want to practise</p>
+          <div class="fx-opt on"><i>01</i><div><b>Topic practice</b><small>Subject by subject</small></div><span class="dot"></span></div>
+          <div class="fx-opt"><i>02</i><div><b>Past papers</b><small>Paper by paper</small></div><span class="dot"></span></div>
+          <div class="fx-opt"><i>03</i><div><b>Timed mock exams</b><small>Practise under exam conditions</small></div><span class="dot"></span></div>
+          <div class="fx-vai"><b>Vault AI</b><span>A clearer explanation when you need one.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+    <div>
+      <h1>Study materials that fit in your scrub pocket.</h1>
+      <p class="lead">Drug cards, flashcards, and rapid-review guides made by a nurse who used them to get through clinicals — built for quick recall, not for reading cover to cover.</p>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="selectSidebarCat('all')">See all resources</button>
+        <button class="btn-text" onclick="openSamplePreview(102,'ACE Inhibitors & ARBs')">Try a free sample</button>
+      </div>
+      <div class="hero-chips"><a href="#/drug-cards">Drug cards</a><a href="#/flashcards">Flashcards</a><a href="#/nck-prep">NCK Prep</a></div>
+      <p class="hero-price">Pay with M-Pesa or card and download instantly.</p>
+    </div>
+
+    <div class="card-fan" aria-hidden="true">
+      <div class="fcard cf-1" style="--c:var(--blue)">
+        <span class="fc-class">Penicillins</span>
+        <div class="fc-name">Amoxicillin</div>
+        <ul>
+          <li>Kills bacteria by blocking cell-wall building</li>
+          <li>Ask about penicillin allergy first</li>
+          <li>Watch for rash or trouble breathing</li>
+        </ul>
+      </div>
+      <div class="fcard cf-3" style="--c:var(--purple)">
+        <span class="fc-class">Respiratory</span>
+        <div class="fc-name">Salbutamol</div>
+        <ul>
+          <li>Opens narrowed airways fast</li>
+          <li>May cause tremor and a fast heartbeat</li>
+          <li>Check inhaler technique</li>
+        </ul>
+      </div>
+      <div class="fcard cf-4" style="--c:var(--coral)">
+        <span class="fc-class">Beta-blockers</span>
+        <div class="fc-name">Atenolol</div>
+        <ul>
+          <li>Lowers heart rate and blood pressure</li>
+          <li>Check pulse and BP before each dose</li>
+          <li>Never stop suddenly</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="catalog" id="catalog">
+  <div class="wrap">
+    <nav class="cat-crumb" aria-label="Breadcrumb">
+      <a href="#/">Home</a>
+      <span class="crumb-sep" aria-hidden="true">/</span>
+      <a href="#/categories">Categories</a>
+      <span class="crumb-sep" aria-hidden="true">/</span>
+      <span id="catCrumbCurrent">Resources</span>
+    </nav>
+    <div class="cat-switch" id="catSwitch" role="navigation" aria-label="Jump to category"></div>
+    <div class="catalog-head">
+      <div>
+        <h2 id="catalogTitle">All resources</h2>
+        <p class="cat-desc" id="catDesc"></p>
+      </div>
+      <div class="count"><span id="product-count">8</span> <span id="product-count-word">items</span></div>
+    </div>
+    <div class="catalog-toolbar">
+      <div class="catalog-filters" role="group" aria-label="Filter resources">
+        <button type="button" class="cat-filter" data-filter="all" onclick="setCatalogFilter('all')">All</button>
+        <button type="button" class="cat-filter active" data-filter="ready" onclick="setCatalogFilter('ready')">Ready now</button>
+        <button type="button" class="cat-filter" data-filter="soon" onclick="setCatalogFilter('soon')">Coming soon</button>
+      </div>
+      <label class="sr-only" for="catalogSort" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Sort</label>
+      <select id="catalogSort" class="catalog-sort" onchange="setCatalogSort(this.value)" aria-label="Sort resources">
+        <option value="default">Default order</option>
+        <option value="name">Name A–Z</option>
+        <option value="price-asc">Price: low to high</option>
+        <option value="price-desc">Price: high to low</option>
+      </select>
+    </div>
+    <div id="products-grid"></div>
+  </div>
+</section>
+
+<section class="fx fx-plans fx-sec" id="subscribe" aria-labelledby="fx-plans-h">
+  <div class="fx-in">
+    <div class="fx-head">
+      <div><span class="fx-eyebrow">Choose your pace</span><h2 class="fx-h2" id="fx-plans-h">A clear plan for the next stretch.</h2></div>
+      <p class="aside">Free practice to get started, or paid access to every ready NCK Prep topic and unlimited Care Plan Builder plans. Choose the duration that suits your revision.</p>
+    </div>
+    <div class="fx-plan-grid" aria-label="NurseVault plans">
+      <div class="fx-plan">
+        <small class="k">Free</small>
+        <div class="fx-price">KES 0</div>
+        <div class="fx-period">Free account</div>
+        <p class="desc">Start with free NCK practice and sample questions, plus 2 Care Plan Builder plans each month.</p>
+        <ul><li>NCK practice and sample questions</li><li>2 Care Plan Builder plans each month</li></ul>
+        <p class="extra">Drug Card packs are purchased separately.</p>
+        <button type="button" class="fx-btn ghost" onclick="openAccountModal()">Get started free</button>
+      </div>
+      <div class="fx-plan">
+        <small class="k">Weekly</small>
+        <div class="fx-price">KES 300</div>
+        <div class="fx-period">7 days &middot; renew manually</div>
+        <p class="desc">All ready NCK Prep topics and unlimited Care Plan Builder plans for 7 days.</p>
+        <ul><li>All ready NCK Prep topics</li><li>Unlimited Care Plan Builder plans</li></ul>
+        <p class="extra">Drug Card packs are purchased separately.</p>
+        <button type="button" class="fx-btn dark" onclick="startSubscription('weekly')">Choose weekly</button>
+      </div>
+      <div class="fx-plan feat">
+        <span class="fx-badge">Save KES 300</span>
+        <small class="k">Monthly</small>
+        <div class="fx-price">KES 900</div>
+        <div class="fx-period">30 days &middot; renew manually</div>
+        <span class="fx-save">KES 300 less than four weekly plans</span>
+        <p class="desc">The same paid access: all ready NCK Prep topics and unlimited Care Plan Builder plans.</p>
+        <ul><li>All ready NCK Prep topics</li><li>Unlimited Care Plan Builder plans</li></ul>
+        <p class="extra">Drug Card packs are purchased separately.</p>
+        <button type="button" class="fx-btn" onclick="startSubscription('monthly')">Choose monthly</button>
+      </div>
+    </div>
+    <p class="fx-plan-note"><b>Paid access renews manually.</b> No automatic billing when your 7- or 30-day period ends. Drug Cards are separate purchases, and availability is shown for each class.</p>
+  </div>
+</section>
+
+<section class="fx fx-drug fx-sec" id="fx-drugcards" aria-labelledby="fx-drug-h">
+  <div class="fx-in">
+    <div class="fx-head">
+      <div><span class="fx-eyebrow">The pocket reference</span><h2 class="fx-h2" id="fx-drug-h">Your notes. A little more organised.</h2></div>
+      <p class="aside">Focused Drug Cards for quick recall, without the scattered PDFs.</p>
+    </div>
+    <div class="fx-drug-grid">
+      <div class="fx-stage" aria-hidden="true">
+        <div class="fx-stage-cap">One class. Two sides. A clearer picture.</div>
+        <div class="fx-flip">
+          <div class="fx-fc front"><small>Front / Quick recall</small><h4>Beta-Blockers</h4><small>Drug class reference</small><ul><li>Class overview</li><li>Metoprolol</li><li>Carvedilol</li><li>Atenolol</li></ul></div>
+          <div class="fx-fc back"><small>Back / The details</small><h4>The nursing perspective.</h4><ul><li>Contraindications</li><li>Side effects</li><li>Nursing considerations</li></ul></div>
+        </div>
+        <div class="fx-stage-foot">Print-ready PDF + editable PowerPoint</div>
+      </div>
+      <div>
+        <h3 class="fx-sub-h" style="font-size:1.6rem">Built for the way you revise.</h3>
+        <ul class="fx-list">
+          <li><i>01</i><div><b>Colour-coded by class</b><span>Related medicines, easy to compare at a glance.</span></div></li>
+          <li><i>02</i><div><b>Double-sided, thoughtfully organised</b><span>Quick-glance facts on the front. More detail on the back.</span></div></li>
+          <li><i>03</i><div><b>Choose your focus</b><span>Explore each therapeutic class and buy only what you need.</span></div></li>
+        </ul>
+        <a class="fx-btn" href="#/drug-cards">Browse Drug Cards <span aria-hidden="true">&rarr;</span></a>
+        <p class="fx-small">Separate purchase from NCK Prep subscriptions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fx fx-buy" aria-labelledby="fx-buy-h">
+  <div class="fx-in fx-sec">
+    <span class="fx-eyebrow">From the vault to your pocket</span>
+    <h2 class="fx-h2" id="fx-buy-h">Pick. Pay. Start studying.</h2>
+    <div class="fx-buy-grid">
+      <div><i>01</i><h3>Choose your class</h3><p>Browse therapeutic classes. Each pack shows whether it is ready now or coming soon.</p></div>
+      <div><i>02</i><h3>Pay your way</h3><p>Check out securely with M-Pesa, Airtel Money or card. Use your email for your receipt.</p></div>
+      <div><i>03</i><h3>Download &amp; make it yours</h3><p>Once payment is confirmed, download your print-ready PDF and editable PowerPoint.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="fx fx-phone fx-sec" id="fx-phone" aria-labelledby="fx-phone-h">
+  <div class="fx-in">
+    <div class="fx-phone-grid">
+      <div class="fx-phone-stage" aria-hidden="true">
+        <div class="fx-device">
+          <div class="fx-dev-top"><span>9:41</span><span>&bull;&bull;&bull;</span></div>
+          <div class="fx-dev-url">nursevault.co.ke</div>
+          <div class="fx-dev-brand">NurseVault</div>
+          <div class="fx-dev-body"><h4>Your next little breakthrough.</h4><p>What are you studying today?</p>
+            <div class="fx-tiles"><span class="a">NCK Prep</span><span class="b">OSCE</span><span class="c">Ward tools</span><span class="d">Care plans</span></div>
+            <div class="fx-dev-ai">Ask Vault AI &#8599;</div></div>
+        </div>
+      </div>
+      <div>
+        <span class="fx-eyebrow">Your study space, on the go</span>
+        <h2 class="fx-h2" id="fx-phone-h">A spare moment.<br>A little progress.</h2>
+        <p class="lead">On the bus. Between classes. Before a shift. NurseVault runs in your phone&rsquo;s browser, so your next study session is always within reach.</p>
+        <ul class="fx-checks">
+          <li>Open in Chrome or Safari &mdash; no app store download</li>
+          <li>Add to your home screen for one-tap access</li>
+          <li>Pay with M-Pesa on the same phone</li>
+        </ul>
+        <p class="fx-hint"><b>Android:</b> Chrome menu &rarr; Install app<br><b>iPhone:</b> Safari Share &rarr; Add to Home Screen</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fx fx-faq fx-sec" id="faq" aria-labelledby="fx-faq-h">
+  <div class="fx-in">
+    <div class="fx-faq-grid">
+      <div class="fx-faq-side">
+        <span class="fx-eyebrow">A little clarity</span>
+        <h2 class="fx-h2" id="fx-faq-h">Good questions.<br>Clear answers.</h2>
+        <p>Everything you want to know before you get started. Still have a question? I&rsquo;m here to help.</p>
+        <button type="button" class="fx-btn ghost" onclick="document.getElementById('fx-support').scrollIntoView({behavior:'smooth',block:'start'})">Talk to support <span aria-hidden="true">&#8599;</span></button>
+      </div>
+      <div>
+        <div class="fx-qs">
+          <details class="fx-q" open><summary>What does the free plan include?</summary><p>A free account gets you started with NCK practice and sample questions, plus two care plans each month. Drug Cards are bought separately.</p></details>
+          <details class="fx-q"><summary>What comes with a paid subscription?</summary><p>Weekly and monthly plans unlock every ready NCK Prep topic and unlimited Care Plan Builder plans for the duration of your plan.</p></details>
+          <details class="fx-q"><summary>Will my subscription renew automatically?</summary><p>No. Paid access renews manually. Your access lasts for 7 or 30 days, and there is no automatic billing when the period ends.</p></details>
+          <details class="fx-q"><summary>What is Vault AI?</summary><p>Vault AI is the built-in tutor for practice questions. When an explanation is not clear enough, tap &ldquo;Still unclear? Ask Vault AI&rdquo; to get a plain-language explanation of why an answer is right or wrong, then ask follow-up questions. Each account has a daily Vault AI allowance, and paid plans get a larger one. The written explanations that come with questions are free to read and do not use your allowance.</p></details>
+          <details class="fx-q"><summary>Are Drug Cards included in a subscription?</summary><p>No. Drug Card packs are separate purchases, and the Drug Cards page shows which classes are ready or coming soon.</p></details>
+          <details class="fx-q"><summary>Can I use NurseVault on my phone?</summary><p>Yes. NurseVault runs in your phone&rsquo;s browser, so there is nothing to download from an app store. For one-tap access, add it to your home screen: in Chrome on Android choose Install app or Add to Home screen, and in Safari on iPhone tap Share, then Add to Home Screen. You need an internet connection to sign in and to use Vault AI.</p></details>
+          <details class="fx-q"><summary>Which courses is NurseVault for?</summary><p>NCK Prep and the OSCE checklists are written for Kenyan nursing programmes, including KRCHN and BScN. Open NCK Prep to see which topics are ready for your level.</p></details>
+          <details class="fx-q"><summary>What is NCK Prep?</summary><p>NCK Prep is the practice area for nursing students preparing for the Nursing Council of Kenya licensing exam. It has topic practice, past papers, timed mock exams and progress tracking. You can try free practice and sample questions with a free account, and paid plans unlock every ready topic.</p></details>
+          <details class="fx-q"><summary>What format are the drug cards in?</summary><p>Each deck comes as a print-ready PDF (double-sided, one drug per card) so you can print and cut them out, plus an editable PowerPoint version if you want to tweak or add your own cards.</p></details>
+          <details class="fx-q"><summary>How can I pay?</summary><p>Checkout supports M-Pesa, Airtel Money and card, and prices are in KES. If you choose mobile money, you will get a prompt on your phone to approve the payment.</p></details>
+          <details class="fx-q"><summary>A class I need says &ldquo;coming soon&rdquo;. When will it be ready?</summary><p>New classes are being added regularly. If you need one urgently, message us on WhatsApp or email support@nursevault.co.ke and it will help decide what gets built next.</p></details>
+          <details class="fx-q"><summary>Can I get all the drug classes at once?</summary><p>The Complete Drug Reference Bundle is planned for when all classes are finished. The Drug Cards page shows current availability.</p></details>
+          <details class="fx-q"><summary>Is NurseVault affiliated with the Nursing Council of Kenya?</summary><p>No. NurseVault is an independent study platform and is not affiliated with, run by or endorsed by NCK or any licensing body. It is built to complement your coursework and revision, not replace official exam preparation.</p></details>
+        </div>
+        <div class="fx-caution"><b>A study companion, not a clinical decision-maker.</b>Check explanations and Vault AI answers against current guidance and your course materials.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fx fx-support" id="fx-support" aria-labelledby="fx-support-h">
+  <div class="fx-in fx-sec">
+    <div class="fx-support-grid">
+      <div>
+        <span class="fx-eyebrow">Real people, a little help</span>
+        <h2 class="fx-h2" id="fx-support-h">Stuck? Talk to a person.</h2>
+        <p class="t">An order, a download or a question about your plan. Send a message and we&rsquo;ll help sort it out.</p>
+      </div>
+      <div class="fx-contact">
+        <a class="wa" href="https://wa.me/254787589949" target="_blank" rel="noopener">Chat on WhatsApp &#8599;<small>+254 787 589 949</small></a>
+        <a class="em" href="https://mail.google.com/mail/?view=cm&fs=1&to=support%40nursevault.co.ke&su=NurseVault%20support" target="_blank" rel="noopener">Email support &#8599;<small>support@nursevault.co.ke</small></a>
+      </div>
+    </div>
+    <div class="fx-shop">
+      <small>Coming soon</small>
+      <h3>NurseVault Shop</h3>
+      <p>Scrubs, stethoscopes, lab coats &amp; more. Get one email when the shop opens.</p>
+      <button type="button" class="fx-btn ghost" onclick="openNotify('shop','NurseVault%20Shop')">Notify me <span aria-hidden="true">&#8599;</span></button>
+    </div>
+  </div>
+</section>
+
+<section class="fx fx-final" aria-labelledby="fx-final-h">
+  <div class="fx-in fx-sec">
+    <span class="fx-eyebrow">A little practice goes a long way</span>
+    <h2 id="fx-final-h">Your next breakthrough starts here.</h2>
+    <p>Start with free NCK practice. Find your focus. Keep going.</p>
+    <div class="fx-cta-row">
+      <a class="fx-btn lg" href="#/nck-prep">Start free NCK practice <span aria-hidden="true">&rarr;</span></a>
+      <a class="fx-btn ghost lg" href="#/drug-cards">Explore Drug Cards <span aria-hidden="true">&#8599;</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="categories-page" id="categories-page">
+  <div class="wrap">
+    <nav class="page-crumb" aria-label="Breadcrumb"><a href="#/">Home</a> <span class="crumb-sep">/</span> <span>Categories</span></nav>
+    <h2 class="page-title">Categories</h2>
+    <p class="page-sub">Browse NurseVault study materials by type.</p>
+    <div class="cats-grid" id="categoriesGrid"></div>
+  </div>
+</section>
+
+<section class="nck-page" id="nck-page">
+  <div class="wrap">
+    <nav class="page-crumb" aria-label="Breadcrumb"><a href="#/">Home</a> <span class="crumb-sep">/</span> <span>NCK Prep</span></nav>
+    <div id="nckRoot"></div>
+  </div>
+</section>
+
+<section class="tools-page" id="tools-page">
+  <div class="wrap">
+    <nav class="page-crumb" aria-label="Breadcrumb"><a href="#/">Home</a> <span class="crumb-sep">/</span> <span>Ward tools</span></nav>
+    <h2 class="wt-title">Ward tools</h2>
+    <p class="wt-note"><b>For learning and quick checks.</b> Always confirm every calculation against the prescription, your hospital protocol, and a second nurse. Never rely on one calculation alone for patient care.</p>
+    <div id="toolsRoot" class="wt-grid"></div>
+  </div>
+</section>
+<section class="osce-page" id="osce-page">
+  <div class="wrap">
+    <nav class="page-crumb" aria-label="Breadcrumb"><a href="#/">Home</a> <span class="crumb-sep">/</span> <a href="#/categories">Categories</a> <span class="crumb-sep">/</span> <span>OSCE</span></nav>
+    <h2 class="page-title">OSCE checklists</h2>
+    <p class="osce-intro">Expandable checklists for nursing OSCE and practical exams in Kenya (KRCHN, BScN, and related programmes). Each procedure includes purpose, current practice principles, equipment, critical pass/fail points, and a full step list you can tick as you practise. Progress is saved on this device only. These are study aids — not official NCK mark sheets; always follow your school scheme, hospital protocol, and tutors.</p>
+    <div id="osceRoot"></div>
+    <p class="osce-note">These lists support revision and simulation practice. They are not an official Nursing Council of Kenya mark sheet. Confirm required steps with your tutors.</p>
+  </div>
+</section>
+<section class="careplan-page" id="careplan-page">
+  <div class="wrap">
+    <nav class="page-crumb" aria-label="Breadcrumb"><a href="#/">Home</a> <span class="crumb-sep">/</span> <a href="#/categories">Categories</a> <span class="crumb-sep">/</span> <span>Care plans</span></nav>
+    <div id="careplanRoot"></div>
+  </div>
+</section>
+
+<dialog id="onboard-modal" aria-labelledby="obTitle"><div id="obBody"></div></dialog>
+
+<section class="shop-section" id="shop">
+  <div class="wrap">
+    <nav class="page-crumb" aria-label="Breadcrumb"><a href="#/">Home</a> <span class="crumb-sep">/</span> <span>Shop</span></nav>
+    <span class="shop-badge">Opening soon</span>
+    <h2 class="page-title">NurseVault Shop</h2>
+    <p class="page-sub">Gear up for every shift. Beyond the study materials, we're building a shop for the everyday essentials of nursing life: the tools you carry, the uniform you wear, and the small things that make a long shift easier.</p>
+    <div class="shop-grid">
+      <div class="shop-card">
+        <div class="shop-icon" style="background:var(--coral)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v6a4 4 0 008 0V3"/><path d="M10 13v2a5 5 0 0010 0v-1"/><circle cx="19" cy="12" r="2"/></svg></div>
+        <h3>Stethoscopes</h3>
+        <p>Hear every heartbeat and breath sound clearly, from your first clinical placement to your first ward round.</p>
+      </div>
+      <div class="shop-card">
+        <div class="shop-icon" style="background:var(--green)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 11-11-3-3L5 16z"/></svg></div>
+        <h3>Pens</h3>
+        <p>Dependable pens for charting, notes and handovers. The small thing you'll reach for a hundred times a shift.</p>
+      </div>
+      <div class="shop-card">
+        <div class="shop-icon" style="background:var(--gold)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l9 9-8 8z"/><circle cx="7.5" cy="8.5" r="1"/></svg></div>
+        <h3>Name tags</h3>
+        <p>Introduce yourself with confidence. Clear, professional name tags for placements, wards and interviews.</p>
+      </div>
+      <div class="shop-card">
+        <div class="shop-icon" style="background:var(--blue)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2h6v5l2 3v12H7V10l2-3z"/></svg></div>
+        <h3>Torches</h3>
+        <p>Slim pen torches for quick assessments, small enough to clip on and always ready when you need them.</p>
+      </div>
+      <div class="shop-card">
+        <div class="shop-icon" style="background:var(--purple)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3l-5 4 3 3 2-1v12h8V9l2 1 3-3-5-4a4 4 0 01-8 0z"/></svg></div>
+        <h3>Scrubs</h3>
+        <p>Comfortable, easy-care scrubs made for long shifts on your feet, so you can focus on your patients, not your uniform.</p>
+      </div>
+      <div class="shop-card">
+        <div class="shop-icon" style="background:var(--coral)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3l-5 4v14h16V7l-5-4-3 5z"/></svg></div>
+        <h3>Lab coats</h3>
+        <p>A clean, professional look for clinicals, labs and ward rounds, from the very first day.</p>
+      </div>
+    </div>
+    <p class="shop-note">Want to know the moment the shop opens? <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello%40nursevault.co.ke&su=NurseVault%20shop%20updates" target="_blank" rel="noopener">Email us</a> and we'll keep you posted.</p>
+  </div>
+</section>
+
+<footer class="fx fx-footer">
+  <div class="fx-in">
+    <div class="fx-foot-grid">
+      <div class="fx-foot-brand">
+        <div class="fx-foot-word">Nurse<span>Vault</span></div>
+        <p>Small format. Clear focus.</p>
+        <p class="small">Made by a nurse, for nursing students in Kenya.</p>
+      </div>
+      <div class="fx-foot-col"><h4>Study</h4><a href="#/nck-prep">NCK Prep</a><a href="#/drug-cards">Drug Cards</a><a href="#/osce">OSCE checklists</a></div>
+      <div class="fx-foot-col"><h4>Practise</h4><a href="#/tools">Ward tools</a><a href="#/careplan">Care Plan Builder</a><a href="#/nck-prep">Vault AI</a></div>
+      <div class="fx-foot-col"><h4>NurseVault</h4><a href="#about">About</a><a href="#" role="button" onclick="event.preventDefault();toggleSupport()">Support</a><a href="#subscribe">Plans &amp; pricing</a><a href="#/shop">Shop &middot; Coming soon</a></div>
+    </div>
+    <div class="fx-foot-bottom">
+      <span>&copy; 2026 NurseVault. All rights reserved.</span>
+      <nav aria-label="Legal">
+        <a href="#" role="button" onclick="event.preventDefault();openLegal('privacy')">Privacy</a>
+        <a href="#" role="button" onclick="event.preventDefault();openLegal('terms')">Terms</a>
+        <a href="#" role="button" onclick="event.preventDefault();openLegal('refund')">Refunds &amp; delivery</a>
+        <a href="#" role="button" onclick="event.preventDefault();openLegal('contact')">Contact</a>
+        <span>M-Pesa &middot; Card</span>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+</div>
+</div>
+</section>
+
+  </div>
+</div>
+
+<div id="cart-overlay" onclick="toggleCart()"></div>
+<div id="cart-sidebar" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+  <div class="cart-head pop-head">
+    <div class="account-modal-top">
+      <div class="account-brand">
+        <span class="account-brand-mark" aria-hidden="true">✦</span>
+        <span class="account-brand-copy">
+          <span class="account-brand-name">Nurse<span>Vault</span></span>
+          <span class="account-brand-caption">YOUR STUDY SPACE</span>
+        </span>
+      </div>
+      <button type="button" class="pop-close" aria-label="Close cart" onclick="toggleCart()">×</button>
+    </div>
+    <div class="account-intro">
+      <p class="account-eyebrow">YOUR ORDER</p>
+      <h2 id="cartTitle">Your cart</h2>
+      <p>Review your resources, then check out with M-Pesa or card.</p>
+    </div>
+  </div>
+  <div id="cart-items"></div>
+  <div class="cart-foot">
+    <div class="cart-total-row"><span>Total</span><span id="cart-total">$0.00</span></div>
+    <button class="checkout-btn" onclick="checkout()">Proceed to checkout</button>
+    <p class="account-device-note"><span aria-hidden="true">✓</span><span>Paid securely. Your downloads unlock as soon as payment is confirmed.</span></p>
+  </div>
+</div>
+
+<div id="support-overlay" onclick="toggleSupport()"></div>
+<div id="support-sidebar" role="dialog" aria-modal="true" aria-labelledby="supportTitle">
+  <div class="support-head pop-head">
+    <div class="account-modal-top">
+      <div class="account-brand">
+        <span class="account-brand-mark" aria-hidden="true">✦</span>
+        <span class="account-brand-copy">
+          <span class="account-brand-name">Nurse<span>Vault</span></span>
+          <span class="account-brand-caption">YOUR STUDY SPACE</span>
+        </span>
+      </div>
+      <button type="button" class="pop-close" aria-label="Close support and settings" onclick="toggleSupport()">×</button>
+    </div>
+    <div class="account-intro">
+      <p class="account-eyebrow">HELP &amp; SETTINGS</p>
+      <h2 id="supportTitle">Support &amp; settings</h2>
+      <p>Contact us, change how the site looks, or read our policies.</p>
+    </div>
+  </div>
+
+  <div class="support-body">
+
+    <div>
+      <p class="nck-select-label support-section-title">Settings</p>
+      <div class="dl-row">
+        <div>
+          <div class="dl-name">Display mode</div>
+          <div class="settings-sub">Currently: <span id="themeLabel2">Light</span></div>
+        </div>
+        <button class="dl-btn" onclick="cycleTheme()">Change</button>
+      </div>
+    </div>
+
+    <div>
+      <p class="nck-select-label support-section-title">Support</p>
+      <div class="support-legal-list">
+        <details class="faq-item">
+          <summary>Contact us</summary>
+          <p>Email <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support%40nursevault.co.ke" target="_blank" rel="noopener">support@nursevault.co.ke</a> — that's the fastest way to reach us for order issues, download problems, or anything else.</p>
+          <p>Prefer chat? Message us on <a href="https://wa.me/254787589949" target="_blank" rel="noopener">WhatsApp</a>.</p>
+        </details>
+      </div>
+      <div class="dl-row">
+        <span class="dl-name">Frequently asked questions</span>
+        <button class="dl-btn" onclick="toggleSupport(); goToSection('faq');">View</button>
+      </div>
+      <div class="dl-row">
+        <div>
+          <div class="dl-name">Report a problem</div>
+          <div class="settings-sub">support@nursevault.co.ke</div>
+        </div>
+        <a class="dl-btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=support%40nursevault.co.ke&su=NurseVault%20%E2%80%94%20Issue%20report" target="_blank" rel="noopener">Email us</a>
+      </div>
+    </div>
+
+    <div>
+      <p class="nck-select-label support-section-title">Legal</p>
+      <div class="dl-row">
+        <div>
+          <div class="dl-name">Terms, privacy &amp; refund policy</div>
+          <div class="settings-sub">Also linked at the bottom of every page</div>
+        </div>
+        <button class="dl-btn" onclick="toggleSupport(); openLegal('terms');">View</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="support-foot">NurseVault · © 2026</div>
+</div>
+
+<div id="checkout-modal">
+  <div class="modal-card">
+    <h3>Order summary</h3>
+    <div id="checkout-summary"></div>
+    <label for="checkout-email" class="email-label">Email (for your receipt &amp; download links)</label>
+    <input type="email" id="checkout-email" class="email-input" placeholder="you@email.com" />
+    <p class="modal-note">Card, M-Pesa or Airtel Money. Prices are charged in KES.</p>
+    <div class="modal-actions">
+      <button class="btn-ghost" onclick="closeCheckout()">Close</button>
+      <button class="btn-solid" id="pay-btn" onclick="startPayment()">Complete payment</button>
+    </div>
+  </div>
+</div>
+
+<div id="success-modal">
+  <div class="modal-card">
+    <h3>Payment successful</h3>
+    <p class="modal-note" style="margin-bottom:16px;">Thanks for your order! Your downloads are ready below. A receipt was also sent to your email.</p>
+    <div id="download-list"></div>
+    <div class="modal-actions" style="margin-top:18px;">
+      <button class="btn-solid" onclick="closeSuccess()">Done</button>
+    </div>
+  </div>
+</div>
+
+<div id="legal-modal" onclick="if(event.target===this)closeLegal()">
+  <div class="modal-card legal-card" role="dialog" aria-modal="true" aria-label="Legal">
+    <div class="account-tabs" role="tablist">
+      <button class="account-tab active" id="legal-tab-terms" role="tab" onclick="showLegal('terms')">Terms</button>
+      <button class="account-tab" id="legal-tab-privacy" role="tab" onclick="showLegal('privacy')">Privacy</button>
+      <button class="account-tab" id="legal-tab-refund" role="tab" onclick="showLegal('refund')">Refunds</button>
+      <button class="account-tab" id="legal-tab-contact" role="tab" onclick="showLegal('contact')">Contact</button>
+    </div>
+    <div class="legal-docs">
+      <div class="legal-doc active" id="legal-doc-terms">
+        <h3 class="legal-title">Terms of Service</h3>
+        <p class="legal-meta">Last updated: November 2026</p>
+        <div class="legal-glance">
+          <b>The short version</b>
+          <ul>
+            <li><b>NurseVault is a study aid.</b> It helps you revise. It is not an exam guarantee and not a substitute for your training or clinical judgement.</li>
+            <li><b>For your own use only.</b> Please do not share, resell or post what you buy.</li>
+            <li><b>We are independent.</b> NurseVault is not part of, run by or endorsed by the Nursing Council of Kenya (NCK).</li>
+            <li><b>Questions?</b> Email <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support%40nursevault.co.ke" target="_blank" rel="noopener">support@nursevault.co.ke</a>.</li>
+          </ul>
+        </div>
+
+        <h4>1. About NurseVault</h4>
+        <p>NurseVault is an independent digital study shop and revision platform for nursing students in Kenya. We offer drug cards, flashcards, notes, OSCE checklists, care-plan and ward tools, and NCK exam-prep practice (topic questions, past papers and timed mock exams). By using the site, creating an account or buying anything, <b>you agree to these terms</b>. If you do not agree, please do not use the site.</p>
+        <p><b>We are not affiliated with, endorsed by or acting for the Nursing Council of Kenya (NCK)</b> or any other licensing or examining body. Names such as "NCK" and "KRCHN" are used only to describe the exams our materials help you prepare for.</p>
+
+        <h4>2. Your account</h4>
+        <ul>
+          <li>Give us <b>accurate details</b> and keep your password private. You are responsible for what happens on your account.</li>
+          <li><b>One account is for one person.</b> Sharing a login, or letting others use your subscription, is not allowed and may lead to the account being suspended.</li>
+          <li>You must be <b>18 or older</b>, or have a parent or guardian's permission to use NurseVault.</li>
+          <li>You can delete your account yourself at any time from your account panel (see our Privacy Policy).</li>
+        </ul>
+
+        <h4>3. What you may do with our content</h4>
+        <p>When you buy or subscribe, we give you a <b>personal, non-commercial, non-transferable licence</b> to use the materials for your own study. You <b>may not</b>:</p>
+        <ul>
+          <li>resell, share, upload, post or distribute purchased files, questions, explanations or notes, in whole or in part, including in WhatsApp, Telegram or social media groups;</li>
+          <li>copy or scrape the question bank, or use our content to build or train another product or AI system;</li>
+          <li>remove watermarks, notices or the limits placed on free accounts.</li>
+        </ul>
+
+        <h4>4. Prices, payments and subscriptions</h4>
+        <ul>
+          <li>Prices are shown in <b>Kenya shillings (KES)</b>. Payments are processed by <b>Paystack</b> (card and M-Pesa). NurseVault never sees or stores your card or M-Pesa PIN details.</li>
+          <li>Some items are marked <b>"coming soon"</b> and cannot be bought yet. We add content as it is finished.</li>
+          <li><b>Subscriptions renew</b> on the cycle you choose (weekly or monthly). You can cancel at any time from your account. <b>Access continues until the end of the period you have paid for.</b></li>
+          <li>From time to time we may run free access, trials or special prices. These can change or end at any time and do not create a right to future free access.</li>
+          <li>If a payment is taken but your access or download does not appear, contact us with your payment reference and we will fix it. See our Refund &amp; delivery policy.</li>
+        </ul>
+
+        <h4>5. Study materials, accuracy and patient safety</h4>
+        <p>We work to keep our content accurate and in line with Kenyan practice and current guidelines, but <b>mistakes and out-of-date information can happen</b>, and guidelines change.</p>
+        <ul>
+          <li><b>Materials are study aids.</b> They do not guarantee that you will pass any exam.</li>
+          <li><b>Nothing on NurseVault is medical advice</b> or a replacement for your official coursework, supervised clinical training, your facility's protocols, the national guidelines or a senior colleague's instructions.</li>
+          <li><b>Drug cards, calculators, care-plan and ward tools are reference aids.</b> Always check doses, calculations and procedures against your approved guidelines and with a qualified colleague <b>before acting on a real patient</b>.</li>
+          <li>If you spot an error, please tell us. You can report a question from inside the practice screen, or email us. We review every report.</li>
+        </ul>
+
+        <h4>6. Mock exams and practice papers</h4>
+        <ul>
+          <li>Our mock exams are <b>practice simulations</b> made to feel like a computer-based exam. They are <b>not</b> run, set or marked by NCK, and our scores are only a guide to how you are doing.</li>
+          <li>The mock exam screen may warn you if you leave full screen or switch tabs, and may end the mock after repeated warnings. This is for practice only and has no effect outside NurseVault.</li>
+          <li>The camera is <b>optional</b>. If you turn it on, the picture stays on your own device (see our Privacy Policy).</li>
+          <li>Past-paper questions are used for revision and practice. If you own rights in a question and want it removed, please contact us and we will review it promptly.</li>
+        </ul>
+
+        <h4>7. AI features</h4>
+        <p>Some features, such as the <b>OSCE coach</b>, use artificial intelligence to give feedback. <b>AI can be wrong.</b> Treat its answers as a starting point, check them against your notes and guidelines, and never rely on them alone for patient care. Please do not type real patient names or other identifying details into any AI feature.</p>
+
+        <h4>8. Using the site fairly</h4>
+        <p>Please do not: try to break into, overload or disrupt the site; use bots or automated tools to access it; try to get around payment, limits or security; share your login; upload anything unlawful or harmful; or use NurseVault to harass or mislead others. We may limit or suspend accounts that do.</p>
+
+        <h4>9. Ownership</h4>
+        <p>The NurseVault name, logo, design, notes, flashcards, explanations and the way our question banks are put together belong to NurseVault or its content providers and are protected by copyright. Third-party names and marks belong to their owners. Buying or subscribing gives you a licence to use the content (section 3), not ownership of it.</p>
+
+        <h4>10. Availability and changes</h4>
+        <p>We aim to keep NurseVault running smoothly, but we <b>cannot promise it will always be available or error-free</b>. We may add, change or remove features and content, and we may do maintenance without notice. We will try not to remove something you have paid for during a paid period.</p>
+
+        <h4>11. Our responsibility to you</h4>
+        <p>NurseVault is provided <b>"as is"</b>. To the fullest extent the law allows, we are not responsible for indirect or consequential losses, for exam results, or for decisions made using our materials, and our total responsibility for any claim is limited to <b>the amount you paid us in the 12 months before the claim</b>. Nothing in these terms limits any right you have under Kenyan consumer-protection law, or liability that cannot lawfully be limited.</p>
+
+        <h4>12. Suspending or ending access</h4>
+        <p>We may suspend or close an account that breaks these terms, after warning you where reasonable. You may stop using NurseVault at any time and delete your account. Sections that by their nature should continue (such as ownership and our responsibility to you) continue afterwards.</p>
+
+        <h4>13. Changes to these terms</h4>
+        <p>We may update these terms as NurseVault grows. We will change the "last updated" date above and, for important changes, tell you on the site or by email. <b>Continuing to use NurseVault after a change means you accept it.</b></p>
+
+        <h4>14. Governing law</h4>
+        <p>These terms are governed by the <b>laws of Kenya</b>. If we have a disagreement, please contact us first so we can try to sort it out. If we cannot, the courts of Kenya will have jurisdiction.</p>
+
+        <h4>15. Contact</h4>
+        <p>Email <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support%40nursevault.co.ke" target="_blank" rel="noopener">support@nursevault.co.ke</a> or message us on <a href="https://wa.me/254787589949" target="_blank" rel="noopener">WhatsApp</a>. See the <a href="#" onclick="event.preventDefault();showLegal('contact')">Contact tab</a> for details.</p>
+      </div>
+
+      <div class="legal-doc" id="legal-doc-privacy">
+        <h3 class="legal-title">Privacy Policy</h3>
+        <p class="legal-meta">Last updated: November 2026</p>
+        <div class="legal-glance">
+          <b>The short version</b>
+          <ul>
+            <li><b>We never sell your information</b> and we do not show advertising.</li>
+            <li><b>We never see your card or M-Pesa details.</b> Paystack handles payment.</li>
+            <li><b>Your camera is never recorded.</b> In a mock exam it only shows you yourself, on your own screen.</li>
+            <li><b>You are in control.</b> You can delete your account yourself, any time, and switch email reminders off.</li>
+          </ul>
+        </div>
+
+        <h4>1. Who we are</h4>
+        <p>NurseVault is an online study platform for nursing students in Kenya. We are responsible for the personal information described here. We follow the <b>Kenya Data Protection Act, 2019</b>. You can reach us at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support%40nursevault.co.ke" target="_blank" rel="noopener">support@nursevault.co.ke</a>.</p>
+
+        <h4>2. What we collect</h4>
+        <ul>
+          <li><b>Account details:</b> your name and email address. If you sign up with a password, we store only a <b>scrambled (hashed and salted) version</b> of it, never the password itself. If you use <b>Google sign-in</b>, we receive your name and email from Google, and no Google password.</li>
+          <li><b>Purchases and subscription:</b> what you bought, the payment reference, and your plan and expiry date. <b>We do not receive your card or M-Pesa details.</b></li>
+          <li><b>Study progress:</b> your practice and mock attempts and scores, goals, exam dates, study plan, flashcard review schedule and OSCE checklist progress. We save this to your account so it follows you to a new phone or computer.</li>
+          <li><b>Messages and reports:</b> what you send us when you contact support or report a question.</li>
+          <li><b>Technical and security information:</b> basic logs such as sign-in and sign-up events, and your network address, used to keep the site secure and stop abuse and over-use.</li>
+          <li><b>AI feature text:</b> if you use the OSCE coach, the messages you type to it.</li>
+        </ul>
+
+        <h4>3. Your camera in mock exams</h4>
+        <p>The camera is <b>optional</b>. If you switch it on, your picture is shown to you in a small window <b>on your own device</b>. It is <b>not recorded, stored or sent to us or anyone else</b>. We do not use your microphone.</p>
+
+        <h4>4. Why we use it</h4>
+        <ul>
+          <li>to create and secure your account, and let you log in;</li>
+          <li>to process your purchases, unlock what you paid for, and send receipts and download links;</li>
+          <li>to run the study tools (progress, readiness, plans and reminders);</li>
+          <li>to answer your messages and fix problems;</li>
+          <li>to keep the site safe, prevent fraud and enforce our terms;</li>
+          <li>to improve our questions and content, for example from the errors you report.</li>
+        </ul>
+        <p><b>We do not sell your information, and we do not use it for advertising.</b></p>
+
+        <h4>5. Emails we send</h4>
+        <p>We always send emails you need, such as sign-up confirmation, receipts and password resets. Study nudges, exam-date reminders and subscription-expiry reminders are optional: <b>you can switch them off in your account panel</b> under "Email reminders".</p>
+
+        <h4>6. Who we share it with</h4>
+        <p>We share only what is needed with trusted companies that help us run NurseVault:</p>
+        <ul>
+          <li><b>Paystack</b> to take payments (card and M-Pesa);</li>
+          <li><b>Cloudflare</b> to host the site, run our servers and store account and question data;</li>
+          <li><b>Resend</b> to deliver emails;</li>
+          <li><b>Google</b> if you choose Google sign-in, and to load the fonts used on our pages;</li>
+          <li><b>Anthropic</b> (the maker of Claude) to power AI features. Only the text you type into an AI feature is sent. Your name and email are not.</li>
+        </ul>
+        <p>We may also share information if the law requires it, or to protect our users and our rights. These companies may process data outside Kenya. We choose providers with appropriate safeguards, as the Data Protection Act expects.</p>
+
+        <h4>7. What is stored in your browser</h4>
+        <p>NurseVault stores a few things in your browser's local storage so the site remembers you: your <b>cart, your login session, your display mode, and your study progress</b>. We do not use advertising or tracking cookies.</p>
+
+        <h4>8. How long we keep it</h4>
+        <ul>
+          <li>We keep your account and progress <b>for as long as your account exists</b>.</li>
+          <li>When you <b>delete your account</b>, we remove your account, your synced study progress and your sign-in sessions from our servers. Our sign-up and deletion activity log is kept for 90 days, and deleted accounts appear in it only with a masked email.</li>
+          <li>We may keep payment records for as long as the law and our accounting require.</li>
+        </ul>
+
+        <h4>9. Your rights</h4>
+        <p>Under the Data Protection Act you have the right to <b>know what we hold about you, see it, correct it, ask us to delete it, object to how we use it and withdraw your consent</b>.</p>
+        <ul>
+          <li><b>Delete your account yourself:</b> open your account panel and choose "Delete my account". This cannot be undone, and an active subscription ends immediately.</li>
+          <li><b>Anything else:</b> email <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support%40nursevault.co.ke&su=Privacy%20request" target="_blank" rel="noopener">support@nursevault.co.ke</a> with the subject "Privacy request" from the email address on your account. We may ask you to confirm it is you, and we will reply as soon as we reasonably can.</li>
+          <li>If you are not happy with our answer, you may complain to the <b>Office of the Data Protection Commissioner (Kenya)</b>.</li>
+        </ul>
+
+        <h4>10. Keeping your information safe</h4>
+        <p>We protect your information with measures such as encrypted connections (HTTPS), hashed passwords, limits on repeated login attempts and restricted admin access. <b>No online service can promise perfect security</b>, so please choose a strong, unique password and log out on shared devices.</p>
+
+        <h4>11. Age</h4>
+        <p>NurseVault is meant for people <b>aged 18 or over</b>. If you are younger, please use it only with a parent or guardian's permission. If you believe a child has given us information without permission, tell us and we will delete it.</p>
+
+        <h4>12. Changes to this policy</h4>
+        <p>We may update this policy as NurseVault grows. We will change the "last updated" date above and, for important changes, tell you on the site or by email.</p>
+
+        <h4>13. Contact</h4>
+        <p>Questions about your privacy? Email <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support%40nursevault.co.ke&su=Privacy%20question" target="_blank" rel="noopener">support@nursevault.co.ke</a> or see the <a href="#" onclick="event.preventDefault();showLegal('contact')">Contact tab</a>.</p>
+      </div>
+
+      <div class="legal-doc" id="legal-doc-refund">
+        <h3 class="legal-title">Refund &amp; delivery policy</h3>
+        <p>Every resource is delivered digitally and instantly — as soon as payment is confirmed, your download link appears on-screen and is emailed to you as a receipt.</p>
+        <p>Because files are delivered immediately, we generally don't offer refunds once a download has started. That said, if a payment failed to unlock your download, a file was corrupted or wrong, or you were charged twice, email <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support%40nursevault.co.ke" target="_blank" rel="noopener">support@nursevault.co.ke</a> with your payment reference — we'll sort it out or refund you.</p>
+        <p>Subscriptions can be cancelled any time; you'll keep access until the current paid period ends, and you won't be charged again after that.</p>
+      </div>
+
+      <div class="legal-doc" id="legal-doc-contact">
+        <h3 class="legal-title">Contact us</h3>
+        <p class="legal-lead">We're a small team and we read every message. <b>Tell us what happened and we will help.</b></p>
+        <div class="legal-contact-grid">
+          <a class="legal-contact-card" href="https://mail.google.com/mail/?view=cm&fs=1&to=support%40nursevault.co.ke" target="_blank" rel="noopener">
+            <span class="lc-k">Email</span><b>support@nursevault.co.ke</b><span class="lc-s">Best for payment, download and account problems</span>
+          </a>
+          <a class="legal-contact-card" href="https://wa.me/254787589949" target="_blank" rel="noopener">
+            <span class="lc-k">WhatsApp</span><b>+254 787 589 949</b><span class="lc-s">Quick questions and chat</span>
+          </a>
+        </div>
+        <h4>What to include so we can help faster</h4>
+        <ul>
+          <li>The <b>email address on your NurseVault account</b>;</li>
+          <li>For a payment problem: the <b>payment reference</b> (from your receipt or M-Pesa message);</li>
+          <li>What you were doing, what you expected and what happened, plus a <b>screenshot</b> if you can;</li>
+          <li>Your phone or computer and browser (for example "Android, Chrome").</li>
+        </ul>
+        <h4>Choose the right route</h4>
+        <ul>
+          <li><b>Payment or download problem:</b> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support%40nursevault.co.ke&su=NurseVault%20%E2%80%94%20Payment%20or%20download%20problem" target="_blank" rel="noopener">email us with your payment reference</a>.</li>
+          <li><b>Wrong or unclear question or answer:</b> use the report button on the question, or <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support%40nursevault.co.ke&su=NurseVault%20%E2%80%94%20Content%20issue" target="_blank" rel="noopener">email us</a>.</li>
+          <li><b>Privacy request or delete my data:</b> use "Delete my account" in your account panel, or <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support%40nursevault.co.ke&su=Privacy%20request" target="_blank" rel="noopener">email us</a>.</li>
+          <li><b>Content or copyright concern:</b> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=support%40nursevault.co.ke&su=NurseVault%20%E2%80%94%20Content%20concern" target="_blank" rel="noopener">email us</a> with the details and we will review it promptly.</li>
+          <li><b>Quick answers:</b> many questions are covered in our <a href="#" onclick="event.preventDefault();closeLegal();goToSection('faq')">Frequently asked questions</a>.</li>
+        </ul>
+        <p class="legal-note"><b>Reply time:</b> we usually reply within one to two working days. Messages sent on weekends and public holidays may take a little longer. We will never ask for your password, your card details or your M-Pesa PIN.</p>
+      </div>
+    </div>
+    <div class="legal-close"><button class="dl-btn" onclick="closeLegal()">Close</button></div>
+  </div>
+</div>
+
+<div id="account-modal" role="dialog" aria-modal="true" aria-label="NurseVault account" aria-hidden="true" tabindex="-1"
+     onclick="if(event.target===this)closeAccountModal()" onkeydown="accountModalKeydown(event)">
+  <div class="modal-card account-modal-card">
+    <div class="account-modal-top">
+      <div class="account-brand">
+        <span class="account-brand-mark" aria-hidden="true">✦</span>
+        <span class="account-brand-copy">
+          <span class="account-brand-name">Nurse<span>Vault</span></span>
+          <span class="account-brand-caption">YOUR STUDY SPACE</span>
+        </span>
+      </div>
+      <button type="button" class="account-close" aria-label="Close account window" onclick="closeAccountModal()">×</button>
+    </div>
+    <div class="account-intro">
+      <p class="account-eyebrow" id="accountDialogEyebrow">ACCOUNT ACCESS</p>
+      <h2 id="accountDialogTitle">Welcome back</h2>
+      <p id="accountDialogSubtitle">Sign in to manage your NurseVault account and membership.</p>
+    </div>
+    <div id="accountLoggedOutView">
+      <div class="social-auth" id="socialAuthBlock">
+        <div id="googleSignInBtn" class="google-btn-wrap" aria-label="Continue with Google"></div>
+        <button type="button" class="social-btn apple" id="appleSignInBtn" onclick="startAppleSignIn()">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.365 1.43c0 1.14-.42 2.2-1.18 3.02-.8.86-2.12 1.52-3.24 1.43-.1-1.1.43-2.28 1.15-3.06.8-.88 2.2-1.52 3.27-1.39zM20.7 17.4c-.55 1.26-.82 1.82-1.53 2.94-.99 1.55-2.38 3.48-4.1 3.5-1.53.02-1.93-.99-4.02-.98-2.1.01-2.53 1-4.06.98-1.72-.02-3.04-1.76-4.03-3.3C1.2 17.4.2 13.55 1.95 10.9c1.12-1.7 2.9-2.7 4.55-2.7 1.7 0 2.77 1 4.18 1 1.37 0 2.2-1 4.2-1 1.5 0 3.1.82 4.22 2.24-3.7 2.02-3.1 7.28.6 9.0z"/></svg>
+          Continue with Apple
+        </button>
+      </div>
+      <div class="account-divider">or continue with email</div>
+      <div class="account-tabs" role="tablist" aria-label="Account access">
+        <button type="button" class="account-tab active" id="tabLogin" role="tab" aria-selected="true" aria-controls="loginForm" tabindex="0" onclick="switchAccountTab('login')" onkeydown="accountTabKeydown(event,'login')">Log in</button>
+        <button type="button" class="account-tab" id="tabSignup" role="tab" aria-selected="false" aria-controls="signupForm" tabindex="-1" onclick="switchAccountTab('signup')" onkeydown="accountTabKeydown(event,'signup')">Create account</button>
+      </div>
+      <form class="account-form active" id="loginForm" role="tabpanel" aria-labelledby="tabLogin" onsubmit="event.preventDefault(); doLogin();">
+        <label class="account-field" for="loginEmail">Email address
+          <input type="email" id="loginEmail" placeholder="you@example.com" required autocomplete="email" />
+        </label>
+        <div class="account-field"><label for="loginPassword">Password</label>
+          <span class="account-password-wrap">
+            <input type="password" id="loginPassword" placeholder="Enter your password" required autocomplete="current-password" />
+            <button type="button" class="account-password-toggle" aria-label="Show password" aria-pressed="false" onclick="toggleAccountPassword('loginPassword',this)">Show</button>
+          </span>
+        </div>
+        <div class="account-forgot-row"><button type="button" class="forgot-link" onclick="switchAccountTab('forgot')">Forgot password?</button></div>
+        <p class="account-error" id="loginError" role="alert" aria-live="polite"></p>
+        <button class="btn-solid" type="submit" id="loginSubmitBtn">Log In</button>
+      </form>
+      <form class="account-form" id="signupForm" role="tabpanel" aria-labelledby="tabSignup" onsubmit="event.preventDefault(); doSignup();">
+        <label class="account-field" for="signupName">Your name
+          <input type="text" id="signupName" placeholder="e.g. Ronald Otieno" required maxlength="60" autocomplete="name" />
+        </label>
+        <label class="account-field" for="signupEmail">Email address
+          <input type="email" id="signupEmail" placeholder="you@example.com" required autocomplete="email" />
+        </label>
+        <div class="account-field"><label for="signupPassword">Create a password</label>
+          <span class="account-password-wrap">
+            <input type="password" id="signupPassword" placeholder="At least 8 characters" required minlength="8" autocomplete="new-password" />
+            <button type="button" class="account-password-toggle" aria-label="Show password" aria-pressed="false" onclick="toggleAccountPassword('signupPassword',this)">Show</button>
+          </span>
+        </div>
+        <p class="account-hint">Use at least 8 characters. You can also sign up with Google or Apple above.</p>
+        <p class="account-error" id="signupError" role="alert" aria-live="polite"></p>
+        <button class="btn-solid" type="submit" id="signupSubmitBtn">Create Account</button>
+        <p class="account-legal-note">Please review our <a href="#" onclick="event.preventDefault();closeAccountModal(false);openLegal('terms')">Terms of Service</a> and <a href="#" onclick="event.preventDefault();closeAccountModal(false);openLegal('privacy')">Privacy Policy</a>.</p>
+      </form>
+      <form class="account-form" id="forgotForm" onsubmit="event.preventDefault(); doForgotPassword();">
+        <p class="account-hint">Enter the email on your account. If it exists, we’ll send a reset link.</p>
+        <label class="account-field" for="forgotEmail">Email address
+          <input type="email" id="forgotEmail" placeholder="you@example.com" required autocomplete="email" />
+        </label>
+        <p class="account-error" id="forgotError" role="alert" aria-live="polite"></p>
+        <p class="account-hint" id="forgotSuccess" style="display:none;color:var(--green-dark);font-weight:600;"></p>
+        <button class="btn-solid" type="submit" id="forgotSubmitBtn">Send reset link</button>
+        <button type="button" class="forgot-link" onclick="switchAccountTab('login')">← Back to log in</button>
+      </form>
+      <form class="account-form" id="resetForm" onsubmit="event.preventDefault(); doResetPassword();">
+        <p class="account-hint">Choose a new password (at least 8 characters).</p>
+        <div class="account-field"><label for="resetPassword">New password</label>
+          <span class="account-password-wrap">
+            <input type="password" id="resetPassword" placeholder="At least 8 characters" required minlength="8" autocomplete="new-password" />
+            <button type="button" class="account-password-toggle" aria-label="Show password" aria-pressed="false" onclick="toggleAccountPassword('resetPassword',this)">Show</button>
+          </span>
+        </div>
+        <div class="account-field"><label for="resetPassword2">Confirm new password</label>
+          <span class="account-password-wrap">
+            <input type="password" id="resetPassword2" placeholder="Enter it again" required minlength="8" autocomplete="new-password" />
+            <button type="button" class="account-password-toggle" aria-label="Show password" aria-pressed="false" onclick="toggleAccountPassword('resetPassword2',this)">Show</button>
+          </span>
+        </div>
+        <p class="account-error" id="resetError" role="alert" aria-live="polite"></p>
+        <button class="btn-solid" type="submit" id="resetSubmitBtn">Update password</button>
+        <button type="button" class="forgot-link" onclick="switchAccountTab('login')">← Back to log in</button>
+      </form>
+      <p class="account-device-note"><span aria-hidden="true">✦</span><span>NCK Prep practice progress is currently saved on this device.</span></p>
+    </div>
+    <div id="accountLoggedInView" style="display:none;">
+      <div class="dash" id="studentDashboard">
+        <div class="dash-welcome">
+          <p class="dash-hello" id="dashGreeting">Welcome back</p>
+          <p class="dash-email" id="accountEmailLine"></p>
+          <form class="dash-name-row" onsubmit="event.preventDefault(); saveProfileName();">
+            <label for="accountNameInput">Your name</label>
+            <input type="text" id="accountNameInput" maxlength="60" autocomplete="name" placeholder="e.g. Ronald Otieno" />
+            <button type="submit" id="accountNameBtn">Save</button>
+            <span class="dash-name-status" id="accountNameStatus" role="status" aria-live="polite"></span>
+          </form>
+          <span class="dash-sub off" id="accountSubLine" style="margin-top:12px;display:inline-block;">No active subscription</span>
+          <p id="accountSyncLine" style="margin:8px 0 0;font-size:.75rem;color:var(--ink-50);"></p>
+          <p id="accountVerifyNotice" style="display:none;margin:10px 0 0;padding:10px 12px;border-radius:8px;background:#FFF6DD;color:#6B4E00;font-size:.82rem;line-height:1.45;">
+            Please confirm your email — we sent you a link. It unlocks your free daily questions and subscriptions.
+            <button type="button" id="resendVerifyBtn" onclick="resendVerification()" style="margin-left:6px;background:none;border:0;padding:0;color:#173F35;font-weight:700;text-decoration:underline;cursor:pointer;">Resend link</button>
+          </p>
+        </div>
+
+        <div class="dash-continue" id="dashContinue">
+          <p class="dash-kicker">Continue studying</p>
+          <h3 id="dashContinueTitle">Pick up where you left off</h3>
+          <p id="dashContinueDesc">Browse drug cards, NCK Prep, or OSCE when you are ready.</p>
+          <button type="button" class="btn-solid dash-cta nck-run-cta" id="dashContinueBtn" onclick="dashContinueStudy()">Continue</button>
+        </div>
+
+        <div class="dash-stats" id="dashStats">
+          <div class="dash-stat"><b id="dashStatAcc">—</b><span>NCK accuracy</span></div>
+          <div class="dash-stat"><b id="dashStatQ">0</b><span>Questions</span></div>
+          <div class="dash-stat"><b id="dashStatStreak">0</b><span>Day streak</span></div>
+        </div>
+
+        <div class="dash-email-prefs" id="dashEmailPrefs" style="margin:16px 0 4px;padding:14px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);">
+          <p class="dash-kicker" style="margin:0 0 8px">Email reminders</p>
+          <p style="margin:0 0 10px;font-size:.82rem;color:var(--ink-70);line-height:1.45">We can email you about study progress, exam dates you saved, and subscription renewals. Confirm your email first.</p>
+          <label style="display:flex;align-items:flex-start;gap:10px;margin:0 0 8px;font-size:.88rem;cursor:pointer">
+            <input type="checkbox" id="prefMailStudy" checked onchange="saveEmailPrefs()" style="margin-top:3px">
+            <span><b>Study &amp; motivation</b><br><span style="color:var(--ink-70);font-size:.8rem">Progress nudges and exam-date reminders</span></span>
+          </label>
+          <label style="display:flex;align-items:flex-start;gap:10px;margin:0 0 8px;font-size:.88rem;cursor:pointer">
+            <input type="checkbox" id="prefMailSub" checked onchange="saveEmailPrefs()" style="margin-top:3px">
+            <span><b>Subscription expiry</b><br><span style="color:var(--ink-70);font-size:.8rem">Reminders when a few days remain</span></span>
+          </label>
+          <p id="emailPrefsStatus" style="margin:6px 0 0;font-size:.75rem;color:var(--ink-50)"></p>
+        </div>
+
+        <div>
+          <span class="dc-section-label" style="margin-top:0">Quick actions</span>
+          <div class="dash-actions">
+            <button type="button" class="dash-action" style="--da:var(--coral)" onclick="closeAccountModal();location.hash='#/drug-cards'">
+              <span class="da-ic" aria-hidden="true">🃏</span>
+              <span><span class="da-t">Drug cards</span><span class="da-s">By body system</span></span>
+            </button>
+            <button type="button" class="dash-action" style="--da:#20315C" onclick="closeAccountModal();location.hash='#/nck-prep'">
+              <span class="da-ic" aria-hidden="true">📚</span>
+              <span><span class="da-t">NCK Prep</span><span class="da-s">Practice &amp; progress</span></span>
+            </button>
+            <button type="button" class="dash-action" style="--da:var(--blue)" onclick="closeAccountModal();location.hash='#/osce'">
+              <span class="da-ic" aria-hidden="true">✅</span>
+              <span><span class="da-t">OSCE</span><span class="da-s">Checklists</span></span>
+            </button>
+            <button type="button" class="dash-action" style="--da:var(--gold)" onclick="closeAccountModal();location.hash='#/tools'">
+              <span class="da-ic" aria-hidden="true">🛠️</span>
+              <span><span class="da-t">Ward tools</span><span class="da-s">Calculators &amp; aids</span></span>
+            </button>
+            <button type="button" class="dash-action" style="--da:var(--purple)" onclick="closeAccountModal();location.hash='#/careplan'">
+              <span class="da-ic" style="--da:var(--purple)">📋</span>
+              <span><span class="da-t">Care plans</span><span class="da-s">ADPIE builder & templates</span></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="dash-block" id="accountOrdersWrap">
+          <h4>Recent orders</h4>
+          <p class="dash-empty" style="margin-bottom:8px;font-size:.78rem">Receipts on this device. Downloads are one-time after payment — save files when you buy.</p>
+          <div class="dash-orders" id="accountOrdersList"></div>
+        </div>
+
+        <div class="dash-foot">
+          <button type="button" class="btn-solid nck-run-cta" onclick="closeAccountModal();goToSection('subscribe')">Subscribe</button>
+          <button type="button" class="btn-ghost" onclick="closeAccountModal()">Close</button>
+          <button type="button" class="btn-ghost nck-run-leave" onclick="doLogout()">Log out</button>
+        </div>
+        <div id="accountDeleteWrap" style="margin-top:14px;text-align:center;">
+          <button type="button" id="showDeleteBtn" onclick="toggleDeletePanel(true)" style="background:none;border:0;color:#8A5A52;font-size:.78rem;text-decoration:underline;cursor:pointer;">Delete my account</button>
+          <div id="accountDeletePanel" style="display:none;text-align:left;margin-top:10px;padding:14px;border:1px solid #E6C7C2;border-radius:10px;background:#FFF7F6;">
+            <p style="margin:0 0 8px;font-weight:700;color:#8A1C12;font-size:.9rem;">Delete your account?</p>
+            <p style="margin:0 0 10px;font-size:.8rem;line-height:1.5;color:#5b4540;">This permanently removes your account from our servers. It cannot be undone.
+              <span id="deleteSubWarn" style="display:none;"> <b>Your active subscription will end immediately, with no refund.</b></span>
+              Files you already bought stay on your device. Study progress saved on this device is also cleared.</p>
+            <div id="deletePwWrap"><label for="deletePassword" style="font-size:.78rem;font-weight:600;">Enter your password to confirm</label>
+              <input type="password" id="deletePassword" autocomplete="current-password" style="width:100%;box-sizing:border-box;margin:4px 0 8px;padding:10px;border:1px solid #D8C4C0;border-radius:8px;"></div>
+            <div id="deleteEmailWrap" style="display:none;"><label for="deleteConfirmEmail" style="font-size:.78rem;font-weight:600;">Type your email address to confirm: <span id="deleteEmailHint"></span></label>
+              <input type="email" id="deleteConfirmEmail" autocomplete="off" style="width:100%;box-sizing:border-box;margin:4px 0 8px;padding:10px;border:1px solid #D8C4C0;border-radius:8px;"></div>
+            <p id="deleteErr" style="display:none;margin:0 0 8px;color:#8A1C12;font-size:.8rem;"></p>
+            <div style="display:flex;gap:8px;">
+              <button type="button" id="confirmDeleteBtn" onclick="confirmDeleteAccount()" style="flex:1;padding:10px;border:0;border-radius:8px;background:#B3261E;color:#fff;font-weight:700;cursor:pointer;">Delete permanently</button>
+              <button type="button" onclick="toggleDeletePanel(false)" style="flex:1;padding:10px;border:1px solid #D8C4C0;border-radius:8px;background:#fff;cursor:pointer;">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://js.paystack.co/v2/inline.js"></script>
+<script src="https://accounts.google.com/gsi/client" async defer onload="initGoogleSignIn()"></script>
+<script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js" async defer onload="initAppleSignIn()"></script>
+<script src="app.js?v=749d8c10"></script>
+
+<div id="preview-modal" onclick="if(event.target===this)closePreview()">
+  <div class="preview-card" role="dialog" aria-modal="true" aria-labelledby="previewTitle" onclick="event.stopPropagation()">
+    <h3 id="previewTitle">Sample</h3>
+    <p class="pv-sub" id="previewSub"></p>
+    <div id="previewBody"></div>
+    <p class="pv-note" id="previewNote">This is a free sample so you can see the style before you buy. Full decks unlock after payment.</p>
+    <div class="pv-actions">
+      <button type="button" class="btn-solid" id="previewPrimaryBtn">Add to cart</button>
+      <button type="button" class="btn-ghost" onclick="closePreview()">Close</button>
+    </div>
+  </div>
+</div>
+
+<div id="pwa-banner" role="dialog" aria-label="Install app">
+  <p>Install NurseVault on your phone for quick access to study materials and NCK Prep.</p>
+  <div class="pwa-actions">
+    <button type="button" class="pwa-yes" id="pwaInstallBtn">Install</button>
+    <button type="button" class="pwa-no" onclick="dismissPwaBanner()">Not now</button>
+  </div>
+</div>
+
+<div id="toast-stack" aria-live="polite" aria-relevant="additions"></div>
+
+<div id="search-modal" role="dialog" aria-modal="true" aria-label="Search" onclick="if(event.target===this)closeSearch()">
+  <div class="search-card" onclick="event.stopPropagation()">
+    <div class="pop-head">
+      <div class="account-modal-top">
+        <div class="account-brand">
+        <span class="account-brand-mark" aria-hidden="true">✦</span>
+        <span class="account-brand-copy">
+          <span class="account-brand-name">Nurse<span>Vault</span></span>
+          <span class="account-brand-caption">YOUR STUDY SPACE</span>
+        </span>
+      </div>
+        <button type="button" class="pop-close" aria-label="Close search" onclick="closeSearch()">×</button>
+      </div>
+      <div class="account-intro">
+        <p class="account-eyebrow">SEARCH</p>
+        <h2>Find a resource</h2>
+      </div>
+    </div>
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input id="searchInput" type="search" placeholder="Search drug cards, topics, NCK…" aria-label="Search" autocomplete="off" oninput="runSearch(this.value)" />
+    </div>
+    <div class="search-results" id="searchResults">
+      <div class="search-empty">Type to search resources and NCK topics</div>
+    </div>
+    <div class="search-hint"><span aria-hidden="true">✦</span><span>Tip: try “beta”, “pharmacology”, or “midwifery”</span></div>
+  </div>
+</div>
+
+<nav class="mobile-nav" aria-label="Primary">
+  <a href="#/" data-mn="home">
+    <svg viewBox="0 0 24 24"><path d="M3 11.5L12 4l9 7.5"/><path d="M6 10.5V20h12v-9.5"/></svg>
+    Home
+  </a>
+  <a href="#/categories" data-mn="categories">
+    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    Categories
+  </a>
+  <a href="#/nck-prep" data-mn="nck">
+    <svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M14 3v5h5"/></svg>
+    NCK Prep
+  </a>
+  <a href="#/tools" data-mn="tools">
+    <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+    Tools
+  </a>
+  <button type="button" data-mn="cart" onclick="toggleCart()">
+    <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+    Cart
+    <span class="mn-badge" id="mn-cart-count">0</span>
+  </button>
+  <button type="button" data-mn="account" onclick="openAccountModal()">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-3.5 4-5 8-5s6.5 1.5 8 5"/></svg>
+    Account
+  </button>
+</nav>
+
+<script>
+  // Greets people who come back to the site after being away for a while (30+ minutes),
+  // styled for the time of day. Add ?welcome=1 to the address to preview it any time.
+  function dismissWelcome(){
+    var b = document.getElementById('welcome-back');
+    if (b) b.classList.remove('show');
+  }
+  (function(){
+    var AWAY_MS = 30 * 60 * 1000;
+    var preview = /[?&]welcome=1/.test(location.search);
+    var now = Date.now(), last = 0;
+    try {
+      last = Number(localStorage.getItem('nv-last-seen') || localStorage.getItem('nv-last-visit') || 0);
+      localStorage.setItem('nv-last-seen', String(now));
+    } catch(e){ if (!preview) return; }
+    // Keep "last seen" fresh while they browse, so leaving and coming back is measured correctly.
+    function touch(){ try { localStorage.setItem('nv-last-seen', String(Date.now())); } catch(e){} }
+    document.addEventListener('visibilitychange', touch);
+    window.addEventListener('pagehide', touch);
+    setInterval(touch, 60000);
+    if (!preview && (!last || now - last < AWAY_MS)) return;
+    var h = new Date().getHours();
+    var tone = (h < 5 || h >= 21) ? 'night' : h < 12 ? 'morning' : h < 17 ? 'afternoon' : 'evening';
+    var head = { morning:'Good morning', afternoon:'Good afternoon', evening:'Good evening', night: h < 5 ? 'Studying late?' : 'Good evening' }[tone];
+    try {
+      if (typeof nvDisplayName === 'function') {
+        var nm = nvDisplayName();
+        if (nm) head = head + ', ' + nm;
+      }
+    } catch (e) {}
+    var sub = { morning:'A fresh start. Pick up where you left off.', afternoon:'Keep the momentum going with a few more questions.',
+                evening:'Wind down with a quick revision session.', night:'Welcome back to NurseVault. One more topic before bed?' }[tone];
+    var days = last ? Math.floor((now - last) / 86400000) : 0;
+    if (days >= 2) sub = 'It has been ' + days + ' days. Pick up where you left off.';
+    var icons = {
+      morning:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+      afternoon:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+      evening:'<path d="M17 18a5 5 0 00-10 0"/><path d="M12 9V2M4.2 10.2l1.4 1.4M1 18h2M21 18h2M18.4 11.6l1.4-1.4M23 22H1M8 6l4-4 4 4"/>',
+      night:'<path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/>' };
+    var b = document.getElementById('welcome-back');
+    if (!b) return;
+    b.setAttribute('data-tone', tone);
+    document.getElementById('wbIcon').innerHTML = '<svg viewBox="0 0 24 24">' + icons[tone] + '</svg>';
+    document.getElementById('wbHead').textContent = head;
+    document.getElementById('wbText').textContent = sub;
+    b.classList.add('show');
+  })();
+</script>
+<dialog id="notify-modal" aria-labelledby="nfTitle">
+  <form onsubmit="submitNotify(event)" novalidate>
+    <h3 id="nfTitle">Get notified</h3>
+    <p class="nf-sub">Enter your email and we'll send you one message when this is ready.</p>
+    <input type="text" id="nfHp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;">
+    <label for="nfEmail" class="nf-label">Email address</label>
+    <input type="email" id="nfEmail" autocomplete="email" placeholder="you@example.com" required>
+    <p id="nfMsg" role="status"></p>
+    <div class="nf-actions">
+      <button type="button" class="nf-cancel" onclick="document.getElementById('notify-modal').close()">Close</button>
+      <button type="submit" id="nfSubmit" class="wb-go">Notify me</button>
+    </div>
+    <p class="nf-fine">We use your email only to tell you about this item. No spam.</p>
+  </form>
+</dialog>
+<script>
+  function setNf(t, bad){ var m=document.getElementById('nfMsg'); m.textContent=t; m.style.color = bad ? 'var(--coral)' : 'var(--green-dark)'; }
+  function openNotify(id, name){
+    var d = document.getElementById('notify-modal');
+    d.dataset.item = id; d.dataset.name = decodeURIComponent(name || '');
+    document.getElementById('nfTitle').textContent = 'Get notified: ' + d.dataset.name;
+    document.getElementById('nfEmail').value = (typeof sessionInfo !== 'undefined' && sessionInfo.email) || '';
+    document.getElementById('nfSubmit').disabled = false;
+    setNf('');
+    d.showModal();
+  }
+  async function submitNotify(e){
+    e.preventDefault();
+    var d = document.getElementById('notify-modal'), btn = document.getElementById('nfSubmit');
+    var email = document.getElementById('nfEmail').value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { setNf('Please enter a valid email address.', true); return; }
+    btn.disabled = true; setNf('Saving...');
+    try {
+      var r = await fetch(AUTH_URL + '/notify', { method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ email: email, itemId: d.dataset.item, itemName: d.dataset.name, website: document.getElementById('nfHp').value }), credentials: 'include' });
+      var j = await r.json().catch(function(){ return {}; });
+      if (r.ok && j.ok) { setNf("Done. We'll email you once when it's ready."); setTimeout(function(){ d.close(); }, 1800); }
+      else { setNf(j.error || 'Something went wrong. Please try again.', true); btn.disabled = false; }
+    } catch(err) { setNf('Could not connect. Please check your internet and try again.', true); btn.disabled = false; }
+  }
+</script>
+<script>
+  // Swaps the emoji icons in the NCK Prep area for line icons that match the rest of the site.
+  (function(){
+    var P = {
+      '\uD83D\uDD01':'<path d="M17 2l4 4-4 4"/><path d="M3 11v-1a4 4 0 014-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v1a4 4 0 01-4 4H3"/>',
+      '\uD83E\uDDED':'<circle cx="12" cy="12" r="10"/><path d="M16.2 7.8l-2.1 6.3-6.3 2.1 2.1-6.3z"/>',
+      '\uD83C\uDFAF':'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/>',
+      '\u23F1':'<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/>',
+      '\uD83D\uDCA1':'<path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 00-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0012 2z"/>',
+      '\uD83D\uDCC5':'<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
+      '\uD83D\uDCDA':'<path d="M4 19.5A2.5 2.5 0 016.5 17H20V3H6.5A2.5 2.5 0 004 5.5z"/><path d="M4 19.5A2.5 2.5 0 006.5 22H20v-5"/>',
+      '\u2705':'<path d="M20 6L9 17l-5-5"/>'
+    };
+    var busy = false;
+    function run(){
+      if (busy) return; busy = true;
+      document.querySelectorAll('.nck-banner-ic,.nck-stat-ic,.nck-empty-ic').forEach(function(el){
+        if (el.querySelector('svg')) return;
+        var k = (el.textContent || '').replace(/\uFE0F/g, '').trim();
+        if (P[k]) el.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true">' + P[k] + '</svg>';
+      });
+      busy = false;
+    }
+    new MutationObserver(run).observe(document.body, { childList: true, subtree: true });
+    run();
+  })();
+</script>
+<script src="tools.js?v=2d8d92f7"></script>
+<script>
+/* Preview-safe hash links: in embedded previews (srcdoc/sandboxed frames) a plain
+   <a href="#/..."> resolves against the parent page and reloads it inside the frame.
+   This only activates when the page's base URL differs from its own address, so it
+   does nothing on the live site. */
+(function(){
+  try {
+    if (document.baseURI.split('#')[0] === location.href.split('#')[0]) return;
+    document.addEventListener('click', function(e){
+      if (e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey) return;
+      var a = e.target && e.target.closest ? e.target.closest('a[href^="#"]') : null;
+      if (!a) return;
+      var h = a.getAttribute('href');
+      e.preventDefault();
+      if (h.length > 1 && h.charAt(1) !== '/') {
+        var el = document.getElementById(h.slice(1));
+        if (location.hash !== h) location.hash = h;
+        if (el && el.scrollIntoView) el.scrollIntoView({behavior:'smooth', block:'start'});
+      } else if (location.hash !== h) {
+        location.hash = h;
+      }
+    });
+  } catch (e) {}
+})();
+</script>
+</body>
+</html>
